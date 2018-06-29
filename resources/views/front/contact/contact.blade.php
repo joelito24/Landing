@@ -9,7 +9,7 @@
             </div>
             <div class="col-md-6">
                 <div class="form-block">
-                    <form method="POST" action="{{ action('ContactController@send') }}">
+                    <form method="POST" action="{{ action('ContactController@send') }}" id="contactform">
                         <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                         <div class="form-group">
                             <label>Nombre</label>
@@ -79,13 +79,18 @@
 
 @section('scripts')
     <script>
+        function validardatos(){
+            return 0;
+        }
         // Validation form
         $('section.contact form .submit').click(function () {
-            if(validadardatos() == 0) {
+
+            if(validardatos() == 0) {
                 $("section.contact #contactform").submit();
             }else{
                 alert('Revise los datos introducidos');
             }
         });
+
     </script>
 @endsection
