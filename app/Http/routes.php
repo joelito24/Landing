@@ -189,7 +189,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 
     //White papers
     Route::get(LaravelLocalization::transRoute('routes.whitepapers'), ['as' => 'whitepapers','uses' => 'WhitepapersController@whitepapers']);
-
+    //Newsletter
+    Route::post(LaravelLocalization::transRoute('routes.newsletter'), ['as' => 'newsletter','uses' => 'NewsletterController@add']);
     //Agency
     Route::get(LaravelLocalization::transRoute('routes.agency'), ['as' => 'agency','uses' => 'StaticController@agency']);
 
