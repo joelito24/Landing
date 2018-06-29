@@ -1,0 +1,227 @@
+<?php
+Route::controllers([
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController'
+]);
+
+Route::get('administrador', function()
+{
+    return redirect('auth/login');
+});
+
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth', 'admin']], function ()
+{
+    Route::get('home', [
+        'as' => 'admin.home',
+        'uses' => 'HomeController@Index'
+    ]);
+
+    ////////////////USERS
+    Route::get('users', [
+        'as' => 'admin.users.index',
+        'uses' => 'UsersController@index'
+    ]);
+
+    Route::get('users/create', [
+        'as' => 'admin.users.create',
+        'uses' => 'UsersController@create'
+    ]);
+
+    Route::post('users/create', [
+        'as' => 'admin.users.save',
+        'uses' => 'UsersController@save'
+    ]);
+
+    Route::get('users/edit/{id}', [
+        'as' => 'admin.users.edit',
+        'uses' => 'UsersController@edit'
+    ]);
+
+    Route::post('users/edit/{id}', [
+        'as' => 'admin.users.update',
+        'uses' => 'UsersController@update'
+    ]);
+
+    Route::get('users/delete/{id}', [
+        'as' => 'admin.users.delete',
+        'uses' => 'UsersController@delete'
+    ]);
+
+    //Services
+    Route::get('services', [
+        'as' => 'admin.services.index',
+        'uses' => 'ServicesController@index'
+    ]);
+
+    Route::get('services/crop/{id}', [
+        'as' => 'admin.services.crop',
+        'uses' => 'ServicesController@crop'
+    ]);
+
+    Route::post('services/crop/{id}', [
+        'as' => 'admin.services.cropSave',
+        'uses' => 'ServicesController@cropSave'
+    ]);
+
+    Route::get('services/create', [
+        'as' => 'admin.services.create',
+        'uses' => 'ServicesController@create'
+    ]);
+
+    Route::post('services/create', [
+        'as' => 'admin.services.save',
+        'uses' => 'ServicesController@save'
+    ]);
+
+    Route::get('services/edit/{id}', [
+        'as' => 'admin.services.edit',
+        'uses' => 'ServicesController@edit'
+    ]);
+
+    Route::post('services/edit/{id}', [
+        'as' => 'admin.services.update',
+        'uses' => 'ServicesController@update'
+    ]);
+
+    Route::get('services/delete/{id}', [
+        'as' => 'admin.services.delete',
+        'uses' => 'ServicesController@delete'
+    ]);
+
+    //Projects
+    Route::get('projects', [
+        'as' => 'admin.projects.index',
+        'uses' => 'ProjectsController@index'
+    ]);
+
+    Route::get('projects/create', [
+        'as' => 'admin.projects.create',
+        'uses' => 'ProjectsController@create'
+    ]);
+
+    Route::post('projects/create', [
+        'as' => 'admin.projects.save',
+        'uses' => 'ProjectsController@save'
+    ]);
+
+    Route::get('projects/edit/{id}', [
+        'as' => 'admin.projects.edit',
+        'uses' => 'ProjectsController@edit'
+    ]);
+
+    Route::post('projects/edit/{id}', [
+        'as' => 'admin.projects.update',
+        'uses' => 'ProjectsController@update'
+    ]);
+
+    Route::get('projects/delete/{id}', [
+        'as' => 'admin.projects.delete',
+        'uses' => 'ProjectsController@delete'
+    ]);
+
+    //White papers
+    Route::get('whitepapers', [
+        'as' => 'admin.whitepapers.index',
+        'uses' => 'WhitepapersController@index'
+    ]);
+
+    Route::get('whitepapers/create', [
+        'as' => 'admin.whitepapers.create',
+        'uses' => 'WhitepapersController@create'
+    ]);
+
+    Route::post('whitepapers/create', [
+        'as' => 'admin.whitepapers.save',
+        'uses' => 'WhitepapersController@save'
+    ]);
+
+    Route::get('whitepapers/edit/{id}', [
+        'as' => 'admin.whitepapers.edit',
+        'uses' => 'WhitepapersController@edit'
+    ]);
+
+    Route::post('whitepapers/edit/{id}', [
+        'as' => 'admin.whitepapers.update',
+        'uses' => 'WhitepapersController@update'
+    ]);
+
+    Route::get('whitepapers/delete/{id}', [
+        'as' => 'admin.whitepapers.delete',
+        'uses' => 'WhitepapersController@delete'
+    ]);
+
+
+    //Para la pagina principal. Luego cambia
+    Route::get('orders', [
+        'as' => 'admin.orders.index',
+        'uses' => 'OrdersController@index'
+    ]);
+    Route::get('products', [
+        'as' => 'admin.products.index',
+        'uses' => 'ProductsController@index'
+    ]);
+    Route::get('categories', [
+        'as' => 'admin.categories.index',
+        'uses' => 'CategoriesController@index'
+    ]);
+    Route::get('news', [
+        'as' => 'admin.news.index',
+        'uses' => 'NewsController@index'
+    ]);
+
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//FRONT
+Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localizationRedirect', 'localize']
+], function()
+{
+    Route::get(LaravelLocalization::transRoute('routes.home'), [
+        'as' => 'home',
+        'uses' => 'HomeController@index'
+    ]);
+
+    //Services
+    Route::get(LaravelLocalization::transRoute('routes.service'), ['as' => 'service','uses' => 'ServiceController@service']);
+
+    //Projects
+    Route::get(LaravelLocalization::transRoute('routes.projects'), ['as' => 'projects','uses' => 'ProjectController@projects']);
+
+    //White papers
+    Route::get(LaravelLocalization::transRoute('routes.whitepapers'), ['as' => 'whitepapers','uses' => 'WhitepapersController@whitepapers']);
+
+    //Agency
+    Route::get(LaravelLocalization::transRoute('routes.agency'), ['as' => 'agency','uses' => 'StaticController@agency']);
+
+    //Specializations
+    Route::get(LaravelLocalization::transRoute('routes.specialization1'), ['as' => 'specialization1','uses' => 'SpecializationController@specialization1']);
+    Route::get(LaravelLocalization::transRoute('routes.specialization2'), ['as' => 'specialization2','uses' => 'SpecializationController@specialization2']);
+    Route::get(LaravelLocalization::transRoute('routes.specialization3'), ['as' => 'specialization3','uses' => 'SpecializationController@specialization3']);
+    Route::get(LaravelLocalization::transRoute('routes.specialization4'), ['as' => 'specialization4','uses' => 'SpecializationController@specialization4']);
+
+
+
+    //Contact
+    Route::get(LaravelLocalization::transRoute('routes.contact'), ['as' => 'contact','uses' => 'ContactController@contact']);
+    Route::post(LaravelLocalization::transRoute('routes.contact'), ['as' => 'contact','uses' => 'ContactController@send']);
+
+});
+
+
+/* PAYMENTS */
+
+//TPV
+Route::post('payment/tpv', ['as' => 'payments.tpv', 'uses' => 'TpvController@Tpv']);
+Route::post('payment/tpv/response', ['as' => 'payments.tpv.response', 'uses' => 'TpvController@TpvResponse']);
+Route::get('payment/tpv/ok', ['as' => 'payments.tpv.ok', 'uses' => 'TpvController@TpvOk']);
+Route::get('payment/tpv/ko', ['as' => 'payments.tpv.ko', 'uses' => 'TpvController@TpvKo']);
+
+//TPV
+Route::post('payment/paypal', ['as' => 'payments.paypal', 'uses' => 'PaypalController@Paypal']);
+Route::post('payment/paypal/response', ['as' => 'payments.paypal.response', 'uses' => 'PaypalController@PaypalResponse']);
+Route::get('payment/paypal/ok', ['as' => 'payments.paypal.ok', 'uses' => 'PaypalController@PaypalOk']);
+Route::post('payment/paypal/ok', ['as' => 'payments.paypal.ok', 'uses' => 'PaypalController@PaypalOk']);
+Route::get('payment/paypal/ko', ['as' => 'payments.paypal.ko', 'uses' => 'PaypalController@PaypalKo']);
+
+//TRANSFER
+Route::post('payment/transfer', ['as' => 'payments.transfer', 'uses' => 'TransferController@Transfer']);

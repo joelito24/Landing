@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 678.55 499.96">
+  <defs>
+    <style>
+      .rellenoUnion,.cls-12{fill:#00bde0;}
+      .rellenoUnion{opacity:0.25;}
+      .cls-2,.cls-3,.cls-4,.cls-5{fill:none;}
+      .cls-2,.cls-5{stroke:#00bde0;}
+      .cls-2,.cls-3,.cls-4,.cls-5,.cls-7{stroke-miterlimit:10;}
+      .cls-3{stroke:#036785;stroke-width:2px;}
+      .cls-4{stroke:#ecbe31;stroke-width:3px;}
+      .cls-5{stroke-width:4px;}
+      .cls-6{fill:#ecbe31;}
+      .cls-7,.cls-8,.cls-9{fill:#036785;}
+      .cls-7{stroke:#00dbe0;}
+      .cls-12,.cls-24,.cls-9{font-size:18px;font-weight:700;}
+      .cls-12,.cls-9{font-family:Muli-SemiBold, Muli;}
+      .cls-24{fill:#fff;font-family:Muli-ExtraBold, Muli;}
+    </style>
+  </defs>
+  <polygon class="rellenoUnion" points="141.18 236.59 348.18 54.59 252.18 74.59 177.18 138.59 141.18 236.59"/>
+  <polygon class="rellenoUnion" points="441.18 78.59 252.18 74.59 177.18 138.59 141.18 234.59 510.18 142.59 441.18 78.59"/>
+  <polygon class="cls-2" points="141.18 236.59 348.18 54.59 252.18 74.59 177.18 138.59 141.18 236.59"/>
+  <polygon class="cls-2" points="441.18 78.59 252.18 74.59 177.18 138.59 141.18 234.59 510.18 142.59 441.18 78.59"/>
+  <circle class="cls-3" cx="342.98" cy="258.56" r="204.03" transform="translate(10.1 530) rotate(-76.21)"/>
+  <path class="cls-4" d="M141.54,236.42a205.94,205.94,0,0,1,4.59-26.34A203.61,203.61,0,0,1,255.28,74.5"/>
+  <path class="cls-5" d="M439.85,80.25a205.94,205.94,0,0,1,22.66,14.2,203.75,203.75,0,0,1,47.42,47.79"/>
+  <circle class="cls-6" cx="251.79" cy="74.02" r="10" transform="translate(119.87 300.91) rotate(-76.21)"/>
+  <circle class="cls-7" cx="509.14" cy="142.7" r="10" transform="translate(249.16 603.14) rotate(-76.21)"/>
+  <circle class="cls-8" cx="546.5" cy="234.32" r="10" transform="translate(188.63 709.19) rotate(-76.21)"/>
+  <circle class="cls-8" cx="535.24" cy="327.44" r="10" transform="translate(89.62 769.17) rotate(-76.21)"/>
+  <circle class="cls-8" cx="480.35" cy="409.23" r="10" transform="translate(-31.61 778.15) rotate(-76.21)"/>
+  <circle class="cls-8" cx="391.37" cy="458.23" r="10" transform="translate(-146.96 729.05) rotate(-76.21)"/>
+  <circle class="cls-8" cx="293.98" cy="456.91" r="10" transform="translate(-219.85 633.47) rotate(-76.21)"/>
+  <circle class="cls-8" cx="209" cy="413.01" r="10" transform="translate(-241.94 517.51) rotate(-76.21)"/>
+  <circle class="cls-8" cx="152.03" cy="328.63" r="10" transform="translate(-203.36 397.92) rotate(-76.21)"/>
+  <circle class="cls-6" cx="141.13" cy="233.73" r="10" transform="translate(-119.51 315.06) rotate(-76.21)"/>
+  <circle class="cls-6" cx="177.84" cy="138.92" r="10" transform="translate(0.52 278.51) rotate(-76.21)"/>
+  <circle class="cls-7" cx="348.38" cy="53.77" r="10" transform="translate(213.1 379.27) rotate(-76.21)"/>
+  <circle class="cls-7" cx="442.84" cy="76.96" r="10" transform="translate(262.51 488.67) rotate(-76.21)"/>
+  <text class="cls-9" transform="translate(227.61 473.45)">Social<tspan x="-37.17" y="21.6">media ads</tspan></text><text class="cls-9" transform="translate(405.64 472.96)">Automation<tspan x="0" y="21.6">marketing</tspan></text>
+  <text class="cls-9" transform="translate(496.21 416.04)">Inbound<tspan x="0" y="21.6">marketing</tspan></text>
+  <text class="cls-12" transform="translate(274.62 15.41)">Ideas de negocio/<tspan x="15.32" y="21.6">Bussines plan</tspan></text>
+  <text class="cls-12" transform="translate(458.9 71.34)">SEO</tspan></text>
+<text class="cls-9" transform="translate(25.84 337.18)">Remarketing</tspan></text>
+<text class="cls-9" transform="translate(99.33 422.96)"><tspan class="cls-17">Publicidad</tspan><tspan x="37.93" y="21.6">online</tspan></text>
+<text class="cls-12" transform="translate(525.06 139.17)">SEA/Adwords</tspan></text>
+<text class="cls-9" transform="translate(564.79 238.58)">Medios e<tspan x="0" y="21.6">influencers</tspan></text>
+<text class="cls-9" transform="translate(553.01 332.66)">Mail marketing</text>
+<text class="cls-24" transform="translate(134.35 71.98)">Diseño web</text>
+<text class="cls-24" transform="translate(29.19 138.77)">Marketing web</text>
+<text class="cls-24" transform="translate(0 215.87)"><tspan class="cls-27">Programación</tspan><tspan class="cls-22" x="86.61" y="21.6">web</tspan></text>
+</svg>

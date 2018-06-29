@@ -1,0 +1,8 @@
+@media (max-width: 768px){
+    .container{padding-left:15px !important;padding-right: 15px !important;}
+    footer .google{margin-bottom: 40px;}
+    footer .last-col ul.menu-footer{margin-top:51px;}
+    footer .contact{margin-top:49px;margin-bottom: -39px;}
+    footer .gorila{position: inherit;margin-left: 15px;bottom: -56px;}
+    footer .footer-bottom:before{display: none;}
+}

@@ -1,0 +1,9 @@
+/vendor
+/node_modules
+.env
+/nbproject
+/public/adm.php
+/public/files
+.DS_Store
+.idea/
+dandelion.yml
