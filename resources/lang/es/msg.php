@@ -8,6 +8,8 @@ return [
         'phone' => 'Teléfono',
         'email' => 'Correo electrónico',
         'mesage' => 'Mensaje',
+        'consults' => 'Consultas',
+        'web' => 'Web',
     ],
 
     'register' => [

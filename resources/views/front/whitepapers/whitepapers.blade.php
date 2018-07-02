@@ -72,3 +72,4 @@
     <title>Thatzad</title>
     <meta name="description" content="">
 @endsection
+

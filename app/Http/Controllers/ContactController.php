@@ -24,36 +24,33 @@ class ContactController extends Controller
     {
         $contactData = Input::all();
 
+        $contactData['consultas'] = json_encode($contactData['consult']);
 
         $emailService->contactEmail(
             $contactData['name'],
             $contactData['email'],
             $contactData['telephone'],
-            $contactData['message']
+            $contactData['consulta'],
+            $contactData['consultas'],
+            $contactData['web']
         );
 
         $contactsHistoryRepository->add($contactData);
 
         if(isset($contactData['newsletter'])){
-                $result = $newsletterRepository->validateMail($contactData['email']);
-                if($result->isEmpty()){
-                    $data = [
-                        'email' => $contactData['email'],
-                        'name' => $contactData['name'],
-                        'surname' => "",
-                        'telephone' => $contactData['telephone'],
-                        'city' => "",
-                        'active' => 1
-                    ];
-                    $newsletterRepository->add($data);
+                $result = $newsletterRepository->checkEmail($contactData['email']);
+                //dd($result);
+                if(!isset($result)){
+                    $newsletterRepository->add($contactData);
                 }
         }
 
 
 
-        return View('front.contact.contact')
+        /*return View('front.contact.contact')
             ->with('contactData', $contactData)
-            ->with('send', true);
+            ->with('send', true);*/
+        return 'sent';
     }
 
 }
