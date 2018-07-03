@@ -57,7 +57,7 @@
 						<!--<div class="btn-yellow-full"><a href="{{ route('contact') }}">Contáctanos</a></div>-->
 						<div class="col-md-6">
 							<div class="form-block">
-								<form method="POST" action="{{ action('ContactController@send') }}" id="contactform">
+								<form method="POST" action="" id="contactform">
 									<input name="_token" type="hidden" value="{{ csrf_token() }}"/>
 									<div class="form-group">
 										<label>Nombre</label>
@@ -123,7 +123,7 @@
                 if (error === 0){
                     $.ajax({
                         type: 'post',
-                        url: '{{ action('ContactController@send') }}',
+                        url: '{{ action('ContactController@sendShort') }}',
                         data: $('#contactform').serialize(),
                         success: function(response) {
                             $('#contactform').trigger("reset");

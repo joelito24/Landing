@@ -36,5 +36,21 @@ class EmailServices
         $this->sendEmail($from, $to, $subject, $view, $data, $sender);
     }
 
+    public function contactShortEmail($name, $email, $consulta)
+    {
+        $subject = "Nueva solicitud de Contacto";
+        $to = "prueba@thatzad.com";
+        $view = 'emails.contactShort';
+        $from = $email;
+        $sender = "info@thatzad.com";
+        $data = ['data' => [
+            'project_name' => "Thatzad",
+            'title' => "Thatzad - Contacto",
+            'name' => $name,
+            'email' => $email,
+            'consulta' => $consulta]];
+        $this->sendEmail($from, $to, $subject, $view, $data, $sender);
+    }
+
 
 }

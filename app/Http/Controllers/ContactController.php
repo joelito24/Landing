@@ -53,4 +53,26 @@ class ContactController extends Controller
         return 'sent';
     }
 
+    function sendShort( EmailServices $emailService, Newsletter $newsletterRepository, ContactsHistory $contactsHistoryRepository )
+    {
+        $contactData = Input::all();
+
+        $emailService->contactShortEmail(
+            $contactData['name'],
+            $contactData['email'],
+            $contactData['consulta']
+        );
+
+        $contactsHistoryRepository->add($contactData);
+
+        if(isset($contactData['newsletter'])){
+            $result = $newsletterRepository->checkEmail($contactData['email']);
+            //dd($result);
+            if(!isset($result)){
+                $newsletterRepository->add($contactData);
+            }
+        }
+        return 'sent';
+    }
+
 }
