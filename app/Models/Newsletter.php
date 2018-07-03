@@ -12,6 +12,7 @@ class Newsletter extends Model implements ModelInterface
     public $timestamps = true;
     protected $fillable = ['name', 'email'];
 
+
     public function add( $data )
     {
         return $this->create($data);
@@ -20,4 +21,5 @@ class Newsletter extends Model implements ModelInterface
     {
         return $this->where('email', '=', $email)->first();
     }
+
 }
