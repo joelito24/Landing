@@ -42,4 +42,24 @@ return [
         'resource' => 'whitepapers'
     ],
 
+    [
+        'route' => 'admin.contacts.index',
+        'create' => 'admin.contacts.create',
+        'edit' => 'admin.contacts.edit',
+        'delete' => 'admin.contacts.delete',
+        'icon' => 'fa fa-user',
+        'name' => 'Contactos',
+        'resource' => 'contacts'
+    ],
+
+    [
+        'route' => 'admin.newsletter.index',
+        'create' => 'admin.newsletter.create',
+        'edit' => 'admin.newsletter.edit',
+        'delete' => 'admin.newsletter.delete',
+        'icon' => 'fa fa-user',
+        'name' => 'Newsletter',
+        'resource' => 'newsletter'
+    ],
+
 ];

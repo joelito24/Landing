@@ -4,12 +4,13 @@ namespace App\Models;
 
 use App\Interfaces\ModelInterface;
 use Illuminate\Database\Eloquent\Model;
+use DateTime;
 
 final class ContactsHistory extends Model implements ModelInterface
 {
-
+    protected $table = 'contacts_history';
     public $timestamps = true;
-    protected $fillable = ['email', 'name', 'message', 'active', 'created_at'];
+    protected $fillable = ['email', 'name', 'consulta', 'consultas', 'web', 'company', 'telephone','created_at', 'updated_at'];
 
     public function add( $data )
     {
@@ -31,6 +32,12 @@ final class ContactsHistory extends Model implements ModelInterface
     {
         return $this->where('email', '=', $email)->get();
     }
+
+    /*public function getCreatedAtAttribute()
+    {
+        $date = new DateTime($this->created_at);
+        return $date->format('d/m/Y H:i');
+    }*/
 
 
 

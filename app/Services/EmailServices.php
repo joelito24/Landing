@@ -17,20 +17,39 @@ class EmailServices
         });
     }
 
-    public function contactEmail($name, $email, $telephone, $message)
+    public function contactEmail($name, $email, $telephone, $consulta, $consultas, $web)
     {
-        $subject = env('EMAIL_PROJECT_NAME') . " - Contacto";
-        $to = env('EMAIL_TO');
+        $subject = "Nueva solicitud de Contacto";
+        $to = "prueba@thatzad.com";
         $view = 'emails.contact';
         $from = $email;
+        $sender = "info@thatzad.com";
         $data = ['data' => [
-                'project_name' => env('EMAIL_PROJECT_NAME'),
-                'title' => env('EMAIL_PROJECT_NAME') . " - Contacto",
+                'project_name' => "Thatzad",
+                'title' => "Thatzad - Contacto",
                 'name' => $name,
                 'email' => $email,
                 'telephone' => $telephone,
-                'message' => $message]];
-        $this->sendEmail($from, $to, $subject, $view, $data, env('EMAIL_FROM'));
+                'consulta' => $consulta,
+                'consultas' => $consultas,
+                'web' => $web]];
+        $this->sendEmail($from, $to, $subject, $view, $data, $sender);
+    }
+
+    public function contactShortEmail($name, $email, $consulta)
+    {
+        $subject = "Nueva solicitud de Contacto";
+        $to = "prueba@thatzad.com";
+        $view = 'emails.contactShort';
+        $from = $email;
+        $sender = "info@thatzad.com";
+        $data = ['data' => [
+            'project_name' => "Thatzad",
+            'title' => "Thatzad - Contacto",
+            'name' => $name,
+            'email' => $email,
+            'consulta' => $consulta]];
+        $this->sendEmail($from, $to, $subject, $view, $data, $sender);
     }
 
 
