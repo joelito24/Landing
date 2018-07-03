@@ -1,0 +1,23 @@
+header.header_transparent {
+    background: transparent!important;
+    position: absolute!important;
+}
+header .menu {
+    list-style-type: none !important;
+    text-align: right;
+}
+header .menu li {
+    color: #ffffff!important;
+    font-family: Muli;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+header .menu .especializaciones ul, .menu .servicios ul{
+    display: none;
+}
+header .menu a {
+    color: inherit;
+}

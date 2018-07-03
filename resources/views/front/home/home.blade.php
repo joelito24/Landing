@@ -150,7 +150,7 @@
 @section('scripts')
 <script>
     $(document).ready(function () {
-        
+        $("#header").addClass('header_transparent');
     });
 </script>
 @endsection
