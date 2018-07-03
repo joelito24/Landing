@@ -220,5 +220,78 @@ return [
             ],
         ]
     ],
+    'contacts' => [
+        'name' => 'Contactos',
+        'for_files' => true,
+        'description' => 'Administración de Contactos',
+        'editor' => true,
+        'fields' => [
+            'name' => [
+                'type' => 'text',
+                'title' => 'Nombre',
+                'description' => 'Introduzca el nombre.',
+                'rules' => ['required']
+            ],
+            'email' => [
+                'type' => 'text',
+                'title' => 'Email',
+                'description' => 'Introduzca el email',
+                'rules' => ['required']
+            ],
+            'company' => [
+                'type' => 'text',
+                'title' => 'Empresa',
+                'description' => 'Introduzca la empresa',
+                'rules' => ['required']
+            ],
+            'telephone' => [
+                'type' => 'text',
+                'title' => 'Telefono',
+                'description' => 'Introduzca el telefono.',
+                'rules' => ['required']
+            ],
+            'web' => [
+                'type' => 'text',
+                'title' => 'Web',
+                'description' => 'Introduzca la web.',
+                'rules' => ['required']
+            ],
+            /*'consultas' => [
+                'type' => 'text',
+                'title' => 'Consultas',
+                'description' => 'Introduzca el nombre.',
+                'rules' => ['required']
+            ],*/
+            'consulta' => [
+                'type' => 'textarea',
+                'title' => 'Consulta',
+                'description' => 'Introduzca su consulta.',
+                'rules' => ['required']
+            ],
+
+        ]
+    ],
+
+    'newsletter' => [
+        'name' => 'Newsletter',
+        'for_files' => true,
+        'description' => 'Administración de Newsletter',
+        'editor' => true,
+        'fields' => [
+            'name' => [
+                'type' => 'text',
+                'title' => 'Nombre',
+                'description' => 'Introduzca el nombre.',
+                'rules' => ['required']
+            ],
+            'email' => [
+                'type' => 'text',
+                'title' => 'Email',
+                'description' => 'Introduzca el email',
+                'rules' => ['required']
+            ],
+
+        ]
+    ],
 
 ];

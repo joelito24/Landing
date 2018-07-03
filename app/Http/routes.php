@@ -169,6 +169,68 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
         'uses' => 'NewsController@index'
     ]);
 
+    //Contacts
+    Route::get('contacts', [
+        'as' => 'admin.contacts.index',
+        'uses' => 'ContactsHistoryController@index'
+    ]);
+
+    Route::get('contacts/create', [
+        'as' => 'admin.contacts.create',
+        'uses' => 'ContactsHistoryController@create'
+    ]);
+
+    Route::post('contacts/create', [
+        'as' => 'admin.contacts.save',
+        'uses' => 'ContactsHistoryController@save'
+    ]);
+
+    Route::get('contacts/edit/{id}', [
+        'as' => 'admin.contacts.edit',
+        'uses' => 'ContactsHistoryController@edit'
+    ]);
+
+    Route::post('contacts/edit/{id}', [
+        'as' => 'admin.contacts.update',
+        'uses' => 'ContactsHistoryController@update'
+    ]);
+
+    Route::get('contacts/delete/{id}', [
+        'as' => 'admin.contacts.delete',
+        'uses' => 'ContactsHistoryController@delete'
+    ]);
+
+    //Newsletter
+    Route::get('newsletter', [
+        'as' => 'admin.newsletter.index',
+        'uses' => 'NewsletterController@index'
+    ]);
+
+    Route::get('newsletter/create', [
+        'as' => 'admin.newsletter.create',
+        'uses' => 'NewsletterController@create'
+    ]);
+
+    Route::post('newsletter/create', [
+        'as' => 'admin.newsletter.save',
+        'uses' => 'NewsletterController@save'
+    ]);
+
+    Route::get('newsletter/edit/{id}', [
+        'as' => 'admin.newsletter.edit',
+        'uses' => 'NewsletterController@edit'
+    ]);
+
+    Route::post('newsletter/edit/{id}', [
+        'as' => 'admin.newsletter.update',
+        'uses' => 'NewsletterController@update'
+    ]);
+
+    Route::get('newsletter/delete/{id}', [
+        'as' => 'admin.newsletter.delete',
+        'uses' => 'NewsletterController@delete'
+    ]);
+
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

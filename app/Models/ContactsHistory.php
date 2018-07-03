@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Interfaces\ModelInterface;
 use Illuminate\Database\Eloquent\Model;
+use DateTime;
 
 final class ContactsHistory extends Model implements ModelInterface
 {
@@ -31,6 +32,12 @@ final class ContactsHistory extends Model implements ModelInterface
     {
         return $this->where('email', '=', $email)->get();
     }
+
+    /*public function getCreatedAtAttribute()
+    {
+        $date = new DateTime($this->created_at);
+        return $date->format('d/m/Y H:i');
+    }*/
 
 
 

@@ -22,13 +22,9 @@ class NewsletterController extends Controller
     public function add(Newsletter $newsletterRepository){
         $contactData = Input::all();
         if($newsletterRepository->checkEmail($contactData['email'])){
-            /*return View('front.whitepapers.whitepapers')
-                ->with('send', 'exist');*/
             return 'exist';
         }else{
             $newsletterRepository->add($contactData);
-            /*return View('front.whitepapers.whitepapers')
-                ->with('send', 'sent');*/
             return 'sent';
         }
     }

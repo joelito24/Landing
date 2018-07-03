@@ -9,7 +9,7 @@ use Session;
 
 class ContactsHistoryController extends BaseController
 {
-    protected $resourceName = 'contacts_histories';
+    protected $resourceName = 'contacts';
     protected $repositoryName = ContactsHistory::class;
 
     public function index()
@@ -18,12 +18,16 @@ class ContactsHistoryController extends BaseController
         $fluxesHead = [
             'id' => 'ID',
             'email' => 'Email',
+            'name' => 'Nombre',
+            'company' => 'Empresa',
+            'telephone' => 'Telefono',
+            'web' => 'Web',
             'created_at' => 'Fecha de alta',
         ];
 
         return view('admin.datatable', [
             'data' => ContactsHistory::all(),
-            'pageTitle' => 'Listado de Newsletter',
+            'pageTitle' => 'Listado de Contactos',
             'header' => $fluxesHead
         ]);
     }
