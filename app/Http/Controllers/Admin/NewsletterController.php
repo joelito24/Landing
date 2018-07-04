@@ -17,7 +17,7 @@ use Session;
 
 class NewsletterController extends BaseController
 {
-    protected $resourceName = 'contacts';
+    protected $resourceName = 'newsletter';
     protected $repositoryName = Newsletter::class;
     public function index()
     {
@@ -34,5 +34,14 @@ class NewsletterController extends BaseController
             'pageTitle' => 'Listado de Newsletter',
             'header' => $fluxesHead
         ]);
+    }
+    public function get_fields(){
+        $consult[1] = 1;
+        $consult[2] = 2;
+        $consult[3] = 3;
+        $consult[4] = 4;
+        $consult[5] = 5;
+        $consult[6] = 6;
+        return $consult;
     }
 }

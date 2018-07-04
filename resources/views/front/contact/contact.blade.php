@@ -41,17 +41,17 @@
                             {{--<label for="consult6"><input class="form-check-input" type="checkbox" name="consult6" id="consult6" value="6">Diseño web</label>--}}
                         </div>
                         <div class="side">
-                            <input type="checkbox" name="consult[1]" value="1" id="consult1" class="gray-radio"/>
+                            <input type="checkbox" name="consult[]" value="1" id="consult1" class="gray-radio"/>
                             <label for="consult1" class="gray-radio-label">Consultoría general</label>
-                            <input type="checkbox" name="consult[2]" value="2" id="consult2" class="gray-radio"/>
+                            <input type="checkbox" name="consult[]" value="2" id="consult2" class="gray-radio"/>
                             <label for="consult2" class="gray-radio-label">SEO</label>
-                            <input type="checkbox" name="consult[3]" value="3" id="consult3" class="gray-radio"/>
+                            <input type="checkbox" name="consult[]" value="3" id="consult3" class="gray-radio"/>
                             <label for="consult3" class="gray-radio-label">SEA</label>
-                            <input type="checkbox" name="consult[4]" value="4" id="consult4" class="gray-radio"/>
+                            <input type="checkbox" name="consult[]" value="4" id="consult4" class="gray-radio"/>
                             <label for="consult4" class="gray-radio-label">Publicidad online</label>
-                            <input type="checkbox" name="consult[5]" value="5" id="consult5" class="gray-radio"/>
+                            <input type="checkbox" name="consult[]" value="5" id="consult5" class="gray-radio"/>
                             <label for="consult5" class="gray-radio-label">Social Media Marketing</label>
-                            <input type="checkbox" name="consult[6]" value="6" id="consult6" class="gray-radio"/>
+                            <input type="checkbox" name="consult[]" value="6" id="consult6" class="gray-radio"/>
                             <label for="consult6" class="gray-radio-label">Diseño web</label>
                         </div>
                         <div class="form-group">

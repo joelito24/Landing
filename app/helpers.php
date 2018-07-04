@@ -434,3 +434,13 @@ function all_news_categories()
     }
     return $data;
 }
+function get_fields(){
+    $consult[1] = "Consultoría general";
+    $consult[2] = "SEO";
+    $consult[3] = "SEA";
+    $consult[4] = "Publicidad online";
+    $consult[5] = "Social Media Marketing";
+    $consult[6] = "Diseño web";
+    return $consult;
+
+}

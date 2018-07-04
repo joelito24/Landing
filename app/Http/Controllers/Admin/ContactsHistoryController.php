@@ -21,7 +21,6 @@ class ContactsHistoryController extends BaseController
             'name' => 'Nombre',
             'company' => 'Empresa',
             'telephone' => 'Telefono',
-            'web' => 'Web',
             'created_at' => 'Fecha de alta',
         ];
 

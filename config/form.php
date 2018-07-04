@@ -254,19 +254,16 @@ return [
                 'type' => 'text',
                 'title' => 'Web',
                 'description' => 'Introduzca la web.',
-                'rules' => ['required']
             ],
-            /*'consultas' => [
-                'type' => 'text',
-                'title' => 'Consultas',
-                'description' => 'Introduzca el nombre.',
-                'rules' => ['required']
-            ],*/
+            'consultas' => [
+                'type' => 'multipleSelect',
+                'title' => 'Consultas ( Ctrl/cmd + clic para seleccinar más de una)',
+                'description' => 'get_fields',
+            ],
             'consulta' => [
                 'type' => 'textarea',
                 'title' => 'Consulta',
                 'description' => 'Introduzca su consulta.',
-                'rules' => ['required']
             ],
 
         ]

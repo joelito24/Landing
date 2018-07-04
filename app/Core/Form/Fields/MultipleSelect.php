@@ -18,7 +18,7 @@ final class MultipleSelect extends AbstractField
         $data = $dataFunction();
         
 
-        $data[0] = 'Selecciona';
+        //$data[0] = 'Selecciona';
         $options = '';
         foreach ($data as $key => $name) {
             $selected = '';

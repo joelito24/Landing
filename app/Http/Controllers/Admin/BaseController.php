@@ -84,15 +84,24 @@ abstract class BaseController extends Controller
 
         $prepareData = $this->prepareData(Input::all(), $request);
 
+
         $validations = $this->prepareValidate($prepareData, $rules, null);
         if (!empty($validations) && is_object($validations)) {
             return back()->withInput()->withErrors($validations);
         }
 
         $dataClear = $this->clearLang($prepareData);
+
         $data = $this->getDataRelated($dataClear);
 
-        $resource = $repo->add($data['data']);
+        if (isset($data['related']['consultas'])){
+            $dataJSON=$data['related']['consultas'];
+            $data['data']['consultas'] = json_encode($dataJSON);
+            unset($data['related']['consultas']);
+        }
+            //dd($data['data']);
+            $resource = $repo->add($data['data']);
+
 
         if (isset($data['related']['showCrop'])) {
             $showCrop = $data['related']['showCrop'];

@@ -21,5 +21,4 @@ class Newsletter extends Model implements ModelInterface
     {
         return $this->where('email', '=', $email)->first();
     }
-
 }
