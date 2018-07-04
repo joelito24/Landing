@@ -5,7 +5,7 @@
 <section class="home">
     <div class="top padding-head">
         <div class="container">
-            <div class="row">
+            <div class="row top-home">
                 <div class="col-md-6 left-col">
                     <p class="title-top">Marketing<br> por vocación</p>
                     <p class="title-top">Digitales<br> por naturaleza</p>
@@ -25,9 +25,11 @@
     </div>
     <div class="infographics">
         <div class="container">
-            <div class="row">
+            <div class="row inner-info">
                 <div class="col-md-4 text-info">
                     <h2>Proyectos integrales de marketing online</h2>
+                    <p class="title-info">Publicidad online y remarketing</p>
+                    <p>Creamos <span>campañas de publicidad online que conectan exactamente con ese cliente que buscas.</span> Una vez lanzamos la web, hemos de empezar a traer tráfico cualificado que generen conversiones y ventas.  Ideamos campañas display efectivas, acciones de remarketing multi fase, que consigan la venta por impulso o que vayan enamorando poco a poco, dependerá de la estrategia.</p>
                 </div>
                 <div class="col-md-8">
                     @include('front.home.complements.infografia')
@@ -46,7 +48,7 @@
                 <h2 class="title-home">Especializaciones</h2>
                 <div class="col-md-3 col-special">
                     <a href="{{ route('specialization1') }}">
-                        <div class="inner-special first-special">
+                        <div class="inner-special fourth-special">
                             <div class="line-yellow"></div>
                             <p>Proyectos de e-commerce</p>
                             <div class="btn-yellow">Cómo hacer crecer tu negocio</div>
@@ -57,7 +59,7 @@
                 </div>
                 <div class="col-md-3 col-special">
                     <a href="{{ route('specialization2') }}">
-                        <div class="inner-special second-special">
+                        <div class="inner-special third-special">
                             <div class="line-yellow"></div>
                             <p>Campañas orientadas a resultados</p>
                             <div class="btn-yellow">Cómo hacer crecer tu negocio</div>
@@ -68,7 +70,7 @@
                 </div>
                 <div class="col-md-3 col-special">
                     <a href="{{ route('specialization3') }}">
-                        <div class="inner-special third-special">
+                        <div class="inner-special second-special">
                             <div class="line-yellow"></div>
                             <p>E-marketing y publicidad para marcas</p>
                             <div class="btn-yellow">Cómo hacer crecer tu negocio</div>
@@ -78,7 +80,7 @@
                 </div>
                 <div class="col-md-3 col-special">
                     <a href="{{ route('specialization4') }}">
-                        <div class="inner-special fourth-special">
+                        <div class="inner-special first-special">
                             <div class="line-yellow"></div>
                             <p>Transformación digital para empresas</p>
                             <div class="btn-yellow">Cómo hacer crecer tu negocio</div>
@@ -151,6 +153,8 @@
 <script>
     $(document).ready(function () {
         $("#header").addClass('header_transparent');
+        $('.cls-8').click(function(){
+        });
     });
 </script>
 @endsection
