@@ -1,6 +1,8 @@
 header.header_transparent {
+    padding-top:10px;
     background: transparent!important;
-    position: absolute!important;
+    position: relative;
+    z-index: 100;
 }
 header .menu {
     list-style-type: none !important;
@@ -15,15 +17,32 @@ header .menu li {
     margin-left: 2%;
     margin-right: 2%;
 }
+section.home{margin-top: -100px}
 header .menu .especializaciones ul, .menu .servicios ul{
     display: none;
     position: absolute;
     background-color: #f6f6f6;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    margin-top: 26px;
+    margin-top: 20px;
+    -webkit-box-shadow:inset 0px 3px 0px 0px var(--main-blue);
+    -moz-box-shadow:inset 0px 3px 0px 0px var(--main-blue);
+    box-shadow:inset 0px 3px 0px 0px var(--main-blue);
+    z-index: 1000;
     margin-left: -5%;
 }
+
+header .menu .especializaciones ul:after, .menu .servicios ul:after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    color: var(--main-blue);
+    clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+}
+
 header .menu .especializaciones ul a, .menu .servicios ul a{
     color: black;
     padding: 12px 16px;
