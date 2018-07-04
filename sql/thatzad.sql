@@ -44,10 +44,18 @@ CREATE TABLE `contacts_history` (
   `company` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `telephone` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `web` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `consulta` int(10) NOT NULL,
+  `consultas` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `consulta` text COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+INSERT INTO `contacts_history` (`id`, `email`, `name`, `company`, `telephone`, `web`, `consultas`, `consulta`, `created_at`, `updated_at`) VALUES
+(36,	'sinnewsletter@gmail.com',	'sinnewsletter',	'',	'',	'',	'',	'prueba de contacto sin newsletter',	'2018-07-03 10:41:10',	'2018-07-03 10:41:10'),
+(37,	'connewsletter@gmail.com',	'connewsletter',	'',	'',	'',	'',	'prueba de contacto con newsletter',	'2018-07-03 10:42:18',	'2018-07-03 10:42:18'),
+(38,	'completosinnews@completosinnews.com',	'completosinnews',	'completosinnews',	'987656787',	'completosinnews.com',	'{\"1\":\"1\",\"3\":\"3\",\"5\":\"5\"}',	'contacto completo sin newsletter',	'2018-07-03 10:44:36',	'2018-07-03 10:44:36'),
+(39,	'completoconnews@completoconnews.com',	'completoconnews',	'completoconnews',	'912324564',	'completoconnews.com',	'{\"2\":\"2\",\"4\":\"4\",\"6\":\"6\"}',	'Contacto completo con newsletter',	'2018-07-03 10:45:38',	'2018-07-03 10:45:38');
 
 DROP TABLE IF EXISTS `currencies`;
 CREATE TABLE `currencies` (
@@ -102,6 +110,22 @@ INSERT INTO `migrations` (`migration`, `batch`) VALUES
 ('2016_01_27_170435_productsOptionsMigrate',	1),
 ('2016_01_29_112407_priceForMoneyMigrate',	1),
 ('2016_02_01_115845_ErroresPaymentsMigrate',	1);
+
+DROP TABLE IF EXISTS `newsletter`;
+CREATE TABLE `newsletter` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(250) NOT NULL,
+  `updated_at` datetime NOT NULL,
+  `created_at` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `newsletter` (`id`, `name`, `email`, `updated_at`, `created_at`) VALUES
+(34,	'connewsletter',	'connewsletter@gmail.com',	'2018-07-03 10:42:18',	'2018-07-03 10:42:18'),
+(35,	'completoconnews',	'completoconnews@completoconnews.com',	'2018-07-03 10:45:38',	'2018-07-03 10:45:38'),
+(36,	'pruebanewsletter',	'pruebanewsletter@newsletter.com',	'2018-07-03 10:47:48',	'2018-07-03 10:47:48');
 
 DROP TABLE IF EXISTS `orders`;
 CREATE TABLE `orders` (
@@ -241,6 +265,7 @@ DROP TABLE IF EXISTS `services`;
 CREATE TABLE `services` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `title` longtext COLLATE utf8_unicode_ci NOT NULL,
+  `shorttitle` longtext COLLATE utf8_unicode_ci NOT NULL,
   `about` longtext COLLATE utf8_unicode_ci NOT NULL,
   `description1` longtext COLLATE utf8_unicode_ci NOT NULL,
   `quote` longtext COLLATE utf8_unicode_ci NOT NULL,
@@ -249,13 +274,14 @@ CREATE TABLE `services` (
   `image1` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `image2` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `active` int(10) NOT NULL DEFAULT '1',
+  `slug` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-INSERT INTO `services` (`id`, `title`, `about`, `description1`, `quote`, `description2`, `conclusion`, `image1`, `image2`, `active`, `created_at`, `updated_at`) VALUES
-(1,	'Consultoría de eMarketing y desarrollo de estrategia ',	'<p>¿Cuánto debo invertir en publicidad en primer año?</p><p>¿Invierto más en desarrollo web?</p><p>¿Apuesto por el SEO con un objetivo a medio plazo?</p><p>¿Debo contratar a un community manager o me centro en social Ads?</p>',	'<p>Todo proyecto se inicia con una idea de negocio y plan de marketing. Las start-ups saben bien que es clave un correcto planteamiento desde el principio, los presupuesto son limitados y un error a la hora de invertir en el proyecto web o en el plan de marketing pueden dilapidar gran parte de nuestra opciones de éxito.<br></p>',	'Llevamos 11 años haciendo crecer negocios online como el tuyo',	'<p>Dominamos el medio, llevamos más de 11 años haciendo crecer negocios online como el tuyo. Hemos aprendido de los éxitos, pero también de los fracasos. Conocemos las tendencias tanto de marketing como de diseño o programación, sabemos hacia dónde se dirige el futuro y es ahí donde podemos llevarte. Con imaginación y creatividad pero con los pies en el suelo, no siguiendo la última moda sino la más eficaz, encontrando nuestro target allá donde no esté saturado de competidores pero sobre todo allá donde sea rentable.</p><p>Desde Thatzad te ayudamos a dar forma a tu idea, presentar best practices, analizar la competencia y a ver cómo se enmarca dentro del mercado.<br></p>',	'<p>Trabajamos contigo para diseñar una estrategia en base a tu presupuesto y tus objetivos. Un plan de marketing que nos ayude a priorizar la inversión publicitaria y definir dónde invertir y cuánto. <br></p>',	'slide10-social_image1.png',	'slide10_image2.png',	1,	'2018-04-11 10:01:33',	'2018-04-11 13:13:33');
+INSERT INTO `services` (`id`, `title`, `shorttitle`, `about`, `description1`, `quote`, `description2`, `conclusion`, `image1`, `image2`, `active`, `slug`, `created_at`, `updated_at`) VALUES
+(1,	'Consultoría de eMarketing y desarrollo de estrategia ',	'',	'<p>¿Cuánto debo invertir en publicidad en primer año?</p><p>¿Invierto más en desarrollo web?</p><p>¿Apuesto por el SEO con un objetivo a medio plazo?</p><p>¿Debo contratar a un community manager o me centro en social Ads?</p>',	'<p>Todo proyecto se inicia con una idea de negocio y plan de marketing. Las start-ups saben bien que es clave un correcto planteamiento desde el principio, los presupuesto son limitados y un error a la hora de invertir en el proyecto web o en el plan de marketing pueden dilapidar gran parte de nuestra opciones de éxito.<br></p>',	'Llevamos 11 años haciendo crecer negocios online como el tuyo',	'<p>Dominamos el medio, llevamos más de 11 años haciendo crecer negocios online como el tuyo. Hemos aprendido de los éxitos, pero también de los fracasos. Conocemos las tendencias tanto de marketing como de diseño o programación, sabemos hacia dónde se dirige el futuro y es ahí donde podemos llevarte. Con imaginación y creatividad pero con los pies en el suelo, no siguiendo la última moda sino la más eficaz, encontrando nuestro target allá donde no esté saturado de competidores pero sobre todo allá donde sea rentable.</p><p>Desde Thatzad te ayudamos a dar forma a tu idea, presentar best practices, analizar la competencia y a ver cómo se enmarca dentro del mercado.<br></p>',	'<p>Trabajamos contigo para diseñar una estrategia en base a tu presupuesto y tus objetivos. Un plan de marketing que nos ayude a priorizar la inversión publicitaria y definir dónde invertir y cuánto. <br></p>',	'slide10-social_image1.png',	'slide10_image2.png',	1,	'consultoria-de-emarketing-y-desarrollo-de-estrategia',	'2018-04-11 10:01:33',	'2018-04-11 13:13:33');
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
@@ -290,7 +316,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 INSERT INTO `users` (`id`, `name`, `lastname`, `email`, `password`, `address`, `postalcode`, `city`, `telephone`, `province`, `country_id`, `rol`, `status`, `remember_token`, `fb_id`, `fb_token`, `fb_image`, `google_id`, `google_token`, `google_image`, `created_at`, `updated_at`) VALUES
-(1,	'Thatzad',	'Thatzad',	'informacion@thatzad.com',	'$2y$10$ev7xjE2AE.qhiKvut29ZWOG/EPwol6/abyh8.GhJfd.Rivlk3iV16',	'Marques de Mulhacen 11',	'08034',	'Barcelona',	'936350620',	'Barcelona',	209,	1,	1,	'NavkjhmBtiAY20rIg6ycXdvS09liRse1V1l8w89wXEvuuorBqIQAH5bHWLr8',	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	'2018-03-05 18:07:41',	'2018-04-11 11:28:17');
+(1,	'Thatzad',	'Thatzad',	'informacion@thatzad.com',	'$2y$10$ev7xjE2AE.qhiKvut29ZWOG/EPwol6/abyh8.GhJfd.Rivlk3iV16',	'Marques de Mulhacen 11',	'08034',	'Barcelona',	'936350620',	'Barcelona',	209,	1,	1,	'a1dLSJoD5KBrqctstZuhGxlpAF6ZjbglTyEXw3558pJYjyi0TJ72uQATmexs',	NULL,	NULL,	NULL,	NULL,	NULL,	NULL,	'2018-03-05 18:07:41',	'2018-04-16 10:34:56');
 
 DROP TABLE IF EXISTS `users_roles`;
 CREATE TABLE `users_roles` (
@@ -331,4 +357,4 @@ CREATE TABLE `whitepapers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
--- 2018-04-16 12:04:26
+-- 2018-07-04 08:22:56

@@ -7,8 +7,8 @@ header .menu {
     text-align: right;
 }
 header .menu li {
-    color: #ffffff!important;
-    font-family: Muli;
+    color: var(--white);
+    font-family: var(--main-font);
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -17,7 +17,40 @@ header .menu li {
 }
 header .menu .especializaciones ul, .menu .servicios ul{
     display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
+header .menu .especializaciones ul a, .menu .servicios ul a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+header .menu .especializaciones ul a:hover, .menu .servicios ul a:hover{
+    background-color: #ddd;
+}
+header .menu .especializaciones:hover ul, .menu .servicios:hover ul{
+    display: block;
+    list-style-type: none !important;
+    z-index: 1000;
+
+}
+header .menu .dropdown li {
+    float: left;
+    position: relative;
+    clear: both;
+}
+
 header .menu a {
     color: inherit;
+}
+header .little li{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.main-blue{
+    color: var(--main-blue)!important;
 }
