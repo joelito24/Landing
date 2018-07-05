@@ -155,6 +155,12 @@
         $("#header").addClass('header_transparent');
         $('.cls-8').click(function(){
         });
+        $("#burger, #mobile-close").click(function(){
+            $("#header").toggleClass('header_transparent');
+            $("#header").toggleClass('pos-abs');
+            $("#burger, #mobile-close").toggle();
+            $("#mobile-menu-content").toggle();
+        });
     });
 </script>
 @endsection
