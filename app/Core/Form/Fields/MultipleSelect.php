@@ -20,9 +20,20 @@ final class MultipleSelect extends AbstractField
 
         //$data[0] = 'Selecciona';
         $options = '';
+        function isJson($string) {
+            json_decode($string);
+            return (json_last_error() == JSON_ERROR_NONE);
+        }
         foreach ($data as $key => $name) {
             $selected = '';
+            if (isJson($this->value())){
+               $jsonArray = json_decode($this->value());
+            if (is_array($jsonArray) && in_array($key, $jsonArray)) {
+                $selected = 'selected="selected"';
+                //dd($jsonArray, $data);
+            }
 
+            }
             if (is_array($this->value()) && in_array($key, $this->value())) {
                 $selected = 'selected="selected"';
             }
@@ -34,7 +45,6 @@ final class MultipleSelect extends AbstractField
                 {$name}</option>
             ";
         }
-
         return $options;
     }
 
