@@ -153,6 +153,7 @@
 <script>
     $(document).ready(function () {
         $("#header").addClass('header_transparent');
+        $("#header").addClass('header_home');
         //$(".servicios").addClass('main-blue');
         $("#sobre").attr("src","{{ asset('front/img/header/sobre.png') }}");
         $('.cls-8').click(function(){
