@@ -28,8 +28,34 @@
             <div class="row inner-info">
                 <div class="col-md-4 text-info">
                     <h2>Proyectos integrales de marketing online</h2>
-                    <p class="title-info">Publicidad online y remarketing</p>
-                    <p>Creamos <span>campañas de publicidad online que conectan exactamente con ese cliente que buscas.</span> Una vez lanzamos la web, hemos de empezar a traer tráfico cualificado que generen conversiones y ventas.  Ideamos campañas display efectivas, acciones de remarketing multi fase, que consigan la venta por impulso o que vayan enamorando poco a poco, dependerá de la estrategia.</p>
+                    <div class="info-block" data-text="1">
+                        <p class="title-info">Ideas de negocio/Bussines plan</p>
+                        <p>Todo proyecto se inicia con una idea de negocio y plan de marketing. Dominamos el medio, <span>llevamos más de 12 años haciendo crecer negocios online como el tuyo.</span> Hemos aprendido de los éxitos, pero también de los fracasos. Conocemos las tendencias, sabemos hacia dónde se dirige el futuro. Podemos ayudarte a darle forma a tu idea y diseñar la estrategia que necesitas para cumplir tus objetivos.</p>
+                    </div>
+                    <div class="info-block" data-text="2">
+                        <p class="title-info">Diseño web, Marketing web, Programación web</p>
+                        <p>Una web, e-commerce o portal son siempre una pieza clave, pero sólo la primera de una proyecto mucho mayor. Ideamos, <span>diseñamos y programamos proyectos web realmente diferentes.</span> Proyectos totalmente a medida, creados sobre un lienzo en blanco con un equipo interdisciplinar de marketing, diseño y programación. </p>
+                    </div>
+                    <div class="info-block" data-text="3">
+                        <p class="title-info">SEO, SEA/Adwords</p>
+                        <p><span>Somos Google Premier Partner (logo)</span>, sabemos la importancia de una web perfectamente adaptada para Google, tanto a nivel SEO como para optimizar Adwords. La estrategia de keywords nos marcará la arquitectura de la web, así que nos gusta que sea uno de los primeros drivers de plan de e-Marketing.</p>
+                    </div>
+                    <div class="info-block" data-text="4">
+                        <p class="title-info">Publicidad online y remarketing</p>
+                        <p>Creamos <span>campañas de publicidad online que conectan exactamente con ese cliente que buscas.</span> Una vez lanzamos la web, hemos de empezar a traer tráfico cualificado que generen conversiones y ventas.  Ideamos campañas display efectivas, acciones de remarketing multi fase, que consigan la venta por impulso o que vayan enamorando poco a poco, dependerá de la estrategia.</p>
+                    </div>
+                    <div class="info-block" data-text="5">
+                        <p class="title-info">Social Media Ads</p>
+                        <p>Las Redes sociales nos permiten crear campañas online conociendo muy bien al cliente potencial al que nos dirigimos. Creamos campañas de <span>Social Ads con un equipo especialista, experimentado, creativo y orientado totalmente a objetivos.</span></p>
+                    </div>
+                    <div class="info-block" data-text="6">
+                        <p class="title-info">Medios e influencers</p>
+                        <p>Quien conozca los entresijos de internet sabrá que los medios online y los influencers son un canal de altísimo impacto con un lenguaje propio. Campañas de content marketing que combinadas con estrategias de remarketing e inbound <span>son la clave del éxito en el lanzamiento de marcas.</span></p>
+                    </div>
+                    <div class="info-block" data-text="7">
+                        <p class="title-info">Automation, Inbound Marketing, Mail Marketing</p>
+                        <p>Inbound & Automation marketing. La tecnología nos ayuda a saber exactamente que ha motivado a un usuario a interactuar con nosotros. <span>Diseñamos estrategias para atraer a un cliente concreto</span> y posteriormente ir persuadiéndole poco a poco y en diferentes medios, con contenidos adaptados a él.</p>
+                    </div>
                 </div>
                 <div class="col-md-8">
                     @include('front.home.complements.infografia')
