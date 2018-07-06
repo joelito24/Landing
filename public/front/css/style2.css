@@ -17,7 +17,7 @@ header .menu {
     list-style-type: none !important;
     text-align: right;
 }
-header.header_transparent .menu li {
+header.header_home .menu li {
     color: var(--white);
     font-family: var(--main-font);
     font-size: 18px;
@@ -117,6 +117,89 @@ header .menu.little{
 #button-mobile{
     display: none;
 }
+section.service{
+    background-color: #f4f8f9;
+}
+section.service .title-service{margin-top: 40px; max-width: 901px; font-size: 48px}
+section.service .blue-word{z-index: 1000; position: relative;}
+section.service .text-service{padding-top: 20px;}
+section.service .top-page{margin: 20px 0 46px 0;}
+section.service .form-block .form-group label{color: var(--white);}
+section.service .form-block .form-check .form-check-label{color:var(--white);}
+section.service .form-block{max-width: 315px;}
+section.service .form-block .btn-yellow-full{width:205px;}
+section.service .form-block .form-group input[type="text"]{min-height: 43px;}
+section.service .form-block .form-group textarea{min-height: 92px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 1199px) {
     header .menu li {
