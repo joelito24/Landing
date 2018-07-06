@@ -12,3 +12,10 @@
     <title>Thatzad</title>
     <meta name="description" content="">
 @endsection
+@section('scripts')
+    <script>
+        $(document).ready(function () {
+            $("#proyectos").addClass('main-blue');
+        });
+    </script>
+@endsection

@@ -50,6 +50,7 @@
         $(document).ready(function(){
             $('#header').addClass('header_transparent');
             $('#header').css('position', 'absolute');
+            $("#agencia").addClass('main-blue');
         });
     </script>
 @endsection
