@@ -5,6 +5,7 @@ return [
     'service'               => 'servicio/{slug}',
     'contact'               => 'contacto',
     'projects'              => 'proyectos',
+    'project'               => 'proyectos/{slug}',
     'whitepapers'           => 'white-papers',
     'agency'                => 'agencia',
     'specialization1'       => 'proyectos-de-e-commerce',

@@ -33,6 +33,16 @@ return [
     ],
 
     [
+        'route' => 'admin.projects_category.index',
+        'create' => 'admin.projects_category.create',
+        'edit' => 'admin.projects_category.edit',
+        'delete' => 'admin.projects_category.delete',
+        'icon' => 'fa fa-user',
+        'name' => 'Categorías',
+        'resource' => 'projects_category'
+    ],
+
+    [
         'route' => 'admin.whitepapers.index',
         'create' => 'admin.whitepapers.create',
         'edit' => 'admin.whitepapers.edit',

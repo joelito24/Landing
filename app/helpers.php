@@ -13,6 +13,7 @@ use App\Models\Colours;
 use App\Models\Sizes;
 use App\Models\NewsCategories;
 use App\Models\Brands;
+use App\Models\ProjectsCategory;
 
 
 function current_lang()
@@ -443,4 +444,14 @@ function get_fields(){
     $consult[6] = "Diseño web";
     return $consult;
 
+}
+function all_projects_categories(){
+    App::setLocale('es');
+    $repo = app(ProjectsCategory::class);
+    $categories = $repo->findAllActive();
+    $data = [];
+    foreach ($categories as $category) {
+        $data[$category->id] = $category->name;
+    }
+    return $data;
 }

@@ -119,6 +119,37 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
         'uses' => 'ProjectsController@delete'
     ]);
 
+    //Projects Categories
+    Route::get('projectscategories', [
+        'as' => 'admin.projects_category.index',
+        'uses' => 'ProjectsCategoriesController@index'
+    ]);
+
+    Route::get('projectscategories/create', [
+        'as' => 'admin.projects_category.create',
+        'uses' => 'ProjectsCategoriesController@create'
+    ]);
+
+    Route::post('projectscategories/create', [
+        'as' => 'admin.projects_category.save',
+        'uses' => 'ProjectsCategoriesController@save'
+    ]);
+
+    Route::get('projectscategories/edit/{id}', [
+        'as' => 'admin.projects_category.edit',
+        'uses' => 'ProjectsCategoriesController@edit'
+    ]);
+
+    Route::post('projectscategories/edit/{id}', [
+        'as' => 'admin.projects_category.update',
+        'uses' => 'ProjectsCategoriesController@update'
+    ]);
+
+    Route::get('projectscategories/delete/{id}', [
+        'as' => 'admin.projects_category.delete',
+        'uses' => 'ProjectsCategoriesController@delete'
+    ]);
+
     //White papers
     Route::get('whitepapers', [
         'as' => 'admin.whitepapers.index',
@@ -249,6 +280,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
 
     //Projects
     Route::get(LaravelLocalization::transRoute('routes.projects'), ['as' => 'projects','uses' => 'ProjectController@projects']);
+    Route::get(LaravelLocalization::transRoute('routes.project'), ['as' => 'project','uses' => 'ProjectController@detail']);
 
     //White papers
     Route::get(LaravelLocalization::transRoute('routes.whitepapers'), ['as' => 'whitepapers','uses' => 'WhitepapersController@whitepapers']);

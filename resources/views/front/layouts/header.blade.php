@@ -16,7 +16,7 @@
                     <li class="servicios default-color">Servicios
                     </li>
                     <li><a href="{{ route('projects') }}">Proyectos</a></li>
-                    <li><a href="{{ route('agency') }}">La agencia</a></li>
+                    <li><a href="{{ route('agency') }}">Agencia</a></li>
                 </ul>
                 <hr>
                 <ul class="menu main-blue">
@@ -53,7 +53,7 @@
                             </ul>
                         </li>
                         <li><a href="{{ route('projects') }}" id="proyectos">Proyectos</a></li>
-                        <li><a href="{{ route('agency') }}" id="agencia">La agencia</a></li>
+                        <li><a href="{{ route('agency') }}" id="agencia">Agencia</a></li>
                     </ul>
                 </div>
         </div>

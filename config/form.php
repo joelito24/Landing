@@ -185,10 +185,10 @@ return [
                 'description' => 'Introduzca el título.',
                 'rules' => ['required']
             ],
-            'category' => [
-                'type' => 'text',
+            'category_id' => [
+                'type' => 'select',
                 'title' => 'Categoría del proyecto',
-                'description' => 'Describa servicio',
+                'description' => 'all_projects_categories',
                 'rules' => ['required']
             ],
             'description' => [
@@ -197,7 +197,33 @@ return [
                 'description' => 'Introduzca la desctipción',
                 'rules' => ['required']
             ],
+            'slug' => [
+                'type' => 'text',
+                'title' => 'URL amigable',
+                'description' => 'Introduzca el url amigable.',
+                'rules' => ['required']
+            ],
         ]
+    ],
+
+    'projects_category' => [
+        'name' => 'Categorías de los proyectos',
+        'for_files' => true,
+        'description' => 'Administración de Categorías',
+        'editor' => true,
+        'fields' => [
+            'name' => [
+                'type' => 'text',
+                'title' => 'Nombre',
+                'description' => 'Introduzca el nombre.',
+                'rules' => ['required']
+            ],
+            'active' => [
+                'type' => 'radio',
+                'title' => 'Visible',
+                'description' => 'Estado'
+            ]
+        ],
     ],
 
     'whitepapers' => [
