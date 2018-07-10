@@ -94,6 +94,16 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
         'uses' => 'ProjectsController@index'
     ]);
 
+    Route::get('projects/crop/{id}', [
+        'as' => 'admin.projects.crop',
+        'uses' => 'ProjectsController@crop'
+    ]);
+
+    Route::post('projects/crop/{id}', [
+        'as' => 'admin.projects.cropSave',
+        'uses' => 'ProjectsController@cropSave'
+    ]);
+
     Route::get('projects/create', [
         'as' => 'admin.projects.create',
         'uses' => 'ProjectsController@create'

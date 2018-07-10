@@ -27,7 +27,7 @@ class ImageFile extends AbstractField
                      <input type='hidden' id='{$this->name()}_prev' name='{$this->name()}_prev' value='" . pathinfo($this->value(), PATHINFO_BASENAME) . "' />
                      <br/>
                      <div id='{$this->name()}'>
-                        <img style='border: 1px solid #000' src='{$this->value()}'>";
+                        <img style='border: 1px solid #000;width:100%;margin-bottom: 10px;' src='{$this->value()}'>";
 
             $data.='<a style="margin-left: 10px;" data-id="' . $this->name() . '" class="deleteImage btn btn-small btn-danger" title="Eliminar Imagen" >
                         <i class="glyphicon glyphicon-trash"> </i>

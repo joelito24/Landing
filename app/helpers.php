@@ -14,6 +14,7 @@ use App\Models\Sizes;
 use App\Models\NewsCategories;
 use App\Models\Brands;
 use App\Models\ProjectsCategory;
+use App\Models\Projects;
 
 
 function current_lang()
@@ -453,5 +454,44 @@ function all_projects_categories(){
     foreach ($categories as $category) {
         $data[$category->id] = $category->name;
     }
+    return $data;
+}
+function all_projects_backend(){
+    $repoCategories = app(ProjectsCategory::class);
+    $repoProducts = app(Projects::class);
+
+    $data = [];
+    $categories = $repoCategories->get();
+    $i = 0;
+    foreach ($categories as $category) {
+        $products = [];
+
+        foreach ($repoProducts->findByCategoryId($category->id) as $product) {
+            $products[$product->id] = $product->title;
+        }
+
+        $data[$i] = [
+            'id' => $category->id,
+            'name' => $category->name,
+            'products' => $products,
+        ];
+
+
+        foreach ($category->getChildren() as $children) {
+
+            $productsAux = [];
+            foreach ($repoProducts->findByCategoryId($children->id) as $product) {
+                $productsAux[$product->id] = $product->title;
+            }
+
+            $data[$i]["child"][] = [
+                'id' => $children->id,
+                'name' => $children->title,
+                'products' => $productsAux,
+            ];
+        }
+        $i++;
+    }
+
     return $data;
 }

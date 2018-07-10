@@ -9,10 +9,10 @@
             <p class="subtitle-projects">Puedes filtrar los proyectos por sectores:</p>
             <div class="block-inputs">
                 @foreach($categories as $category)
-                <div class="check-category">
-                    <input type="checkbox" name="{{ $category->id }}" value="{{ $category->name }}" id="{{ $category->name }}" class="gray-radio"/>
-                    <label for="{{ $category->name }}" class="gray-radio-label blue">{{ $category->name }}</label>
-                </div>
+                    <div class="check-category">
+                        <input type="checkbox" name="{{ $category->id }}" value="{{ $category->name }}" id="{{ $category->name }}" class="gray-radio"/>
+                        <label for="{{ $category->name }}" class="gray-radio-label blue">{{ $category->name }}</label>
+                    </div>
                 @endforeach
                 {{--<div class="check-category">--}}
                     {{--<input type="checkbox" name="newsletter" value="newsletter" id="newsletter" class="gray-radio"/>--}}
@@ -21,14 +21,14 @@
             </div>
             <div class="row grid">
                 @foreach($projects as $project)
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                         <figure class="effect-sarah">
-                            <img src="{{ asset('front/img/foto1.png') }}" alt="">
+                            <img src="{{$project->image1}}" alt="">
                             <div class="title-project">{{ $project->title }}
                                 <div class="category">{{ $project->nameCategory }}</div>
                             </div>
                             <figcaption>
-                                <p>{{ $project->description }}</p>
+                                <p>{!! $project->description_short !!}</p>
                                 <div class="btn-yellow"><a href="{{ route('project', $project->slug) }}">Ver mas</a></div>
                             </figcaption>
                         </figure>

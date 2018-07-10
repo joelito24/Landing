@@ -11,6 +11,7 @@ use App\Core\Form\Fields\Text;
 use App\Core\Form\Fields\Textslug;
 use App\Core\Form\Fields\TextDisabled;
 use App\Core\Form\Fields\Textarea;
+use App\Core\Form\Fields\TextareaSimple;
 use App\Core\Form\Fields\Image;
 use App\Core\Form\Fields\ImageCrop;
 use App\Core\Form\Fields\Radio;
@@ -37,6 +38,7 @@ final class FormGenerator
         'textslug' => Textslug::class,
         'textDisabled' => TextDisabled::class,
         'textarea' => Textarea::class,
+        'textareaSimple' => TextareaSimple::class,
         'email' => Email::class,
         'emailDisabled' => EmailDisabled::class,
         'image' => Image::class,

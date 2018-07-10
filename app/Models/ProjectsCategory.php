@@ -20,4 +20,15 @@ class ProjectsCategory extends Model implements ModelInterface
     public function findAllActive(){
         return $this->where('active', '1')->get();
     }
+
+    public function children()
+    {
+        return $this->hasMany(ProjectsCategory::class, 'id')->get();
+    }
+
+    public function getChildren()
+    {
+        return $this->children();
+    }
+
 }

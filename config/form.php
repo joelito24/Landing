@@ -191,17 +191,103 @@ return [
                 'description' => 'all_projects_categories',
                 'rules' => ['required']
             ],
+            'description_short' => [
+                'type' => 'textareaSimple',
+                'title' => 'Descripción corta (para listado de proyectos)',
+                'description' => 'Introduzca la desctipción corta del proyecto',
+                'rules' => ['required']
+            ],
             'description' => [
                 'type' => 'textarea',
                 'title' => 'Descripción',
                 'description' => 'Introduzca la desctipción',
                 'rules' => ['required']
             ],
+            'description_big' => [
+                'type' => 'textarea',
+                'title' => 'Descripción larga',
+                'description' => 'Introduzca la desctipción larga del proyecto',
+                'rules' => ['required']
+            ],
+            'image1' => [
+                'type' => 'imageFile',
+                'title' => 'Imagen principal del proyecto (arriba de todo)',
+                'description' => '',
+                'rules' => ['required']
+            ],
+            'image2' => [
+                'type' => 'imageFile',
+                'title' => 'Imagen segunda del proyecto (al lado de descripción)',
+                'description' => '',
+                'rules' => []
+            ],
+            'image3' => [
+                'type' => 'imageFile',
+                'title' => 'Imagen primera del slideshow (abajo)',
+                'description' => '',
+                'rules' => []
+            ],
+            'image4' => [
+                'type' => 'imageFile',
+                'title' => 'Imagen segunda del slideshow (abajo)',
+                'description' => '',
+                'rules' => []
+            ],
+            'image5' => [
+                'type' => 'imageFile',
+                'title' => 'Imagen tercera del slideshow (abajo)',
+                'description' => '',
+                'rules' => []
+            ],
             'slug' => [
                 'type' => 'text',
                 'title' => 'URL amigable',
                 'description' => 'Introduzca el url amigable.',
                 'rules' => ['required']
+            ],
+            'project_id_related' => [
+                'type' => 'multipleSelectProducts',
+                'title' => 'Proyectos Relacionados',
+                'description' => 'all_projects_backend',
+            ],
+        ]
+    ],
+
+    'projects_crop' => [
+        'name' => 'Proeyctos',
+        'for_files' => true,
+        'description' => 'Administración de Imagenes de proyectos',
+        'slug' => false,
+        'editor' => true,
+        'dataShow' => [],
+        'fields' => [
+            'image1' => [
+                'type' => 'imageCrop',
+                'title' => 'Imagen detalle',
+                'description' => ''
+            ],
+            'image2' => [
+                'type' => 'imageCrop',
+                'title' => 'Imagen detalle',
+                'description' => ''
+            ],
+            'image3' => [
+                'type' => 'imageCrop',
+                'title' => 'Imagen detalle',
+                'description' => '',
+                'rules' => []
+            ],
+            'image4' => [
+                'type' => 'imageCrop',
+                'title' => 'Imagen detalle',
+                'description' => '',
+                'rules' => []
+            ],
+            'image5' => [
+                'type' => 'imageCrop',
+                'title' => 'Imagen detalle',
+                'description' => '',
+                'rules' => []
             ],
         ]
     ],
