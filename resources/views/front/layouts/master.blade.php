@@ -16,6 +16,8 @@
     <link href="{{ asset('admin/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- fontAwesome icons -->
     <link href="{{ asset('front/css/font-awesome.css') }}" rel="stylesheet" type="text/css">
+    <!-- Animate CSS -->
+    <link href="{{ asset('front/css/animate.css') }}" rel="stylesheet">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -33,6 +35,7 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
 <script type="text/javascript" src="{{ asset('front/js/main.js') }}"></script>
+<script type="text/javascript" src="{{ asset('front/js/animate.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 
 <script type="text/javascript" src="{{ asset('admin/js/bootstrap.js') }}"></script>
