@@ -235,6 +235,14 @@ section.agency .text-col p{font-size: 16px;}
 section.agency .img-col{width: 50%;float: left;}
 section.agency .img-col img{width:100%;}
 section.agency .description .text-desc{font-size: 20px;line-height: 26px;max-width: 425px;}
+section.agency .white-block{padding:90px 0;background: url(/front/img/home/bg-whitepapers.png) no-repeat center center;background-size: cover;}
+section.agency .white-block .block-opinion{background-color: #dedede;padding:28px 12% 120px;}
+section.agency .white-block .title-opinion{font-size: 48px;font-family: var(--title-font);color: var(--main-blue);margin-bottom: 27px;}
+section.agency .white-block .block-opinion img{max-width: 40%;margin-bottom: 65px;}
+section.agency .white-block .block-opinion .text-opinion{color: #444654;font-size: 16px;font-weight: 700;margin-bottom: 58px;}
+section.agency .white-block .block-opinion .name-opinion{color: #444654;font-weight: 700;font-size: 16px;margin-bottom: 0;}
+
+
 
 /* PROJECTS */
 section.projects{background: #f7f7f7;padding-top: 20px;}
@@ -248,9 +256,9 @@ section.projects .block-inputs .gray-radio-label.blue{font-size: 12px;font-weigh
 section.projects .block-inputs .gray-radio-label.blue:after{border-color: var(--default-color);}
 section.projects .block-inputs{margin-bottom: 35px;}
 section.projects .inner-category img{width:100%;}
-section.projects .title-project{position: absolute;top: 11px;left: 11px;color: #fff;font-size: 20px; font-weight: 700;transition: opacity 0.35s, transform 0.35s;}
-section.projects .title-category{font-size: 10px;color: #fff;}
-section.projects .title-project .category{font-size: 10px;text-transform: uppercase;text-align: left;font-weight:400;}
+.title-project{position: absolute;top: 11px;left: 11px;color: #fff;font-size: 20px; font-weight: 700;transition: opacity 0.35s, transform 0.35s;}
+.title-category{font-size: 10px;color: #fff;}
+.title-project .category{font-size: 10px;text-transform: uppercase;text-align: left;font-weight:400;}
 figcaption .btn-yellow{border: 2px solid #fcbf10;height: 40px;line-height: 37px;width: 120px;margin-left: auto;margin-right: auto;position: absolute;bottom: 10px;left: 0;right: 0;}
 figcaption .btn-yellow a{ color:#fcbf10;}
 figcaption .btn-yellow:hover{background: #fcbf10;}
@@ -307,6 +315,7 @@ section.project .block-slider .carousel-indicators .active{background-color: #54
 section.project .block-slider .carousel-indicators li{border-color: #545454;}
 section.project .related{padding-top: 68px;padding-bottom: 100px;background: #f7f9fa;}
 section.project .related .title-related{margin-top:0;font-family: var(--title-font);color: var(--default-color);font-size: 36px;text-align:  center;}
+/*section.project .related .grid{display: flex;justify-content: center;}*/
 
 /* Specializations */
 section.specializations .ecommerce-top{background-color: #f3f8f9;}
@@ -324,8 +333,8 @@ section.specializations .bg-stripers{padding-top:48px;padding-bottom:60px;backgr
 section.specializations .bg-stripers img{width: 100%;}
 section.specializations .bg-stripers .subtitle{font-family: var(--title-font);font-size: 24px;line-height: 28px;margin-bottom: 26px;}
 section.specializations .bg-stripers .conclusion{ font-size: 18px;font-weight: 700;}
-section.specializations .bottom-action{padding: 93px 0;background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/front/img/specials/img_banner.jpg);}
-section.specializations .bottom-action .action-title{margin-bottom: 33px;font-size: 36px;font-family: var(--title-font);color: #fff;line-height: 40px;}
+.bottom-action{padding: 93px 0;background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/front/img/specials/img_banner.jpg);}
+.bottom-action .action-title{margin-bottom: 33px;font-size: 36px;font-family: var(--title-font);color: #fff;line-height: 40px;}
 /*section.specializations.emarketing .ecommerce-top .ecommerce-description .text{padding-right: 3%;display: inline-block;width:50%;}*/
 /*section.specializations.emarketing .ecommerce-top .ecommerce-description .img-info{margin-bottom: -64px;display: inline-block;width:49%;}*/
 /*section.specializations.emarketing .ecommerce-top .ecommerce-description .img-info img{width:100%;}*/

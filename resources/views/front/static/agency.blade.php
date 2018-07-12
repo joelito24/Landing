@@ -35,7 +35,51 @@
             </div>
 
         </div>
-
+        <div class="white-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="title-opinion">Lo que dicen de nosotros</p>
+                    </div>
+                    <div class="col-md-4" data-animated="fadeInUp">
+                        <div class="block-opinion">
+                            <img src="{{ asset('front/img/agency/ico-opinion.png') }}" alt="">
+                            <div class="text-opinion">
+                                <p>Marty, you didn't fall asleep, did you? No, it was The Enchantment Under The Sea Dance. Our first date. It was the night of that terrible thunderstorm, remember George? Your father kissed me for the very first time on that dance floor. It was then I realized I was going to spend the rest of my life with him.</p>
+                            </div>
+                            <p class="name-opinion">Nombre Apellido y empresa</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-animated="fadeInUp">
+                        <div class="block-opinion">
+                            <img src="{{ asset('front/img/agency/ico-opinion.png') }}" alt="">
+                            <div class="text-opinion">
+                                <p>Marty, you didn't fall asleep, did you? No, it was The Enchantment Under The Sea Dance. Our first date. It was the night of that terrible thunderstorm, remember George? Your father kissed me for the very first time on that dance floor. It was then I realized I was going to spend the rest of my life with him.</p>
+                            </div>
+                            <p class="name-opinion">Nombre Apellido y empresa</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-animated="fadeInUp">
+                        <div class="block-opinion">
+                            <img src="{{ asset('front/img/agency/ico-opinion.png') }}" alt="">
+                            <div class="text-opinion">
+                                <p>Marty, you didn't fall asleep, did you? No, it was The Enchantment Under The Sea Dance. Our first date. It was the night of that terrible thunderstorm, remember George? Your father kissed me for the very first time on that dance floor. It was then I realized I was going to spend the rest of my life with him.</p>
+                            </div>
+                            <p class="name-opinion">Nombre Apellido y empresa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-action">
+            <div class="container">
+                <div class="col-md-10">
+                    <p class="action-title" data-animated="fadeInUp">Desarrolamos la estrategia, la web y las campañas de publicidad con un equipo creativo, implicado y 100% efectivo. </p>
+                    <p class="action-title" data-animated="fadeInUp">Somos tu agencia boutique de marketing online.</p>
+                    <div class="btn-yellow-full"><a href="{{ route('contact') }}">¿Quieres descubrirl?</a></div>
+                </div>
+            </div>
+        </div>
     </section>
 
 @stop

@@ -477,19 +477,19 @@ function all_projects_backend(){
         ];
 
 
-        foreach ($category->getChildren() as $children) {
-
-            $productsAux = [];
-            foreach ($repoProducts->findByCategoryId($children->id) as $product) {
-                $productsAux[$product->id] = $product->title;
-            }
-
-            $data[$i]["child"][] = [
-                'id' => $children->id,
-                'name' => $children->title,
-                'products' => $productsAux,
-            ];
-        }
+//        foreach ($category->getChildren() as $children) {
+//
+//            $productsAux = [];
+//            foreach ($repoProducts->findByCategoryId($children->id) as $product) {
+//                $productsAux[$product->id] = $product->title;
+//            }
+//
+//            $data[$i]["child"][] = [
+//                'id' => $children->id,
+//                'name' => $children->title,
+//                'products' => $productsAux,
+//            ];
+//        }
         $i++;
     }
 

@@ -12,7 +12,7 @@ class Projects extends Model implements ModelInterface
     protected $table = 'projects';
     public $timestamps = true;
     protected $fillable = ['title', 'category_id', 'description', 'slug', 'description_big', 'description_short', 'image1', 'image2', 'image3', 'image4', 'image5'];
-    protected $appends = ['nameCategory'];
+    protected $appends = ['nameCategory', 'project_id_related'];
 
     private function category()
     {
@@ -61,6 +61,19 @@ class Projects extends Model implements ModelInterface
         }
         return false;
     }
+    private function projects()
+    {
+        return $this->hasMany(ProjectsRelated::class, 'project_id', 'id')->get();
+    }
+    public function getProjectIdRelatedAttribute()
+    {
+        $projects = $this->projects();
+        $return = [];
+        foreach ($projects as $project) {
+            $return[] = $project->project_id_related;
+        }
+        return $return;
+    }
     public function findAllActive(){
         return $this->where('active', '1')->get();
     }
@@ -71,6 +84,19 @@ class Projects extends Model implements ModelInterface
 
     public function findByCategoryId($id){
         return $this->where('category_id', $id)->get();
+    }
+
+    public function getProjectRelated()
+    {
+        $projectsRelated = $this->projects();
+        $return = [];
+        foreach ($projectsRelated as $projectRelated) {
+            $project = $projectRelated->projectsRelated();
+            if ($project) {
+                $return[] = $project;
+            }
+        }
+        return $return;
     }
 
 }

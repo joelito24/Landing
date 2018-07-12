@@ -54,11 +54,30 @@
                 </div>
             </div>
         </div>
+        @if($project->getProjectRelated())
         <div class="related">
             <div class="container">
                 <p class="title-related">Proyectos relacionados</p>
+                <div class="grid" style="@if(count($project->getProjectRelated()) < 4) display: flex;justify-content: center; @endif">
+
+                        @foreach($project->getProjectRelated() as $related)
+                            <div data-category-id="{{ $related->id }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
+                                <figure class="effect-sarah">
+                                    <img src="{{$related->image1}}" alt="">
+                                    <div class="title-project">{{ $related->title }}
+                                        <div class="category">{{ $related->nameCategory }}</div>
+                                    </div>
+                                    <figcaption>
+                                        <p>{!! $related->description_short !!}</p>
+                                        <div class="btn-yellow"><a href="{{ route('project', $related->slug) }}">Ver mas</a></div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        @endforeach
+                </div>
             </div>
         </div>
+        @endif
     </section>
 @stop
 

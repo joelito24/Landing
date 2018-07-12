@@ -567,6 +567,7 @@ abstract class BaseController extends Controller
         $repositories = $this->repositoryRelated;
         foreach ($data as $field => $values) {
             $repository = App::make($repositories[$field]);
+//            print_r($resource);die();
             $this->deleteRelated($repository, $resource);
             $this->addRelated($field, $values, $repository, $resource);
         }
