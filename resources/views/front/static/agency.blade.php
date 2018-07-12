@@ -7,10 +7,10 @@
             <div class="container">
                 <p class="name-page">Agencia</p>
                 <h1 class="title">Una agencia boutique de grandes proyectos</h1>
-                <h2 class="subtitle">Marketing por vocación. Digitales por naturaleza.</h2>
+                <h2 class="subtitle" data-animated="fadeInUp">Marketing por vocación. Digitales por naturaleza.</h2>
             </div>
         </div>
-        <div class="content-agency">
+        <div class="content-agency" data-animated="fadeInUp">
             <div class="container">
                 <div class="description">
                     <div class="col-md-6">
@@ -24,12 +24,12 @@
         </div>
         <div class="content-agency">
             <div class="inner-agency">
-                <div class="text-col">
+                <div class="text-col" data-animated="fadeInLeft">
                     <p>Pero para hacerlo realmente bien, no podemos tener cien clientes, no sabemos hacer webs, e-shops o campañas online como si fueran una cadena de montaje. No nos obsesiona optimizar los tiempos de producción, maximizar la rentabilidad o conseguir volumen para bajar costes. Sólo nos concentramos en que los proyectos superen las expectativas de nuestros Clientes.</p>
                     <p>Esa es nuestra idea de Agencia Boutique, grandes proyectos por su calidad, no por su tamaño. Proyectos motivantes, que ilusionen al equipo, ya que son ellos los que deberán ir un paso más allá con su creatividad, ejecutando las campañas, analizando los resultados y dándole una vuelta y otra más para dar con las claves que consigan los objetivos marcados.</p>
                     <p>Esta ha sido nuestra forma de entender lo que queríamos que fuera nuestra agencia de marketing online durante los últimos 12 años, nosotros estamos orgullosos de haberlo conseguido y nos gusta pensar que nuestros Clientes opinan lo mismo.</p>
                 </div>
-                <div class="img-col">
+                <div class="img-col" data-animated="fadeInRight">
                     <img src="{{ asset('front/img/agency/agency.png') }}" alt="">
                 </div>
             </div>
@@ -48,7 +48,7 @@
 @section('scripts')
     <script>
         $(document).ready(function(){
-            $('#header').addClass('header_transparent');
+            $('#header').css('opacity', '0.9');
             $('#header').css('position', 'absolute');
             $("#agencia").addClass('main-blue');
         });

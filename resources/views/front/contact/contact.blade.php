@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <h2 class="title-page">Contacto</h2>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-animated="fadeInLeft">
 
                 <div class="text-contact">
                     <p>Nos encanta hablar de marketing online, campañas, e-commerce y proyectos digitales.</p>
@@ -85,7 +85,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="form-block">
+                <div class="form-block" data-animated="pulse">
                     <form method="POST" action="{{ action('ContactController@send') }}" id="contactform">
                         <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                         <div class="form-group">

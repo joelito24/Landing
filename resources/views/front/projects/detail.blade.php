@@ -7,13 +7,13 @@
     </div>
     <section class="project">
 
-        <div class="project-top" style="background: url({{$project->image1}}) no-repeat center center; background-size: cover;">
+        <div class="project-top" style="background-image: url({{$project->image1}});">
             <div class="container">
                 <h1 class="title">{{ $project->title }}</h1>
                 <p class="category-name">{{ $project->nameCategory }}</p>
             </div>
         </div>
-        <div class="project-description">
+        <div class="project-description" data-animated="fadeInUp">
             {!! $project->description  !!}
         </div>
         <div class="container">
@@ -22,11 +22,11 @@
                     <p class="question">¿Qué hemos hecho juntos?</p>
                 </div>
                 <div class="col-md-6">
-                    <div class="main-description">
+                    <div class="main-description" data-animated="fadeInLeft">
                         {!! $project->description_big !!}
                     </div>
                 </div>
-                <div class="col-md-6 block-img">
+                <div class="col-md-6 block-img" data-animated="fadeInRight">
                     <img src="{{ asset($project->image2) }}" alt="">
                 </div>
             </div>
