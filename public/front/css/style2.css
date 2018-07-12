@@ -120,16 +120,31 @@ header .menu.little{
 section.service{
     background-color: #f4f8f9;
 }
-section.service .title-service{margin-top: 40px; max-width: 901px; font-size: 48px}
+section.service .title-service{margin-top: 65px; max-width: 901px; font-size: 48px}
 section.service .blue-word{z-index: 1000; position: relative;}
 section.service .text-service{padding-top: 20px;}
 section.service .top-page{margin: 20px 0 46px 0;}
+section.service .top-page p {max-width: 540px;}
+section.service .text-page .description1, section.service .text-page .description2{/*max-width: 540px;*/max-width: 71.715%;}
 section.service .form-block .form-group label{color: var(--white);}
 section.service .form-block .form-check .form-check-label{color:var(--white);}
 section.service .form-block{max-width: 315px;}
 section.service .form-block .btn-yellow-full{width:205px;}
 section.service .form-block .form-group input[type="text"]{min-height: 43px;}
 section.service .form-block .form-group textarea{min-height: 92px;}
+section.service .big-title{margin-top: 167px;}
+section.service .conclusion-service .conclusion{margin-left: 89px;color: var(--white);font-size: 21px;font-weight: 700;line-height: 32px; background-color: #023c4e; max-width: 574px;}
+section.service .conclusion-service .conclusion div{padding-left: 65px;padding-right: 65px;}
+section.service .conclusion-service .conclusion div:first-child{padding-top:50px}
+section.service .conclusion-service .conclusion div:last-child{padding-bottom:50px}
+section.service .conclusion-service .conclusion p{padding-left: 65px;padding-right: 65px;}
+section.service .conclusion-service .conclusion p:first-child{padding-top:50px}
+section.service .conclusion-service .conclusion p:last-child{padding-bottom:50px}
+section.service .contact-block {background-attachment: fixed}
+section.service .text-page ul{padding-left: 80px}
+
+
+
 
 
 
