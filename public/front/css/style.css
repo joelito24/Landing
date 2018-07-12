@@ -148,12 +148,12 @@ section.service .title-service{margin-top: 6px;max-width: 740px;font-size: 58px;
 section.service .top-page{margin: 20px 0 46px 88px;}
 section.service .top-page p{font-weight: 700;font-size: 21px;color: var(--default-color);}
 section.service .text-page p{color: var(--default-color);font-size: 16px;line-height: 27px;margin-bottom: 35px;}
-section.service .quote{padding-left: 88px;color: var(--main-blue);font-size: 46px;font-family: var(--title-font);line-height: 53px;margin-bottom: 70px;}
+section.service .quote{/*padding-left: 88px*/;color: var(--main-blue);font-size: 46px;font-family: var(--title-font);line-height: 53px;margin-bottom: 70px;}
 section.service .text-page .description2 p:last-child{margin-bottom: -15px;}
 section.service .text-page .description1, section.service .text-page .description2{max-width: 406px;}
 section.service .conclusion-service .conclusion{margin-left: 89px;color: var(--default-color);font-size: 21px;font-weight: 700;line-height: 32px;}
 section.service .conclusion-service img{width: 100%;}
-section.service .contact-block{padding:93px 0 96px;background: url('/front/img/contact-service.png') no-repeat center center; background-size:cover;}
+section.service .contact-block{padding:22px 0 26px;background: url('/front/img/contact-service.png') no-repeat center center; background-size:cover;}
 section.service .big-title{font-family: var(--title-font);color: #fff;font-size: 36px;line-height: 42px;max-width: 600px;margin-bottom: 34px;}
 
 /* CONTACT */

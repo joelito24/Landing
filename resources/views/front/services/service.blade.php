@@ -15,41 +15,62 @@
     	<div class="text-service">
     		<div class="container">
 	    		<div class="row">
-	    			<div class="col-sm-12 col-md-6 top-page">
+
+	    			<div class="col-sm-12 col-md-6 top-page @if($service->about == "<div><br></div><div><br></div>") text-page @endif">
+						@if($service->about == "<div><br></div><div><br></div>")
+							<div class="description1">{!! $service->description1 !!}</div>
+							<div class="description2">{!! $service->description2 !!}</div>
+						@endif
 	        			{!! $service->about !!}
 	    			</div>
-					<div class="col-md-6">
-						<div class="quote">"{!! $service->quote !!}"</div>
+					<div class="col-sm-12 col-md-6">
+						@if($service->about != "<div><br></div><div><br></div>")
+							<div class="quote">"{!! $service->quote !!}"</div>
+						@endif
+						@if($service->about == "<div><br></div><div><br></div>")
+								<div class="row">
+									<div class="quote">"{!! $service->quote !!}"</div>
+								</div>
+							<div class="row">
+								<img class="img-responsive" src="{{ $service->image1 }}">
+							</div>
+						@endif
+
 						<!--<img src="{{ $service->image1 }}">-->
 					</div>
-					<div class="col-md-6 text-page">
+				</div>
+				@if($service->about != "<div><br></div><div><br></div>")
+				<div class="row">
+					<div class="col-sm-12 col-md-6 text-page">
 						<div class="description1">{!! $service->description1 !!}</div>
 						<div class="description2">{!! $service->description2 !!}</div>
 					</div>
-					<div class="col-md-6" style="text-align: center">
-						<img src="http://lorempixel.com/550/550/cats/">
+					<div class="col-sm-12 col-md-6" style="text-align: center">
+						<img class="img-responsive" src="{{ $service->image1 }}">
 					</div>
+				</div>
+				@endif
+
 
 
 	    			
-	    		</div>
-	    	</div>
-    	</div>
-    	
+			</div>
+		</div>
+
     	<div class="conclusion-service">
     		<div class="container">
     			<div class="row">
-    				<div class="col-md-6">
+    				<div class="col-sm-12 col-md-6">
     					<div class="conclusion">{!! $service->conclusion !!}</div>
     				</div>
-    				<div class="col-md-6">
-    					<img src="{{ $service->image2 }}">
+    				<div class="col-sm-12 col-md-6">
+    					<!--<img src="{{ $service->image2 }}">-->
     				</div>
     			</div>
     		</div>
 		</div>
 		<div class="contact-block">
-				<div class="row">
+				<div class="row" style="margin: 0">
 					<div class="col-md-12">
 						<div class="col-md-1"></div>
 						<div class="col-md-5">

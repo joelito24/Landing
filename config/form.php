@@ -87,7 +87,7 @@ return [
         'name' => 'Servicios',
         'for_files' => true,
         'description' => 'Administración de Servicios',
-        'editor' => false,
+        'editor' => true,
         'fields' => [
             'title' => [
                 'type' => 'text',
@@ -111,7 +111,7 @@ return [
                 'type' => 'textarea',
                 'title' => 'Preguntas de servicio',
                 'description' => 'Describa servicio',
-                'rules' => ['required']
+                //'rules' => ['required']
             ],
             'description1' => [
                 'type' => 'textarea',
