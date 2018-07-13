@@ -1,31 +1,11 @@
 /*header#header{
     margin-top: 19px;
 }*/
-#sobre{
-    min-width: 33px;
-}
-header.header_transparent {
-    background: transparent!important;
-    position: relative;
-    z-index: 100;
-}
-header .img-logo{
-    padding-top:39px;
-
-}
-header .menu {
-    list-style-type: none !important;
-    text-align: right;
-}
-header.header_home .menu li {
-    color: var(--white);
-    font-family: var(--main-font);
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 600;
-    margin-left: 2%;
-    margin-right: 2%;
-}
+#sobre{min-width: 33px;}
+header.header_transparent {background: transparent!important;position: relative;z-index: 100;}
+header .img-logo{padding-top:39px;}
+header .menu {list-style-type: none !important;text-align: right;}
+header.header_home .menu li {color: var(--white);font-family: var(--main-font);font-size: 18px;line-height: 24px;font-weight: 600;margin-left: 2%;margin-right: 2%;}
 header .menu li {
     font-family: var(--main-font);
     font-size: 18px;
@@ -122,10 +102,10 @@ section.service{
 }
 section.service .title-service{margin-top: 65px; max-width: 901px; font-size: 48px}
 section.service .blue-word{z-index: 1000; position: relative;}
-section.service .text-service{padding-top: 20px;}
+section.service .text-service{padding-top: 20px; margin-bottom: 100px}
 section.service .top-page{margin: 20px 0 46px 0;}
 section.service .top-page p {max-width: 540px;}
-section.service .text-page .description1, section.service .text-page .description2{/*max-width: 540px;*/max-width: 71.715%;}
+section.service .text-page .description1, section.service .text-page .description2{max-width: 540px;}
 section.service .form-block .form-group label{color: var(--white);}
 section.service .form-block .form-check .form-check-label{color:var(--white);}
 section.service .form-block{max-width: 315px;}
@@ -133,21 +113,24 @@ section.service .form-block .btn-yellow-full{width:205px;}
 section.service .form-block .form-group input[type="text"]{min-height: 43px;}
 section.service .form-block .form-group textarea{min-height: 92px;}
 section.service .big-title{margin-top: 167px;}
-section.service .conclusion-service .conclusion{margin-left: 89px;color: var(--white);font-size: 21px;font-weight: 700;line-height: 32px; background-color: #023c4e; max-width: 574px;}
-section.service .conclusion-service .conclusion div{padding-left: 65px;padding-right: 65px;}
-section.service .conclusion-service .conclusion div:first-child{padding-top:50px}
-section.service .conclusion-service .conclusion div:last-child{padding-bottom:50px}
-section.service .conclusion-service .conclusion p{padding-left: 65px;padding-right: 65px;}
-section.service .conclusion-service .conclusion p:first-child{padding-top:50px}
-section.service .conclusion-service .conclusion p:last-child{padding-bottom:50px}
+section.service .conclusion-service .conclusion{margin-left: 89px;color: var(--white);font-size: 18px;font-weight: 700;line-height: 24px; background-color: #023c4e; max-width: 574px;}
+section.service .conclusion-service .conclusion div{padding-left: 30px;padding-right: 30px;}
+section.service .conclusion-service .conclusion div:first-child{padding-top:40px}
+section.service .conclusion-service .conclusion div:last-child{padding-bottom:40px}
+section.service .conclusion-service .conclusion p{padding-left: 30px;padding-right: 30px;}
+section.service .conclusion-service .conclusion p:first-child{padding-top:40px}
+section.service .conclusion-service .conclusion p:last-child{padding-bottom:40px}
 section.service .contact-block {background-attachment: fixed}
 section.service .text-page ul{padding-left: 80px}
-
-
-
-
-
-
+section.service .contact-block label {cursor: pointer;font-weight: 400;font-size: 14px;}
+.white-radio-label{display: block;position: relative;clear: both;margin: 0px 0px 10px 0px;}
+.white-radio-label:after {content: '';width: 10px;height: 6px;position: absolute;top: 6px;left: 5px;border: 3px solid #ffffff;border-top: none;border-right: none;background: transparent;opacity: 0;-webkit-transform: rotate(-45deg);transform: rotate(-45deg);}
+.white-radio-label:before {content: '';width: 20px;height: 20px;cursor: pointer;display: block;top: 0px;left: 0px;float: left;border: 2px solid #ffffff;border-radius: 2px;margin-right: 9px;margin-bottom: 14px;}
+section.service .quote-mbl {display: none;}
+@media (max-width: 992px){
+    section.service .quote-desk {display:none;}
+    section.service .quote-mbl {display: block;}
+}
 
 
 
