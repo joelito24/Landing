@@ -8,6 +8,8 @@
 
 namespace App\Http\Controllers;
 use App\Models\Newsletter;
+use App\Models\Whitepapers;
+use App\Services\EmailServices;
 use Input;
 
 
@@ -19,13 +21,18 @@ class NewsletterController extends Controller
         return View('front.whitepapers.whitepapers');
 
     }
-    public function add(Newsletter $newsletterRepository){
+    public function add(Newsletter $newsletterRepository, EmailServices $emailServices, Whitepapers $whitepapersRepository){
         $contactData = Input::all();
+//        var_dump($contactData);die();
+        $id = $contactData['idPdf'];
+        $whitepaper = $whitepapersRepository->find($id);
+        $pdf = $whitepaper->data_file;
+
+        $emailServices->sendWhitepaper($contactData['name'], $contactData['email'], $pdf);
         if($newsletterRepository->checkEmail($contactData['email'])){
-            return 'exist';
         }else{
             $newsletterRepository->add($contactData);
-            return 'sent';
         }
+        return 'sent';
     }
 }

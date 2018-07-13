@@ -52,5 +52,18 @@ class EmailServices
         $this->sendEmail($from, $to, $subject, $view, $data, $sender);
     }
 
+    public function sendWhitepaper($name, $email, $pdf){
+        $subject = "Thatzpaper";
+        $to = $email;
+        $view = 'emails.sendwhitepaper';
+        $from = "prueba@thatzad.com";
+        $sender = "info@thatzad.com";
+        $data = ['data' => [
+            'project_name' => "Thatzad",
+            'title' => "Thatzad - Whitepapers",
+            'name' => $name,
+            'pdf' => $pdf]];
+        $this->sendEmail($from, $to, $subject, $view, $data, $sender);
+    }
 
 }

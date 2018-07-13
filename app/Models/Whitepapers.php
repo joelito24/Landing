@@ -22,4 +22,8 @@ class Whitepapers extends Model implements ModelInterface
     public function findAllActive(){
         return $this->where('active', 1)->get();
     }
+
+    public function findLast(){
+        return $this->where('active', 1)->orderBy('created_at', 'desc')->first();
+    }
 }

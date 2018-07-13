@@ -6,12 +6,12 @@
 
         <div class="container">
             <p class="title-page">White papers</p>
-            <div class="description">
+            <div class="description" data-animated="fadeInUp">
                 <p>Nuestros ThatzPapers son estudios, análisis y reflexiones que hacemos desde los diferentes departamentos de THATZAD.</p>
                 <p>No tienen la intención de sentar cátedra, parten de una curiosidad por algún campo del marketing online sobre el que investigamos y compartimos ese aprendizaje con nuestro equipo y nuestros Clientes.</p>
             </div>
             @foreach($whitepapers as $whitepaper)
-                <div class="whitepaper">
+                <div class="whitepaper" data-animated="fadeInUp">
                     <div class="text-col">
                         <p class="title">{{ $whitepaper->title }}</p>
                         <p class="number">Thatzpaper nº1, Junio 2018</p>
@@ -21,27 +21,36 @@
             @endforeach
             <div class="whitepaper-popup">
                 <div class="form-block">
-                    <p class="close">X</p>
-                    <p class="title-popup">Para descargar nuestros <span class="white">ThatzPapers</span> debes registratarte, <span class="black">son 10 segundos</span></p>
-                    <form method="POST" action="" id="form_newsletter">
-                        <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
-                        <div class="form-group">
-                            <input placeholder="Nombre" class="form-control required" type="text" name="name" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <input placeholder="Email" class="form-control required" type="email" name="email" id="email" required>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                {{--<input class="form-check-input" type="checkbox" id="privacy" name="newsletter" value="1">--}}
-                                {{--<span class="acept-text">Me gustaría que me avisaseis cuando publiquéis nuevos White papers o Articulos</span>--}}
+                    <div class="form-newsletter">
+                        <p class="close">X</p>
+                        <p class="title-popup">Para descargar nuestros <span class="white">ThatzPapers</span> debes registratarte, <span class="black">son 10 segundos</span></p>
+                        <form method="POST" action="" id="form_newsletter">
+                            <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
+                            <input type="hidden" name="idPdf" value="" id="pdf">
+                            <div class="form-group">
+                                <input placeholder="Nombre" class="form-control required" type="text" name="name" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <input placeholder="Email" class="form-control required" type="email" name="email" id="email" required>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    {{--<input class="form-check-input" type="checkbox" id="privacy" name="newsletter" value="1">--}}
+                                    {{--<span class="acept-text">Me gustaría que me avisaseis cuando publiquéis nuevos White papers o Articulos</span>--}}
 
-                                <input type="checkbox" id="privacy" name="newsletter" value="1" class="gray-radio"/>
-                                <label for="privacy" class="gray-radio-label">Me gustaría que me avisaseis cuando publiquéis nuevos White papers o Articulos</label>
-                            </label>
-                        </div>
-                        <div class="send" id="response"><input class="submit btn-yellow-full" type="button" id="send" value="Recibir White paper"></div>
-                    </form>
+                                    <input type="checkbox" id="privacy" name="newsletter" value="1" class="gray-radio"/>
+                                    <label for="privacy" class="gray-radio-label">Me gustaría que me avisaseis cuando publiquéis nuevos White papers o Articulos</label>
+                                </label>
+                            </div>
+                            <div class="send" id="response"><input class="submit btn-yellow-full" type="button" id="send" value="Recibir White paper"></div>
+                        </form>
+                    </div>
+                    <div style="display: none;" class="response-newsletter">
+                        <p>¡Recibido!</p>
+                        <p>Muchas gracias por tu interés.</p>
+                        <p>Revisa tu email, te hemos enviado el Whitepaper.</p>
+                        <p>¡Qué lo disfrutes!</p>
+                    </div>
                 </div>
             </div>
 
@@ -64,8 +73,10 @@
     $(document).ready(function(){
         $("#header").addClass('header_transparent');
 
-        $('.btn-yellow-full').click(function(){
+        $('.whitepaper .btn-yellow-full').click(function(){
             id = $(this).attr('data-id');
+            $('.whitepaper-popup').fadeIn();
+            $('#pdf').val(id);
         });
 
         $("#send").click(function(e){
@@ -83,12 +94,16 @@
                    success: function(response) {
                        $('#form_newsletter').trigger("reset");
                        $('#privacy').prop('checked', false);
-                       if (response === 'sent'){
-                           $('#response').html('Se ha enviado su solicitud correctamente');
+                       if (response === 'sent' || response === 'exist'){
+                           $('section.whitepapers .form-block').css('background', '#00bde0');
+                           $('.form-newsletter').css('display', 'none');
+                           $('.response-newsletter').fadeIn();
+                           setTimeout(function() { $(".whitepaper-popup").hide('slow'); }, 8000);
+                           // $('#response').html('Se ha enviado su solicitud correctamente');
                        }
-                       else if (response === 'exist'){
-                           $('#response').html('El email indicado ya ha sido introducido');
-                       }
+                       // else if (response === 'exist'){
+                       //     $('#response').html('El email indicado ya ha sido introducido');
+                       // }
                    },
                    error: function(e){
                        console.log(e);

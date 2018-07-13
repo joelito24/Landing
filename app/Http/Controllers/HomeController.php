@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 use App\Models\Services;
+use App\Models\Whitepapers;
+
 class HomeController extends Controller {
 
 	/*
@@ -28,11 +30,13 @@ class HomeController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function index(Services $serviceRepository)
+	public function index(Services $serviceRepository, Whitepapers $whitepapersRepository)
 	{
 		    	// $services = $serviceRepository->getAllActive();
-
-		return view('front.home.home');
+        $whitepaper = $whitepapersRepository->findLast();
+		return view('front.home.home',[
+		    'whitepaper' => $whitepaper,
+        ]);
 	}
 
 }

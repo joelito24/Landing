@@ -134,8 +134,8 @@
                 <div class="btn-blue"><a href="{{ route('whitepapers') }}">Ver todos los White papers ></a></div>
                 <div class="whitepaper col-md-offset-1" data-animated="fadeInUp">
                     <div class="col-md-7 left-col-whitepaper">
-                        <p class="title-whitepaper">Título del white paper</p>
-                        <p class="text">Hear directly from the people who know it best. From teh to politics to creativity and more -whatever your interest, we’ve got you covered.</p>
+                        <p class="title-whitepaper">{{ $whitepaper->title }}</p>
+                        <div class="text">{!! $whitepaper->description !!}</div>
                         <div class="btn-yellow-full"><a href="">Leer más</a></div>
                     </div>
                     <div class="col-md-5 right-col-whitepaper">
