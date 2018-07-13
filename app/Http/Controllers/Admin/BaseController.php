@@ -150,6 +150,7 @@ abstract class BaseController extends Controller
 
 
         $validations = $this->prepareValidate($prepareData, $rules, $resource->id);
+//        print_r($validations);die();
 
         if (!empty($validations) && is_object($validations)) {
 
@@ -161,7 +162,6 @@ abstract class BaseController extends Controller
         $dataClear = $this->clearLang($prepareData);
 
         $data = $this->getDataRelated($dataClear);
-
 
         $resource->update($data['data']);
 

@@ -9,12 +9,18 @@
 namespace App\Http\Controllers\Admin;
 use App\Models\Projects;
 use App;
-
+use App\Models\ProjectsRelated;
 
 class ProjectsController extends BaseController
 {
     protected $resourceName = 'projects';
     protected $repositoryName = Projects::class;
+
+    //Relaciones multiples
+    protected $repositoryRelated = [
+        'project_id_related' => ProjectsRelated::class,
+    ];
+    protected $selfReferenceRelated = 'project_id';
 
     protected $pathFile = 'files/projects/';
     protected $filesDimensions = [

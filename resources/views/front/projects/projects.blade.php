@@ -10,8 +10,8 @@
             <div class="block-inputs">
                 @foreach($categories as $category)
                     <div class="check-category">
-                        <input type="checkbox" name="{{ $category->id }}" value="{{ $category->name }}" id="{{ $category->name }}" class="gray-radio"/>
-                        <label for="{{ $category->name }}" class="gray-radio-label blue">{{ $category->name }}</label>
+                        <input type="checkbox" name="{{ $category->id }}" value="{{ $category->name }}" id="{{ $category->id }}" class="gray-radio"/>
+                        <label for="{{ $category->id }}" class="gray-radio-label blue">{{ $category->name }}</label>
                     </div>
                 @endforeach
                 {{--<div class="check-category">--}}
@@ -21,7 +21,7 @@
             </div>
             <div class="row grid">
                 @foreach($projects as $project)
-                    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div data-category-id="{{ $project->id }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
                         <figure class="effect-sarah">
                             <img src="{{$project->image1}}" alt="">
                             <div class="title-project">{{ $project->title }}
@@ -97,6 +97,11 @@
     <script>
         $(document).ready(function () {
             $("#proyectos").addClass('main-blue');
+            $('.check-category input').click(function(){
+                $('.project').hide();
+                var category = $(this).attr('id');
+                $('*[data-category-id="'+ category +'"]').fadeIn();
+            });
         });
     </script>
 @endsection

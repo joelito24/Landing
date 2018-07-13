@@ -14,7 +14,7 @@ class ProjectsRelated extends Model implements ModelInterface
     public $timestamps = false;
 
     //RELACIONES
-    public function projects()
+    public function project()
     {
         return $this->belongsTo(Projects::class, 'project_id', 'id')->first();
     }
