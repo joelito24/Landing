@@ -9,11 +9,16 @@
 namespace App\Http\Controllers;
 
 
+use App\Models\Whitepapers;
+
 class WhitepapersController extends Controller
 {
-    public function whitepapers(){
+    public function whitepapers(Whitepapers $whitepapersRepository){
 
-        return view('front.whitepapers.whitepapers');
+        $whitepapers = $whitepapersRepository->findAllActive();
+        return view('front.whitepapers.whitepapers',[
+            'whitepapers' => $whitepapers,
+        ]);
 
     }
 }

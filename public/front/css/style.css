@@ -371,7 +371,7 @@ section.specializations.advertising .white-block-text .text-action{display: inli
 section.specializations.advertising .steps{text-align: center;    display: inline-block;}
 section.specializations.advertising .steps .step{display: inline-block;max-width: 20%; vertical-align: top;width: 200px;}
 section.specializations.advertising .steps .step .number{margin-bottom: 9px;width: 74px;height: 74px;background-color: var(--default-color);border-radius: 100%;text-align: center;font-size: 72px;font-family: var(--title-font);line-height: 55px;color: #ebbd31;}
-section.specializations.advertising .steps .text{font-size:18px;font-weight: 700;max-width: 187px;padding-right: 15px;text-align: left;}
+section.specializations.advertising .steps .text{font-size:18px;font-weight: 700;max-width: 187px;padding-right: 20px;text-align: left;}
 section.specializations.advertising .steps .first-line{text-align: center;border-right: 2px solid #ebbd31;border-radius: 0 64px 64px 0;border-bottom: 2px solid #ebbd31;border-top: 2px solid #ebbd31;}
 /*section.specializations.advertising .steps .first-line .step:last-child .number::after{ width: 88px;}*/
 section.specializations.advertising .steps .step .number{position: relative;margin-top: -37px;}
@@ -385,6 +385,26 @@ section.specializations.advertising .steps .second-line .step .number img{right:
 section.specializations.advertising .steps .second-line .step:first-child .number img{right: 100px;}
 section.specializations.advertising .steps .between-steps .arrow-left{position: absolute;top: -13px;left: 54px;}
 section.specializations.advertising .steps .between-steps .arrow-right{position: absolute;top: -13px;right: -78px;}
+
+/* Whitepapres */
+section.whitepapers{background: #f3f9f9;margin-top: -134px;padding-bottom: 20px;}
+section.whitepapers .description{margin-bottom: 67px;max-width:742px;color: var(--default-color);font-size: 22px;line-height: 30px;font-weight: 700;}
+section.whitepapers .whitepaper{background: #fff;padding: 25px;margin-bottom: 8px;}
+section.whitepapers .whitepaper .text-col{display:  inline-block;width: 81%;}
+section.whitepapers .whitepaper .title{font-size: 24px;font-weight: 900;color: var(--default-color);line-height: 27px;margin-bottom: 14px;}
+section.whitepapers .whitepaper .number{font-size: 12px; color:var(--default-color);}
+section.whitepapers .whitepaper .btn-yellow-full{cursor:pointer;max-width: 143px;display: inline-block;width: 17%;float: right;font-size: 14px;}
+section.whitepapers #form_newsletter .btn-yellow-full{padding:0 25px;}
+section.whitepapers .form-block{box-shadow: 0 0 24px 6px rgba(2, 60, 78, 0.5);z-index: 1000;background-size: cover;background: url(/front/img/bg-whitepapers.png) no-repeat center center;max-width: 658px;padding: 40px 100px 60px;position: fixed;top: 10%;margin-left:  auto;margin-right:  auto;left: 0;right: 0;}
+section.whitepapers .form-block .close{top: 15px;position: absolute;right: 15px;color: #fff;opacity: 1;line-height: 21px;}
+section.whitepapers .form-block .title-popup{margin-bottom: 40px;font-size: 24px;line-height: 30px;color: #023c4e;font-weight: 700;}
+section.whitepapers .form-block .title-popup .white{font-weight: 900;color:#fff;}
+section.whitepapers .form-block .title-popup .black{font-weight: 900;}
+section.whitepapers .form-block .form-control{max-width: 315px;height:  40px;border: 1px solid #fff;box-shadow: none;}
+section.whitepapers .form-block .form-group{margin-bottom: 20px;}
+section.whitepapers .form-block .gray-radio-label{max-width: 325px;cursor: pointer;}
+section.whitepapers .form-block .gray-radio-label:before{background: #fff;}
+section.whitepapers .whitepaper-popup{display:none;width: 100%;min-height: 100%;background-color: rgba(0,0,0,0.65);overflow: hidden;position: fixed;top: 0;left: 0;z-index: 100000000;}
 
 /* FOOTER */
 footer{padding-top:48px;background: var(--white);}

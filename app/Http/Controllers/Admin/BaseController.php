@@ -150,6 +150,7 @@ abstract class BaseController extends Controller
 
 
         $validations = $this->prepareValidate($prepareData, $rules, $resource->id);
+//        print_r($validations);die();
 
         if (!empty($validations) && is_object($validations)) {
 
@@ -161,7 +162,6 @@ abstract class BaseController extends Controller
         $dataClear = $this->clearLang($prepareData);
 
         $data = $this->getDataRelated($dataClear);
-
 
         $resource->update($data['data']);
 
@@ -567,7 +567,6 @@ abstract class BaseController extends Controller
         $repositories = $this->repositoryRelated;
         foreach ($data as $field => $values) {
             $repository = App::make($repositories[$field]);
-//            print_r($resource);die();
             $this->deleteRelated($repository, $resource);
             $this->addRelated($field, $values, $repository, $resource);
         }

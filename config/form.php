@@ -328,7 +328,19 @@ return [
                 'type' => 'textarea',
                 'title' => 'Descripción',
                 'description' => 'Introduzca la desctipción',
-                'rules' => ['required']
+                'rules' => []
+            ],
+
+            'active' => [
+                'type' => 'radio',
+                'title' => 'Visible',
+                'description' => 'Estado'
+            ],
+            'data_file' => [
+                'type' => 'file',
+                'title' => 'Fichero PDF',
+                'description' => '',
+                'rules' => ['']
             ],
         ]
     ],

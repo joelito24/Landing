@@ -28,6 +28,9 @@
             <div class="row inner-info">
                 <div class="col-md-4 text-info">
                     <h2>Proyectos integrales de marketing online</h2>
+                    <div class="info-block" id="text0" data-text="0">
+                        <p>Clicka en las diferentes opciones y descubre todo lo que podemos hacer por ti</p>
+                    </div>
                     <div class="info-block" id="text1" data-text="1">
                         <p class="text-bg">Ideas de negocio</p>
                         <p class="title-info">Ideas de negocio/Bussines plan</p>

@@ -14,6 +14,9 @@ class WhitepapersController extends BaseController
 {
     protected $resourceName = 'whitepapers';
     protected $repositoryName = Whitepapers::class;
+
+    protected $pathFile = 'files/documents/';
+
     public function index()
     {
         $fluxesHead = [
