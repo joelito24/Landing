@@ -127,9 +127,19 @@ section.service .contact-block label {cursor: pointer;font-weight: 400;font-size
 .white-radio-label:after {content: '';width: 10px;height: 6px;position: absolute;top: 6px;left: 5px;border: 3px solid #ffffff;border-top: none;border-right: none;background: transparent;opacity: 0;-webkit-transform: rotate(-45deg);transform: rotate(-45deg);}
 .white-radio-label:before {content: '';width: 20px;height: 20px;cursor: pointer;display: block;top: 0px;left: 0px;float: left;border: 2px solid #ffffff;border-radius: 2px;margin-right: 9px;margin-bottom: 14px;}
 section.service .quote-mbl {display: none;}
-@media (max-width: 992px){
+@media (max-width: 768px){
+    section.service .title-service {font-size: 36px; line-height: 36px; margin-top: 10px;}
+    section.service .top-page p {font-size: 20px; line-height: 24px;}
+    section.service .text-service .top-page .text-page p{font-size: 16px;}
     section.service .quote-desk {display:none;}
     section.service .quote-mbl {display: block;}
+    section.service .conclusion-service .conclusion {margin-left: -10%; margin-right: -10%;}
+    section.service .text-service {margin-bottom: 30px;}
+    section.service .big-title {margin: 80px auto 34px auto;}
+    section.service .quote {margin-bottom: 35px;}
+    footer ul.menu-footer.gray{margin-top: 35px;}
+    footer .top-footer .col-last {margin-top: 50px;}
+    section.service .form-block {margin:0 auto;}
 }
 
 

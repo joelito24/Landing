@@ -18,7 +18,7 @@
 
 	    			<div class="col-sm-12 col-md-5 @if(empty(strip_tags($service->about))) text-page @else top-page @endif">
 						{!! $service->about !!}
-						<div class="text-page" style="@if(!empty(strip_tags($service->about))) margin-top:50px; color: unset; @endif">
+						<div class="text-page" style="@if(!empty(strip_tags($service->about))) margin-top:50px; @endif">
 							<div class="description1">{!! $service->description1 !!}</div>
 							<div class="quote-mbl">
 								<div class="quote">"{!! $service->quote !!}"</div>
