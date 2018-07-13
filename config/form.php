@@ -133,7 +133,7 @@ return [
             ],
             'image1' => [
                 'type' => 'imageFile',
-                'title' => 'Imagen para el descripción de servicio',
+                'title' => 'Imagen para el descripción de servicio (500x500)',
                 'description' => '',
                 'rules' => []
             ],
@@ -145,7 +145,7 @@ return [
             ],
             'image2' => [
                 'type' => 'imageFile',
-                'title' => 'Imagen conclusión del servicio',
+                'title' => 'Imagen conclusión del servicio (2000 x 520)',
                 'description' => '',
                 'rules' => []
             ],

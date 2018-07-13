@@ -15,8 +15,8 @@ class ServicesController extends BaseController
     // IMAGENES
     protected $pathFile = 'files/services/';
     protected $filesDimensions = [
-        'image1' => ['w' => 495, 'h' => 776],
-        'image2' => ['w' => 500, 'h' => 391],
+        'image1' => ['w' => 500, 'h' => 500],
+        'image2' => ['w' => 2000, 'h' => 520],
         'thumb' => ['w' => 150, 'h' => 150],
     ];
 
