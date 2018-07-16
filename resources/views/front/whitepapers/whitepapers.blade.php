@@ -28,9 +28,11 @@
                             <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                             <input type="hidden" name="idPdf" value="" id="pdf">
                             <div class="form-group">
+                                <p class="msg-error">Campo nombre es obligatorio</p>
                                 <input placeholder="Nombre" class="form-control required" type="text" name="name" id="name" required>
                             </div>
                             <div class="form-group">
+                                <p class="msg-error">Email no tiene el formato correcte</p>
                                 <input placeholder="Email" class="form-control required" type="email" name="email" id="email" required>
                             </div>
                             <div class="form-check">
@@ -38,14 +40,29 @@
                                     {{--<input class="form-check-input" type="checkbox" id="privacy" name="newsletter" value="1">--}}
                                     {{--<span class="acept-text">Me gustaría que me avisaseis cuando publiquéis nuevos White papers o Articulos</span>--}}
 
-                                    <input type="checkbox" id="privacy" name="newsletter" value="1" class="gray-radio"/>
-                                    <label for="privacy" class="gray-radio-label">Me gustaría que me avisaseis cuando publiquéis nuevos White papers o Articulos</label>
+                                    {{--<input type="radio" id="privacy" name="newsletter" value="1" class="gray-radio"/>--}}
+                                    {{--<label for="privacy" class="gray-radio-label">Me gustaría que me avisaseis cuando publiquéis nuevos White papers o Articulos</label>--}}
+                                    {{--<input type="radio" id="privacy2" name="newsletter" value="0" class="gray-radio"/>--}}
+                                    {{--<label for="privacy" class="gray-radio-label">No hace falta que me aviseis. Gracias.</label>--}}
+                                    <p class="msg-error radio-btn">Tienes que elegir una de dos opciones</p>
+                                    <div>
+                                        <input type="radio" name="newsletter"  value="1" id="newsletter1" class="ios-radio" />
+                                        <label for="newsletter1" class="ios-radio-label"></label>
+                                        <label class="news" for="newsletter1">Me gustaría que me avisaseis cuando publiquéis nuevos White papers o Articulos.</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" name="newsletter" value="0" id="newsletter2" class="ios-radio"/>
+                                        <label for="newsletter2" class="ios-radio-label"></label>
+                                        <label class="news" for="newsletter2">No hace falta que me aviseis. Gracias.</label>
+                                    </div>
                                 </label>
                             </div>
                             <div class="send" id="response"><input class="submit btn-yellow-full" type="button" id="send" value="Recibir White paper"></div>
                         </form>
                     </div>
                     <div style="display: none;" class="response-newsletter">
+                        <p class="close">X</p>
                         <p>¡Recibido!</p>
                         <p>Muchas gracias por tu interés.</p>
                         <p>Revisa tu email, te hemos enviado el Whitepaper.</p>
@@ -74,6 +91,9 @@
         $("#header").addClass('header_transparent');
 
         $('.whitepaper .btn-yellow-full').click(function(){
+            $("section.whitepapers  .form-block").css('background-image', '/front/img/bg-whitepapers.png');
+            $('.response-newsletter').css('display', 'none');
+            $('.form-newsletter').css('display', 'block');
             id = $(this).attr('data-id');
             $('.whitepaper-popup').fadeIn();
             $('#pdf').val(id);
@@ -82,10 +102,30 @@
         $("#send").click(function(e){
            e.preventDefault();
            var error = 0;
-           if (!$('#privacy').attr('checked'))error = 1;
            var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-           if (!testEmail.test($('#email').val()))error = 1;
-           if ($('#name').val().length <= 1)error = 1;
+           if (!testEmail.test($('#email').val())) {
+               error = 1;
+               $('#email').parent().find('.msg-error').fadeIn();
+               $('#email').addClass('not-correct');
+           }else{
+               $('#email').parent().find('.msg-error').fadeOut();
+               $('#email').removeClass('not-correct');
+           }
+           if ($('#name').val().length <= 1) {
+               error = 1;
+               $('#name').parent().find('.msg-error').fadeIn();
+               $('#name').addClass('not-correct');
+           }else{
+               $('#name').parent().find('.msg-error').fadeOut();
+               $('#name').removeClass('not-correct');
+           }
+           if($("input[name='newsletter']:radio").is(':checked')){
+               $('#name').parent().parent().find('.msg-error.radio-btn').fadeOut();
+           }else{
+               error = 1;
+               $('#name').parent().parent().find('.msg-error.radio-btn').fadeIn();
+            }
+
            if (error === 0){
                $.ajax({
                    type: 'post',

@@ -27,12 +27,14 @@ class NewsletterController extends Controller
         $id = $contactData['idPdf'];
         $whitepaper = $whitepapersRepository->find($id);
         $pdf = $whitepaper->data_file;
-
-        $emailServices->sendWhitepaper($contactData['name'], $contactData['email'], $pdf);
-        if($newsletterRepository->checkEmail($contactData['email'])){
-        }else{
-            $newsletterRepository->add($contactData);
+        if(isset($contactData['newsletter']) && $contactData['newsletter'] == 1){
+            if($newsletterRepository->checkEmail($contactData['email'])){
+            }else{
+                $newsletterRepository->add($contactData);
+            }
         }
+        $emailServices->sendWhitepaper($contactData['name'], $contactData['email'], $pdf);
+
         return 'sent';
     }
 }

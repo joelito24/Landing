@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="description">
                     <div class="col-md-6">
-                        <p class="text-desc">El éxito de un negocio digital es una mezcla de Conocimiento, Creatividad y Esfuerzo. Pero el Conocimiento se multiplica cuando se trabaja en equipo, la Creatividad se amplifica cuando todos aportan ideas y el Esfuerzo se disfruta cuando te mueve la pasión y las ganas de ir un paso más allá y hacer las cosas mucho mejor.</p>
+                        <p class="text-desc">El éxito de un negocio digital es una mezcla de <span>Conocimiento, Creatividad y Esfuerzo</span>. Pero el Conocimiento se multiplica cuando se trabaja en equipo, la Creatividad se amplifica cuando todos aportan ideas y el <span>Esfuerzo</span> se disfruta cuando te mueve la pasión y las ganas de ir un paso más allá y hacer las cosas mucho mejor.</p>
                     </div>
                     <div class="col-md-6">
                         <p class="phrase">Nos sentimos tremendamente orgullosos de idear, lanzar y hacer crecer negocios digitales.</p>
@@ -79,6 +79,42 @@
                     <div class="btn-yellow-full"><a href="{{ route('contact') }}">¿Quieres descubrirl?</a></div>
                 </div>
             </div>
+        </div>
+        <div class="content-agency vision">
+            <div class="inner-agency">
+                <div class="text-col" data-animated="fadeInLeft">
+                    <p class="title-opinion">Visión</p>
+                    <p>Queremos ser la agencia de marketing online de la que nuestros clientes estén absolutamente convencidos de que deben confiar sus proyectos clave.</p>
+                    <p>Por efectividad y resultados en los parámetros que realmente influyen en el negocio, por visión estratégica y la capacidad de ir un paso más allá, prever su necesidades en un mercado cambiante que conocemos y en el que tenemos toda la experiencia. Con un enfoque creativo y en inspiradas ocasiones genial.</p>
+                    <p class="title-yellow">Puro músculo. Cero grasa</p>
+                </div>
+                <div class="img-col" data-animated="fadeInRight">
+                    <img src="{{ asset('front/img/agency/agency2.jpg') }}" alt="">
+                </div>
+            </div>
+            <div class="white-space">
+
+            </div>
+        </div>
+        <div class="valores">
+            <div class="container">
+                <p class="title-valor">Valores de Thatzad</p>
+                <div class="intro" data-animated="fadeInUp">
+                    <p>Valores que intentamos transmitir cada día en Thatzad.</p>
+                    <p>Nos consideramos…</p>
+                </div>
+
+                <ul >
+                    <li data-animated="fadeInUp">Éticos.</li>
+                    <li data-animated="fadeInUp">Honestos.</li>
+                    <li data-animated="fadeInUp">Empáticos.</li>
+                    <li data-animated="fadeInUp">Implicados. </li>
+                    <li data-animated="fadeInUp">Efectivos.</li>
+                    <li data-animated="fadeInUp">Visionarios.</li>
+                    <li data-animated="fadeInUp">Personas.</li>
+                </ul>
+            </div>
+
         </div>
     </section>
 

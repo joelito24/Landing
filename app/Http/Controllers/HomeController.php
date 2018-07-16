@@ -33,7 +33,10 @@ class HomeController extends Controller {
 	public function index(Services $serviceRepository, Whitepapers $whitepapersRepository)
 	{
 		    	// $services = $serviceRepository->getAllActive();
-        $whitepaper = $whitepapersRepository->findLast();
+        $whitepaper = $whitepapersRepository->findLastHome();
+        if (count($whitepaper)<=0){
+            $whitepaper = $whitepapersRepository->findLast();
+        }
 		return view('front.home.home',[
 		    'whitepaper' => $whitepaper,
         ]);

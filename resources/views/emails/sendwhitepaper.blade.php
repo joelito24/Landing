@@ -12,7 +12,7 @@
                     <br><br>
                     <div style="text-align: left;font-family:Helvetica, Arial, sans-serif;font-size:14px;">
                         <p>Hola {{$data['name']}},</p>
-                        <br>
+
                         <p>Muchas gracias por tu interés.</p>
                         <p>Te adjuntamos el Whitepaper para que lo tengas a tu total disponibilidad.</p>
                         <p>¡Qué lo disfrutes!</p>

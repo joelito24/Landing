@@ -330,10 +330,15 @@ return [
                 'description' => 'Introduzca la desctipción',
                 'rules' => []
             ],
-
+            'image' => [
+                'type' => 'imageFile',
+                'title' => 'Imagen de whitepaper',
+                'description' => '',
+                'rules' => ['required']
+            ],
             'active' => [
                 'type' => 'radio',
-                'title' => 'Visible',
+                'title' => 'Active',
                 'description' => 'Estado'
             ],
             'data_file' => [
@@ -341,6 +346,27 @@ return [
                 'title' => 'Fichero PDF',
                 'description' => '',
                 'rules' => ['']
+            ],
+            'home' => [
+                'type' => 'radio',
+                'title' => 'Visible en la home',
+                'description' => 'Estado'
+            ],
+        ]
+    ],
+
+    'whitepapers_crop' => [
+        'name' => 'White papers',
+        'for_files' => true,
+        'description' => 'Administración de Imagenes de White papers',
+        'slug' => false,
+        'editor' => true,
+        'dataShow' => [],
+        'fields' => [
+            'image' => [
+                'type' => 'imageCrop',
+                'title' => 'Imagen detalle',
+                'description' => ''
             ],
         ]
     ],

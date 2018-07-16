@@ -136,10 +136,10 @@
                     <div class="col-md-7 left-col-whitepaper">
                         <p class="title-whitepaper">{{ $whitepaper->title }}</p>
                         <div class="text">{!! $whitepaper->description !!}</div>
-                        <div class="btn-yellow-full"><a href="">Leer más</a></div>
+                        <div class="btn-yellow-full" data-id="{{ $whitepaper->id }}">Leer más</div>
                     </div>
                     <div class="col-md-5 right-col-whitepaper">
-                        <img src="{{ asset('front/img/home/objeto-inteligente-vectorial.png') }}" alt="">
+                        <img src="{{ $whitepaper->image }}" alt="">
                     </div>
                 </div>
             </div>
@@ -181,6 +181,51 @@
              
         </div>
     </div>
+
+    {{--popup para whitepapers--}}
+    <div class="whitepaper-popup">
+        <div class="form-block">
+            <div class="form-newsletter">
+                <p class="close">X</p>
+                <p class="title-popup">Para descargar nuestros <span class="white">ThatzPapers</span> debes registratarte, <span class="black">son 10 segundos</span></p>
+                <form method="POST" action="" id="form_newsletter">
+                    <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
+                    <input type="hidden" name="idPdf" value="" id="pdf">
+                    <div class="form-group">
+                        <p class="msg-error">Campo nombre es obligatorio</p>
+                        <input placeholder="Nombre" class="form-control required" type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <p class="msg-error">Email no tiene el formato correcte</p>
+                        <input placeholder="Email" class="form-control required" type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <p class="msg-error radio-btn">Tienes que elegir una de dos opciones</p>
+                            <div>
+                                <input type="radio" name="newsletter"  value="1" id="newsletter1" class="ios-radio" />
+                                <label for="newsletter1" class="ios-radio-label"></label>
+                                <label class="news" for="newsletter1">Me gustaría que me avisaseis cuando publiquéis nuevos White papers o Articulos.</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="newsletter" value="0" id="newsletter2" class="ios-radio"/>
+                                <label for="newsletter2" class="ios-radio-label"></label>
+                                <label class="news" for="newsletter2">No hace falta que me aviseis. Gracias.</label>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="send" id="response"><input class="submit btn-yellow-full" type="button" id="send" value="Recibir White paper"></div>
+                </form>
+            </div>
+            <div style="display: none;" class="response-newsletter">
+                <p>¡Recibido!</p>
+                <p>Muchas gracias por tu interés.</p>
+                <p>Revisa tu email, te hemos enviado el Whitepaper.</p>
+                <p>¡Qué lo disfrutes!</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 @stop
@@ -192,8 +237,65 @@
         $("#header").addClass('header_home');
         //$(".servicios").addClass('main-blue');
         $("#sobre").attr("src","{{ asset('front/img/header/sobre.png') }}");
-        $('.cls-8').click(function(){
+
+        $('.whitepaper .btn-yellow-full').click(function(){
+            $(".form-block").css('background-image', '/front/img/bg-whitepapers.png');
+            $('.response-newsletter').css('display', 'none');
+            $('.form-newsletter').css('display', 'block');
+            id = $(this).attr('data-id');
+            $('.whitepaper-popup').fadeIn();
+            $('#pdf').val(id);
         });
+
+        $("#send").click(function(e){
+            e.preventDefault();
+            var error = 0;
+            var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+            if (!testEmail.test($('#email').val())) {
+                error = 1;
+                $('#email').parent().find('.msg-error').fadeIn();
+                $('#email').addClass('not-correct');
+            }else{
+                $('#email').parent().find('.msg-error').fadeOut();
+                $('#email').removeClass('not-correct');
+            }
+            if ($('#name').val().length <= 1) {
+                error = 1;
+                $('#name').parent().find('.msg-error').fadeIn();
+                $('#name').addClass('not-correct');
+            }else{
+                $('#name').parent().find('.msg-error').fadeOut();
+                $('#name').removeClass('not-correct');
+            }
+            if($("input[name='newsletter']:radio").is(':checked')){
+                $('#name').parent().parent().find('.msg-error.radio-btn').fadeOut();
+            }else{
+                error = 1;
+                $('#name').parent().parent().find('.msg-error.radio-btn').fadeIn();
+            }
+
+            if (error === 0){
+                $.ajax({
+                    type: 'post',
+                    url: 'routes.newsletter',
+                    data: $('#form_newsletter').serialize(),
+                    success: function(response) {
+                        $('#form_newsletter').trigger("reset");
+                        $('#privacy').prop('checked', false);
+                        if (response === 'sent' || response === 'exist'){
+                            $('.whitepaper .form-block').css('background', '#00bde0');
+                            $('.form-newsletter').css('display', 'none');
+                            $('.response-newsletter').fadeIn();
+                            setTimeout(function() { $(".whitepaper-popup").hide('slow'); }, 8000);
+                        }
+                    },
+                    error: function(e){
+                        console.log(e);
+                    }
+                });
+            }
+        });
+
         $("#burger, #mobile-close").click(function(){
             $("#header").toggleClass('header_transparent');
             $("#header").toggleClass('pos-abs');

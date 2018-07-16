@@ -48,6 +48,7 @@ return [
         'create' => 'admin.whitepapers.create',
         'edit' => 'admin.whitepapers.edit',
         'delete' => 'admin.whitepapers.delete',
+        'crop' => 'admin.whitepapers.crop',
         'icon' => 'fa fa-user',
         'name' => 'White papers',
         'resource' => 'whitepapers'
