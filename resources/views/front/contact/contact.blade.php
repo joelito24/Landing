@@ -94,7 +94,8 @@
                         <div class="form-group">
                             <input placeholder="Empresa" class="form-control" type="text" name="company" id="company">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="position: relative;">
+                            <p style="position: absolute;top: -10px;" class="msg-error">El campo Email es obligatorio</p>
                             <input placeholder="Email (obligatorio)" class="form-control required" type="text" name="email" id="email">
                         </div>
                         <div class="form-group">
@@ -169,17 +170,29 @@
             }
         });*/
         $(document).ready(function(){
-
+            $("#burger, #mobile-close").click(function(){
+                $("#header").toggleClass('header_transparent');
+            });
             $('#header').addClass('header_transparent');
             $('#header').css('position', 'absolute');
 
             $("#send").click(function(e){
                 e.preventDefault();
                 var error = 0;
-                if (!$('#privacy').attr('checked'))error = 1;
+                if (!$('#privacy').attr('checked')) error = 1;
                 var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-                if (!testEmail.test($('#email').val()))error = 1;
-                if ($('#name').val().length <= 1)error = 1;
+                if (!testEmail.test($('#email').val())) {
+                    error = 1;
+                    $('#email').parent().find('.msg-error').fadeIn();
+                    $('#email').addClass('not-correct');
+                    $([document.documentElement, document.body]).animate({
+                        scrollTop: $("#company").offset().top
+                    }, 500);
+                }
+                else{
+
+                }
+                // if ($('#name').val().length <= 1) error = 1;
                 if (error === 0){
                     $.ajax({
                         type: 'post',

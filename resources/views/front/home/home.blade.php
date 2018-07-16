@@ -238,6 +238,7 @@
         //$(".servicios").addClass('main-blue');
         $("#sobre").attr("src","{{ asset('front/img/header/sobre.png') }}");
 
+
         $('.whitepaper .btn-yellow-full').click(function(){
             $(".form-block").css('background-image', '/front/img/bg-whitepapers.png');
             $('.response-newsletter').css('display', 'none');
@@ -245,6 +246,9 @@
             id = $(this).attr('data-id');
             $('.whitepaper-popup').fadeIn();
             $('#pdf').val(id);
+
+        $("#burger img").attr("src","{{ asset('front/img/header/burger.png') }}");
+        $('.cls-8').click(function(){
         });
 
         $("#send").click(function(e){
@@ -298,9 +302,6 @@
 
         $("#burger, #mobile-close").click(function(){
             $("#header").toggleClass('header_transparent');
-            $("#header").toggleClass('pos-abs');
-            $("#burger, #mobile-close").toggle();
-            $("#mobile-menu-content").toggle();
         });
         $('#infografia #transparencias polygon').css('display', 'none');
         $('#infografia #lineas_amarillas path').css('display', 'none');

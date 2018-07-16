@@ -168,6 +168,7 @@ section.contact .form-block{overflow: hidden;background: #fff;padding: 39px 55px
 section.contact .btn-yellow-full{min-width: 201px;float: right;}
 section.contact .form-block label{cursor: pointer;font-weight: 400;font-size: 14px;}
 section.contact .form-block .form-control{box-shadow: none;height: 43px;background-color: #ededed;border: 1px solid #ededed;}
+section.contact .form-block .form-control.not-correct{border:1px solid red;}
 section.contact .form-block textarea.form-control{height: 164px; margin-top: 35px;}
 section.contact .checks label:first-child{font-size: 16px; margin-bottom: 5px;}
 section.contact .checks label{width:100%;font-size: 14px;}

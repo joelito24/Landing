@@ -1,5 +1,5 @@
 @media (max-width: 768px){
-    .container{padding-left:15px !important;padding-right: 15px !important;}
+    .container{padding-left:15px !important;padding-right: 15px !important;width: 90% !important;max-width: 90% !important;}
     footer .google{margin-bottom: 40px;}
     footer .last-col ul.menu-footer{margin-top:51px;}
     footer .contact{margin-top:49px;margin-bottom: -39px;}

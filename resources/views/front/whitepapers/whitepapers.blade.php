@@ -89,7 +89,9 @@
 <script>
     $(document).ready(function(){
         $("#header").addClass('header_transparent');
-
+        $("#burger, #mobile-close").click(function(){
+            $("#header").toggleClass('header_transparent');
+        });
         $('.whitepaper .btn-yellow-full').click(function(){
             $("section.whitepapers  .form-block").css('background-image', '/front/img/bg-whitepapers.png');
             $('.response-newsletter').css('display', 'none');

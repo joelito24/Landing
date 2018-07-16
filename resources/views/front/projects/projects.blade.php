@@ -97,11 +97,18 @@
     <script>
         $(document).ready(function () {
             $("#proyectos").addClass('main-blue');
-            $('.check-category input').click(function(){
-                $('.project').hide();
-                var category = $(this).attr('id');
-                $('*[data-category-id="'+ category +'"]').fadeIn();
-            });
+            // $('.check-category input').click(function(){
+            //     $('.project').hide();
+            //     var category = $(this).attr('id');
+            //     $('*[data-category-id="'+ category +'"]').fadeIn();
+            // });
+            // $( ".check-category input" ).toggle(function() {
+            //     var category = $(this).attr('id');
+            //     $('*[data-category-id="'+ category +'"]').fadeIn();
+            // }, function() {
+            //     var category = $(this).attr('id');
+            //     $('*[data-category-id="'+ category +'"]').fadeOut();
+            // });
         });
     </script>
 @endsection
