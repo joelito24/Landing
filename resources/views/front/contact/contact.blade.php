@@ -169,7 +169,9 @@
             }
         });*/
         $(document).ready(function(){
-
+            $("#burger, #mobile-close").click(function(){
+                $("#header").toggleClass('header_transparent');
+            });
             $('#header').addClass('header_transparent');
             $('#header').css('position', 'absolute');
 

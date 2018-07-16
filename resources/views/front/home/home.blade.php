@@ -192,13 +192,11 @@
         $("#header").addClass('header_home');
         //$(".servicios").addClass('main-blue');
         $("#sobre").attr("src","{{ asset('front/img/header/sobre.png') }}");
+        $("#burger img").attr("src","{{ asset('front/img/header/burger.png') }}");
         $('.cls-8').click(function(){
         });
         $("#burger, #mobile-close").click(function(){
             $("#header").toggleClass('header_transparent');
-            $("#header").toggleClass('pos-abs');
-            $("#burger, #mobile-close").toggle();
-            $("#mobile-menu-content").toggle();
         });
         $('#infografia #transparencias polygon').css('display', 'none');
         $('#infografia #lineas_amarillas path').css('display', 'none');

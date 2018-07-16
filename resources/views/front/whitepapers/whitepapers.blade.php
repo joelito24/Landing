@@ -72,7 +72,9 @@
 <script>
     $(document).ready(function(){
         $("#header").addClass('header_transparent');
-
+        $("#burger, #mobile-close").click(function(){
+            $("#header").toggleClass('header_transparent');
+        });
         $('.whitepaper .btn-yellow-full').click(function(){
             id = $(this).attr('data-id');
             $('.whitepaper-popup').fadeIn();

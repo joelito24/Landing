@@ -44,5 +44,8 @@
 		</div>
 	</div>
 	<div class="footer-bottom">
+		<p class="footerphrase">
+			Thatzad Copyright 2018
+		</p>
 	</div>
 </footer>

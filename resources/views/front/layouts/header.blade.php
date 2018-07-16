@@ -4,25 +4,33 @@
             <a href="{{ route('home') }}" ><img class="img-logo" src="{{ asset('front/img/header/logotipo.png') }}"></a>
         </div>
         <div id="button-mobile">
-                <a href="#" id="burger"><img src="{{ asset('front/img/header/burger.png') }}"></a>
+                <a href="#" id="burger"><img src="{{ asset('front/img/header/b-burger.png') }}"></a>
                 <a href="#" id="mobile-close" style="display: none"><img src="{{ asset('front/img/header/ios7-close-empty.png') }}"></a>
 
         </div>
         <div class="col-12" id="mobile-menu-content">
             <div class="row">
                 <ul class="menu">
-                    <li class="especializaciones default-color">Especializaciones
-                    </li>
-                    <li class="servicios default-color">Servicios
-                    </li>
+                    <li class="mbl-especializaciones default-color">Especializaciones <img src="{{ asset('front/img/header/flecha.png') }}"></li>
+                    <ul class="esp-mobile-dropdown">
+                        <li><a href="{{ route('specialization1') }}">Proyectos de e-commerce</a></li>
+                        <li><a href="{{ route('specialization2') }}">Campañas orientadas a resultados</a></li>
+                        <li><a href="{{ route('specialization3') }}">E-marketing y publicidad para marcas</a></li>
+                        <li><a href="{{ route('specialization4') }}">Transformación digital para empresas</a></li>
+                    </ul>
+                    <li class="mbl-servicios default-color">Servicios <img src="{{ asset('front/img/header/flecha.png') }}"></li>
+                    <ul class="mobile-dropdown">
+                        @foreach($services as $service)
+                            <li><a href="{{ route('service',$service->slug) }}">{{ $service->title }}</a></li>
+                        @endforeach
+                    </ul>
                     <li><a href="{{ route('projects') }}">Proyectos</a></li>
                     <li><a href="{{ route('agency') }}">Agencia</a></li>
                 </ul>
-                <hr>
                 <ul class="menu main-blue">
                     <li><a href="{{ route('whitepapers') }}">White papers</a></li>
                     <li><a href="http://www.thatzblog.com/" target="_blank">Blog</a></li>
-                    <li><a href="{{ route('contact') }}">Contacto</a></li>
+                    <li><a href="{{ route('contact') }}"><img src="{{ asset('front/img/header/sobre-icon.png') }}"></a></li>
                 </ul>
             </div>
         </div>
