@@ -16,7 +16,7 @@
                         <p>THATZAD no es una consultoría de transformación digital, quizás no seamos los expertos que definan tu modelo de negocio en los próximos años, pero sí podemos ayudarte a diseñar y programar los sistemas y herramientas que necesitas para redefinir las operaciones de tu empresa. Somos expertos en hacer crecer la semilla tecnológica de la transformación digital de las organizaciones.</p>
                     </div>
                     <div class="col-md-12 inner-img" data-animated="fadeInUp">
-                        <img src="{{ asset('front/img/specials/info-transformation.png') }}" alt="">
+                        <img class="w100" src="{{ asset('front/img/specials/info-transformation.png') }}" alt="">
                     </div>
                 </div>
             </div>

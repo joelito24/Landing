@@ -109,6 +109,7 @@ section.service .contact-block label {cursor: pointer;font-weight: 400;font-size
 .white-radio-label:before {content: '';width: 20px;height: 20px;cursor: pointer;display: block;top: 0px;left: 0px;float: left;border: 2px solid #ffffff;border-radius: 2px;margin-right: 9px;margin-bottom: 14px;}
 section.service .quote-mbl {display: none;}
 footer .footer-bottom .footerphrase{display: none;}
+.w100{width: 100%}
 @media (max-width: 768px){
 
     footer ul.menu-footer.gray{margin-top: 35px;}
@@ -127,6 +128,10 @@ footer .footer-bottom .footerphrase{display: none;}
     header .menu li {margin-left: 1.9%!important;}
 }
 @media (max-width: 992px) {
+    .img-info {float: left;width: 100%!important;}
+    .img-info img{width: 100%!important;}
+    section.specializations ul.list-benefits {margin-left:20px;}
+    section.specializations .ecommerce-top .ecommerce-description .text {width: 100%;}
     section.service .title-service {font-size: 36px; line-height: 36px; margin-top: 10px;}
     section.service .top-page p {font-size: 20px; line-height: 24px;}
     section.service .text-service .top-page .text-page p{font-size: 16px;}
