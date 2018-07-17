@@ -88,9 +88,10 @@
 @section('scripts')
 <script>
     $(document).ready(function(){
-        $("#header").addClass('header_transparent');
+        $("#header").addClass('header-blue-mbl');
         $("#burger, #mobile-close").click(function(){
-            $("#header").toggleClass('header_transparent');
+            $("#header").toggleClass('header-blue-mbl');
+            $("#header").toggleClass('header-white');
         });
         $('.whitepaper .btn-yellow-full').click(function(){
             $("section.whitepapers  .form-block").css('background-image', '/front/img/bg-whitepapers.png');

@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="top-footer">
-				<div class="col-sm-3">
+				<div class="col-md-3">
 					<a href="{{ route('home') }}"><img class="logo" src="{{ asset('front/img/home/logo.png') }}" alt=""></a>
 					<div class="contact">
 						<a href="tel:+34936350620">+34 936 350 620</a>
@@ -12,7 +12,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-md-3">
 					<ul class="menu-footer">
 						<li><a href="{{ route('specialization1') }}">Proyectos de e-Commerce</a></li>
 						<li><a href="{{ route('specialization2') }}">Transformación digital para empresas</a></li>
@@ -20,7 +20,7 @@
 						<li><a href="{{ route('specialization4') }}">Campañas orientadas a resultados</a></li>
 					</ul>
 				</div>
-				<div class="col-sm-3">
+				<div class="col-md-3">
 					<ul class="menu-footer gray">
 						<li><a href="{{ route('aviso') }}">Aviso legal y política de privacidad</a></li>
 						<li><a href="{{ route('politica') }}">Política de cookies</a></li>
@@ -28,7 +28,7 @@
 					</ul>
 
 				</div>
-				<div class="col-sm-3 col-last">
+				<div class="col-md-3 col-last">
 					<script src="https://apis.google.com/js/platform.js" async defer></script>
 					<div style="float: right;" class="g-partnersbadge" data-agency-id="1589660341"></div>
 					{{--<img class="google" src="{{ asset('front/img/home/google-partner.png') }}" alt="">--}}

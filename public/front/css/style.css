@@ -503,7 +503,7 @@ section.whitepapers .whitepaper .btn-yellow-full{cursor:pointer;max-width: 143px
 footer{padding-top:48px;background: var(--white);}
 footer a{cursor: pointer; display: block;}
 footer .top-footer{position: relative;overflow: hidden;}
-footer .logo{/*max-width: 200px;*/width: 100%;}
+footer .logo{max-width: 350px;width: 100%;}
 footer .gorila{position: absolute;bottom: -49px;right: 43px;max-width: 313px;width:100%;}
 .text-logo{color: var(--main-blue);font-size: 14px;font-weight: 700;margin-top: 11px;}
 .text-logo a{color: var(--main-blue);}
