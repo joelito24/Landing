@@ -21,7 +21,7 @@
             </div>
             <div class="row grid">
                 @foreach($projects as $project)
-                    <div id="project-{{ $project->id }}" data-category-id="{{ $project->id }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
+                    <div id="project-{{ $project->id }}" data-category-id="{{ $project->id }}" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
                         <figure class="effect-sarah">
                             <img src="{{$project->image1}}" alt="">
                             <div class="title-project">{{ $project->title }}
@@ -34,7 +34,31 @@
                         </figure>
                     </div>
                 @endforeach
-                {{--<div class="col-md-4">--}}
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
+                    <figure class="effect-sarah">
+                        <img src="{{ asset('front/img/foto1.png') }}" alt="">
+                        <div class="title-project">Turisimo de Canarias
+                            <div class="category">Turismo</div>
+                        </div>
+                        <figcaption>
+                            <p>Una de las principales empresas de alquiler de villas de lujo y servicios de concierge de España fusionada con una de las más importantes del mundo. </p>
+                            <div class="btn-yellow"><a href="">Ver mas</a></div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
+                    <figure class="effect-sarah">
+                        <img src="{{ asset('front/img/foto2.png') }}" alt="">
+                        <div class="title-project">Bonder & Co
+                            <div class="category">Banca</div>
+                        </div>
+                        <figcaption>
+                            <p>Una de las principales empresas de alquiler de villas de lujo y servicios de concierge de España fusionada con una de las más importantes del mundo. </p>
+                            <div class="btn-yellow"><a href="">Ver mas</a></div>
+                        </figcaption>
+                    </figure>
+                </div>
+                {{--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project">--}}
                     {{--<figure class="effect-sarah">--}}
                         {{--<img src="{{ asset('front/img/foto1.png') }}" alt="">--}}
                         {{--<div class="title-project">Turisimo de Canarias--}}
@@ -46,31 +70,7 @@
                         {{--</figcaption>--}}
                     {{--</figure>--}}
                 {{--</div>--}}
-                {{--<div class="col-md-4">--}}
-                    {{--<figure class="effect-sarah">--}}
-                        {{--<img src="{{ asset('front/img/foto2.png') }}" alt="">--}}
-                        {{--<div class="title-project">Bonder & Co--}}
-                            {{--<div class="category">Banca</div>--}}
-                        {{--</div>--}}
-                        {{--<figcaption>--}}
-                            {{--<p>Una de las principales empresas de alquiler de villas de lujo y servicios de concierge de España fusionada con una de las más importantes del mundo. </p>--}}
-                            {{--<div class="btn-yellow"><a href="">Ver mas</a></div>--}}
-                        {{--</figcaption>--}}
-                    {{--</figure>--}}
-                {{--</div>--}}
-                {{--<div class="col-md-4">--}}
-                    {{--<figure class="effect-sarah">--}}
-                        {{--<img src="{{ asset('front/img/foto1.png') }}" alt="">--}}
-                        {{--<div class="title-project">Turisimo de Canarias--}}
-                            {{--<div class="category">Turismo</div>--}}
-                        {{--</div>--}}
-                        {{--<figcaption>--}}
-                            {{--<p>Una de las principales empresas de alquiler de villas de lujo y servicios de concierge de España fusionada con una de las más importantes del mundo. </p>--}}
-                            {{--<div class="btn-yellow"><a href="">Ver mas</a></div>--}}
-                        {{--</figcaption>--}}
-                    {{--</figure>--}}
-                {{--</div>--}}
-                {{--<div class="col-md-4">--}}
+                {{--<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project">--}}
                     {{--<figure class="effect-sarah">--}}
                         {{--<img src="{{ asset('front/img/foto2.png') }}" alt="">--}}
                         {{--<div class="title-project">Bonder & Co--}}

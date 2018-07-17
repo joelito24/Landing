@@ -17,7 +17,7 @@ class WhitepapersController extends BaseController
 
     protected $pathFile = 'files/whitepapers/';
     protected $filesDimensions = [
-        'image'  => ['w' => 800, 'h' => 800],
+        'image'  => ['w' => 550, 'h' => 300],
     ];
     public function index()
     {

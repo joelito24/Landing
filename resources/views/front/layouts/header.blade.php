@@ -1,6 +1,6 @@
 <header id="header">
     <div class="container">
-        <div class="col-md-6">
+        <div class="col-md-4">
             <a href="{{ route('home') }}" ><img class="img-logo" src="{{ asset('front/img/header/logotipo.png') }}"></a>
         </div>
         <div id="button-mobile">
@@ -14,7 +14,7 @@
                     <li class="mbl-especializaciones default-color">Especializaciones <img src="{{ asset('front/img/header/flecha.png') }}"></li>
                     <ul class="esp-mobile-dropdown">
                         <li><a href="{{ route('specialization1') }}">Proyectos de e-commerce</a></li>
-                        <li><a href="{{ route('specialization2') }}">Campañas orientadas a resultados</a></li>
+                        <li><a href="{{ route('specialization2') }}">Publicidad online orientada a resultados</a></li>
                         <li><a href="{{ route('specialization3') }}">E-marketing y publicidad para marcas</a></li>
                         <li><a href="{{ route('specialization4') }}">Transformación digital para empresas</a></li>
                     </ul>
@@ -34,7 +34,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col-md-6" id="menu-content">
+        <div class="col-md-8" id="menu-content">
 
                 <div class="row">
                     <ul class="menu little">
@@ -48,7 +48,7 @@
                         <li class="especializaciones" id="especializaciones">Especializaciones
                             <ul class="dropdown">
                                 <li><a href="{{ route('specialization1') }}">Proyectos de e-commerce</a></li>
-                                <li><a href="{{ route('specialization2') }}">Campañas orientadas a resultados</a></li>
+                                <li><a href="{{ route('specialization2') }}">Publicidad online orientada a resultados</a></li>
                                 <li><a href="{{ route('specialization3') }}">E-marketing y publicidad para marcas</a></li>
                                 <li><a href="{{ route('specialization4') }}">Transformación digital para empresas</a></li>
                             </ul>

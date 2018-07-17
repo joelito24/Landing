@@ -179,9 +179,9 @@ section.home .whitepapers .container{transform: var(--reverse-ancle);}
 section.home .whitepapers .btn-blue{margin-left: 84px;}
 section.home .whitepapers .title-home{margin-bottom: -2px;display: inline-block;}
 section.home .whitepapers .whitepaper {overflow: hidden;margin-top: 54px;background: #fff;box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.2);}
-section.home .whitepapers .whitepaper .title-whitepaper{margin-bottom: 38px;font-family: var(--title-font);font-size: 36px;line-height: 38px;color: var(--default-color);}
+section.home .whitepapers .whitepaper .title-whitepaper{margin-bottom: 30px;font-family: var(--title-font);font-size: 36px;line-height: 38px;color: var(--default-color);}
 section.home .whitepapers .whitepaper .left-col-whitepaper{padding:24px 30px 85px;}
-section.home .whitepapers .whitepaper .left-col-whitepaper .text{max-width: 450px;margin-bottom: 65px;font-size: 20px;line-height: 30px;color: var(--default-color);}
+section.home .whitepapers .whitepaper .left-col-whitepaper .text{max-width: 670px;margin-bottom: 30px;font-size: 16px;line-height: 24px;color: var(--default-color);}
 section.home .whitepapers .whitepaper .right-col-whitepaper{padding: 24px 30px 11px 0;}
 section.home .whitepapers .whitepaper .right-col-whitepaper img{width: 100%;}
 section.home .whitepapers .btn-yellow-full{cursor: pointer;}
@@ -330,7 +330,7 @@ section.agency .valores ul li:last-child{color: #fcbf10;}
 /* PROJECTS */
 section.projects{background: #f7f7f7;padding-top: 20px;}
 section.projects .title-page{padding-top: 30px;}
-section.projects .container{z-index: 1000;position: relative;}
+section.projects .container{position: relative;}
 section.projects .name-page{margin-bottom: 34px;font-size: 14px;font-weight: 700;text-transform: uppercase;color: var(--main-blue);}
 section.projects .subtitle-projects{font-size: 16px;color: var(--default-color);margin-bottom: 12px;}
 section.projects .block-inputs .gray-radio-label{text-transform: uppercase;}
@@ -347,7 +347,7 @@ figcaption .btn-yellow{border: 2px solid #fcbf10;height: 40px;line-height: 37px;
 figcaption .btn-yellow a{ color:#fcbf10;}
 figcaption .btn-yellow:hover{background: #fcbf10;}
 figcaption .btn-yellow:hover a{color:var(--default-color);display: block;}
-.grid {position: relative;margin: 0 auto;padding: 1em 0 4em;max-width: 1000px;list-style: none;text-align: center;}
+.grid {position: relative;margin: 0 auto;padding: 0;list-style: none;text-align: center;}
 
 /* Grid style projects */
 .grid figure {position: relative;float: left;overflow: hidden;margin: 0 0 30px;width: 100%;background: #424242;text-align: center;cursor: pointer;}
