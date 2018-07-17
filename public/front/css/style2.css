@@ -110,18 +110,10 @@ section.service .contact-block label {cursor: pointer;font-weight: 400;font-size
 section.service .quote-mbl {display: none;}
 footer .footer-bottom .footerphrase{display: none;}
 @media (max-width: 768px){
-    section.service .title-service {font-size: 36px; line-height: 36px; margin-top: 10px;}
-    section.service .top-page p {font-size: 20px; line-height: 24px;}
-    section.service .text-service .top-page .text-page p{font-size: 16px;}
-    section.service .quote-desk {display:none;}
-    section.service .quote-mbl {display: block;}
-    section.service .conclusion-service .conclusion {margin-left: -10%; margin-right: -10%;}
-    section.service .text-service {margin-bottom: 30px;}
-    section.service .big-title {margin: 80px auto 34px auto;}
-    section.service .quote {margin-bottom: 35px;}
+
     footer ul.menu-footer.gray{margin-top: 35px;}
     footer .top-footer .col-last {margin-top: 50px;}
-    section.service .form-block {margin:0 auto;}
+
     footer .top-footer {overflow: unset;}
     footer .top-footer .slogan {margin-top: 83px;margin-bottom: 44px;float: unset;margin-left: 113px;position: absolute;}
     footer .footer-bottom .footerphrase{display:block; padding-top: 20px;padding-left: 24px;font-size: 14px;font-weight: 400;line-height: 14px;  }
@@ -135,6 +127,16 @@ footer .footer-bottom .footerphrase{display: none;}
     header .menu li {margin-left: 1.9%!important;}
 }
 @media (max-width: 992px) {
+    section.service .title-service {font-size: 36px; line-height: 36px; margin-top: 10px;}
+    section.service .top-page p {font-size: 20px; line-height: 24px;}
+    section.service .text-service .top-page .text-page p{font-size: 16px;}
+    section.service .quote-desk {display:none;}
+    section.service .quote-mbl {display: block;}
+    section.service .conclusion-service .conclusion {margin: 0 auto}
+    section.service .text-service {margin-bottom: 30px;}
+    section.service .big-title {margin: 80px auto 34px auto;}
+    section.service .quote {margin-bottom: 35px;}
+    section.service .form-block {margin:0 auto;}
     section.home{margin-top: -89px;}
     #menu-content{display: none;}
     #mobile-menu-content{margin-top: 20px;}
@@ -156,5 +158,56 @@ footer .footer-bottom .footerphrase{display: none;}
     #header {opacity: 1!important;}
     section.whitepapers {margin-top: 0;}
     header.header-blue-mbl {background: #f3f9f9!important;position: relative;z-index: 100;}
-
+    .whitepaper-popup .form-block {
+        box-shadow: 0 0 24px 6px rgba(2, 60, 78, 0.5);
+        z-index: 1000;
+        background-size: cover !important;
+        background: url(/front/img/bg-whitepapers.png) no-repeat center center;
+        max-width: 648px;
+        padding: 23px 20px 0px;
+        position: fixed;
+        top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+    .whitepaper-popup .form-block .title-popup {
+        margin-bottom: 16px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #023c4e;
+        font-weight: 700;
+    }
+    #form_newsletter .btn-yellow-full {
+        margin-bottom: 10px;
+    }
+    .form-group {
+        margin-bottom: 15px!important;
+    }
+    section.whitepapers .whitepaper .text-col {
+        display: block;
+        width: 100%;
+    }
+    section.whitepapers .whitepaper .btn-yellow-full {
+        max-width: 143px;
+        display: block;
+        width: unset;
+        float: unset;
+    }
+}
+@media (max-width: 420px){
+    .whitepaper-popup .form-block {
+        top:3%;}
+}
+@media (max-width: 377px) {
+    .whitepaper-popup .form-block {
+        top: 0%;
+    }
+    .whitepaper-popup .form-block {
+        padding: 10px 20px 0px;
+    }
+}
+@media screen and (orientation:landscape) {
+    .whitepaper-popup .form-block {top:0;}
 }
