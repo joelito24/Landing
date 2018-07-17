@@ -2,6 +2,7 @@
     margin-top: 19px;
 }*/
 #sobre{min-width: 33px;}
+header.header-white {background-color: #ffffff!important; position: relative; z-index: 100;}
 header.header-blue-mbl {background: transparent!important;position: relative;z-index: 100;}
 header.header_transparent {background: transparent!important;position: relative;z-index: 100;}
 header .img-logo{padding-top:39px;}
@@ -14,13 +15,8 @@ header .mbl-especializaciones img, header .mbl-servicios img{float: right;-webki
 header .rotated {transform: rotate(180deg);-ms-transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);-webkit-transition: 300ms;-moz-transition: 300ms;-ms-transition: 300ms;-o-transition: 300ms;transition: 300ms;}
 section.home{margin-top: -134px;}
 header .menu .especializaciones ul, .menu .servicios ul{display: none;position: absolute;background-color: rgba(255,255,255,0.95);min-width: 160px;margin-top: 20px;-webkit-box-shadow:inset 0px 3px 0px 0px var(--main-blue);-moz-box-shadow:inset 0px 3px 0px 0px var(--main-blue);box-shadow:inset 0px 3px 0px 0px var(--main-blue);z-index: 1000;margin-left: -5%;text-align: left;}
-header #menu-content .menu:last-child li{
-    padding-bottom: 22px;
-}
-header #menu-content .menu:last-child .dropdown li{
-    padding-bottom: unset;
-    padding-left: 20px;
-}
+header #menu-content .menu:last-child li{padding-bottom: 22px;}
+header #menu-content .menu:last-child .dropdown li{padding-bottom: unset;padding-left: 20px;}
 header .menu .especializaciones ul:after, .menu .servicios ul:after{
     content: "";
     position: absolute;
