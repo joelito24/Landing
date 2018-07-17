@@ -10,7 +10,7 @@
             <div class="block-inputs">
                 @foreach($categories as $category)
                     <div class="check-category">
-                        <input type="checkbox" name="{{ $category->id }}" value="{{ $category->name }}" id="{{ $category->id }}" class="gray-radio"/>
+                        <input type="checkbox" name="{{ $category->id }}" value="{{ $category->id }}" id="{{ $category->id }}" class="gray-radio"/>
                         <label for="{{ $category->id }}" class="gray-radio-label blue">{{ $category->name }}</label>
                     </div>
                 @endforeach
@@ -21,7 +21,7 @@
             </div>
             <div class="row grid">
                 @foreach($projects as $project)
-                    <div data-category-id="{{ $project->id }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
+                    <div id="project-{{ $project->id }}" data-category-id="{{ $project->id }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
                         <figure class="effect-sarah">
                             <img src="{{$project->image1}}" alt="">
                             <div class="title-project">{{ $project->title }}
@@ -96,19 +96,30 @@
 @section('scripts')
     <script>
         $(document).ready(function () {
-            $("#proyectos").addClass('main-blue');
-            // $('.check-category input').click(function(){
-            //     $('.project').hide();
-            //     var category = $(this).attr('id');
-            //     $('*[data-category-id="'+ category +'"]').fadeIn();
-            // });
-            // $( ".check-category input" ).toggle(function() {
-            //     var category = $(this).attr('id');
-            //     $('*[data-category-id="'+ category +'"]').fadeIn();
-            // }, function() {
-            //     var category = $(this).attr('id');
-            //     $('*[data-category-id="'+ category +'"]').fadeOut();
-            // });
+            // $("#proyectos").addClass('main-blue');
+
+            //Script para mostrar proyectos por categoría
+            $('.check-category input').change(function() {
+                var sList = "";
+                var val = 0;
+                $('.project').hide();
+                $('input[type=checkbox]').each(function () {
+                    var sThisVal = (this.checked ? "1" : "0");
+                    if(sThisVal == 1){
+                        val = $(this).val();
+                        $("#project-"+ val).fadeIn();
+                    }else{
+                        val = 0;
+                    }
+                    sList += (sList=="" ? val : "" + val);
+                });
+                var nList = parseInt(sList);
+                if(nList == 0){
+                    $('.project').show();
+                }
+                // console.log (parseInt(sList));
+            });
+
         });
     </script>
 @endsection

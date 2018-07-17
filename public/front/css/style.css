@@ -130,12 +130,15 @@ section.home .blog .title-home{display: inline-block; margin-bottom: -2px;}
 section.home .blog .btn-blue{margin-left: 131px;}
 section.home .blog .col-article{margin-top:63px;padding:0;}
 section.home .blog .col-article img{width:100%;}
-section.home .blog .col-article .article-block{background: #fff;margin-top: -100px;position: relative;max-width: 286px;float: right;padding: 19px 59px 29px 15px;}
+section.home .blog .col-article .article-block{background: #fff;margin-top: -100px;position: relative;max-width: 80%;float: right;padding: 19px 59px 29px 15px;}
 section.home .blog .col-article .article-block .title-article{font-size: 22px;line-height: 26px;color: var(--default-color);font-weight: 700;margin-bottom: 20px;}
 section.home .blog .col-article .article-block .article-text{font-size: 16px;line-height: 24px;color: var(--default-color);}
+section.home .blog .col-article .article-block p a{display: none;}
 section.home .blog .col-article .more{font-size: 16px;font-weight: 700;color: var(--default-color);}
 section.home .blog .col-article .more a{transition: all 0.5s ease;color: var(--default-color);}
 section.home .blog .col-article .more a:hover{transition: all 0.5s ease;color:var(--main-blue);}
+section.home .blog .col-article .more a:focus{outline: none;text-decoration: none;}
+section.home .blog .col-article .more a:active{text-decoration: none;transition: all 0.5s ease;color:var(--main-blue);}
 section.home .blog .col-article .more a span{color: #fcbf10;margin-left: 10px;font-size: 24px;vertical-align: sub;}
 section.home #infografia circle{cursor: pointer;}
 
@@ -270,7 +273,7 @@ section.projects .block-inputs .gray-radio-label:before {content: '';width: 18px
 section.projects .block-inputs .check-category{display: inline-block;margin-right: 76px;}
 section.projects .block-inputs .gray-radio-label.blue{font-size: 12px;font-weight: 400;color: var(--default-color);cursor: pointer;}
 section.projects .block-inputs .gray-radio-label.blue:after{border-color: var(--default-color);}
-section.projects .block-inputs{margin-bottom: 35px;}
+section.projects .block-inputs{margin-bottom: 35px;overflow: hidden;}
 section.projects .inner-category img{width:100%;}
 .title-project{position: absolute;top: 11px;left: 11px;color: #fff;font-size: 20px; font-weight: 700;transition: opacity 0.35s, transform 0.35s;}
 .title-category{font-size: 10px;color: #fff;}
@@ -313,6 +316,7 @@ section.project .title{margin-bottom: 20px;text-align: center;color: #fff;max-wi
 section.project .project-top{padding-top: 178px;    background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
 section.project .project-top .category-name{text-align: center;color: #fff;text-transform: uppercase;font-size: 16px;margin-bottom: 163px;}
 section.project .project-description{max-width: 770px;width: 90%;margin:-100px auto 68px;background: #fff;padding: 35px 60px;font-size: 20px;font-weight: 700;color: var(--default-color);}
+section.project .project-description p, section.project .project-description span{font-size:20px !important;font-family: var(--main-font) !important;}
 section.project .question{font-family: var(--title-font);font-size: 36px;color: var(--default-color);}
 section.project .project-description p{margin-bottom: 25px;}
 section.project .project-description p:last-child{margin-bottom: 0;}
@@ -324,8 +328,8 @@ section.project .block-slider{background: var(--default-color); margin-top: 20px
 section.project .block-slider .carousel{padding: 50px 0;}
 section.project .block-slider .carousel .item img{width:100%;}
 section.project .block-slider .carousel-indicators{ bottom: 70px;}
-section.project .block-slider .carousel-indicators .active{background-color: #545454;}
-section.project .block-slider .carousel-indicators li{border-color: #545454;}
+section.project .block-slider .carousel-indicators .active{background-color: #fff;}
+section.project .block-slider .carousel-indicators li{border-color: #fff;}
 section.project .related{padding-top: 68px;padding-bottom: 100px;background: #f7f9fa;}
 section.project .related .title-related{margin-top:0;font-family: var(--title-font);color: var(--default-color);font-size: 36px;text-align:  center;}
 /*section.project .related .grid{display: flex;justify-content: center;}*/
