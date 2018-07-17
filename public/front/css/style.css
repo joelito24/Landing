@@ -224,6 +224,8 @@ section.contact .form-group.margin0{margin-bottom: 0;}
   margin-right: 9px;
   margin-bottom: 14px;
 }
+.gray-radio-label.not-correct:before{border: 2px solid red;}
+
 /* AGENCY */
 section.agency{}
 section.agency .top-agency{padding-bottom: 235px;padding-top: 143px;    background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/front/img/agency/bg-agency.png);}

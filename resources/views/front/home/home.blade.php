@@ -246,6 +246,7 @@
             id = $(this).attr('data-id');
             $('.whitepaper-popup').fadeIn();
             $('#pdf').val(id);
+        });
 
         $("#burger img").attr("src","{{ asset('front/img/header/burger.png') }}");
         $('.cls-8').click(function(){
@@ -303,6 +304,7 @@
         $("#burger, #mobile-close").click(function(){
             $("#header").toggleClass('header_transparent');
         });
+        
         $('#infografia #transparencias polygon').css('display', 'none');
         $('#infografia #lineas_amarillas path').css('display', 'none');
         $('#infografia #lineas_azules path').css('display', 'none');

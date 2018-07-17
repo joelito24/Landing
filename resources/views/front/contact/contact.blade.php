@@ -140,6 +140,7 @@
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
+                                <p class="msg-error">Tienes que aceptar nuestra política de privacidad</p>
                                 <input type="checkbox" name="privacy" value="privacy" id="privacy" class="gray-radio"/>
                                 <label for="privacy" class="gray-radio-label">Acepto la política de privacidad aplicada en esta web.</label>
                                 {{--<input class="form-check-input" type="checkbox" name="privacy" id="privacy" value="1">--}}
@@ -179,7 +180,14 @@
             $("#send").click(function(e){
                 e.preventDefault();
                 var error = 0;
-                if (!$('#privacy').attr('checked')) error = 1;
+                if (!$('#privacy').attr('checked')) {
+                    error = 1;
+                    $('#privacy').parent().find('.msg-error').fadeIn();
+                    $('#privacy').parent().find('.gray-radio-label').addClass('not-correct');
+                }else{
+                    $('#privacy').parent().find('.msg-error').fadeOut();
+                    $('#privacy').parent().find('.gray-radio-label').removeClass('not-correct');
+                }
                 var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
                 if (!testEmail.test($('#email').val())) {
                     error = 1;
@@ -190,7 +198,8 @@
                     }, 500);
                 }
                 else{
-
+                    $('#email').parent().find('.msg-error').fadeOut();
+                    $('#email').removeClass('not-correct');
                 }
                 // if ($('#name').val().length <= 1) error = 1;
                 if (error === 0){
