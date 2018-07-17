@@ -250,6 +250,11 @@ return [
                 'title' => 'Proyectos Relacionados',
                 'description' => 'all_projects_backend',
             ],
+            'active' => [
+                'type' => 'radio',
+                'title' => 'Visible',
+                'description' => 'Estado'
+            ]
         ]
     ],
 

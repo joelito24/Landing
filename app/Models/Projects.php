@@ -11,7 +11,7 @@ class Projects extends Model implements ModelInterface
     const IMAGE_PATH = 'files/projects/';
     protected $table = 'projects';
     public $timestamps = true;
-    protected $fillable = ['title', 'category_id', 'description', 'slug', 'description_big', 'description_short', 'image1', 'image2', 'image3', 'image4', 'image5'];
+    protected $fillable = ['title', 'category_id', 'description', 'slug', 'description_big', 'description_short', 'image1', 'image2', 'image3', 'image4', 'image5', 'active'];
     protected $appends = ['nameCategory', 'project_id_related'];
 
     private function category()

@@ -153,30 +153,54 @@
                     <div class="btn-blue"><a href="">Ver todos los White papers ></a></div>    
                 </div>
             </div>
-            <div class="col-md-4 col-article" data-animated="fadeInUp">
-                <img src="{{ asset('front/img/home/rect-ngulo-10-copia-2.png') }}">
-                <div class="article-block">
-                    <p class="title-article">Con chuches, la depresión postvacacional es mucho menor.</p>
-                    <p class="article-text">Extracto de texto del artículo extracto de texto del artículo extracto de texto del artículo</p>
-                    <div class="more"><a href="">Leer más <span>></span></a></div>
-                </div>
-            </div>
-            <div class="col-md-4 col-article" data-animated="fadeInUp">
-                <img src="{{ asset('front/img/home/rect-ngulo-10-copia-2.png') }}">
-                <div class="article-block">
-                    <p class="title-article">Con chuches, la depresión postvacacional es mucho menor.</p>
-                    <p class="article-text">Extracto de texto del artículo extracto de texto del artículo extracto de texto del artículo</p>
-                    <div class="more"><a href="">Leer más <span>></span></a></div>
-                </div>
-            </div>
-            <div class="col-md-4 col-article" data-animated="fadeInUp">
-                <img src="{{ asset('front/img/home/rect-ngulo-10-copia-2.png') }}">
-                <div class="article-block">
-                    <p class="title-article">Con chuches, la depresión postvacacional es mucho menor.</p>
-                    <p class="article-text">Extracto de texto del artículo extracto de texto del artículo extracto de texto del artículo</p>
-                    <div class="more"><a href="">Leer más <span>></span></a></div>
-                </div>
-            </div>
+            <?php $i = 1; ?>
+            @foreach($posts as $post)
+                @if($i <= 3)
+                    <div class="col-md-4 col-article" data-animated="fadeInUp">
+                        @if(isset($post->thumbnail_images->full->url))
+                            <div style="height:350px;background: url({{ $post->thumbnail_images->full->url }}) center center no-repeat; background-size: cover;">
+{{--                                <img src="{{ $post->thumbnail_images->full->url }}" alt="">--}}
+                            </div>
+                        @else
+                            <div style="height:350px;background: url({{ asset('front/img/home/rect-ngulo-10-copia-2.png') }}) center center no-repeat;background-size: cover;" ">
+
+                            </div>
+{{--                            <img src="{{ asset('front/img/home/rect-ngulo-10-copia-2.png') }}">--}}
+                        @endif
+                        
+                        <div class="article-block">
+                            <p class="title-article">{{ $post->title }}</p>
+                            <div class="article-text">{!! $post->excerpt !!}</div>
+                            <div class="more"><a href="{{ $post->url }}" target="_blank">Leer más <span>></span></a></div>
+                        </div>
+                    </div>
+                @endif
+                <?php $i++; ?>
+            @endforeach
+            {{--<div class="col-md-4 col-article" data-animated="fadeInUp">--}}
+                {{--<img src="{{ asset('front/img/home/rect-ngulo-10-copia-2.png') }}">--}}
+                {{--<div class="article-block">--}}
+                    {{--<p class="title-article">Con chuches, la depresión postvacacional es mucho menor.</p>--}}
+                    {{--<p class="article-text">Extracto de texto del artículo extracto de texto del artículo extracto de texto del artículo</p>--}}
+                    {{--<div class="more"><a href="">Leer más <span>></span></a></div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<div class="col-md-4 col-article" data-animated="fadeInUp">--}}
+                {{--<img src="{{ asset('front/img/home/rect-ngulo-10-copia-2.png') }}">--}}
+                {{--<div class="article-block">--}}
+                    {{--<p class="title-article">Con chuches, la depresión postvacacional es mucho menor.</p>--}}
+                    {{--<p class="article-text">Extracto de texto del artículo extracto de texto del artículo extracto de texto del artículo</p>--}}
+                    {{--<div class="more"><a href="">Leer más <span>></span></a></div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+            {{--<div class="col-md-4 col-article" data-animated="fadeInUp">--}}
+                {{--<img src="{{ asset('front/img/home/rect-ngulo-10-copia-2.png') }}">--}}
+                {{--<div class="article-block">--}}
+                    {{--<p class="title-article">Con chuches, la depresión postvacacional es mucho menor.</p>--}}
+                    {{--<p class="article-text">Extracto de texto del artículo extracto de texto del artículo extracto de texto del artículo</p>--}}
+                    {{--<div class="more"><a href="">Leer más <span>></span></a></div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
                
              
         </div>
@@ -304,7 +328,7 @@
         $("#burger, #mobile-close").click(function(){
             $("#header").toggleClass('header_transparent');
         });
-        
+
         $('#infografia #transparencias polygon').css('display', 'none');
         $('#infografia #lineas_amarillas path').css('display', 'none');
         $('#infografia #lineas_azules path').css('display', 'none');
