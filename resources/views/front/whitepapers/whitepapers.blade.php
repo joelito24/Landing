@@ -88,7 +88,7 @@
 @section('scripts')
 <script>
     $(document).ready(function(){
-        $("#header").addClass('header_transparent');
+        $("#header").addClass('header-blue-mbl');
         $("#burger, #mobile-close").click(function(){
             $("#header").toggleClass('header_transparent');
         });
