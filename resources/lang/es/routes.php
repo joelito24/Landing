@@ -12,4 +12,7 @@ return [
     'specialization2'       => 'companas-orientadas-a-resultados',
     'specialization3'       => 'e-marketing-y-publicidad-para-mareas',
     'specialization4'       => 'transformacion-digital-para-empresas',
+    'aviso'                 => 'aviso-legal',
+    'politica'              => 'politica-de-cookies',
+    'generals'              => 'condiciones-generales',
 ];

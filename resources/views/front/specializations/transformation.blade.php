@@ -54,3 +54,10 @@
     <title>Transformación digital para empresas  | Thatzad</title>
     <meta name="description" content="">
 @endsection
+@section('scripts')
+    <script>
+        $(document).ready(function () {
+            $("#especializaciones").addClass('main-blue');
+        });
+    </script>
+@endsection

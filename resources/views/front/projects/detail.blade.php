@@ -89,6 +89,7 @@
     <script>
         $(document).ready(function () {
             $("#header").addClass('hide-transparent');
+            $("#proyectos").addClass('main-blue');
         });
     </script>
 @endsection

@@ -86,3 +86,10 @@
     <title>Publicidad online orientada a resultados | Thatzad</title>
     <meta name="description" content="">
 @endsection
+@section('scripts')
+    <script>
+        $(document).ready(function () {
+            $("#especializaciones").addClass('main-blue');
+        });
+    </script>
+@endsection

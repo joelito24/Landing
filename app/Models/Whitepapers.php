@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Whitepapers extends Model implements ModelInterface
 {
-    const IMAGE_PATH = 'files/documents/';
+    const IMAGE_PATH = 'files/whitepapers/';
 
     protected $table = 'whitepapers';
     public $timestamps = true;

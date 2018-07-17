@@ -5,8 +5,8 @@
 				<div class="col-sm-3">
 					<a href="{{ route('home') }}"><img class="logo" src="{{ asset('front/img/home/logo.png') }}" alt=""></a>
 					<div class="contact">
-						<a>+34 936 350 620</a>
-						<a>hola@thatzad.com</a>
+						<a href="tel:+34936350620">+34 936 350 620</a>
+						<a href="mailto:hola@thatzad.com">hola@thatzad.com</a>
 						<div class="address">
 							<p>C/ Marqués de Mulhacén 11 bajos 2, 08034 Barcelona</p>
 						</div>
@@ -22,9 +22,9 @@
 				</div>
 				<div class="col-sm-3">
 					<ul class="menu-footer gray">
-						<li><a href="{{ route('whitepapers') }}">Aviso legal y política de privacidad</a></li>
-						<li><a href="http://www.thatzblog.com/">Política de cookies</a></li>
-						<li><a href="{{ route('contact') }}">Condiciones generales</a></li>
+						<li><a href="{{ route('aviso') }}">Aviso legal y política de privacidad</a></li>
+						<li><a href="{{ route('politica') }}">Política de cookies</a></li>
+						<li><a href="{{ route('generals') }}">Condiciones generales</a></li>
 					</ul>
 
 				</div>

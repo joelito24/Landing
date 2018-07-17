@@ -17,6 +17,10 @@ class StaticController extends Controller
         return view('front.static.politica');
     }
 
+    public function generals(){
+        return view('front.static.generals');
+    }
+
     public function agency(){
 
         return view('front.static.agency');

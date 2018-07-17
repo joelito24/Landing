@@ -15,7 +15,7 @@ class WhitepapersController extends BaseController
     protected $resourceName = 'whitepapers';
     protected $repositoryName = Whitepapers::class;
 
-    protected $pathFile = 'files/documents/';
+    protected $pathFile = 'files/whitepapers/';
     protected $filesDimensions = [
         'image'  => ['w' => 800, 'h' => 800],
     ];

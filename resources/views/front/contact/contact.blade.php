@@ -95,8 +95,8 @@
                             <input placeholder="Empresa" class="form-control" type="text" name="company" id="company">
                         </div>
                         <div class="form-group" style="position: relative;">
-                            <p style="position: absolute;top: -10px;" class="msg-error">El campo Email es obligatorio</p>
                             <input placeholder="Email (obligatorio)" class="form-control required" type="text" name="email" id="email">
+                            <p style="position: absolute;bottom: -19px;right: 0;" class="msg-error">El campo Email es obligatorio</p>
                         </div>
                         <div class="form-group">
                             <input placeholder="Teléfono" class="form-control" type="text" name="telephone" id="telephone">
@@ -140,9 +140,9 @@
                         </div>
                         <div class="form-check">
                             <label class="form-check-label">
-                                <p class="msg-error">Tienes que aceptar nuestra política de privacidad</p>
                                 <input type="checkbox" name="privacy" value="privacy" id="privacy" class="gray-radio"/>
-                                <label for="privacy" class="gray-radio-label">Acepto la política de privacidad aplicada en esta web.</label>
+                                <label for="privacy" class="gray-radio-label">Acepto <a href="{{ route('politica') }}">la política de privacidad</a> aplicada en esta web.</label>
+                                <p style="margin-top: -9px;" class="msg-error">Tienes que aceptar nuestra política de privacidad</p>
                                 {{--<input class="form-check-input" type="checkbox" name="privacy" id="privacy" value="1">--}}
                                 {{--<span class="acept-text">Acepto la política de privacidad aplicada en esta web.</span>--}}
                             </label>

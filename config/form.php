@@ -211,31 +211,31 @@ return [
             ],
             'image1' => [
                 'type' => 'imageFile',
-                'title' => 'Imagen principal del proyecto (arriba de todo)',
+                'title' => 'Imagen principal del proyecto (arriba de todo - 1900x1608)',
                 'description' => '',
                 'rules' => ['required']
             ],
             'image2' => [
                 'type' => 'imageFile',
-                'title' => 'Imagen segunda del proyecto (al lado de descripción)',
+                'title' => 'Imagen segunda del proyecto (al lado de descripción - 700x700)',
                 'description' => '',
                 'rules' => []
             ],
             'image3' => [
                 'type' => 'imageFile',
-                'title' => 'Imagen primera del slideshow (abajo)',
+                'title' => 'Imagen primera del slideshow (abajo - 1340x580)',
                 'description' => '',
                 'rules' => []
             ],
             'image4' => [
                 'type' => 'imageFile',
-                'title' => 'Imagen segunda del slideshow (abajo)',
+                'title' => 'Imagen segunda del slideshow (abajo - 1340x580)',
                 'description' => '',
                 'rules' => []
             ],
             'image5' => [
                 'type' => 'imageFile',
-                'title' => 'Imagen tercera del slideshow (abajo)',
+                'title' => 'Imagen tercera del slideshow (abajo - 1340x580)',
                 'description' => '',
                 'rules' => []
             ],
@@ -337,9 +337,9 @@ return [
             ],
             'image' => [
                 'type' => 'imageFile',
-                'title' => 'Imagen de whitepaper',
+                'title' => 'Imagen de whitepaper(800x800)',
                 'description' => '',
-                'rules' => ['required']
+                'rules' => ['']
             ],
             'active' => [
                 'type' => 'radio',

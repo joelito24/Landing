@@ -4,7 +4,7 @@
 
     <section class="projects">
         <div class="container">
-            <p class="name-page">Proyectos destacados</p>
+            {{--<p class="name-page">Proyectos destacados</p>--}}
             <h2 class="title-page">Proyectos destacados</h2>
             <p class="subtitle-projects">Puedes filtrar los proyectos por sectores:</p>
             <div class="block-inputs">
@@ -96,7 +96,7 @@
 @section('scripts')
     <script>
         $(document).ready(function () {
-            // $("#proyectos").addClass('main-blue');
+            $("#proyectos").addClass('main-blue');
 
             //Script para mostrar proyectos por categoría
             $('.check-category input').change(function() {

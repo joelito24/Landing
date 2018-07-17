@@ -61,3 +61,10 @@
     <title>Proyectos de e-Commerce | Thatzad</title>
     <meta name="description" content="">
 @endsection
+@section('scripts')
+    <script>
+        $(document).ready(function () {
+            $("#especializaciones").addClass('main-blue');
+        });
+    </script>
+@endsection

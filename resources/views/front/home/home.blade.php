@@ -29,7 +29,15 @@
                 <div class="col-md-4 text-info">
                     <h2>Proyectos integrales de marketing online</h2>
                     <div class="info-block" id="text0" data-text="0">
-                        <p>Clicka en las diferentes opciones y descubre todo lo que podemos hacer por ti</p>
+                        {{--<div class="downArrow bounce">--}}
+                            {{--<img style="max-width: 23px;color: #fff;" src="{{ asset('front/img/home/right-arrow-angle.png') }}" alt="">--}}
+                            {{--<svg style="max-width: 23px;color: #fff;" aria-hidden="true" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>--}}
+                        {{--</div>--}}
+                        <p class="text-general">Clicka en las diferentes opciones y descubre todo lo que podemos hacer por ti</p>
+                        <div class="downArrow bounce">
+                            {{--<img style="max-width: 23px;color: #fff;" src="{{ asset('front/img/home/right-arrow-angle.png') }}" alt="">--}}
+                            <svg style="max-width: 23px;color: #fff;" aria-hidden="true" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>
+                        </div>
                     </div>
                     <div class="info-block" id="text1" data-text="1">
                         <p class="text-bg">Ideas de negocio</p>
@@ -150,7 +158,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="title-home">Artículos</h2>
-                    <div class="btn-blue"><a href="">Ver todos los White papers ></a></div>    
+                    <div class="btn-blue"><a target="_blank" href="http://www.thatzblog.com/">Ver todos los articulos ></a></div>
                 </div>
             </div>
             <?php $i = 1; ?>
@@ -159,13 +167,11 @@
                     <div class="col-md-4 col-article" data-animated="fadeInUp">
                         @if(isset($post->thumbnail_images->full->url))
                             <div style="height:350px;background: url({{ $post->thumbnail_images->full->url }}) center center no-repeat; background-size: cover;">
-{{--                                <img src="{{ $post->thumbnail_images->full->url }}" alt="">--}}
                             </div>
                         @else
-                            <div style="height:350px;background: url({{ asset('front/img/home/rect-ngulo-10-copia-2.png') }}) center center no-repeat;background-size: cover;" ">
+                            <div style="height:350px;background: url({{ asset('front/img/home/rect-ngulo-10-copia-2.png') }}) center center no-repeat;background-size: cover;">
 
                             </div>
-{{--                            <img src="{{ asset('front/img/home/rect-ngulo-10-copia-2.png') }}">--}}
                         @endif
                         
                         <div class="article-block">
@@ -312,7 +318,7 @@
                         $('#form_newsletter').trigger("reset");
                         $('#privacy').prop('checked', false);
                         if (response === 'sent' || response === 'exist'){
-                            $('.whitepaper .form-block').css('background', '#00bde0');
+                            $('.whitepaper-popup .form-block').css('background', '#00bde0');
                             $('.form-newsletter').css('display', 'none');
                             $('.response-newsletter').fadeIn();
                             setTimeout(function() { $(".whitepaper-popup").hide('slow'); }, 8000);

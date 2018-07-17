@@ -306,6 +306,9 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
     Route::post(LaravelLocalization::transRoute('routes.newsletter'), ['as' => 'newsletter','uses' => 'NewsletterController@add']);
     //Agency
     Route::get(LaravelLocalization::transRoute('routes.agency'), ['as' => 'agency','uses' => 'StaticController@agency']);
+    Route::get(LaravelLocalization::transRoute('routes.aviso'), ['as' => 'aviso','uses' => 'StaticController@aviso']);
+    Route::get(LaravelLocalization::transRoute('routes.politica'), ['as' => 'politica','uses' => 'StaticController@politica']);
+    Route::get(LaravelLocalization::transRoute('routes.generals'), ['as' => 'generals','uses' => 'StaticController@generals']);
 
     //Specializations
     Route::get(LaravelLocalization::transRoute('routes.specialization1'), ['as' => 'specialization1','uses' => 'SpecializationController@specialization1']);
