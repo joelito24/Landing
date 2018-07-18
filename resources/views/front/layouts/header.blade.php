@@ -26,7 +26,7 @@
                     <li class="mbl-servicios default-color">Servicios <span class="arrow down"></span></li>
                     <ul class="mobile-dropdown">
                         @foreach($services as $service)
-                            <li><a href="{{ route('service',$service->slug) }}">{{ $service->title }}</a></li>
+                            <li><a href="{{ route('service',$service->slug) }}">{{ $service->shorttitle }}</a></li>
                         @endforeach
                     </ul>
                     <li><a href="{{ route('projects') }}">Proyectos</a></li>
