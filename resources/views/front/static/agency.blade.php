@@ -30,7 +30,7 @@
                     <p>Esta ha sido nuestra forma de entender lo que queríamos que fuera nuestra agencia de marketing online durante los últimos 12 años, nosotros estamos orgullosos de haberlo conseguido y nos gusta pensar que nuestros Clientes opinan lo mismo.</p>
                 </div>
                 <div class="img-col" data-animated="fadeInRight">
-                    <img src="{{ asset('front/img/agency/agency.png') }}" alt="">
+                    <img src="{{ asset('front/img/agency/agency.jpg') }}" alt="">
                 </div>
             </div>
 

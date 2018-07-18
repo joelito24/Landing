@@ -100,7 +100,7 @@
                             <p style="position: absolute;bottom: -19px;right: 0;" class="msg-error">El formato de email no es correcto</p>
                         </div>
                         <div class="form-group">
-                            <input placeholder="Teléfono" class="form-control" type="text" name="telephone" id="telephone">
+                            <input placeholder="Teléfono" class="form-control" type="telephone" name="telephone" id="telephone">
                         </div>
                         <div class="form-group">
                             <input placeholder="Web" class="form-control" type="text" name="web" id="web">
