@@ -2,23 +2,28 @@
     <div class="container">
         <div class="col-md-4">
             <a href="{{ route('home') }}" ><img class="img-logo" src="{{ asset('front/img/header/logotipo.png') }}"></a>
+            <div id="button-mobile">
+                <a href="#" id="burger">
+                    <div id="nav-icon1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div id="button-mobile">
-                <a href="#" id="burger"><img src="{{ asset('front/img/header/b-burger.png') }}"></a>
-                <a href="#" id="mobile-close" style="display: none"><img src="{{ asset('front/img/header/ios7-close-empty.png') }}"></a>
 
-        </div>
         <div class="col-12" id="mobile-menu-content">
             <div class="row">
                 <ul class="menu">
-                    <li class="mbl-especializaciones default-color">Especializaciones <img src="{{ asset('front/img/header/flecha.png') }}"></li>
+                    <li class="mbl-especializaciones default-color">Especializaciones <span class="arrow down"></span></li>
                     <ul class="esp-mobile-dropdown">
                         <li><a href="{{ route('specialization1') }}">Proyectos de e-commerce</a></li>
                         <li><a href="{{ route('specialization2') }}">Publicidad online orientada a resultados</a></li>
                         <li><a href="{{ route('specialization3') }}">e-Marketing y publicidad para marcas</a></li>
                         <li><a href="{{ route('specialization4') }}">Transformación digital para empresas</a></li>
                     </ul>
-                    <li class="mbl-servicios default-color">Servicios <img src="{{ asset('front/img/header/flecha.png') }}"></li>
+                    <li class="mbl-servicios default-color">Servicios <span class="arrow down"></span></li>
                     <ul class="mobile-dropdown">
                         @foreach($services as $service)
                             <li><a href="{{ route('service',$service->slug) }}">{{ $service->title }}</a></li>
