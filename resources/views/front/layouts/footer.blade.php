@@ -2,41 +2,46 @@
 	<div class="container">
 		<div class="row">
 			<div class="top-footer">
-				<div class="col-md-3">
+				<div class="row">
 					<a href="{{ route('home') }}"><img class="logo" src="{{ asset('front/img/home/logo.png') }}" alt=""></a>
-					<div class="contact">
-						<a href="tel:+34936350620">+34 936 350 620</a>
-						<a href="mailto:hola@thatzad.com">hola@thatzad.com</a>
-						<div class="address">
-							<p>C/ Marqués de Mulhacén 11 bajos 2, 08034 Barcelona</p>
+				</div>
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<div class="contact">
+							<a href="tel:+34936350620">+34 936 350 620</a>
+							<a href="mailto:hola@thatzad.com">hola@thatzad.com</a>
+							<div class="address">
+								<p>C/ Marqués de Mulhacén 11 bajos 2, 08034 Barcelona</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<ul class="menu-footer">
+							<li><a href="{{ route('specialization1') }}">Proyectos de e-Commerce</a></li>
+							<li><a href="{{ route('specialization3') }}">e-Marketing y publicidad para marcas</a></li>
+							<li><a href="{{ route('specialization2') }}">Transformación digital para empresas</a></li>
+							<li><a href="{{ route('specialization4') }}">Campañas orientadas a resultados</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<ul class="menu-footer gray">
+							<li><a href="{{ route('generals') }}">Política de privacidad</a></li>
+							<li><a href="{{ route('politica') }}">Política de cookies</a></li>
+							<li><a href="{{ route('aviso') }}">Aviso legal</a></li>
+						</ul>
+
+					</div>
+					<div class="col-sm-6 col-md-3 col-last">
+						<script src="https://apis.google.com/js/platform.js" async defer></script>
+						<div style="float: right;" class="g-partnersbadge" data-agency-id="1589660341"></div>
+						{{--<img class="google" src="{{ asset('front/img/home/google-partner.png') }}" alt="">--}}
+						<div class="slogan">
+							<p>Marketing por vocación.</p>
+							<p>Digitales por naturaleza.</p>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3">
-					<ul class="menu-footer">
-						<li><a href="{{ route('specialization1') }}">Proyectos de e-Commerce</a></li>
-						<li><a href="{{ route('specialization2') }}">Transformación digital para empresas</a></li>
-						<li><a href="{{ route('specialization3') }}">e-Marketing y publicidad para marcas</a></li>
-						<li><a href="{{ route('specialization4') }}">Campañas orientadas a resultados</a></li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<ul class="menu-footer gray">
-						<li><a href="{{ route('generals') }}">Política de privacidad</a></li>
-						<li><a href="{{ route('politica') }}">Política de cookies</a></li>
-						<li><a href="{{ route('aviso') }}">Aviso legal</a></li>
-					</ul>
 
-				</div>
-				<div class="col-md-3 col-last">
-					<script src="https://apis.google.com/js/platform.js" async defer></script>
-					<div style="float: right;" class="g-partnersbadge" data-agency-id="1589660341"></div>
-					{{--<img class="google" src="{{ asset('front/img/home/google-partner.png') }}" alt="">--}}
-					<div class="slogan">
-						<p>Marketing por vocación.</p>
-						<p>Digitales por naturaleza.</p>
-					</div>
-				</div>
 				<img class="gorila" src="{{ asset('front/img/home/gorila.png') }}" alt="">
 			</div>
 
