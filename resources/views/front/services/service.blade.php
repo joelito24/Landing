@@ -23,7 +23,7 @@
 							<div class="quote-mbl">
 								<div class="quote">"{!! $service->quote !!}"</div>
 							</div>
-							<div class="description2">{!! $service->description2 !!}</div>
+{{--							<div class="description2">{!! $service->description2 !!}</div>--}}
 						</div>
 	    			</div>
 					<div class="col-md-2"></div>

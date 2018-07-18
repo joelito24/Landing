@@ -113,24 +113,25 @@ return [
                 'description' => 'Describa servicio',
                 //'rules' => ['required']
             ],
-            'description1' => [
-                'type' => 'textarea',
-                'title' => 'Descripción 1',
-                'description' => 'Introduzca la descripción primera',
-                'rules' => ['required']
-            ],
             'quote' => [
                 'type' => 'text',
                 'title' => 'Una frase',
                 'description' => 'Introduzca frase de cita',
                 'rules' => ['required']
             ],
-            'description2' => [
+            'description1' => [
                 'type' => 'textarea',
-                'title' => 'Descripción 2',
-                'description' => 'Introduzca la descripción segunda',
+                'title' => 'Descripción',
+                'description' => 'Introduzca la descripción',
                 'rules' => ['required']
             ],
+
+//            'description2' => [
+//                'type' => 'textarea',
+//                'title' => 'Descripción 2',
+//                'description' => 'Introduzca la descripción segunda',
+//                'rules' => ['required']
+//            ],
             'image1' => [
                 'type' => 'imageFile',
                 'title' => 'Imagen para el descripción de servicio (500x500)',
