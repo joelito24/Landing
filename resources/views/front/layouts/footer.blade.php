@@ -22,9 +22,9 @@
 				</div>
 				<div class="col-md-3">
 					<ul class="menu-footer gray">
-						<li><a href="{{ route('aviso') }}">Aviso legal y política de privacidad</a></li>
+						<li><a href="{{ route('generals') }}">Política de privacidad</a></li>
 						<li><a href="{{ route('politica') }}">Política de cookies</a></li>
-						<li><a href="{{ route('generals') }}">Condiciones generales</a></li>
+						<li><a href="{{ route('aviso') }}">Aviso legal</a></li>
 					</ul>
 
 				</div>
