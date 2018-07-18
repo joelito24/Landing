@@ -505,6 +505,18 @@ section.whitepapers .whitepaper:hover .btn-yellow-full{transition:  visibility 0
 .whitepaper-popup .news{display: inline-block;max-width: 69%;margin-bottom: 5px;font-weight: 700; vertical-align: top; cursor: pointer;}
 .whitepaper-popup .msg-error{font-weight: 700;}
 
+section.generals{background: #f3f9f9; padding-top: 85px;padding-bottom: 130px;}
+section.generals .title-page{margin-bottom: 55px;}
+section.generals p{color: #023c4e;font-size: 16px;line-height: 27px; margin-bottom: 23px;}
+section.generals img{padding:50px 0;}
+section.generals ul{list-style: none;margin-left: 30px;color: #023c4e;font-size: 16px;line-height: 27px;}
+section.generals ul li{margin-bottom: 7px;}
+section.generals .subtitle{font-size: 24px;font-weight: 600;margin-top: 60px;}
+section.generals .subtitle:first-child{margin-top:10px;}
+section.generals ul.info{    margin-left: 0;margin-bottom: 20px;margin-top: -18px;}
+section.generals ul.info li{margin-bottom: 3px;}
+section.generals p a{color:var(--default-color);font-weight: 700;}
+
 /* FOOTER */
 footer{padding-top:48px;background: var(--white);}
 footer a{cursor: pointer; display: block;}
