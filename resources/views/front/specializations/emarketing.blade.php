@@ -24,7 +24,7 @@
             <div class="ecommerce-top white">
                 <div class="ecommerce-description">
                     <div class="img-info" data-animated="fadeInLeft">
-                        <img src="{{ asset('front/img/specials/info-emarketing2.png') }}" alt="">
+                        <img id="emarketing" src="{{ asset('front/img/specials/info-emarketing2.png') }}" alt="">
                     </div>
                     <div class="text" data-animated="fadeInRight">
                         <h2 class="title-page">La web como herramienta clave y ADN de la marca.</h2>

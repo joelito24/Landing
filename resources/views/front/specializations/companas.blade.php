@@ -22,7 +22,7 @@
                             <p>Los objetivos no tienen que ser únicamente ventas, pueden ser leads, contactos comerciales, descargas de catálogos, visualizaciones de videos o visitar más de X minutos una web. Si definimos bien los objetivos de negocio y el embudo de conversión en THATZAD realizaremos la campaña perfecta para conseguirlos, y no por tener una barita mágica, sino con experiencia, creatividad, implicación, análisis y optimización de las campañas.</p>
 
                         </div>
-                        <div class="col-lg-6 col-lg-offset-6 col-md-offset-0">
+                        <div class="col-lg-6 col-lg-offset-6 col-md-offset-0 col-md-12">
                             <div class="text-blue-big">
                                 <div class="text-big">Tú</div>
                                 <div class="text-action">marcas los objetivos a conseguir</div>

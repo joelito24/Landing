@@ -96,11 +96,11 @@
                             <input placeholder="Empresa" class="form-control" type="text" name="company" id="company">
                         </div>
                         <div class="form-group" style="position: relative;">
-                            <input placeholder="Email (obligatorio)" class="form-control required" type="text" name="email" id="email">
+                            <input placeholder="Email (obligatorio)" class="form-control required" type="email" name="email" id="email">
                             <p style="position: absolute;bottom: -19px;right: 0;" class="msg-error">El formato de email no es correcto</p>
                         </div>
                         <div class="form-group">
-                            <input placeholder="Teléfono" class="form-control" type="telephone" name="telephone" id="telephone">
+                            <input placeholder="Teléfono" class="form-control" type="number" name="telephone" id="telephone">
                         </div>
                         <div class="form-group">
                             <input placeholder="Web" class="form-control" type="text" name="web" id="web">

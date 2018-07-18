@@ -13,23 +13,31 @@
     section.projects .project{width: 25% !important;}
 }
 /* MAX WIDTH */
+@media (max-width: 1280px){
+    section.specializations.advertising .steps .step{max-width: 19%;}
+    section.specializations.advertising .steps .first-line{text-align: left;}
+}
 @media (max-width: 1224px){
-    section.home .right-col{
-        width: 50%;max-width: none;}
+    section.home .right-col{width: 50%;max-width: none;}
+    /*section.specializations.advertising .steps .first-line .step{float: left;}*/
 }
 @media (max-width: 1200px){
     section.contact .contact-info{margin-top:30px;}
     section.contact .contact-info .info-text svg{margin-right: 0;}
     section.contact .contact-info .info-text p{max-width: 354px;vertical-align: top;margin-bottom: 10px;display:  inline-block;padding-left: 30px;}
     section.contact .contact-info .link-contact{padding-left: 30px;}
-    #header .container{    width: 90% !important;max-width: 90% !important;}
+    #header .container{width: 90% !important;max-width: 90% !important;}
     section.home .right-col .white-box{padding: 17px;}
     section.home .right-col{padding: 40px 5%;}
     section.specializations.advertising .white-block-text .text-blue-big{margin-bottom: 60px;}
-    section.specializations.advertising .white-block-text .text-big{margin-bottom: 0;}
+    section.specializations.advertising .white-block-text .text-big{width: 26%;margin-bottom: 0;line-height: 71px;}
+    section.specializations.advertising .white-block-text .text-action{line-height: 39px;width: 66%;}
+    section.specializations.advertising .steps .step{width: 175px;}
+    section.specializations.advertising .main-content .container{width: 90% !important;max-width: 90% !important;}
 }
 @media (max-width: 992px){
     #header{margin-top: -6px;}
+    #header .col-md-4{padding-left: 0;padding-right: 0;}
     section.contact .form-block{float: left;}
     section.projects .title-page{padding-top:0;margin-top: 0;}
     .container{padding-left:0px !important;padding-right: 0px !important;width: 90% !important;max-width: 90% !important;}
@@ -66,17 +74,19 @@
     section.home #infografia, section.home .infographics .text-info .info-block .text-bg{display: none;}
     section.home .infographics .title-info{padding-right: 10px;position: relative;text-transform: inherit;border-bottom: 1px solid #00dbef;padding-bottom: 15px;margin-bottom: 17px;}
     section.home .infographics .text-info{padding-left: 0; padding-right: 0;}
-    section.home .infographics .title-info:after{content: "+";position: absolute;bottom: 47%;right: 0;z-index: 0;width: 20px;height: 25px;text-align:  right;line-height: 30px;}
+    section.home .infographics .title-info:after{font-size: 22px;content: "+";position: absolute;bottom: 47%;right: 0;z-index: 0;width: 20px;height: 25px;text-align:  right;line-height: 30px;}
     section.home .infographics p{position: relative;border-bottom: 1px solid #00dbef;padding-bottom: 15px;}
-    section.home .infographics p:after{content: "-";position: absolute;bottom: 8px;right: 0;z-index: 0;}
+    section.home .infographics p:after{font-size: 22px;content: "-";position: absolute;bottom: 8px;right: 0;z-index: 0;}
     section.home .infographics p.text-info{display: none; padding-right: 12px;}
+    section.home .infographics .inner-info{padding-bottom: 50px;}
     section.home .specializations{transform: none;    margin-top: 0;}
     section.home .specializations .container, section.home .specializations .container .row{transform: none;}
-    section.home .specializations .title-home{transform:none;position: relative;background-color: rgba(0, 0, 0, 0.78);top: 0;margin: 0;padding: 34px 5%;}
+    section.home .specializations .title-home{transform:none;position: relative;background-color: rgba(0, 0, 0, 0.78);top: 0;margin: 0;padding: 34px 7%;}
     section.home .specializations .col-special{height: auto;}
     section.home .specializations .col-special .inner-special{padding-bottom: 70px;transform: none;padding-top:27px !important;}
-    section.home .specializations .col-special .inner-special p{max-width: 90% !important;text-align: left;margin-bottom: 24px;}
-    section.home .specializations .col-special .inner-special .btn-yellow{margin-left: 5%;}
+    section.home .specializations .col-special .inner-special p, section.home .specializations .col-special .inner-special.first-special p{max-width: 90% !important;text-align: left;margin-bottom: 24px;}
+    section.home .specializations .col-special .inner-special .btn-yellow{margin-left: 5%;margin-right: 5%;max-width: 100%;}
+    section.home .specializations .col-special .inner-special .btn-yellow.big{line-height: 48px; padding: 0;}
     section.home .whitepapers{transform: none;padding-top:0;background: #fff;padding-bottom: 60px;}
     section.home .whitepapers .container, section.home .blog, section.home .blog .container{transform: none;}
     section.home .whitepapers .btn-blue, section.home .blog .btn-blue{margin-left: 0;margin-top:18px;display: block;}
@@ -91,13 +101,32 @@
 
     .bottom-action .col-md-10{padding:0;}
     section.home .whitepapers .title-home{margin-top: 56px;}
-
     section.generals .row{margin-right: 0;margin-left: 0;}
 
     section.specializations.advertising .name-page{margin-top: 50px;color: #fff !important;margin-bottom: 27px !important;}
     section.specializations.advertising .ecommerce-top{text-align: center;}
     section.specializations.advertising .subtitle{max-width: 100%;}
-    section.specializations.advertising .white-block-text{padding: 40px 5%;}
+    section.specializations.advertising .white-block-text{padding: 40px 5% 0;}
+    section.specializations .name-page{margin-top: 50px;margin-bottom: 27px !important;}
+    /*section.specializations .title-page{text-align: center;font-size: 40px;}*/
+    section.specializations.transformation .title-page{font-size: 37px;}
+    section.specializations .ecommerce-top .ecommerce-description{padding-left: 0;}
+    section.specializations.ecommerce .white-block{padding-top: 50px; padding-bottom: 50px;}
+    section.specializations.advertising .steps .step{padding-top: 19px;width: 100%;display: block;max-width: 100%; position: relative;}
+    section.specializations.advertising .steps .first-line{border:none;padding: 0 5%;}
+    section.specializations.advertising .steps .second-line{padding: 0 5%;}
+    section.specializations.advertising .steps{display: block;}
+    section.specializations.advertising .steps .step .number{margin-top:0;margin-right: auto;margin-left: auto;}
+    section.specializations.advertising .steps .text{max-width: 100%; text-align: center;}
+    section.specializations.advertising .steps .step .number img, section.specializations.advertising .steps .between-steps{display: none;}
+    /*section.specializations.advertising .steps .step:after{content: "";position: absolute;bottom: 47%;right: 0;z-index: 0;width: 20px;height: 25px;text-align: right;line-height: 30px;}*/
+    section.specializations.advertising .steps .step:after{content: "";position: absolute;bottom: -35px;left: 0;right: 0;height: 26px;background: #ebbd31;width: 2px;margin: 0 auto;}
+    section.specializations.advertising .steps .text{padding-right: 0;}
+    footer .top-footer .row{margin-right: 0;margin-left: 0;}
+    section.home .specializations .col-special:hover .line-yellow{display: none;}
+    section.specializations .white-block .ecommerce-top .ecommerce-description .img-info img#emarketing{margin-bottom: 20px;}
+    section.specializations.emarketing .emarketing-orders{padding:40px 0;}
+    section.specializations.emarketing .emarketing-orders .right-col{padding-left: 15px;}
 }
 
 @media (max-width: 768px){
@@ -110,7 +139,6 @@
 
     section.projects .block-inputs .check-category{width: 25%;margin-right: 0;float: left;}
     section.projects .block-inputs{margin-bottom: 0;}
-
     section.contact{background: none;}
     section.contact .contact-info .info-text svg{display: none;}
     section.contact .contact-info .link-contact, section.contact .contact-info .info-text p, section.contact .contact-info .info-text .link-map{padding-left: 0;margin-left: 0;}
@@ -121,7 +149,6 @@
     figcaption .btn-yellow{width: 100%;}
 
     section.project .project-description{width: 100%;padding-left:5%;padding-right: 5%;margin-bottom: 10px;}
-
     section.agency .content-agency .container{width: 100% !important;max-width: 100% !important;}
     section.agency .valores{padding:70px 0;}
     section.agency .content-agency.vision .inner-agency{padding-top:70px;}
@@ -129,19 +156,21 @@
     section.home .blog .col-article .article-block{max-width: 90%;}
     section.agency .valores ul{font-size: 30px;}
     section.home .left-col .title-top{font-size: 48px;line-height: 54px;}
-
     section.project .block-slider .container{width: 100% !important;max-width: 100% !important;}
     section.project .block-slider .container #carroselhome{padding:0;}
     section.project .block-slider .carousel-indicators{bottom:15px;}
     section.project .block-slider{margin-top:40px;}
-
     section.generals img{padding:30px 0;}
     section.generals .subtitle{margin-top:30px;}
-
     section.specializations.advertising .main-content .container, section.specializations.advertising .white-block-text{max-width: 100% !important;width:100% !important;}
+    section.specializations.advertising .white-block-text .text-action{    width: 100%;margin-top: 25px;}
+    section.whitepapers .whitepaper .btn-yellow-full{visibility: visible;}
 }
 @media (max-width: 600px){
     section.projects .block-inputs .check-category{width: 50%;}
     section.home .left-col .title-top{font-size: 42px;line-height: 47px;}
-    section.home .top .top-home{margin-top:30px;}
+    section.home .top .top-home{margin-top:0;}
+    .whitepaper-popup .form-block .close{font-size: 16px;top: 4px;right: 8px;}
+    .whitepaper-popup .form-block .form-control{max-width: 100%;}
+
 }

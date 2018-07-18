@@ -212,8 +212,8 @@ footer .footer-bottom .footerphrase{display: none;}
 @media (max-width: 992px) {
     .img-info {float: left;width: 100%!important;}
     .img-info img{width: 100%!important;}
-    section.specializations ul.list-benefits {margin-left:20px;}
-    section.specializations .ecommerce-top .ecommerce-description .text {width: 100%;}
+    section.specializations ul.list-benefits {margin-left:30px;}
+    section.specializations .ecommerce-top .ecommerce-description .text {width: 100%; padding: 0 5%;}
     section.service .title-service {font-size: 36px; line-height: 36px; margin-top: 10px;}
     section.service .top-page p {font-size: 20px; line-height: 24px;}
     section.service .text-service .top-page .text-page p{font-size: 16px;}
@@ -251,7 +251,7 @@ footer .footer-bottom .footerphrase{display: none;}
         background-size: cover !important;
         background: url(/front/img/bg-whitepapers.png) no-repeat center center;
         max-width: 648px;
-        padding: 23px 20px 0px;
+        padding: 30px;
         position: fixed;
         top: 5%;
         margin-left: auto;
@@ -282,19 +282,4 @@ footer .footer-bottom .footerphrase{display: none;}
         width: unset;
         float: unset;
     }
-}
-@media (max-width: 420px){
-    .whitepaper-popup .form-block {
-        top:3%;}
-}
-@media (max-width: 377px) {
-    .whitepaper-popup .form-block {
-        top: 0%;
-    }
-    .whitepaper-popup .form-block {
-        padding: 10px 20px 0px;
-    }
-}
-@media screen and (orientation:landscape) {
-    .whitepaper-popup .form-block {top:0;}
 }
