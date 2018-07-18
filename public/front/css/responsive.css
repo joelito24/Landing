@@ -6,6 +6,8 @@
     section.specializations.emarketing .white-block .ecommerce-top .ecommerce-description .img-info img{float: left;}
     section.generals .row{max-width: 80%;}
     section.contact .form-block{float: left;}
+    section.specializations.ecommerce .ecommerce-top .ecommerce-description .img-info img{float: right;}
+
 }
 @media (min-width: 1450px){
     section.projects .project{width: 25% !important;}

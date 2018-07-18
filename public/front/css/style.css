@@ -408,7 +408,7 @@ section.specializations .title-page{margin-top:0; margin-bottom: 48px;}
 section.specializations .ecommerce-top .ecommerce-description{padding-left: 10%;overflow: hidden;}
 section.specializations .ecommerce-top .ecommerce-description .text{width: 50%;float: left;padding-right: 8%;}
 section.specializations .ecommerce-top .ecommerce-description .img-info{float: left;width: 50%;}
-section.specializations.ecommerce .ecommerce-top .ecommerce-description .img-info img{float: right;}
+section.specializations.ecommerce .ecommerce-top .ecommerce-description .img-info img{float: left;}
 section.specializations.emarketing .ecommerce-top .ecommerce-description .img-info img{float: left;}
 section.specializations .ecommerce-top .ecommerce-description .text .subtitle{color: var(--default-color);font-size: 22px;line-height: 26px;font-weight: 700;margin-bottom: 40px;}
 section.specializations p{font-size: 16px;color: var(--default-color);margin-bottom: 28px;}
