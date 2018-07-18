@@ -23,6 +23,7 @@ class ContactController extends Controller
     function send( EmailServices $emailService, Newsletter $newsletterRepository, ContactsHistory $contactsHistoryRepository )
     {
         $contactData = Input::all();
+        if(!isset($contactData['consult'])){$contactData['consult'] = ["0"];}
 
         $contactData['consultas'] = json_encode($contactData['consult']);
 

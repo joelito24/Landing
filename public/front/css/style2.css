@@ -163,7 +163,7 @@ section.service{
     background-color: #f4f8f9;
 }
 section.service .title-service{margin-top: 0px; max-width: 901px; font-size: 48px}
-section.service .blue-word{z-index: 1000; position: relative; margin-top: 70px;}
+section.service .blue-word{z-index: 1000; margin-top: 90px;}
 section.service .text-service{padding-top: 20px; margin-bottom: 100px}
 section.service .top-page{margin: 20px 0 46px 0;}
 section.service .top-page p {max-width: 540px;}

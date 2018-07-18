@@ -26,8 +26,8 @@
 {{--							<div class="description2">{!! $service->description2 !!}</div>--}}
 						</div>
 	    			</div>
-					<div class="col-md-2"></div>
-					<div class="col-sm-12 col-md-5">
+					<div class="col-md-1"></div>
+					<div class="col-sm-12 col-md-6">
 							<div class="row quote-desk">
 								<div class="quote">"{!! $service->quote !!}"</div>
 							</div>
@@ -76,7 +76,8 @@
 									</div>
 									<div class="form-group">
 										<!--<label>Email (obligatorio)</label>-->
-										<input class="form-control required" type="text" name="email" id="email" placeholder="Email">
+										<input class="form-control required" type="text" name="email" id="email" placeholder="Email (obligatorio)">
+										<p style="position: absolute;bottom: -19px;right: 0;" class="msg-error">El formato de email no es correcto</p>
 									</div>
 									<div class="form-group">
 										<!--<label>Comentario</label>-->
