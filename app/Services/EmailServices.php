@@ -18,15 +18,15 @@ class EmailServices
         });
     }
 
-    private function sendEmailWithPdf( $from, $to, $subject, $view, $data, $emailFrom)
+    private function sendEmailWithPdf( $from, $to, $subject, $view, $data, $emailFrom, $pdf)
     {
-        Mail::send($view, $data, function ($message) use($from, $to, $subject, $emailFrom)
+        Mail::send($view, $data, function ($message) use ($from, $to, $subject, $emailFrom, $pdf)
         {
             $message->from($emailFrom);
             $message->to($to);
             $message->subject($subject);
-            $message->attach('files/projects/', array(
-                    'as' => 'recepti-kitayskogo-issledovaniya.pdf',
+            $message->attach('files/whitepapers/'.$pdf, array(
+                    'as' => $pdf,
                     'mime' => 'application/pdf')
             );
         });
@@ -78,7 +78,7 @@ class EmailServices
             'title' => "Thatzad - Whitepapers",
             'name' => $name,
             'pdf' => $pdf]];
-        $this->sendEmailWithPdf($from, $to, $subject, $view, $data, $sender);
+        $this->sendEmailWithPdf($from, $to, $subject, $view, $data, $sender,$pdf);
     }
 
 }

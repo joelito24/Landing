@@ -335,6 +335,12 @@ return [
                 'description' => 'Introduzca la desctipción',
                 'rules' => []
             ],
+            'number' => [
+                'type' => 'text',
+                'title' => 'Núnero y mes de Thatzpaper (ejemplo: nº1, Junio 2018)',
+                'description' => 'Introduzca el número y mes',
+                'rules' => ['required']
+            ],
             'image' => [
                 'type' => 'imageFile',
                 'title' => 'Imagen de whitepaper(800x800)',

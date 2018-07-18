@@ -46,13 +46,13 @@
                         <p>Y aunque tenemos una amplia experiencia y sabemos lo que funciona y lo que no, no tenemos una barita mágica, el éxito lo conseguimos a base de conocimiento, creatividad e implicación en tu proyecto.</p>
                         <p class="conclusion">Los líderes futuros de cada vertical de e-commerce se están definiendo ahora.</p>
                     </div>
-                    <div class="col-md-5 col-md-offset-1" data-animated="fadeInUp">
+                    <div class="col-md-4 col-md-offset-1" data-animated="fadeInUp">
                         <img src="{{ asset('front/img/specials/info-ecommerce.png') }}" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        @include('front.specializations.complements.action', ['title' => 'Los líderes futuros de cada vertical de e-commerce se están definiendo ahora.', 'btntitle' => '¡Hagamos juntos!'])
+        @include('front.specializations.complements.action', ['title' => 'Los líderes futuros de cada vertical de e-commerce se están definiendo ahora.', 'btntitle' => '¡Hagámoslo juntos!'])
     </section>
 
 @stop

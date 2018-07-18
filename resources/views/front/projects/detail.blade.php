@@ -90,6 +90,11 @@
         $(document).ready(function () {
             $("#header").addClass('hide-transparent');
             $("#proyectos").addClass('main-blue');
+
+
+            $('#carroselhome').carousel({
+                interval: 2000
+            });
         });
     </script>
 @endsection

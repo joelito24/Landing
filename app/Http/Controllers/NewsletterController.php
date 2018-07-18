@@ -23,10 +23,10 @@ class NewsletterController extends Controller
     }
     public function add(Newsletter $newsletterRepository, EmailServices $emailServices, Whitepapers $whitepapersRepository){
         $contactData = Input::all();
-//        var_dump($contactData);die();
         $id = $contactData['idPdf'];
         $whitepaper = $whitepapersRepository->find($id);
         $pdf = $whitepaper->data_file;
+
         if(isset($contactData['newsletter']) && $contactData['newsletter'] == 1){
             if($newsletterRepository->checkEmail($contactData['email'])){
             }else{

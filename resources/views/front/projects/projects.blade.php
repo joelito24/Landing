@@ -21,7 +21,7 @@
             </div>
             <div class="row grid">
                 @foreach($projects as $project)
-                    <div id="project-{{ $project->id }}" data-category-id="{{ $project->id }}" class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
+                    <div id="project-{{ $project->id }}" data-category-id="{{ $project->id }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
                         <figure class="effect-sarah">
                             <img src="{{$project->image1}}" alt="">
                             <div class="title-project">{{ $project->title }}
@@ -29,14 +29,14 @@
                             </div>
                             <figcaption>
                                 <p>{!! $project->description_short !!}</p>
-                                <div class="btn-yellow"><a href="{{ route('project', $project->slug) }}">Ver mas</a></div>
+                                <div class="btn-yellow"><a href="{{ route('project', $project->slug) }}">Ver más</a></div>
                             </figcaption>
                         </figure>
                     </div>
                 @endforeach
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
                     <figure class="effect-sarah">
-                        <img src="{{ asset('front/img/foto1.png') }}" alt="">
+                        <img src="{{ asset('files/projects/foto1_image1.png') }}" alt="">
                         <div class="title-project">Turisimo de Canarias
                             <div class="category">Turismo</div>
                         </div>
@@ -46,9 +46,9 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
                     <figure class="effect-sarah">
-                        <img src="{{ asset('front/img/foto2.png') }}" alt="">
+                        <img src="{{ asset('files/projects/foto1_image1.png') }}" alt="">
                         <div class="title-project">Bonder & Co
                             <div class="category">Banca</div>
                         </div>

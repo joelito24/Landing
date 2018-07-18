@@ -87,6 +87,7 @@
             <div class="col-md-6">
                 <div class="form-block" data-animated="pulse">
                     <form method="POST" action="{{ action('ContactController@send') }}" id="contactform">
+                        <div class="send" id="response"></div>
                         <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                         <div class="form-group">
                             <input placeholder="Nombre" class="form-control required" type="text" name="name" id="name">
@@ -96,7 +97,7 @@
                         </div>
                         <div class="form-group" style="position: relative;">
                             <input placeholder="Email (obligatorio)" class="form-control required" type="text" name="email" id="email">
-                            <p style="position: absolute;bottom: -19px;right: 0;" class="msg-error">El campo Email es obligatorio</p>
+                            <p style="position: absolute;bottom: -19px;right: 0;" class="msg-error">El formato de email no es correcto</p>
                         </div>
                         <div class="form-group">
                             <input placeholder="Teléfono" class="form-control" type="text" name="telephone" id="telephone">
@@ -147,7 +148,7 @@
                                 {{--<span class="acept-text">Acepto la política de privacidad aplicada en esta web.</span>--}}
                             </label>
                         </div>
-                            <div class="send" id="response"><input class="submit btn-yellow-full" type="button" id="send" value="Enviar"></div>
+                            <input class="submit btn-yellow-full" type="button" id="send" value="Enviar">
                     </form>
                 </div>
             </div>
@@ -212,6 +213,9 @@
                             $('#privacy').prop('checked', false);
                             if (response === 'sent'){
                                 $('#response').html('Se ha enviado su solicitud correctamente');
+                                $([document.documentElement, document.body]).animate({
+                                    scrollTop: $("#response").offset().top
+                                }, 500);
                             }
                         },
                         error: function(e){

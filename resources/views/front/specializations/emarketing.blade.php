@@ -39,10 +39,9 @@
                 <h2 class="title-page">Publicidad orientada al branding pero con objetivos de ventas</h2>
                 <div class="row">
                     <div class="col-md-6" data-animated="fadeInUp">
-                        <p>Potenciar la imagen de marca es importante, pero no debe estar reñido con nuestros objetivos, ¿queremos leads? ¿ventas?, ¿abrir nuevos mercados? Nuestras campañas de publicidad online siempre tienen una intencionalidad clara y se miden los resultados en tiempo real para</p>
+                        <p>Potenciar la imagen de marca es importante, pero no debe estar reñido con nuestros objetivos, ¿queremos leads? ¿ventas?, ¿abrir nuevos mercados? Nuestras campañas de publicidad online siempre tienen una intencionalidad clara y se miden los resultados en tiempo real para analizar qué canales, medios, segmentos o creatividades nos acercan más a nuestros objetivos de negocio.</p>
                     </div>
                     <div class="col-md-6 right-col" data-animated="fadeInUp">
-                        <p>analizar qué canales, medios, segmentos o creatividades nos acercan más a nuestros objetivos de negocio.</p>
                         <p>Desarrollamos la estrategia, la web y las campañas de publicidad online de tu marca con un equipo creativo, implicado un 100% efectivo.</p>
                     </div>
                 </div>

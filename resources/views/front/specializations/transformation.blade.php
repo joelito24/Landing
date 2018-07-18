@@ -32,7 +32,7 @@
                         <p>Apostamos por los lenguajes abiertos y no por las herramientas herméticas que hay en el mercado, para programar a medida todo lo que pueda necesitar tu empresa. HTML5, PHP4, CSS3, Ajax o Javascript nos permiten diseñar libremente, tanto a nivel gráfico como de arquitectura y enfrentarnos a reglas de negocio complejas.</p>
                         <p>El límite está únicamente en nuestra imaginación y no en la tecnología.</p>
                     </div>
-                    <div class="col-md-6 col-benefits" data-animated="fadeInUp">
+                    <div class="col-md-offset-1 col-md-5 col-benefits" data-animated="fadeInUp">
                         <ul class="list-benefits">
                             <li>Intranets corporativas</li>
                             <li>Diseño y programación ERP</li>

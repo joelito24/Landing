@@ -20,6 +20,7 @@
     <link href="{{ asset('front/css/animate.css') }}" rel="stylesheet">
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
+    {{--<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900" rel="stylesheet">--}}
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
 </head>

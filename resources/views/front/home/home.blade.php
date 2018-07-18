@@ -105,8 +105,8 @@
                     <a href="{{ route('specialization2') }}">
                         <div class="inner-special third-special">
                             <div class="line-yellow"></div>
-                            <p  data-animated="fadeInUp">Campañas orientadas a resultados</p>
-                            <div  data-animated="fadeInUp" class="btn-yellow">Cómo hacer crecer tu negocio</div>
+                            <p  data-animated="fadeInUp">Publicidad online orientada a resultados</p>
+                            <div  data-animated="fadeInUp" class="btn-yellow big">Consigue los resultados que buscas</div>
                             <div class="line-yellow line-bottom"></div>
                         </div>
                     </a>
@@ -116,8 +116,8 @@
                     <a href="{{ route('specialization3') }}">
                         <div class="inner-special second-special">
                             <div class="line-yellow"></div>
-                            <p data-animated="fadeInUp">E-marketing y publicidad para marcas</p>
-                            <div data-animated="fadeInUp" class="btn-yellow">Cómo hacer crecer tu negocio</div>
+                            <p data-animated="fadeInUp">e-Marketing y publicidad para marcas</p>
+                            <div data-animated="fadeInUp" class="btn-yellow">Hagamos que tu marca triunfe</div>
                             <div class="line-yellow line-bottom"></div>
                         </div>
                     </a>
@@ -127,7 +127,7 @@
                         <div class="inner-special first-special">
                             <div class="line-yellow"></div>
                             <p data-animated="fadeInUp">Transformación digital para empresas</p>
-                            <div data-animated="fadeInUp" class="btn-yellow">Cómo hacer crecer tu negocio</div>
+                            <div data-animated="fadeInUp" class="btn-yellow big">Descubre hasta dónde podemos llegar juntos</div>
                             <div class="line-yellow line-bottom"></div>
                         </div>
                     </a>
@@ -161,7 +161,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="title-home">Artículos</h2>
-                    <div class="btn-blue"><a target="_blank" href="http://www.thatzblog.com/">Ver todos los articulos ></a></div>
+                    <div class="btn-blue"><a target="_blank" href="http://www.thatzblog.com/">Ver todos los artículos ></a></div>
                 </div>
             </div>
             <?php $i = 1; ?>
@@ -664,6 +664,15 @@
             $('#transparencias .mark').fadeIn();
             $('#lineas_transparencia .mark').fadeIn();
             $('.info-block#text7').fadeIn();
+        });
+
+        $('.infographics .title-info').after().click(function(){
+            $('.info-block .text-info').fadeOut();
+            $(this).parent().find('.text-info').fadeIn();
+        });
+        $('.infographics .info-block .text-info').after().click(function(){
+            // $('.info-block .text-info').fadeOut();
+            $(this).fadeOut();
         });
     });
 </script>

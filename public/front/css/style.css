@@ -25,7 +25,7 @@ body {width:100%;font-family:var(--main-font) !important;}
 a{color:var(--default-color);}
 a:hover{text-decoration: none !important;}
 .padding-head{padding-top: var(--padding-head);}
-.btn-yellow{outline: none;font-weight: 700;transition: all 0.5s ease; color: #fcbf10;font-size: 14px;border-radius: 24px;border: 1px solid #fcbf10;height: 48px;max-width: 240px;line-height: 45px;text-align: center;}
+.btn-yellow{outline: none;font-weight: 700;transition: all 0.5s ease; color: #fcbf10;font-size: 14px;border-radius: 24px;border: 2px solid #fcbf10;height: 48px;max-width: 240px;line-height: 45px;text-align: center;}
 .btn-yellow a{color: #fcbf10;}
 .btn-yellow-full{outline: none;transition: all 0.5s ease;font-size: 16px;font-weight: 700;color:var(--default-color);background-color: #fcbf10;border-radius: 24px;border: 2px solid #fcbf10;height: 48px;max-width:  201px;text-align:  center;line-height: 46px;}
 .btn-yellow-full a{display:block;transition: all 0.5s ease;color:var(--default-color);}
@@ -80,13 +80,13 @@ section.home .infographics .container{transform: var(--reverse-ancle);}
 section.home .infographics #infografia svg{max-width: 800px;}
 section.home .infographics .inner-info{padding-bottom: 100px;margin-top: 100px;}
 section.home .infographics p{color:#fff;}
-section.home .infographics .text-info{font-size: 14px;font-family: var(--main-font);font-weight: 700;line-height: 18px;}
+section.home .infographics .text-info{font-size: 14px;font-family: var(--main-font);font-weight: 500;line-height: 18px;}
 section.home .infographics .title-info{font-family:var(--main-font);font-size: 16px;font-weight: 400;text-transform: uppercase;margin-bottom: 3px;}
 section.home .infographics .text-info p span{color: var(--main-blue);}
 section.home .infographics .text-info .info-block{display: none;}
-section.home .infographics .text-info .info-block .text-bg{font-family: var(--title-font);color: rgba(0, 0, 0, 0.25);font-size: 61px;position: absolute;left: 12px;line-height: 63px;top: 18px;text-align: right;width: 498px;z-index: 0;}
+section.home .infographics .text-info .info-block .text-bg{font-family: var(--title-font);color: rgba(0, 0, 0, 0.25);font-size: 61px;position: absolute;left: 40%;line-height: 63px;top: 18px;text-align: right;width: 498px;z-index: 0;}
 section.home .infographics .text-info .info-block#text0{display: block;}
-section.home .infographics .text-info .text-general{color: var(--main-blue);font-size: 20px;line-height: 25px;max-width: 300px;margin-top: 20px;margin-bottom: 20px;/*margin-left:  auto;margin-right:  auto;*/}
+section.home .infographics .text-info .text-general{font-weight: 700;color: var(--main-blue);font-size: 20px;line-height: 25px;max-width: 300px;margin-top: 20px;margin-bottom: 20px;/*margin-left:  auto;margin-right:  auto;*/}
 
 section.home .infographics .bounce {
   -moz-animation: bounce 3s infinite;
@@ -152,7 +152,8 @@ section.home .specializations .col-special:hover{transition: all 0.5s ease;backg
 section.home .specializations .col-special:hover .btn-yellow{background-color: #fcbf10;transition: all 0.5s ease; color:var(--default-color);}
 section.home .specializations .col-special .inner-special{transform: var(--ancle);padding-top: 313px;}
 section.home .specializations .col-special .inner-special p{margin-bottom: 50px;font-family: var(--title-font);color: #fff;font-size: 22px;text-align: center;max-width: 300px;margin-left:  auto;margin-right:  auto;}
-section.home .specializations .col-special .inner-special .btn-yellow{    margin-left: auto;margin-right: auto;}
+section.home .specializations .col-special .inner-special .btn-yellow{margin-left: auto;margin-right: auto;}
+section.home .specializations .col-special .inner-special .btn-yellow.big{line-height: 18px;padding: 4px 14px 0;}
 section.home .specializations .col-special:nth-child(odd){background-color: rgba(0, 0, 0, 0.5);}
 section.home .specializations .col-special:nth-child(even){background-color: rgba(0, 0, 0, 0.75);}
 section.home .specializations .row{transform: var(--reverse-ancle);margin-top: -1px;}
@@ -292,6 +293,7 @@ section.contact .form-group.margin0{margin-bottom: 0;}
   margin-bottom: 14px;
 }
 .gray-radio-label.not-correct:before{border: 2px solid red;}
+section.contact #response{font-weight: 700;font-size: 20px;color: #00bde0;margin-bottom: 20px;text-align:  center;}
 
 /* AGENCY */
 section.agency{}
@@ -329,7 +331,7 @@ section.agency .valores ul li:last-child{color: #fcbf10;}
 
 /* PROJECTS */
 section.projects{background: #f7f7f7;padding-top: 20px;}
-section.projects .title-page{padding-top: 30px;}
+section.projects .title-page{padding-top: 52px;}
 section.projects .container{position: relative;}
 section.projects .name-page{margin-bottom: 34px;font-size: 14px;font-weight: 700;text-transform: uppercase;color: var(--main-blue);}
 section.projects .subtitle-projects{font-size: 16px;color: var(--default-color);margin-bottom: 12px;}
@@ -401,11 +403,13 @@ section.project .related .title-related{margin-top:0;font-family: var(--title-fo
 
 /* Specializations */
 section.specializations .ecommerce-top{background-color: #f3f8f9;}
-section.specializations .name-page{z-index: 10;margin-top: 82px; margin-bottom: 0 !important; color:var(--main-blue) !important;}
+section.specializations .name-page{z-index: 10;margin-top: 100px; margin-bottom: 0 !important; color:var(--main-blue) !important;}
 section.specializations .title-page{margin-top:0; margin-bottom: 48px;}
 section.specializations .ecommerce-top .ecommerce-description{padding-left: 10%;overflow: hidden;}
 section.specializations .ecommerce-top .ecommerce-description .text{width: 50%;float: left;padding-right: 8%;}
 section.specializations .ecommerce-top .ecommerce-description .img-info{float: left;width: 50%;}
+section.specializations .ecommerce-top .ecommerce-description .img-info img{float: right;}
+section.specializations.emarketing .ecommerce-top .ecommerce-description .img-info img{float: left;}
 section.specializations .ecommerce-top .ecommerce-description .text .subtitle{color: var(--default-color);font-size: 22px;line-height: 26px;font-weight: 700;margin-bottom: 40px;}
 section.specializations p{font-size: 16px;color: var(--default-color);margin-bottom: 28px;}
 section.specializations.ecommerce .white-block{padding-top: 69px;padding-bottom: 94px;}
@@ -432,7 +436,8 @@ section.specializations.emarketing .emarketing-orders{padding:97px 0 100px;backg
 section.specializations.emarketing .emarketing-orders .title-page{margin-bottom: 36px;font-size: 36px;}
 section.specializations.emarketing .emarketing-orders .right-col{padding-left: 6%;}
 section.specializations.transformation p{margin-bottom: 20px;}
-section.specializations.transformation .inner-img{padding: 29px 0 46px;text-align: center;max-width: 1026px;width: 100%;}
+section.specializations.transformation .inner-img{padding: 29px 0 46px;text-align: center;width: 100%;}
+section.specializations.transformation .inner-img img{max-width: 1026px;}
 section.specializations.transformation .transform-title{font-size: 24px;font-weight: 700;}
 section.specializations.transformation .white-stripers{padding:66px 0 100px;background: url(/front/img/home/bg-whitepapers.png) no-repeat center center;background-size: cover;}
 section.specializations.transformation .white-stripers .title-page{font-size: 36px;}
@@ -444,7 +449,7 @@ section.specializations.advertising .ecommerce-top{padding-bottom: 197px;backgro
 section.specializations.advertising .white-block-text{max-width: 1100px;width: 90%;margin: -120px auto 0;background: #eff9fb;padding: 73px 100px;}
 section.specializations.advertising .title-page{color:#fff;}
 section.specializations.advertising .subtitle{color:#fff;max-width: 644px;font-size: 20px;margin-bottom: 0;}
-section.specializations.advertising .white-block-text .text-big{margin-bottom:40px;display: inline-block;vertical-align: top;font-family: var(--title-font);color: var(--main-blue);font-size: 109px;width: 44%;line-height: 106px;}
+section.specializations.advertising .white-block-text .text-big{margin-bottom:60px;display: inline-block;vertical-align: top;font-family: var(--title-font);color: var(--main-blue);font-size: 109px;width: 44%;line-height: 106px;}
 section.specializations.advertising .white-block-text .text-action{display: inline-block;vertical-align: top;width: 54%;font-size: 34px;font-family: var(--title-font);color: var(--main-blue);line-height: 34px;}
 section.specializations.advertising .steps{text-align: center;    display: inline-block;}
 section.specializations.advertising .steps .step{display: inline-block;max-width: 20%; vertical-align: top;width: 200px;}
@@ -472,7 +477,8 @@ section.whitepapers .whitepaper:hover{transition: 0.1s ease-in;box-shadow: 3px 4
 section.whitepapers .whitepaper .text-col{display:  inline-block;width: 81%;}
 section.whitepapers .whitepaper .title{font-size: 24px;font-weight: 900;color: var(--default-color);line-height: 27px;margin-bottom: 14px;}
 section.whitepapers .whitepaper .number{font-size: 12px; color:var(--default-color);}
-section.whitepapers .whitepaper .btn-yellow-full{cursor:pointer;max-width: 143px;display: inline-block;width: 17%;float: right;font-size: 14px;}
+section.whitepapers .whitepaper .btn-yellow-full{transition:  visibility 0s, opacity 1s linear;cursor:pointer;max-width: 143px;visibility:hidden;display: inline-block;width: 17%;float: right;font-size: 14px;}
+section.whitepapers .whitepaper:hover .btn-yellow-full{transition:  visibility 0s, opacity 1s linear;visibility: visible;}
 #form_newsletter .btn-yellow-full{padding:0 25px;}
 .whitepaper-popup .form-block{box-shadow: 0 0 24px 6px rgba(2, 60, 78, 0.5);z-index: 1000;background-size: cover !important;background: url(/front/img/bg-whitepapers.png) no-repeat center center;max-width: 658px;padding: 40px 100px 60px;position: fixed;top: 10%;margin-left:  auto;margin-right:  auto;left: 0;right: 0;}
 .whitepaper-popup .form-block .close{top: 15px;position: absolute;right: 15px;color: #fff;opacity: 1;line-height: 21px;}

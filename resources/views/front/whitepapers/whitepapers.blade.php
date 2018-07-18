@@ -14,7 +14,7 @@
                 <div class="whitepaper" data-animated="fadeInUp">
                     <div class="text-col">
                         <p class="title">{{ $whitepaper->title }}</p>
-                        <p class="number">Thatzpaper nº1, Junio 2018</p>
+                        <p class="number">Thatzpaper {{ $whitepaper->number }}</p>
                     </div>
                     <div class="btn-yellow-full" data-id="{{ $whitepaper->id }}">Leer más</div>
                 </div>
@@ -32,7 +32,7 @@
                                 <input placeholder="Nombre" class="form-control required" type="text" name="name" id="name" required>
                             </div>
                             <div class="form-group">
-                                <p class="msg-error">Email no tiene el formato correcte</p>
+                                <p class="msg-error">Email no tiene el formato correcto</p>
                                 <input placeholder="Email" class="form-control required" type="email" name="email" id="email" required>
                             </div>
                             <div class="form-check">
@@ -44,7 +44,7 @@
                                     {{--<label for="privacy" class="gray-radio-label">Me gustaría que me avisaseis cuando publiquéis nuevos White papers o Articulos</label>--}}
                                     {{--<input type="radio" id="privacy2" name="newsletter" value="0" class="gray-radio"/>--}}
                                     {{--<label for="privacy" class="gray-radio-label">No hace falta que me aviseis. Gracias.</label>--}}
-                                    <p class="msg-error radio-btn">Tienes que elegir una de dos opciones</p>
+                                    <p class="msg-error radio-btn">Tienes que elegir una de las dos opciones</p>
                                     <div>
                                         <input type="radio" name="newsletter"  value="1" id="newsletter1" class="ios-radio" />
                                         <label for="newsletter1" class="ios-radio-label"></label>

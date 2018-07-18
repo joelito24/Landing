@@ -5,7 +5,7 @@
     <section class="agency">
         <div class="top-agency">
             <div class="container">
-                <p class="name-page">Agencia</p>
+                <p class="name-page">La agencia</p>
                 <h1 class="title">Una agencia boutique de grandes proyectos</h1>
                 <h2 class="subtitle" data-animated="fadeInUp">Marketing por vocación. Digitales por naturaleza.</h2>
             </div>
@@ -74,9 +74,9 @@
         <div class="bottom-action">
             <div class="container">
                 <div class="col-md-10">
-                    <p class="action-title" data-animated="fadeInUp">Desarrolamos la estrategia, la web y las campañas de publicidad con un equipo creativo, implicado y 100% efectivo. </p>
+                    <p class="action-title" data-animated="fadeInUp">Desarrollamos la estrategia, la web y las campañas de publicidad con un equipo creativo, implicado y 100% efectivo. </p>
                     <p class="action-title" data-animated="fadeInUp">Somos tu agencia boutique de marketing online.</p>
-                    <div class="btn-yellow-full"><a href="{{ route('contact') }}">¿Quieres descubrirl?</a></div>
+                    <div class="btn-yellow-full"><a href="{{ route('contact') }}">¿Quieres descubrirlo?</a></div>
                 </div>
             </div>
         </div>

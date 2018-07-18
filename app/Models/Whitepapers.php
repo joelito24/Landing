@@ -12,7 +12,7 @@ class Whitepapers extends Model implements ModelInterface
 
     protected $table = 'whitepapers';
     public $timestamps = true;
-    protected $fillable = ['title', 'description', 'image', 'data_file', 'active', 'home'];
+    protected $fillable = ['title', 'description', 'image', 'data_file', 'active', 'home', 'number'];
 
     private function imagePath( $image )
     {

@@ -15,7 +15,7 @@
                     <ul class="esp-mobile-dropdown">
                         <li><a href="{{ route('specialization1') }}">Proyectos de e-commerce</a></li>
                         <li><a href="{{ route('specialization2') }}">Publicidad online orientada a resultados</a></li>
-                        <li><a href="{{ route('specialization3') }}">E-marketing y publicidad para marcas</a></li>
+                        <li><a href="{{ route('specialization3') }}">e-Marketing y publicidad para marcas</a></li>
                         <li><a href="{{ route('specialization4') }}">Transformación digital para empresas</a></li>
                     </ul>
                     <li class="mbl-servicios default-color">Servicios <img src="{{ asset('front/img/header/flecha.png') }}"></li>
@@ -25,7 +25,7 @@
                         @endforeach
                     </ul>
                     <li><a href="{{ route('projects') }}">Proyectos</a></li>
-                    <li><a href="{{ route('agency') }}">Agencia</a></li>
+                    <li><a href="{{ route('agency') }}">La Agencia</a></li>
                 </ul>
                 <ul class="menu main-blue">
                     <li><a href="{{ route('whitepapers') }}">White papers</a></li>
@@ -49,7 +49,7 @@
                             <ul class="dropdown">
                                 <li><a href="{{ route('specialization1') }}">Proyectos de e-commerce</a></li>
                                 <li><a href="{{ route('specialization2') }}">Publicidad online orientada a resultados</a></li>
-                                <li><a href="{{ route('specialization3') }}">E-marketing y publicidad para marcas</a></li>
+                                <li><a href="{{ route('specialization3') }}">e-Marketing y publicidad para marcas</a></li>
                                 <li><a href="{{ route('specialization4') }}">Transformación digital para empresas</a></li>
                             </ul>
                         </li>
@@ -61,7 +61,7 @@
                             </ul>
                         </li>
                         <li><a href="{{ route('projects') }}" id="proyectos">Proyectos</a></li>
-                        <li><a href="{{ route('agency') }}" id="agencia">Agencia</a></li>
+                        <li><a href="{{ route('agency') }}" id="agencia">La Agencia</a></li>
                     </ul>
                 </div>
         </div>
