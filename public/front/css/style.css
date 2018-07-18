@@ -408,7 +408,7 @@ section.specializations .title-page{margin-top:0; margin-bottom: 48px;}
 section.specializations .ecommerce-top .ecommerce-description{padding-left: 10%;overflow: hidden;}
 section.specializations .ecommerce-top .ecommerce-description .text{width: 50%;float: left;padding-right: 8%;}
 section.specializations .ecommerce-top .ecommerce-description .img-info{float: left;width: 50%;}
-section.specializations .ecommerce-top .ecommerce-description .img-info img{float: right;}
+section.specializations.ecommerce .ecommerce-top .ecommerce-description .img-info img{float: right;}
 section.specializations.emarketing .ecommerce-top .ecommerce-description .img-info img{float: left;}
 section.specializations .ecommerce-top .ecommerce-description .text .subtitle{color: var(--default-color);font-size: 22px;line-height: 26px;font-weight: 700;margin-bottom: 40px;}
 section.specializations p{font-size: 16px;color: var(--default-color);margin-bottom: 28px;}
@@ -504,6 +504,18 @@ section.whitepapers .whitepaper:hover .btn-yellow-full{transition:  visibility 0
 .whitepaper-popup input.ios-radio[type="radio"]:checked+label:after{background-color: #fcc035;}
 .whitepaper-popup .news{display: inline-block;max-width: 69%;margin-bottom: 5px;font-weight: 700; vertical-align: top; cursor: pointer;}
 .whitepaper-popup .msg-error{font-weight: 700;}
+
+section.generals{background: #f3f9f9; padding-top: 85px;padding-bottom: 130px;}
+section.generals .title-page{margin-bottom: 55px;}
+section.generals p{color: #023c4e;font-size: 16px;line-height: 27px; margin-bottom: 23px;}
+section.generals img{padding:50px 0;}
+section.generals ul{list-style: none;margin-left: 30px;color: #023c4e;font-size: 16px;line-height: 27px;}
+section.generals ul li{margin-bottom: 7px;}
+section.generals .subtitle{font-size: 24px;font-weight: 600;margin-top: 60px;}
+section.generals .subtitle:first-child{margin-top:10px;}
+section.generals ul.info{    margin-left: 0;margin-bottom: 20px;margin-top: -18px;}
+section.generals ul.info li{margin-bottom: 3px;}
+section.generals p a{color:var(--default-color);font-weight: 700;}
 
 /* FOOTER */
 footer{padding-top:48px;background: var(--white);}

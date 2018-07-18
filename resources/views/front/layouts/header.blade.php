@@ -61,7 +61,7 @@
                         <li class="servicios" id="servicios">Servicios
                             <ul class="dropdown">
                                 @foreach($services as $service)
-                                    <li><a href="{{ route('service',$service->slug) }}">{{ $service->title }}</a></li>
+                                    <li><a href="{{ route('service',$service->slug) }}">{{ $service->shorttitle }}</a></li>
                                 @endforeach
                             </ul>
                         </li>

@@ -4,6 +4,7 @@
 }
 @media (min-width: 1700px){
     section.specializations.emarketing .white-block .ecommerce-top .ecommerce-description .img-info img{float: left;}
+    section.generals .row{max-width: 80%;}
 }
 @media (min-width: 1450px){
     section.projects .project{width: 25% !important;}
@@ -85,6 +86,8 @@
 
     .bottom-action .col-md-10{padding:0;}
     section.home .whitepapers .title-home{margin-top: 56px;}
+
+    section.generals .row{margin-right: 0;margin-left: 0;}
 }
 
 @media (max-width: 768px){
@@ -120,6 +123,10 @@
     section.project .block-slider .container #carroselhome{padding:0;}
     section.project .block-slider .carousel-indicators{bottom:15px;}
     section.project .block-slider{margin-top:40px;}
+
+    section.generals img{padding:30px 0;}
+    section.generals .subtitle{margin-top:30px;}
+
 }
 @media (max-width: 600px){
     section.projects .block-inputs .check-category{width: 50%;}
