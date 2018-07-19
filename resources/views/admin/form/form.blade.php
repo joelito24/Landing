@@ -4,11 +4,10 @@
 <div class="row">
     <div class="col-md-12">
         <h1 class="page-header">
-            {{ $form->name() }} <small>{{ $form->description() }}</small>
+            {{ $form->name() }} <small>{{ $form->description() }} @if(Route::getCurrentRoute()->getPath() === "admin/contacts/edit/{id}") dewrgwegfsewgf @endif</small>
         </h1>
     </div>
 </div>
-
 <div class="row">
     <div class="col-lg-12">
         <div class="panel panel-default">
@@ -31,9 +30,9 @@
                 </div>
                 @endif
                 @if ($form->isForFiles())
-                <form method="post" action="" enctype="multipart/form-data" > 
+                <form method="post" id="edit" action="" enctype="multipart/form-data" >
                     @else
-                    <form method="post" action="" > 
+                    <form method="post" id="edit" action="" >
                         @endif
                         @if(is_array($form->getDataShow()))
                         @foreach($form->getDataShow() as $datashow )    
@@ -115,10 +114,16 @@
                         @endif
 
                         @if(!isset($details))
-                        <button class="btn btn-success">Guardar</button>
+                            @if(Route::getCurrentRoute()->getPath() === "admin/contacts/edit/{id}")
+                                @else
+                                    <button class="btn btn-success">Guardar</button>
+                                @endif
                         @endif
-                        <a  href="{{ route('admin.'.$repository.'.index')}}" class="btn btn-danger">Cancelar</a>
-
+                        @if(Route::getCurrentRoute()->getPath() === "admin/contacts/edit/{id}")
+                            <a  href="{{ route('admin.'.$repository.'.index')}}" class="btn btn-primary">Volver</a>
+                        @else
+                            <a  href="{{ route('admin.'.$repository.'.index')}}" class="btn btn-danger">Cancelar</a>
+                        @endif
                         <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
                     </form>
 
@@ -261,6 +266,10 @@ foreach ($form->getDataShow() as $dataHide) {
     }
 }
 ?>
+        <?php if(Route::getCurrentRoute()->getPath() === "admin/contacts/edit/{id}"){?>
+        $("#edit :input").attr("disabled", true);
+        $(".note-editable").attr("contentEditable", false);
+        <?php } ?>
     });
 </script>
 @stop    
