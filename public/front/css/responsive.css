@@ -42,6 +42,7 @@
     section.projects .title-page{padding-top:0;margin-top: 0;}
     .container{padding-left:0px !important;padding-right: 0px !important;width: 90% !important;max-width: 90% !important;}
     .name-page{margin-top: 10px;text-align: center;color: #fff;}
+    section.home .top{background-attachment: scroll;}
 
     section.project .main-description{margin-left: 0;}
     section.agency .content-agency .description{padding: 30px 5%;}
@@ -175,4 +176,5 @@
     .whitepaper-popup .form-block .close{font-size: 16px;top: 4px;right: 8px;}
     .whitepaper-popup .form-block .form-control{max-width: 100%;}
     section.home .whitepapers .whitepaper .title-whitepaper{font-size: 25px;line-height: 29px;}
+    section.whitepapers .whitepaper .btn-yellow-full{max-width: 100%;}
 }

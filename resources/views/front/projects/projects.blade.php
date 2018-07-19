@@ -21,7 +21,7 @@
             </div>
             <div class="row grid">
                 @foreach($projects as $project)
-                    <div id="project-{{ $project->id }}" data-category-id="{{ $project->id }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">
+                    <div id="" data-category-id="{{ $project->category_id }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project project-{{ $project->category_id }}" data-animated="fadeInUp">
                         <figure class="effect-sarah">
                             <img src="{{$project->image1}}" alt="">
                             <div class="title-project">{{ $project->title }}
@@ -107,7 +107,7 @@
                     var sThisVal = (this.checked ? "1" : "0");
                     if(sThisVal == 1){
                         val = $(this).val();
-                        $("#project-"+ val).fadeIn();
+                        $(".project-"+ val).fadeIn();
                     }else{
                         val = 0;
                     }

@@ -24,7 +24,8 @@ class WhitepapersController extends BaseController
         $fluxesHead = [
             'id' => 'ID',
             'title' => 'Título',
-            'description' => 'Descripción',
+//            'description' => 'Descripción',
+            'data_file' => 'Ficheros',
         ];
 
         return view('admin.datatable', [

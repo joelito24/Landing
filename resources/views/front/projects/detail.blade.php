@@ -32,6 +32,8 @@
             </div>
 
         </div>
+        @if($project->image3 == "" && $project->image4 == "" && $project->image5 == "")
+        @else
         <div class="block-slider">
             <div class="container">
                 <div id="carroselhome" class="carousel">
@@ -54,6 +56,7 @@
                 </div>
             </div>
         </div>
+        @endif
         @if($project->getProjectRelated())
         <div class="related">
             <div class="container">

@@ -357,7 +357,7 @@ return [
                 'type' => 'file',
                 'title' => 'Fichero PDF',
                 'description' => '',
-                'rules' => ['']
+                'rules' => ['required']
             ],
             'home' => [
                 'type' => 'radio',

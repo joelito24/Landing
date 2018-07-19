@@ -48,7 +48,7 @@ header .menu > li{color:var(--default-color);display: inline-block;}
 
 #header:after {background: inherit;bottom: 0;content: '';display: block;height: var(--height);left: 0;position: absolute;right: 0;transform: var(--ancle);transform-origin: 100%;z-index: -1;}
 /* HOME */
-section.home .top{height: 591px;position: relative;background: url('/front/img/home/foto-con-rayas.jpg') no-repeat center center; background-size: cover;}
+section.home .top{height: 591px;position: relative;background: url('/front/img/home/foto-con-rayas.jpg') fixed center center; background-size: cover;}
 section.home .top .top-home{margin-top:80px;}
 section.home .left-col{margin-top: 72px;}
 section.home .left-col .title-top{text-shadow: 0 0 22px rgba(1, 0, 1, 0.39);font-size: 60px;font-family: var(--title-font);color:var(--white);line-height: 64px;margin-bottom: 38px;}
