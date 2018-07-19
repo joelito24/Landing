@@ -121,6 +121,7 @@
     section.specializations.advertising .steps .step .number img, section.specializations.advertising .steps .between-steps{display: none;}
     /*section.specializations.advertising .steps .step:after{content: "";position: absolute;bottom: 47%;right: 0;z-index: 0;width: 20px;height: 25px;text-align: right;line-height: 30px;}*/
     section.specializations.advertising .steps .step:after{content: "";position: absolute;bottom: -35px;left: 0;right: 0;height: 26px;background: #ebbd31;width: 2px;margin: 0 auto;}
+    section.specializations.advertising .steps .step:last-child:after{display: none;}
     section.specializations.advertising .steps .text{padding-right: 0;}
     footer .top-footer .row{margin-right: 0;margin-left: 0;}
     section.home .specializations .col-special:hover .line-yellow{display: none;}

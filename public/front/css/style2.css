@@ -162,6 +162,9 @@ header .menu.little{
 section.service{
     background-color: #f4f8f9;
 }
+section.specializations.emarketing #emarketing-mvl{display: none}
+section.service #response {font-weight: 700;font-size: 20px;color: var(--white);margin-bottom: 20px;text-align: center;}
+section.service .form-block .form-control.not-correct{border: 1px solid #fbd0d0;background:#fbd0d0; }
 section.service .title-service{margin-top: 0px; max-width: 901px; font-size: 48px}
 section.service .blue-word{z-index: 1000; margin-top: 90px;}
 section.service .text-service{padding-top: 20px; margin-bottom: 100px}
@@ -186,6 +189,7 @@ section.service .contact-block {background-attachment: fixed}
 section.service .text-page ul{padding-left: 80px;font-family:Muli;font-size:16px;color: var(--default-color);}
 section.service .text-page ul li {margin-bottom: 10px}
 section.service .contact-block label {cursor: pointer;font-weight: 400;font-size: 14px;}
+.white-radio-label.not-correct:before {border: 2px solid red;}
 .white-radio-label{display: block;position: relative;clear: both;margin: 0px 0px 10px 0px;}
 .white-radio-label:after {content: '';width: 10px;height: 6px;position: absolute;top: 6px;left: 5px;border: 3px solid #ffffff;border-top: none;border-right: none;background: transparent;opacity: 0;-webkit-transform: rotate(-45deg);transform: rotate(-45deg);}
 .white-radio-label:before {content: '';width: 20px;height: 20px;cursor: pointer;display: block;top: 0px;left: 0px;float: left;border: 2px solid #ffffff;border-radius: 2px;margin-right: 9px;margin-bottom: 14px;}
@@ -208,8 +212,19 @@ footer .footer-bottom .footerphrase{display: none;}
 
 @media (max-width: 1199px) {
     header .menu li {margin-left: 1.9%!important;}
+    section.specializations.emarketing .container {padding-left: 0px !important;padding-right: 0px !important;width: 90% !important;max-width: 90% !important;}
+    section.specializations.emarketing .name-page {text-align:center; margin-top: 50px;margin-bottom: 27px !important;}
+    section.specializations.emarketing .ecommerce-top .ecommerce-description{padding-left: 0}
+    section.specializations.emarketing .ecommerce-top .ecommerce-description .text {width: 100%;padding: 0 5%;}
+    section.specializations.emarketing .img-info {float: left!important; width: 80%;}
+    section.specializations.emarketing .img-info#first{float: right!important; width: 80%;}
+    section.specializations.emarketing .img-info#second{float: left!important; width: 80%;}
+    section.specializations.emarketing .img-info img {width: 100%!important;}
+    section.specializations.emarketing #emarketing{display: none}
+    section.specializations.emarketing #emarketing-mvl{display: block}
 }
 @media (max-width: 992px) {
+
     .img-info {float: left;width: 100%!important;}
     .img-info img{width: 100%!important;}
     section.specializations ul.list-benefits {margin-left:30px;}

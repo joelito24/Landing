@@ -69,6 +69,7 @@
 						<div class="col-md-3">
 							<div class="form-block">
 								<form method="POST" action="" id="contactform">
+									<div class="send" id="response"></div>
 									<input name="_token" type="hidden" value="{{ csrf_token() }}"/>
 									<div class="form-group">
 										<!--<label>Nombre</label>-->
@@ -77,7 +78,7 @@
 									<div class="form-group">
 										<!--<label>Email (obligatorio)</label>-->
 										<input class="form-control required" type="text" name="email" id="email" placeholder="Email (obligatorio)">
-										<p style="position: absolute;bottom: -19px;right: 0;" class="msg-error">El formato de email no es correcto</p>
+										<p style="margin-top:0px; margin-bottom: -13px;" class="msg-error">El formato de email no es correcto</p>
 									</div>
 									<div class="form-group">
 										<!--<label>Comentario</label>-->
@@ -93,9 +94,10 @@
 										<label class="form-check-label">
 											<input class="gray-radio" type="checkbox" name="privacy" id="privacy" value="1">
 											<label for="privacy" class="white-radio-label">Acepto la política de privacidad aplicada en esta web.</label>
+											<p style="margin-top: -10px;" class="msg-error">Tienes que aceptar nuestra política de privacidad</p>
 										</label>
 									</div>
-									<div class="send" id="response"><input class="submit btn-yellow-full" type="button" id="send" value="Enviar"></div>
+									<input class="submit btn-yellow-full" type="button" id="send" value="Enviar">
 								</form>
 							</div>
 						</div>
@@ -129,10 +131,24 @@
             $("#send").click(function(e){
                 e.preventDefault();
                 var error = 0;
-                if (!$('#privacy').attr('checked'))error = 1;
+                if (!$('#privacy').attr('checked')){
+                    error = 1;
+                    $('#privacy').parent().find('.white-radio-label').addClass('not-correct');
+                    $("#privacy").next().next().fadeIn();
+                }else{
+                    $('#privacy').next().next().fadeOut();
+                    $('#privacy').parent().find('.white-radio-label').removeClass('not-correct');
+				}
                 var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-                if (!testEmail.test($('#email').val()))error = 1;
-                if ($('#name').val().length <= 1)error = 1;
+                if (!testEmail.test($('#email').val())){
+					error = 1;
+                    $("#email").next().fadeIn();
+                    $('#email').addClass('not-correct');
+                }else{
+                    $('#email').next().fadeOut();
+                    $('#email').removeClass('not-correct');
+				}
+                //if ($('#name').val().length <= 1)error = 1;
                 if (error === 0){
                     $.ajax({
                         type: 'post',
@@ -143,6 +159,9 @@
                             $('#privacy').prop('checked', false);
                             if (response === 'sent'){
                                 $('#response').html('Se ha enviado su solicitud correctamente');
+                                $([document.documentElement, document.body]).animate({
+                                    scrollTop: $("#response").offset().top
+                                }, 500);
                             }
                         },
                         error: function(e){
