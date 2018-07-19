@@ -380,6 +380,7 @@ figure.effect-sarah:hover .btn-yellow{opacity: 1;font-size: 13px;-webkit-transfo
 section.project{margin-top: -214px}
 .name-page{z-index: 100000;position: relative;margin-bottom: 62px;font-size: 14px;font-weight: 700;text-transform: uppercase;color: var(--main-blue);}
 section.project .title{margin-bottom: 20px;text-align: center;color: #fff;max-width: 398px;margin-left: auto;margin-right: auto;font-family: var(--title-font);font-size: 48px;}
+section.project a{color:#fff;}
 section.project .project-top{padding-top: 178px;    background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
 section.project .project-top .category-name{text-align: center;color: #fff;text-transform: uppercase;font-size: 16px;margin-bottom: 163px;}
 section.project .project-description{max-width: 770px;width: 90%;margin:-100px auto 68px;background: #fff;padding: 35px 60px;font-size: 20px;font-weight: 700;color: var(--default-color);}
