@@ -90,7 +90,7 @@
         $(document).ready(function () {
             $("#header").addClass('hide-transparent');
             $("#proyectos").addClass('main-blue');
-
+            $('.name-page').css('display', 'inline-block');
 
             $('#carroselhome').carousel({
                 interval: 2000

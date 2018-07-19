@@ -128,6 +128,7 @@
     section.specializations .white-block .ecommerce-top .ecommerce-description .img-info img#emarketing{margin-bottom: 20px;}
     section.specializations.emarketing .emarketing-orders{padding:40px 0;}
     section.specializations.emarketing .emarketing-orders .right-col{padding-left: 15px;}
+    section.generals{padding-top: 30px;}
 }
 
 @media (max-width: 768px){
