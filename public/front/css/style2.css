@@ -97,7 +97,7 @@ header .rotated {transform: rotate(225deg);-ms-transform: rotate(225deg);-moz-tr
 section.home{margin-top: -134px;}
 header .menu .especializaciones ul, .menu .servicios ul{display: none;position: absolute;background-color: rgba(255,255,255,0.95);min-width: 160px;margin-top: 20px;-webkit-box-shadow:inset 0px 3px 0px 0px var(--main-blue);-moz-box-shadow:inset 0px 3px 0px 0px var(--main-blue);box-shadow:inset 0px 3px 0px 0px var(--main-blue);z-index: 1000;margin-left: -5%;text-align: left;}
 header #menu-content .menu:last-child li{padding-bottom: 22px;}
-header #menu-content .menu:last-child .dropdown li{padding-bottom: unset;padding-left: 20px;}
+header #menu-content .menu:last-child .dropdown li{padding-bottom: unset;padding-left: 20px;width: 100%;padding-right: 20px;margin-left: 0px!important;}
 header .menu .especializaciones ul:after, .menu .servicios ul:after{
     content: "";
     position: absolute;
@@ -224,7 +224,7 @@ footer .footer-bottom .footerphrase{display: none;}
     section.specializations.emarketing #emarketing-mvl{display: block}
 }
 @media (max-width: 992px) {
-
+    section.service .blue-word {margin-top: 50px;margin-bottom:27px; text-align: center;font-weight: 700;}
     .img-info {float: left;width: 100%!important;}
     .img-info img{width: 100%!important;}
     section.specializations ul.list-benefits {margin-left:30px;}
@@ -236,7 +236,7 @@ footer .footer-bottom .footerphrase{display: none;}
     section.service .quote-mbl {display: block;}
     section.service .conclusion-service .conclusion {margin: 0 auto}
     section.service .text-service {margin-bottom: 30px;}
-    section.service .big-title {margin: 80px auto 34px auto;}
+    section.service .big-title {margin: 20px auto 34px auto;}
     section.service .quote {margin-bottom: 35px;}
     section.service .form-block {margin:0 auto;}
     section.home{margin-top: -89px;}
