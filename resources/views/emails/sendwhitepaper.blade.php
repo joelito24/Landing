@@ -18,7 +18,6 @@
                         <p>¡Qué lo disfrutes!</p>
                         <p>Cualquier duda o comentario, no dudes en contactarnos.</p>
                         <br>
-                        {{ $data['pdf'] }}
                         <p>Saludos,</p>
                         <p>Thatzad.</p>
                     </div>

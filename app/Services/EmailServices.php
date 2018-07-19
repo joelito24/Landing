@@ -75,7 +75,7 @@ class EmailServices
         $sender = "info@thatzad.com";
         $data = ['data' => [
             'project_name' => "Thatzad",
-            'title' => "Thatzad - Whitepapers",
+            'title' => "Thatzpaper",
             'name' => $name,
             'pdf' => $pdf]];
         $this->sendEmailWithPdf($from, $to, $subject, $view, $data, $sender,$pdf);
