@@ -39,7 +39,7 @@
                 <div id="page-inner">
                     @yield('content')
                     <footer>
-                        <p>Desarrollado por: <a href="http://www.thatzad.com/" target="_blank">Thatzad</a></p>
+                        <p>Desarrollado por: <a href="http://www.thatzad.com/" target="_blank" style="color: #00bfe0;">Thatzad</a></p>
                     </footer>
                 </div>
             </div>

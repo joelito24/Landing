@@ -33,6 +33,13 @@ final class ContactsHistory extends Model implements ModelInterface
         return $this->where('email', '=', $email)->get();
     }
 
+    public function getTodayContacts(){
+        date_default_timezone_set('Europe/Madrid');
+        $hoy = date('Y-m-d'). ' 00:00:00';
+//        print_r($hoy);die();
+        return $this->where('created_at', '>=', $hoy )->get();
+    }
+
     /*public function getCreatedAtAttribute()
     {
         $date = new DateTime($this->created_at);

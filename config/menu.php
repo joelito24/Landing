@@ -1,15 +1,15 @@
 <?php
 
 return [
-    [
-        'route' => 'admin.users.index',
-        'create' => 'admin.users.create',
-        'edit' => 'admin.users.edit',
-        'delete' => 'admin.users.delete',
-        'icon' => 'fa fa-user',
-        'name' => 'Usuarios',
-        'resource' => 'users'
-    ],
+//    [
+//        'route' => 'admin.users.index',
+//        'create' => 'admin.users.create',
+//        'edit' => 'admin.users.edit',
+//        'delete' => 'admin.users.delete',
+//        'icon' => 'fa fa-user',
+//        'name' => 'Usuarios',
+//        'resource' => 'users'
+//    ],
 
     [
         'route' => 'admin.services.index',
@@ -17,7 +17,7 @@ return [
         'edit' => 'admin.services.edit',
         'delete' => 'admin.services.delete',
         'crop' => 'admin.services.crop',
-        'icon' => 'fa fa-user',
+        'icon' => 'fa fa-book',
         'name' => 'Servicios',
         'resource' => 'services'
     ],
@@ -28,7 +28,7 @@ return [
         'edit' => 'admin.projects.edit',
         'delete' => 'admin.projects.delete',
         'crop' => 'admin.services.crop',
-        'icon' => 'fa fa-user',
+        'icon' => 'fa fa-star',
         'name' => 'Proyectos',
         'resource' => 'projects'
     ],
@@ -38,7 +38,7 @@ return [
         'create' => 'admin.projects_category.create',
         'edit' => 'admin.projects_category.edit',
         'delete' => 'admin.projects_category.delete',
-        'icon' => 'fa fa-user',
+        'icon' => 'fa fa-star-o',
         'name' => 'Categorías',
         'resource' => 'projects_category'
     ],
@@ -49,7 +49,7 @@ return [
         'edit' => 'admin.whitepapers.edit',
         'delete' => 'admin.whitepapers.delete',
         'crop' => 'admin.whitepapers.crop',
-        'icon' => 'fa fa-user',
+        'icon' => 'fa fa-file-o',
         'name' => 'White papers',
         'resource' => 'whitepapers'
     ],
@@ -69,7 +69,7 @@ return [
         'create' => 'admin.newsletter.create',
         'edit' => 'admin.newsletter.edit',
         'delete' => 'admin.newsletter.delete',
-        'icon' => 'fa fa-user',
+        'icon' => 'fa fa-envelope',
         'name' => 'Newsletter',
         'resource' => 'newsletter'
     ],

@@ -392,25 +392,25 @@ return [
                 'type' => 'text',
                 'title' => 'Nombre',
                 'description' => 'Introduzca el nombre.',
-                'rules' => ['required']
+                'rules' => ['']
             ],
             'email' => [
                 'type' => 'text',
                 'title' => 'Email',
                 'description' => 'Introduzca el email',
-                'rules' => ['required']
+                'rules' => ['']
             ],
             'company' => [
                 'type' => 'text',
                 'title' => 'Empresa',
                 'description' => 'Introduzca la empresa',
-                'rules' => ['required']
+                'rules' => ['']
             ],
             'telephone' => [
                 'type' => 'text',
                 'title' => 'Telefono',
                 'description' => 'Introduzca el telefono.',
-                'rules' => ['required']
+                'rules' => ['']
             ],
             'web' => [
                 'type' => 'text',
