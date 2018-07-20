@@ -21,19 +21,17 @@
             </div>
             <div class="row grid">
                 @foreach($projects as $project)
-                    <div id="" data-category-id="{{ $project->category_id }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project project-{{ $project->category_id }}" data-animated="fadeInUp">
-                        <a href="{{ route('project', $project->slug) }}">
-                            <figure class="effect-sarah">
-                                <img src="{{$project->image1}}" alt="">
-                                <div class="title-project">{{ $project->title }}
-                                    <div class="category">{{ $project->nameCategory }}</div>
-                                </div>
-                                <figcaption>
-                                    <p>{!! $project->description_short !!}</p>
-                                    <div class="btn-yellow"><a href="{{ route('project', $project->slug) }}">Ver más</a></div>
-                                </figcaption>
-                            </figure>
-                        </a>
+                    <div data-url="{{ route('project', $project->slug) }}" data-category-id="{{ $project->category_id }}" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project project-{{ $project->category_id }}" data-animated="fadeInUp">
+                        <figure class="effect-sarah">
+                            <img src="{{$project->image1}}" alt="">
+                            <div class="title-project">{{ $project->title }}
+                                <div class="category">{{ $project->nameCategory }}</div>
+                            </div>
+                            <figcaption>
+                                <p>{!! $project->description_short !!}</p>
+                                <div class="btn-yellow"><a href="{{ route('project', $project->slug) }}">Ver más</a></div>
+                            </figcaption>
+                        </figure>
                     </div>
                 @endforeach
                 {{--<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 project" data-animated="fadeInUp">--}}
@@ -99,6 +97,11 @@
     <script>
         $(document).ready(function () {
             $("#proyectos").addClass('main-blue');
+
+            $('.effect-sarah').click(function(){
+                var $url = $(this).parent().attr('data-url');
+                window.location.href = $url;
+            });
 
             //Script para mostrar proyectos por categoría
             $('.check-category input').change(function() {

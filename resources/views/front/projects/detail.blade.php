@@ -38,20 +38,32 @@
             <div class="container">
                 <div id="carroselhome" class="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#carroselhome" data-slide-to="0" class="active"></li>
-                        <li data-target="#carroselhome" data-slide-to="1"></li>
-                        <li data-target="#carroselhome" data-slide-to="2"></li>
+                        @if($project->image3 != "")
+                            <li data-target="#carroselhome" data-slide-to="0" class="active"></li>
+                        @endif
+                        @if($project->image4 != "")
+                            <li data-target="#carroselhome" data-slide-to="1" class="@if($project->image3 == "") active @endif"></li>
+                        @endif
+                        @if($project->image5 != "")
+                            <li data-target="#carroselhome" data-slide-to="2" class="@if($project->image3 == "" && $project->image4 == "") active @endif"></li>
+                        @endif
                     </ol>
                     <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="{{ $project->image3 }}">
-                        </div>
-                        <div class="item">
+                        @if($project->image3 != "")
+                            <div class="item active">
+                                <img src="{{ $project->image3 }}">
+                            </div>
+                        @endif
+                        @if($project->image4 != "")
+                        <div class="item @if($project->image3 == "") active @endif">
                             <img src="{{ $project->image4 }}">
                         </div>
-                        <div class="item">
+                        @endif
+                        @if($project->image5 != "")
+                        <div class="item @if($project->image3 == "" && $project->image4 == "") active @endif">
                             <img src="{{ $project->image5 }}">
                         </div>
+                        @endif
                     </div>
                 </div>
             </div>
