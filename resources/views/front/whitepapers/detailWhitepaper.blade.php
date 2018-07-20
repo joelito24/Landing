@@ -5,8 +5,17 @@
     <section class="whitepapers detail">
 
         <div class="container">
-            <div class="btn-blue"><a href="{{ route('whitepapers') }}">Ver todos los White papers ></a></div>
-            <p class="title-page">{{ $whitepaper->title }}</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="name-page">WHITEPAPERS</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="btn-blue"><a href="{{ route('whitepapers') }}">Ver todos los White papers ></a></div>
+                </div>
+            </div>
+            <div class="row">
+                <p class="title-page">{{ $whitepaper->title }}</p>
+            </div>
             <div class="row">
                 <div class="description col-md-6" data-animated="fadeInUp">
                     <p class="number">Thatzpaper {{ $whitepaper->number }}</p>
