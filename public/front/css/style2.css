@@ -1,9 +1,15 @@
-/*header#header{
-    margin-top: 19px;
-}*/
-
-/* Icon 1 */
-
+text.business, text.mark, text.influ, text.web, text.media, text.online, text.seo{
+    cursor: pointer;
+}
+.title-info.mouseenter{
+    font-weight: 700!important;
+    font-size: 20px!important;
+    margin-bottom: 25px!important;
+    line-height: 24px!important;
+}
+.text-grey{
+    color: #6f6f6f!important;
+}
 #nav-icon1 {
     width: 24px;
     height: 17px;

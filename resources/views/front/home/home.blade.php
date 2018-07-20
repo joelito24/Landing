@@ -346,282 +346,399 @@
         $('#lineas .line-polylang').css('display', 'none');
         $('#puntitos_con_linea circle').css('display', 'none');
         //id = 1, Ideas de negocio
-        $('#puntitos .business').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+        $('#puntitos .business, text.business').mouseenter(function () {
+            $("#text1 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .business').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
 
-            $('#puntitos .cls-26.business').css('fill', '#ecbe31');
-            $('#Textos .cls-2.business').css('fill', '#fff');
-            $('#Textos .business-secondary').css('fill', '#00bde0');
-            $('#transparencias .business').fadeIn();
-            $('#lineas_transparencia .business').fadeIn();
-            $('#lineas_azules .business').fadeIn();
-            $('.info-block#text1').fadeIn();
-            $('#puntitos_con_linea .business').fadeIn();
+                $('#puntitos .cls-26.business').css('fill', '#ecbe31');
+                $('#Textos .cls-2.business').css('fill', '#fff');
+                $('#Textos .business-secondary').css('fill', '#00bde0');
+                $('#transparencias .business').fadeIn();
+                $('#lineas_transparencia .business').fadeIn();
+                $('#lineas_azules .business').fadeIn();
+                $('.info-block#text1').fadeIn();
+                $('#puntitos_con_linea .business').fadeIn();
+            }
         });
-        $('#puntitos_con_linea .business-boton').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+        $('#puntitos_con_linea .business-boton').mouseenter(function () {
+            $("#text1 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .business').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
 
-            $('#puntitos .cls-26.business').css('fill', '#ecbe31');
-            $('#Textos .cls-2.business').css('fill', '#fff');
-            $('#Textos .business-secondary').css('fill', '#00bde0');
-            $('#transparencias .business').fadeIn();
-            $('#lineas_transparencia .business').fadeIn();
-            $('#lineas_azules .business').fadeIn();
-            $('.info-block#text1').fadeIn();
-            $('#puntitos_con_linea .business').fadeIn();
+                $('#puntitos .cls-26.business').css('fill', '#ecbe31');
+                $('#Textos .cls-2.business').css('fill', '#fff');
+                $('#Textos .business-secondary').css('fill', '#00bde0');
+                $('#transparencias .business').fadeIn();
+                $('#lineas_transparencia .business').fadeIn();
+                $('#lineas_azules .business').fadeIn();
+                $('.info-block#text1').fadeIn();
+                $('#puntitos_con_linea .business').fadeIn();
+            }
+
         });
 
         //id = 2, Diseño web, marketing, programación
-        $('#puntitos .web').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+        $('#puntitos .web, text.web').mouseenter(function () {
+            $("#text2 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .web').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
 
-            $('#puntitos .cls-26.web').css('fill', '#ecbe31');
-            $('#lineas_amarillas .web').fadeIn();
-            $('#Textos .cls-2.web').css('fill', '#fff');
-            $('#Textos .web-secondary').css('fill', '#00bde0');
-            $('#puntitos_con_linea .web').fadeIn();
-            $('#lineas_azules .web').fadeIn();
-            $('#transparencias .web').fadeIn();
-            $('#lineas_transparencia .web').fadeIn();
-            $('.info-block#text2').fadeIn();
+                $('#puntitos .cls-26.web').css('fill', '#ecbe31');
+                $('#lineas_amarillas .web').fadeIn();
+                $('#Textos .cls-2.web').css('fill', '#fff');
+                $('#Textos .web-secondary').css('fill', '#00bde0');
+                $('#puntitos_con_linea .web').fadeIn();
+                $('#lineas_azules .web').fadeIn();
+                $('#transparencias .web').fadeIn();
+                $('#lineas_transparencia .web').fadeIn();
+                $('.info-block#text2').fadeIn();
+            }
         });
-        $('#puntitos_con_linea .web-boton').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+        $('#puntitos_con_linea .web-boton').mouseenter(function () {
+            $("#text2 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .web').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
 
-            $('#puntitos .cls-26.web').css('fill', '#ecbe31');
-            $('#lineas_amarillas .web').fadeIn();
-            $('#Textos .cls-2.web').css('fill', '#fff');
-            $('#Textos .web-secondary').css('fill', '#00bde0');
-            $('#puntitos_con_linea .web').fadeIn();
-            $('#lineas_azules .web').fadeIn();
-            $('#transparencias .web').fadeIn();
-            $('#lineas_transparencia .web').fadeIn();
-            $('.info-block#text2').fadeIn();
+                $('#puntitos .cls-26.web').css('fill', '#ecbe31');
+                $('#lineas_amarillas .web').fadeIn();
+                $('#Textos .cls-2.web').css('fill', '#fff');
+                $('#Textos .web-secondary').css('fill', '#00bde0');
+                $('#puntitos_con_linea .web').fadeIn();
+                $('#lineas_azules .web').fadeIn();
+                $('#transparencias .web').fadeIn();
+                $('#lineas_transparencia .web').fadeIn();
+                $('.info-block#text2').fadeIn();
+            }
         });
 
         //id = 3, SEO, SEA, Adwords
-        $('#puntitos .seo').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+        $('#puntitos .seo, text.seo').mouseenter(function () {
+            $("#text3 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .seo').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
 
-            $('#puntitos .cls-26.seo').css('fill', '#ecbe31');
-            $('#lineas_amarillas .seo').fadeIn();
-            $('#Textos .cls-2.seo').css('fill', '#fff');
-            $('#Textos .seo-secondary').css('fill', '#00bde0');
-            $('#transparencias .seo').fadeIn();
-            $('#lineas_transparencia .seo').fadeIn();
-            $('#lineas_azules .seo').fadeIn();
-            $('#puntitos_con_linea .seo').fadeIn();
-            $('.info-block#text3').fadeIn();
+                $('#puntitos .cls-26.seo').css('fill', '#ecbe31');
+                $('#lineas_amarillas .seo').fadeIn();
+                $('#Textos .cls-2.seo').css('fill', '#fff');
+                $('#Textos .seo-secondary').css('fill', '#00bde0');
+                $('#transparencias .seo').fadeIn();
+                $('#lineas_transparencia .seo').fadeIn();
+                $('#lineas_azules .seo').fadeIn();
+                $('#puntitos_con_linea .seo').fadeIn();
+                $('.info-block#text3').fadeIn();
+            }
         });
-        $('#puntitos_con_linea .seo-boton').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+        $('#puntitos_con_linea .seo-boton').mouseenter(function () {
+            $("#text3 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .seo').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
 
-            $('#puntitos .cls-26.seo').css('fill', '#ecbe31');
-            $('#lineas_amarillas .seo').fadeIn();
-            $('#Textos .cls-2.seo').css('fill', '#fff');
-            $('#Textos .seo-secondary').css('fill', '#00bde0');
-            $('#transparencias .seo').fadeIn();
-            $('#lineas_transparencia .seo').fadeIn();
-            $('#lineas_azules .seo').fadeIn();
-            $('#puntitos_con_linea .seo').fadeIn();
-            $('.info-block#text3').fadeIn();
+                $('#puntitos .cls-26.seo').css('fill', '#ecbe31');
+                $('#lineas_amarillas .seo').fadeIn();
+                $('#Textos .cls-2.seo').css('fill', '#fff');
+                $('#Textos .seo-secondary').css('fill', '#00bde0');
+                $('#transparencias .seo').fadeIn();
+                $('#lineas_transparencia .seo').fadeIn();
+                $('#lineas_azules .seo').fadeIn();
+                $('#puntitos_con_linea .seo').fadeIn();
+                $('.info-block#text3').fadeIn();
+            }
         });
 
         //id = 4, Publicidad online y remarketing
-        $('#puntitos .online').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+        $('#puntitos .online, text.online').mouseenter(function () {
+            $("#text4 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .online').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
 
-            $('#puntitos .online').css('fill', '#ecbe31');
-            $('#Textos .cls-2.online').css('fill', '#fff');
-            $('#Textos .online-secondary').css('fill', '#00bde0');
-            $('#lineas_amarillas .online').fadeIn();
-            $('#lineas_azules .online').fadeIn();
-            $('#puntitos_con_linea .online').fadeIn();
-            $('#transparencias .online').fadeIn();
-            $('#lineas_transparencia .online').fadeIn();
-            $('.info-block#text4').fadeIn();
-
+                $('#puntitos .online').css('fill', '#ecbe31');
+                $('#Textos .cls-2.online').css('fill', '#fff');
+                $('#Textos .online-secondary').css('fill', '#00bde0');
+                $('#lineas_amarillas .online').fadeIn();
+                $('#lineas_azules .online').fadeIn();
+                $('#puntitos_con_linea .online').fadeIn();
+                $('#transparencias .online').fadeIn();
+                $('#lineas_transparencia .online').fadeIn();
+                $('.info-block#text4').fadeIn();
+            }
         });
-        $('#puntitos_con_linea .online-boton').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+        $('#puntitos_con_linea .online-boton').mouseenter(function () {
+            $("#text4 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .online').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
 
-            $('#puntitos .online').css('fill', '#ecbe31');
-            $('#Textos .cls-2.online').css('fill', '#fff');
-            $('#Textos .online-secondary').css('fill', '#00bde0');
-            $('#lineas_amarillas .online').fadeIn();
-            $('#lineas_azules .online').fadeIn();
-            $('#puntitos_con_linea .online').fadeIn();
-            $('#transparencias .online').fadeIn();
-            $('#lineas_transparencia .online').fadeIn();
-            $('.info-block#text4').fadeIn();
+                $('#puntitos .online').css('fill', '#ecbe31');
+                $('#Textos .cls-2.online').css('fill', '#fff');
+                $('#Textos .online-secondary').css('fill', '#00bde0');
+                $('#lineas_amarillas .online').fadeIn();
+                $('#lineas_azules .online').fadeIn();
+                $('#puntitos_con_linea .online').fadeIn();
+                $('#transparencias .online').fadeIn();
+                $('#lineas_transparencia .online').fadeIn();
+                $('.info-block#text4').fadeIn();
+            }
         });
-
         //id = 5, Social Media Ads
-        $('#puntitos .media').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+        $('#puntitos .media, text.media').mouseenter(function () {
+            $("#text5 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .media').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
 
-            $('#puntitos .media').css('fill', '#ecbe31');
-            $('#Textos .cls-2.media').css('fill', '#fff');
-            $('#Textos .media-secondary').css('fill', '#00bde0');
-            $('#lineas_amarillas .media').fadeIn();
-            $('#lineas_azules .media').fadeIn();
-            $('#puntitos_con_linea .media').fadeIn();
-            $('#transparencias .media').fadeIn();
-            $('#lineas_transparencia .media').fadeIn();
-            $('.info-block#text5').fadeIn();
+                $('#puntitos .media').css('fill', '#ecbe31');
+                $('#Textos .cls-2.media').css('fill', '#fff');
+                $('#Textos .media-secondary').css('fill', '#00bde0');
+                $('#lineas_amarillas .media').fadeIn();
+                $('#lineas_azules .media').fadeIn();
+                $('#puntitos_con_linea .media').fadeIn();
+                $('#transparencias .media').fadeIn();
+                $('#lineas_transparencia .media').fadeIn();
+                $('.info-block#text5').fadeIn();
+            }
         });
-        $('#puntitos_con_linea .media-boton').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+        $('#puntitos_con_linea .media-boton').mouseenter(function () {
+            $("#text5 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .media').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
 
-            $('#puntitos .media').css('fill', '#ecbe31');
-            $('#Textos .cls-2.media').css('fill', '#fff');
-            $('#Textos .media-secondary').css('fill', '#00bde0');
-            $('#lineas_amarillas .media').fadeIn();
-            $('#lineas_azules .media').fadeIn();
-            $('#puntitos_con_linea .media').fadeIn();
-            $('#transparencias .media').fadeIn();
-            $('#lineas_transparencia .media').fadeIn();
-            $('.info-block#text5').fadeIn();
+                $('#puntitos .media').css('fill', '#ecbe31');
+                $('#Textos .cls-2.media').css('fill', '#fff');
+                $('#Textos .media-secondary').css('fill', '#00bde0');
+                $('#lineas_amarillas .media').fadeIn();
+                $('#lineas_azules .media').fadeIn();
+                $('#puntitos_con_linea .media').fadeIn();
+                $('#transparencias .media').fadeIn();
+                $('#lineas_transparencia .media').fadeIn();
+                $('.info-block#text5').fadeIn();
+            }
         });
 
         //id = 6, Medios e influencers
-        $('#puntitos .influ').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+        $('#puntitos .influ, text.influ').mouseenter(function () {
+            $("#text6 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .influ').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
 
-            $('#puntitos .influ').css('fill', '#ecbe31');
-            $('#Textos .cls-2.influ').css('fill', '#fff');
-            $('#Textos .influ-secondary').css('fill', '#00bde0');
-            $('#lineas_amarillas .influ').fadeIn();
-            $('#lineas_azules .influ').fadeIn();
-            $('#puntitos_con_linea .influ').fadeIn();
-            $('#transparencias .influ').fadeIn();
-            $('#lineas_transparencia .influ').fadeIn();
-            $('.info-block#text6').fadeIn();
+                $('#puntitos .influ').css('fill', '#ecbe31');
+                $('#Textos .cls-2.influ').css('fill', '#fff');
+                $('#Textos .influ-secondary').css('fill', '#00bde0');
+                $('#lineas_amarillas .influ').fadeIn();
+                $('#lineas_azules .influ').fadeIn();
+                $('#puntitos_con_linea .influ').fadeIn();
+                $('#transparencias .influ').fadeIn();
+                $('#lineas_transparencia .influ').fadeIn();
+                $('.info-block#text6').fadeIn();
+            }
         });
-        $('#puntitos_con_linea .influ-boton').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+        $('#puntitos_con_linea .influ-boton').mouseenter(function () {
+            $("#text6 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .influ').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
 
-            $('#puntitos .influ').css('fill', '#ecbe31');
-            $('#Textos .cls-2.influ').css('fill', '#fff');
-            $('#Textos .influ-secondary').css('fill', '#00bde0');
-            $('#lineas_amarillas .influ').fadeIn();
-            $('#lineas_azules .influ').fadeIn();
-            $('#puntitos_con_linea .influ').fadeIn();
-            $('#transparencias .influ').fadeIn();
-            $('#lineas_transparencia .influ').fadeIn();
-            $('.info-block#text6').fadeIn();
+                $('#puntitos .influ').css('fill', '#ecbe31');
+                $('#Textos .cls-2.influ').css('fill', '#fff');
+                $('#Textos .influ-secondary').css('fill', '#00bde0');
+                $('#lineas_amarillas .influ').fadeIn();
+                $('#lineas_azules .influ').fadeIn();
+                $('#puntitos_con_linea .influ').fadeIn();
+                $('#transparencias .influ').fadeIn();
+                $('#lineas_transparencia .influ').fadeIn();
+                $('.info-block#text6').fadeIn();
+            }
         });
 
         //id = 7, Automation, Inbound Marketing, Mail
-        $('#puntitos .mark').click(function () {
+        $('#puntitos .mark, text.mark').mouseenter(function () {
+            $("#text7 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .mark').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
+
+                $('#puntitos .mark').css('fill', '#ecbe31');
+                $('#Textos .cls-2.mark').css('fill', '#fff');
+                $('#Textos .mark-secondary').css('fill', '#00bde0');
+                $('#lineas_amarillas .mark').fadeIn();
+                $('#lineas_azules .mark').fadeIn();
+                $('#puntitos_con_linea .mark').fadeIn();
+                $('#transparencias .mark').fadeIn();
+                $('#lineas_transparencia .mark').fadeIn();
+                $('.info-block#text7').fadeIn();
+            }
+        });
+        $('#puntitos_con_linea .mark-boton').mouseenter(function () {
+            $("#text7 .title-info").addClass('mouseenter');
+            $(".col-md-4.text-info h2").addClass('text-grey');
+            var style = $('#puntitos .mark').attr("style");
+            if(style != "fill: rgb(236, 190, 49);" ){
+                $('#infografia #transparencias polygon').css('display', 'none');
+                $('#infografia #lineas_amarillas path').css('display', 'none');
+                $('#infografia #lineas_azules path').css('display', 'none');
+                $('#lineas polyline').css('display', 'none');
+                $('#lineas_transparencia polygon').css('display', 'none');
+                $('#lineas .line-polylang').css('display', 'none');
+                $('#puntitos_con_linea circle').css('display', 'none');
+                $('#Textos text').css('fill', '#036785');
+                $('#puntitos circle').css('fill', '#036785');
+                $('.infographics .info-block').css('display', 'none');
+
+                $('#puntitos .mark').css('fill', '#ecbe31');
+                $('#Textos .cls-2.mark').css('fill', '#fff');
+                $('#Textos .mark-secondary').css('fill', '#00bde0');
+                $('#lineas_amarillas .mark').fadeIn();
+                $('#lineas_azules .mark').fadeIn();
+                $('#puntitos_con_linea .mark').fadeIn();
+                $('#transparencias .mark').fadeIn();
+                $('#lineas_transparencia .mark').fadeIn();
+                $('.info-block#text7').fadeIn();
+            }
+        });
+        $(".row.inner-info").mouseleave(function () {
+            $("#text1 .title-info,#text2 .title-info,#text3 .title-info,#text4 .title-info,#text5 .title-info,#text6 .title-info,#text7 .title-info").removeClass('mouseenter');
+            $('#Textos text').css('fill', '#036785');
+            $('#puntitos circle').css('fill', '#036785');
+            $(".col-md-4.text-info h2").removeClass('text-grey');
             $('#infografia #transparencias polygon').css('display', 'none');
             $('#infografia #lineas_amarillas path').css('display', 'none');
             $('#infografia #lineas_azules path').css('display', 'none');
@@ -629,43 +746,11 @@
             $('#lineas_transparencia polygon').css('display', 'none');
             $('#lineas .line-polylang').css('display', 'none');
             $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
+            $(".info-block#text0").fadeIn();
+            $(".info-block#text1,.info-block#text2,.info-block#text3,.info-block#text4,.info-block#text5,.info-block#text6,.info-block#text7").hide();
 
-            $('#puntitos .mark').css('fill', '#ecbe31');
-            $('#Textos .cls-2.mark').css('fill', '#fff');
-            $('#Textos .mark-secondary').css('fill', '#00bde0');
-            $('#lineas_amarillas .mark').fadeIn();
-            $('#lineas_azules .mark').fadeIn();
-            $('#puntitos_con_linea .mark').fadeIn();
-            $('#transparencias .mark').fadeIn();
-            $('#lineas_transparencia .mark').fadeIn();
-            $('.info-block#text7').fadeIn();
+
         });
-        $('#puntitos_con_linea .mark-boton').click(function () {
-            $('#infografia #transparencias polygon').css('display', 'none');
-            $('#infografia #lineas_amarillas path').css('display', 'none');
-            $('#infografia #lineas_azules path').css('display', 'none');
-            $('#lineas polyline').css('display', 'none');
-            $('#lineas_transparencia polygon').css('display', 'none');
-            $('#lineas .line-polylang').css('display', 'none');
-            $('#puntitos_con_linea circle').css('display', 'none');
-            $('#Textos text').css('fill', '#036785');
-            $('#puntitos circle').css('fill', '#036785');
-            $('.infographics .info-block').css('display', 'none');
-
-            $('#puntitos .mark').css('fill', '#ecbe31');
-            $('#Textos .cls-2.mark').css('fill', '#fff');
-            $('#Textos .mark-secondary').css('fill', '#00bde0');
-            $('#lineas_amarillas .mark').fadeIn();
-            $('#lineas_azules .mark').fadeIn();
-            $('#puntitos_con_linea .mark').fadeIn();
-            $('#transparencias .mark').fadeIn();
-            $('#lineas_transparencia .mark').fadeIn();
-            $('.info-block#text7').fadeIn();
-        });
-
         $('.infographics .title-info').after().click(function(){
             $('.info-block .text-info').fadeOut();
             $(this).parent().find('.text-info').fadeIn();
