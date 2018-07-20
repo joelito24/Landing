@@ -10,7 +10,7 @@
             <div class="block-inputs">
                 @foreach($categories as $category)
                     <div class="check-category">
-                        <input type="checkbox" name="{{ $category->id }}" value="{{ $category->id }}" id="{{ $category->id }}" class="gray-radio"/>
+                        <input type="radio" name="filter" value="{{ $category->id }}" id="{{ $category->id }}" class="gray-radio"/>
                         <label for="{{ $category->id }}" class="gray-radio-label blue">{{ $category->name }}</label>
                     </div>
                 @endforeach
@@ -108,7 +108,7 @@
                 var sList = "";
                 var val = 0;
                 $('.project').hide();
-                $('input[type=checkbox]').each(function () {
+                $('input[type=radio]').each(function () {
                     var sThisVal = (this.checked ? "1" : "0");
                     if(sThisVal == 1){
                         val = $(this).val();
