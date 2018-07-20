@@ -5,6 +5,7 @@
     <section class="whitepapers detail">
 
         <div class="container">
+            <div class="btn-blue"><a href="{{ route('whitepapers') }}">Ver todos los White papers ></a></div>
             <p class="title-page">{{ $whitepaper->title }}</p>
             <div class="row">
                 <div class="description col-md-6" data-animated="fadeInUp">
@@ -12,7 +13,7 @@
                     <p>{{ $whitepaper->description }}</p>
                     <div class="btn-yellow-full" data-id="{{ $whitepaper->id }}">Leer más</div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 image">
                     <img src="{{ $whitepaper->image }}" alt="{{ $whitepaper->title }}">
                 </div>
             </div>
