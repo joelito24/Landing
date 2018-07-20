@@ -94,7 +94,7 @@
                     <a href="{{ route('specialization1') }}">
                         <div class="inner-special fourth-special">
                             <div class="line-yellow"></div>
-                            <p data-animated="fadeInUp">Proyectos de e-commerce</p>
+                            <p data-animated="fadeInUp">Proyectos de e‑commerce</p>
                             <div data-animated="fadeInUp" class="btn-yellow">Cómo hacer crecer tu negocio</div>
                             <div  class="line-yellow line-bottom"></div>
                         </div>
@@ -144,7 +144,7 @@
                     <div class="col-md-7 left-col-whitepaper">
                         <p class="title-whitepaper">{{ $whitepaper->title }}</p>
                         <div class="text">{!! $whitepaper->description !!}</div>
-                        <div class="btn-yellow-full" data-id="{{ $whitepaper->id }}">Leer más</div>
+                        <a href="{{ route('detailwhitepaper', $whitepaper->slug) }}"><div class="btn-yellow-full">Leer más</div></a>
                     </div>
                     <div class="col-md-5 right-col-whitepaper" >
 {{--                        <img src="{{ $whitepaper->image }}" alt="">--}}
@@ -214,51 +214,6 @@
              
         </div>
     </div>
-
-    {{--popup para whitepapers--}}
-    <div class="whitepaper-popup">
-        <div class="form-block">
-            <div class="form-newsletter">
-                <p class="close">X</p>
-                <p class="title-popup">Para descargar nuestros <span class="white">ThatzPapers</span> debes registratarte, <span class="black">son 10 segundos</span></p>
-                <form method="POST" action="" id="form_newsletter">
-                    <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
-                    <input type="hidden" name="idPdf" value="" id="pdf">
-                    <div class="form-group">
-                        <p class="msg-error">Campo nombre es obligatorio</p>
-                        <input placeholder="Nombre" class="form-control required" type="text" name="name" id="name" required>
-                    </div>
-                    <div class="form-group">
-                        <p class="msg-error">Email no tiene el formato correcte</p>
-                        <input placeholder="Email" class="form-control required" type="email" name="email" id="email" required>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                            <p class="msg-error radio-btn">Tienes que elegir una de dos opciones</p>
-                            <div>
-                                <input type="radio" name="newsletter"  value="1" id="newsletter1" class="ios-radio" />
-                                <label for="newsletter1" class="ios-radio-label"></label>
-                                <label class="news" for="newsletter1">Me gustaría que me avisaseis cuando publiquéis nuevos White papers o Articulos.</label>
-                            </div>
-
-                            <div>
-                                <input type="radio" name="newsletter" value="0" id="newsletter2" class="ios-radio"/>
-                                <label for="newsletter2" class="ios-radio-label"></label>
-                                <label class="news" for="newsletter2">No hace falta que me aviseis. Gracias.</label>
-                            </div>
-                        </label>
-                    </div>
-                    <div class="send" id="response"><input class="submit btn-yellow-full" type="button" id="send" value="Recibir White paper"></div>
-                </form>
-            </div>
-            <div style="display: none;" class="response-newsletter">
-                <p>¡Recibido!</p>
-                <p>Muchas gracias por tu interés.</p>
-                <p>Revisa tu email, te hemos enviado el Whitepaper.</p>
-                <p>¡Qué lo disfrutes!</p>
-            </div>
-        </div>
-    </div>
 </section>
 
 @stop
@@ -270,16 +225,6 @@
         $("#header").addClass('header_home');
         //$(".servicios").addClass('main-blue');
         $("#sobre").attr("src","{{ asset('front/img/header/sobre.png') }}");
-
-
-        $('.whitepaper .btn-yellow-full').click(function(){
-            $(".form-block").css('background-image', '/front/img/bg-whitepapers.png');
-            $('.response-newsletter').css('display', 'none');
-            $('.form-newsletter').css('display', 'block');
-            id = $(this).attr('data-id');
-            $('.whitepaper-popup').fadeIn();
-            $('#pdf').val(id);
-        });
 
         $("#burger img").attr("src","{{ asset('front/img/header/burger.png') }}");
         $('.cls-8').click(function(){
