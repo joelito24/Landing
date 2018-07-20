@@ -674,6 +674,17 @@
             // $('.info-block .text-info').fadeOut();
             $(this).fadeOut();
         });
+
+        // $(window).bind('scroll',function(e){
+        //     parallaxScroll();
+        // });
+        //
+        // function parallaxScroll(){
+        //     var scrolled = $(window).scrollTop();
+        //     $('.section.home .right-col').css('top',(0-(scrolled*.25))+'px');
+        //     // $('#parallax-bg2').css('top',(0-(scrolled*.5))+'px');
+        //     $('section.home .top').css('top',(0-(scrolled*.175))+'px');
+        // }
     });
 </script>
 @endsection

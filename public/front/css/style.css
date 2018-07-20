@@ -375,15 +375,18 @@ figure.effect-sarah:hover .title-project{font-weight: 400;transition: opacity 0.
 figure.effect-sarah p {padding: 65px 0 0;opacity: 0;-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;transition: opacity 0.35s, transform 0.35s;-webkit-transform: translate3d(100%,0,0);transform: translate3d(100%,0,0);}
 figure.effect-sarah:hover p {opacity: 1;-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
 figure.effect-sarah:hover .btn-yellow{opacity: 1;font-size: 13px;-webkit-transform: translate3d(0,0,0);transform: translate3d(0,0,0);}
+.grid figure figcaption a{color: #fff;}
+.grid figure a{display: block;color:#fff;}
 
 /* Project detail */
 section.project{margin-top: -214px}
 .name-page{z-index: 100000;position: relative;margin-bottom: 62px;font-size: 14px;font-weight: 700;text-transform: uppercase;color: var(--main-blue);}
 section.project .title{margin-bottom: 20px;text-align: center;color: #fff;max-width: 398px;margin-left: auto;margin-right: auto;font-family: var(--title-font);font-size: 48px;}
-section.project a{color:#fff;}
+section.project .project a {color:#fff;}
 section.project .project-top{padding-top: 178px;    background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
 section.project .project-top .category-name{text-align: center;color: #fff;text-transform: uppercase;font-size: 16px;margin-bottom: 163px;}
 section.project .project-description{max-width: 770px;width: 90%;margin:-100px auto 68px;background: #fff;padding: 35px 60px;font-size: 20px;font-weight: 700;color: var(--default-color);}
+section.project .project-description a{color: var(--main-blue);}
 section.project .project-description p, section.project .project-description span{font-size:20px !important;font-family: var(--main-font) !important;}
 section.project .question{font-family: var(--title-font);font-size: 36px;color: var(--default-color);}
 section.project .project-description p{margin-bottom: 25px;}
