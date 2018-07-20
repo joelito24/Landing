@@ -21,4 +21,12 @@ class WhitepapersController extends Controller
         ]);
 
     }
+    public function detail(Whitepapers $whitepapersRepository, $slug){
+
+        $whitepaper = $whitepapersRepository->findBySlug($slug);
+        return view('front.whitepapers.detailWhitepaper',[
+            'whitepaper' => $whitepaper,
+        ]);
+
+    }
 }

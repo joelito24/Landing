@@ -12,7 +12,7 @@ class Whitepapers extends Model implements ModelInterface
 
     protected $table = 'whitepapers';
     public $timestamps = true;
-    protected $fillable = ['title', 'description', 'image', 'data_file', 'active', 'home', 'number', 'order'];
+    protected $fillable = ['title', 'description', 'image', 'data_file', 'active', 'home', 'number', 'order', 'slug'];
 
     private function imagePath( $image )
     {
@@ -34,6 +34,10 @@ class Whitepapers extends Model implements ModelInterface
 
     public function findAllActive(){
         return $this->where('active', 1)->orderBy('order', 'asc')->get();
+    }
+
+    public function findBySlug($slug){
+        return $this->where('slug', $slug)->first();
     }
 
     public function findLastHome(){

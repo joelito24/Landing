@@ -89,6 +89,9 @@ span.arrow.down {
 }
 #sobre{min-width: 33px;}
 .servicios:hover , .especializaciones:hover {cursor: pointer}
+section.whitepapers.detail .btn-yellow-full{margin-top: 25px; cursor: pointer}
+section.whitepapers.detail .description .number{margin-top: 10px;margin-bottom: 15px;}
+section.whitepapers.detail .description p{font-size: 16px; font-weight: 400; line-height: 22px;}
 header.header-white {background-color: #ffffff!important; position: relative; z-index: 100;}
 header.header-blue-mbl {background: transparent!important;position: relative;z-index: 100;}
 header.header_transparent {background: transparent!important;position: relative;z-index: 100;}

@@ -2,23 +2,22 @@
 
 @section('content')
 
-    <section class="whitepapers">
+    <section class="whitepapers detail">
 
         <div class="container">
-            <p class="title-page">White papers</p>
-            <div class="description" data-animated="fadeInUp">
-                <p>Nuestros ThatzPapers son estudios, análisis y reflexiones que hacemos desde los diferentes departamentos de THATZAD.</p>
-                <p>No tienen la intención de sentar cátedra, parten de una curiosidad por algún campo del marketing online sobre el que investigamos y compartimos ese aprendizaje con nuestro equipo y nuestros Clientes.</p>
-            </div>
-            @foreach($whitepapers as $whitepaper)
-                <div class="whitepaper" data-animated="fadeInUp">
-                    <div class="text-col">
-                        <p class="title">{{ $whitepaper->title }}</p>
-                        <p class="number">Thatzpaper {{ $whitepaper->number }}</p>
-                    </div>
-                    <a href="{{ route('detailwhitepaper', $whitepaper->slug) }}"><div class="btn-yellow-full">Leer más</div></a>
+            <p class="title-page">{{ $whitepaper->title }}</p>
+            <div class="row">
+                <div class="description col-md-6" data-animated="fadeInUp">
+                    <p class="number">Thatzpaper {{ $whitepaper->number }}</p>
+                    <p>{{ $whitepaper->description }}</p>
+                    <div class="btn-yellow-full" data-id="{{ $whitepaper->id }}">Leer más</div>
                 </div>
-            @endforeach
+                <div class="col-md-6">
+                    <img src="{{ $whitepaper->image }}" alt="{{ $whitepaper->title }}">
+                </div>
+            </div>
+
+
             <div class="whitepaper-popup">
                 <div class="form-block">
                     <div class="form-newsletter">
@@ -92,6 +91,67 @@
         $("#burger, #mobile-close").click(function(){
             $("#header").toggleClass('header-blue-mbl');
             $("#header").toggleClass('header-white');
+        });
+        $('.btn-yellow-full').click(function(){
+            $("section.whitepapers  .form-block").css('background-image', '/front/img/bg-whitepapers.png');
+            $('.response-newsletter').css('display', 'none');
+            $('.form-newsletter').css('display', 'block');
+            id = $(this).attr('data-id');
+            $('.whitepaper-popup').fadeIn();
+            $('#pdf').val(id);
+        });
+
+        $("#send").click(function(e){
+           e.preventDefault();
+           var error = 0;
+           var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+           if (!testEmail.test($('#email').val())) {
+               error = 1;
+               $('#email').parent().find('.msg-error').fadeIn();
+               $('#email').addClass('not-correct');
+           }else{
+               $('#email').parent().find('.msg-error').fadeOut();
+               $('#email').removeClass('not-correct');
+           }
+           if ($('#name').val().length <= 1) {
+               error = 1;
+               $('#name').parent().find('.msg-error').fadeIn();
+               $('#name').addClass('not-correct');
+           }else{
+               $('#name').parent().find('.msg-error').fadeOut();
+               $('#name').removeClass('not-correct');
+           }
+           if($("input[name='newsletter']:radio").is(':checked')){
+               $('#name').parent().parent().find('.msg-error.radio-btn').fadeOut();
+           }else{
+               error = 1;
+               $('#name').parent().parent().find('.msg-error.radio-btn').fadeIn();
+            }
+
+           if (error === 0){
+               $.ajax({
+                   type: 'post',
+                   url: 'routes.newsletter',
+                   data: $('#form_newsletter').serialize(),
+                   success: function(response) {
+                       $('#form_newsletter').trigger("reset");
+                       $('#privacy').prop('checked', false);
+                       if (response === 'sent' || response === 'exist'){
+                           $('section.whitepapers .form-block').css('background', '#00bde0');
+                           $('.form-newsletter').css('display', 'none');
+                           $('.response-newsletter').fadeIn();
+                           setTimeout(function() { $(".whitepaper-popup").hide('slow'); }, 8000);
+                           // $('#response').html('Se ha enviado su solicitud correctamente');
+                       }
+                       // else if (response === 'exist'){
+                       //     $('#response').html('El email indicado ya ha sido introducido');
+                       // }
+                   },
+                   error: function(e){
+                       console.log(e);
+                   }
+               });
+           }
         });
     });
 </script>

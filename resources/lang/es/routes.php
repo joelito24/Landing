@@ -7,6 +7,7 @@ return [
     'projects'              => 'proyectos',
     'project'               => 'proyectos/{slug}',
     'whitepapers'           => 'white-papers',
+    'detailwhitepaper'      => 'white-papers/{slug}',
     'agency'                => 'agencia',
     'specialization1'       => 'proyectos-de-e-commerce',
     'specialization2'       => 'publicidad-online-orientada-a-resultados',

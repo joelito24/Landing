@@ -326,8 +326,14 @@ return [
         'fields' => [
             'title' => [
                 'type' => 'text',
-                'title' => 'Ttítulo',
+                'title' => 'Título',
                 'description' => 'Introduzca el título.',
+                'rules' => ['required']
+            ],
+            'slug' => [
+                'type' => 'text',
+                'title' => 'url amigable',
+                'description' => 'Introduzca el slug.',
                 'rules' => ['required']
             ],
             'description' => [
