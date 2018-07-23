@@ -52,7 +52,9 @@
                     <div class="info-block" id="text3" data-text="3">
                         <p class="text-bg">SEO, SEA, Adwords</p>
                         <p class="title-info">SEO, SEA/Adwords</p>
-                        <p class="text-info"><span>Somos Google Premier Partner (logo)</span>, sabemos la importancia de una web perfectamente adaptada para Google, tanto a nivel SEO como para optimizar Adwords. La estrategia de keywords nos marcará la arquitectura de la web, así que nos gusta que sea uno de los primeros drivers de plan de e-Marketing.</p>
+                        <p class="text-info"><span>Somos Google Premier Partner,</span>
+                            <img style="max-width: 163px;display: block;margin-bottom: 10px;margin-top: 10px;" src="{{ asset('front/img/primer-google.png') }}" alt="">
+                             sabemos la importancia de una web perfectamente adaptada para Google, tanto a nivel SEO como para optimizar Adwords. La estrategia de keywords nos marcará la arquitectura de la web, así que nos gusta que sea uno de los primeros drivers de plan de e-Marketing.</p>
                     </div>
                     <div class="info-block" id="text4" data-text="4">
                         <p class="text-bg">Publicidad online</p>
