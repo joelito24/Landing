@@ -15,14 +15,14 @@
                 <p>Google Analytics: Almacena cookies para poder elaborar estadísticas sobre el tráfico yvolumen de visitas de esta web. Al utilizar este sitio web está consintiendo el tratamiento deinformación acerca de usted por Googlet. Por tanto, el ejercicio de cualquier derecho en estesentido deberá hacerlo comunicando directamente con Google.</p>
                 <p>Google Inc. es una compañía adherida a “Privacy Shiels” (escudo de privacidad) que garantiza que todos los datos transferidos serán tratados con un nivel de protección acorde a la normativa europea. Puede consultar información detallada a este respecto a través del siguiente enlace: https://support.google.com/analytics/answer/6004245.</p>
                 <p>Si lo desea puede utilizar el Complemento de inhabilitación para navegadores de Google Analytics a través de cuyas instrucciones pueden rechazarse las cookies analíticas de dicho servicio en todos los navegadores. Puede consultar más información al respecto en el siguiente enlace: https://tools.google.com/dlpage/gaoptout.</p>
-                <p>Asimismo, ARRUEBO PETRUS SL informa al usuario de que tiene la posibilidad de configurar su navegador de modo que se le informe de la recepción de cookies, pudiendo, si así lo desea, impedir que sean instaladas en su disco duro.</p>
+                <p>Asimismo, That’s Advertising SL informa al usuario de que tiene la posibilidad de configurar su navegador de modo que se le informe de la recepción de cookies, pudiendo, si así lo desea, impedir que sean instaladas en su disco duro.</p>
                 <p>A continuación le proporcionamos los enlaces de diversos navegadores, a través de los cuales podrá realizar dicha configuración:</p>
                 <ul>
-                    <li>Firefox desde aquí: http://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-que-los-sitios-we</li>
-                    <li>Chrome desde aquí:http://support.google.com/chrome/bin/answer.py?hl=es&answer=95647</li>
-                    <li>Explorer desde aquí:http://windows.microsoft.com/es-es/internet-explorer/delete-manage-cookies#ie=ie-10</li>
-                    <li>Safari desde aquí:https://support.apple.com/kb/ph17191?locale=es_ES</li>
-                    <li>Opera desde aquí:http://help.opera.com/Windows/11.50/es-ES/cookies.html</li>
+                    <li>Firefox desde aquí: <a target="_blank" href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias">https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias</a></li>
+                    <li>Chrome desde aquí: <a target="_blank" href="http://support.google.com/chrome/bin/answer.py?hl=es&answer=95647">http://support.google.com/chrome/bin/answer.py?hl=es&answer=95647</a></li>
+                    <li>Explorer desde aquí: <a target="_blank" href="https://support.microsoft.com/ru-ru/help/17442/windows-internet-explorer-delete-manage-cookies#ie=ie-10">http://windows.microsoft.com/es-es/internet-explorer/delete-manage-cookies#ie=ie-10</a></li>
+                    <li>Safari desde aquí: <a target="_blank" href="https://support.apple.com/kb/ph17191?locale=es_ES">https://support.apple.com/kb/ph17191?locale=es_ES</a></li>
+                    <li>Opera desde aquí: <a target="_blank" href="https://help.opera.com/en/latest/web-preferences/#cookies">https://help.opera.com/en/latest/web-preferences/#cookies</a></li>
                 </ul>
             </div>
 

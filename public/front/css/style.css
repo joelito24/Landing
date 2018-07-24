@@ -87,7 +87,7 @@ section.home .infographics .text-info p span.line-title{color:#fff; display: blo
 section.home .infographics .text-info .info-block{display: none;}
 section.home .infographics .text-info .info-block .text-bg{font-family: var(--title-font);color: rgba(0, 0, 0, 0.25);font-size: 61px;position: absolute;left: 40%;line-height: 63px;top: 18px;text-align: right;width: 498px;z-index: 0;}
 section.home .infographics .text-info .info-block#text0{display: block;}
-section.home .infographics .text-info .text-general{font-weight: 700;color: var(--main-blue);font-size: 18px;line-height: 22px;max-width: 273px;margin-top: 20px;margin-bottom: 20px;/*margin-left:  auto;margin-right:  auto;*/}
+section.home .infographics .text-info .text-general{font-weight: 700;color: var(--main-blue);font-size: 18px;line-height: 22px;max-width: 228px;margin-top: 20px;margin-bottom: 20px;/*margin-left:  auto;margin-right:  auto;*/}
 section.home .infographics .link-service{margin-top: 25px;}
 section.home .infographics .link-service.last{margin-top:0;}
 section.home .infographics .link-service a{color: rgb(236, 190, 49); font-weight: 700;}
@@ -525,6 +525,7 @@ section.generals .subtitle:first-child{margin-top:10px;}
 section.generals ul.info{    margin-left: 0;margin-bottom: 20px;margin-top: -18px;}
 section.generals ul.info li{margin-bottom: 3px;}
 section.generals p a{color:var(--default-color);font-weight: 700;}
+section.generals ul a{color:var(--main-blue);}
 
 /* FOOTER */
 footer{padding-top:48px;background: var(--white);}

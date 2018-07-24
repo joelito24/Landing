@@ -93,7 +93,7 @@
 									<div class="form-check">
 										<label class="form-check-label">
 											<input class="gray-radio" type="checkbox" name="privacy" id="privacy" value="1">
-											<label for="privacy" class="white-radio-label">Acepto la política de privacidad aplicada en esta web.</label>
+											<label for="privacy" class="white-radio-label">Acepto <a style="color: #fff;font-weight: 700;" href="{{ route('generals') }}" target="_blank">la política de privacidad</a> aplicada en esta web.</label>
 											<p style="margin-top: -10px;" class="msg-error">Tienes que aceptar nuestra política de privacidad</p>
 										</label>
 									</div>

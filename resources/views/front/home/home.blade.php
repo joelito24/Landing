@@ -33,7 +33,8 @@
                             {{--<img style="max-width: 23px;color: #fff;" src="{{ asset('front/img/home/right-arrow-angle.png') }}" alt="">--}}
                             {{--<svg style="max-width: 23px;color: #fff;" aria-hidden="true" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>--}}
                         {{--</div>--}}
-                        <p class="text-general">Clicka en las diferentes opciones y descubre todo lo que podemos hacer por ti</p>
+                        <p>Para que una acción de e-Marketing tenga éxito de verdad, debe estar coordinada con otras acciones que apoyen una estrategia integral. Existe una interrelación muy fuerte entre ciertas estrategias. En <b>THATZAD</b> tenemos la visión global para que TODO tenga sentido.</p>
+                        <p class="text-general">Clica en los diferentes servicios y descubre todo lo que podemos hacer con tu proyecto</p>
                         <div class="downArrow bounce">
                             {{--<img style="max-width: 23px;color: #fff;" src="{{ asset('front/img/home/right-arrow-angle.png') }}" alt="">--}}
                             <svg style="max-width: 23px;color: #fff;" aria-hidden="true" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>

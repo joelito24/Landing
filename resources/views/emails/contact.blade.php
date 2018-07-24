@@ -19,6 +19,9 @@
                             <?php
                                 foreach (json_decode($data['consultas']) as $consulta) {
                                     switch ($consulta){
+                                        case "0":
+                                            $consulta = "";
+                                            break;
                                         case "1":
                                             $consulta = "Consultoría general";
                                             break;

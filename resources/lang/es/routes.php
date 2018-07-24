@@ -15,5 +15,5 @@ return [
     'specialization4'       => 'transformacion-digital-para-empresas',
     'aviso'                 => 'aviso-legal',
     'politica'              => 'politica-de-cookies',
-    'generals'              => 'condiciones-generales',
+    'generals'              => 'politica-de-privacidad',
 ];
