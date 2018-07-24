@@ -76,9 +76,9 @@
     section.home .infographics .title-info{padding-right: 10px;position: relative;text-transform: inherit;border-bottom: 1px solid #00dbef;padding-bottom: 15px;margin-bottom: 17px;}
     section.home .infographics .text-info{padding-left: 0; padding-right: 0;}
     section.home .infographics .title-info:after{font-size: 22px;content: "+";position: absolute;bottom: 47%;right: 0;z-index: 0;width: 20px;height: 25px;text-align:  right;line-height: 30px;}
-    section.home .infographics p{position: relative;border-bottom: 1px solid #00dbef;padding-bottom: 15px;}
+    section.home .infographics .info-descr{position: relative;border-bottom: 1px solid #00dbef;padding-bottom: 9px;}
     section.home .infographics p:after{font-size: 22px;content: "-";position: absolute;bottom: 8px;right: 0;z-index: 0;}
-    section.home .infographics p.text-info{display: none; padding-right: 12px;}
+    section.home .infographics .info-descr{margin-bottom: 15px;display: none; padding-right: 12px;}
     section.home .infographics .inner-info{padding-bottom: 50px;}
     section.home .specializations{transform: none;    margin-top: 0;}
     section.home .specializations .container, section.home .specializations .container .row{transform: none;}
@@ -168,6 +168,8 @@
     section.specializations.advertising .main-content .container, section.specializations.advertising .white-block-text{max-width: 100% !important;width:100% !important;}
     section.specializations.advertising .white-block-text .text-action{    width: 100%;margin-top: 25px;}
     section.whitepapers .whitepaper .btn-yellow-full{visibility: visible;}
+
+    section.home .blog .col-article:nth-child(2), section.home .blog .col-article:nth-child(3){display: none;}
 }
 @media (max-width: 600px){
     section.projects .block-inputs .check-category{width: 50%;}

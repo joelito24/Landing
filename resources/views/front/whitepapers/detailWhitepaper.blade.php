@@ -20,7 +20,12 @@
                 <div class="description col-md-6" data-animated="fadeInUp">
                     <p class="number">Thatzpaper {{ $whitepaper->number }}</p>
                     <p>{{ $whitepaper->description }}</p>
-                    <div class="btn-yellow-full" data-id="{{ $whitepaper->id }}">Leer más</div>
+                    @if (Session::has('whitepapers'))
+                        <?php $idSubsriber = Session::get('whitepapers'); ?>
+                        <div class="btn-yellow-full sendmail" data-subscriber="{{ $idSubsriber }}" data-id="{{ $whitepaper->id }}">Descargar</div>
+                    @else
+                        <div class="btn-yellow-full download" data-id="{{ $whitepaper->id }}">Descargar</div>
+                    @endif
                 </div>
                 <div class="col-md-6 image">
                     <img src="{{ $whitepaper->image }}" alt="{{ $whitepaper->title }}">
@@ -34,8 +39,8 @@
                         <p class="close">X</p>
                         <p class="title-popup">Para descargar nuestros <span class="white">ThatzPapers</span> debes registratarte, <span class="black">son 10 segundos</span></p>
                         <form method="POST" action="" id="form_newsletter">
-                            <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
-                            <input type="hidden" name="idPdf" value="" id="pdf">
+                            <input id="token" name="_token" type="hidden" value="{{ csrf_token() }}"/>
+                            <input type="hidden" name="idPdf" value="{{ $whitepaper->id }}" id="pdf">
                             <div class="form-group">
                                 <p class="msg-error">Campo nombre es obligatorio</p>
                                 <input placeholder="Nombre" class="form-control required" type="text" name="name" id="name" required>
@@ -102,13 +107,48 @@
             $("#header").toggleClass('header-blue-mbl');
             $("#header").toggleClass('header-white');
         });
-        $('.btn-yellow-full').click(function(){
+        $('.btn-yellow-full.download').click(function(){
             $("section.whitepapers  .form-block").css('background-image', '/front/img/bg-whitepapers.png');
             $('.response-newsletter').css('display', 'none');
             $('.form-newsletter').css('display', 'block');
-            id = $(this).attr('data-id');
+            // id = $(this).attr('data-id');
             $('.whitepaper-popup').fadeIn();
-            $('#pdf').val(id);
+            // $('#pdf').val(id);
+        });
+
+        $('.btn-yellow-full.sendmail').click(function(){
+            var idSubscriber = $(this).attr('data-subscriber');
+            var token = $('#token').val();
+            var idWhitepaper = $(this).attr('data-id');
+            var data = "_token="+token+"&idSubscriber="+idSubscriber+"&idWhitepaper="+idWhitepaper;
+            // console.log(token);
+            sendWhitepaper(data);
+            $('section.whitepapers .form-block').css('background', '#00bde0');
+            $('.whitepaper-popup').fadeIn();
+            $('.form-newsletter').css('display', 'none');
+            $('.response-newsletter').css('display', 'block');
+            setTimeout(function() { $(".whitepaper-popup").hide('slow'); }, 8000);
+            {{--alert('hola');--}}
+            {{--$.ajax({--}}
+            {{--type: 'post',--}}
+            {{--url: '{{ action('NewsletterController@add') }}',--}}
+            {{--data: { idSubscriber: $(this).attr('data-subscriber'), _token: $('#token') },--}}
+            {{--success: function(response) {--}}
+            {{--$('#form_newsletter').trigger("reset");--}}
+            {{--$('#privacy').prop('checked', false);--}}
+            {{--if (response === 'sent' || response === 'sentWithSubscribe'){--}}
+            {{--$(".whitepaper-popup").fadeIn();--}}
+            {{--// $('#response').html('Se ha enviado su solicitud correctamente');--}}
+            {{--}--}}
+            {{--// else if (response === 'exist'){--}}
+            {{--//     $('#response').html('El email indicado ya ha sido introducido');--}}
+            {{--// }--}}
+            {{--},--}}
+            {{--error: function(e){--}}
+            {{--console.log(e);--}}
+            {{--}--}}
+            {{--});--}}
+
         });
 
         $("#send").click(function(e){
@@ -139,31 +179,40 @@
             }
 
            if (error === 0){
-               $.ajax({
-                   type: 'post',
-                   url: 'routes.newsletter',
-                   data: $('#form_newsletter').serialize(),
-                   success: function(response) {
-                       $('#form_newsletter').trigger("reset");
-                       $('#privacy').prop('checked', false);
-                       if (response === 'sent' || response === 'exist'){
-                           $('section.whitepapers .form-block').css('background', '#00bde0');
-                           $('.form-newsletter').css('display', 'none');
-                           $('.response-newsletter').fadeIn();
-                           setTimeout(function() { $(".whitepaper-popup").hide('slow'); }, 8000);
-                           // $('#response').html('Se ha enviado su solicitud correctamente');
-                       }
-                       // else if (response === 'exist'){
-                       //     $('#response').html('El email indicado ya ha sido introducido');
-                       // }
-                   },
-                   error: function(e){
-                       console.log(e);
-                   }
-               });
+               // console.log($('#form_newsletter').serialize());
+               sendWhitepaper($('#form_newsletter').serialize());
            }
         });
     });
+
+    function sendWhitepaper(data){
+        $.ajax({
+            type: 'post',
+            url: '{{ action('NewsletterController@add') }}',
+            data: data,
+            success: function(response) {
+                $('#form_newsletter').trigger("reset");
+                $('#privacy').prop('checked', false);
+                if (response === 'sent' || response === 'sentWithSubscribe'){
+                    if(response === 'sentWithSubscribe'){
+                        createCookie("whitepapers", "", 365);
+                    }
+                    $('section.whitepapers .form-block').css('background', '#00bde0');
+                    $('.form-newsletter').css('display', 'none');
+                    $('.response-newsletter').fadeIn();
+                    setTimeout(function() { $(".whitepaper-popup").hide('slow'); }, 8000);
+
+                    // $('#response').html('Se ha enviado su solicitud correctamente');
+                }
+                // else if (response === 'exist'){
+                //     $('#response').html('El email indicado ya ha sido introducido');
+                // }
+            },
+            error: function(e){
+                console.log(e);
+            }
+        });
+    }
 </script>
 @endsection
 @section('titles')

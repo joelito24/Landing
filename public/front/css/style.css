@@ -58,7 +58,7 @@ section.home .right-col .text-box{color:var(--white);max-width: 318px;margin: 0 
 section.home .right-col .text-box p{font-size: 14px;line-height: 19px;margin-bottom: 15px;}
 section.home .right-col .text-box p.text-grand{font-size: 22px;line-height: 24px;}
 section.home .right-col .text-box p:last-child{margin-bottom: 45px;}
-section.home .right-col .white-box{box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.35);background: var(--white);color: var(--main-blue);font-family: var(--title-font);font-size: 36px;margin-top: 20px;padding: 26px 17px 56px;}
+section.home .right-col .white-box{line-height: 40px;box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.35);background: var(--white);color: var(--main-blue);font-family: var(--title-font);font-size: 36px;margin-top: 20px;padding: 26px 17px 56px;}
 section.home .top:after {background: #00b3ee;bottom: -80px;content: '';display: block;height: var(--height);left: 0;position: absolute;right: 0;transform: var(--ancle);transform-origin: 100%;z-index: -1;}
 section.home .infographics{padding: 94px 0;position: relative;background: #023240;background: -moz-linear-gradient(top, #86145a 0%, #e63e4a 100%);background: -webkit-linear-gradient(top, #023240 0%,#01455a 100%);background: linear-gradient(to bottom, #023240 0%,#01455a 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86145a', endColorstr='#e63e4a',GradientType=0 );margin-top: 45px;transform: var(--ancle);}
 section.home .infographics .container{transform: var(--reverse-ancle);}
@@ -80,19 +80,24 @@ section.home .infographics .container{transform: var(--reverse-ancle);}
 section.home .infographics #infografia svg{max-width: 800px;}
 section.home .infographics .inner-info{padding-bottom: 100px;margin-top: 100px;}
 section.home .infographics p{color:#fff;}
-section.home .infographics .text-info{font-size: 14px;font-family: var(--main-font);font-weight: 500;line-height: 18px;}
-section.home .infographics .title-info{font-family:var(--main-font);font-size: 16px;font-weight: 400;text-transform: uppercase;margin-bottom: 3px;}
+section.home .infographics .text-info{font-size: 16px;font-family: var(--main-font);font-weight: 500;line-height: 22px;}
+section.home .infographics .title-info{font-family:var(--main-font);font-size: 16px;font-weight: 400;margin-bottom: 3px;}
 section.home .infographics .text-info p span{color: var(--main-blue);}
+section.home .infographics .text-info p span.line-title{color:#fff; display: block;}
 section.home .infographics .text-info .info-block{display: none;}
 section.home .infographics .text-info .info-block .text-bg{font-family: var(--title-font);color: rgba(0, 0, 0, 0.25);font-size: 61px;position: absolute;left: 40%;line-height: 63px;top: 18px;text-align: right;width: 498px;z-index: 0;}
 section.home .infographics .text-info .info-block#text0{display: block;}
-section.home .infographics .text-info .text-general{font-weight: 700;color: var(--main-blue);font-size: 20px;line-height: 25px;max-width: 300px;margin-top: 20px;margin-bottom: 20px;/*margin-left:  auto;margin-right:  auto;*/}
+section.home .infographics .text-info .text-general{font-weight: 700;color: var(--main-blue);font-size: 18px;line-height: 22px;max-width: 273px;margin-top: 20px;margin-bottom: 20px;/*margin-left:  auto;margin-right:  auto;*/}
+section.home .infographics .link-service{margin-top: 25px;}
+section.home .infographics .link-service.last{margin-top:0;}
+section.home .infographics .link-service a{color: rgb(236, 190, 49); font-weight: 700;}
 
 section.home .infographics .bounce {
   -moz-animation: bounce 3s infinite;
   -webkit-animation: bounce 3s infinite;
   animation: bounce 3s infinite;
-  margin-left: 203px;
+  margin-left: 274px;
+  margin-top: -76px;
 }
 @-moz-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {

@@ -363,7 +363,7 @@ return [
                 'type' => 'file',
                 'title' => 'Fichero PDF',
                 'description' => '',
-                'rules' => ['required']
+                'rules' => ['']
             ],
             'home' => [
                 'type' => 'radio',

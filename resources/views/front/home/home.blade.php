@@ -40,41 +40,71 @@
                         </div>
                     </div>
                     <div class="info-block" id="text1" data-text="1">
-                        <p class="text-bg">Ideas de negocio</p>
+                        <p class="text-bg business">Ideas de negocio</p>
                         <p class="title-info">Ideas de negocio/Bussines plan</p>
-                        <p class="text-info">Todo proyecto se inicia con una idea de negocio y plan de marketing. Dominamos el medio, <span>llevamos más de 12 años haciendo crecer negocios online como el tuyo.</span> Hemos aprendido de los éxitos, pero también de los fracasos. Conocemos las tendencias, sabemos hacia dónde se dirige el futuro. Podemos ayudarte a darle forma a tu idea y diseñar la estrategia que necesitas para cumplir tus objetivos.</p>
+                        <div class="info-descr">
+                            <p class="text-info">Todo proyecto se inicia con una idea de negocio y plan de marketing. Dominamos el medio, <span>llevamos más de 12 años haciendo crecer negocios online como el tuyo.</span> Hemos aprendido de los éxitos, pero también de los fracasos. Conocemos las tendencias, sabemos hacia dónde se dirige el futuro. Podemos ayudarte a darle forma a tu idea y diseñar la estrategia que necesitas para cumplir tus objetivos.</p>
+                            <p class="link-service"><a href="{{ route('service','consultoria-de-emarketing-y-desarrollo-de-estrategia') }}">Saber más de Consultoría de e-Marketing&nbsp;></a></p>
+                        </div>
                     </div>
                     <div class="info-block" id="text2" data-text="2">
-                        <p class="text-bg">Diseño web</p>
-                        <p class="title-info">Diseño web, Marketing web, Programación web</p>
-                        <p class="text-info">Una web, e-commerce o portal son siempre una pieza clave, pero sólo la primera de una proyecto mucho mayor. Ideamos, <span>diseñamos y programamos proyectos web realmente diferentes.</span> Proyectos totalmente a medida, creados sobre un lienzo en blanco con un equipo interdisciplinar de marketing, diseño y programación. </p>
+                        <p class="text-bg diseno">Diseño web y usabilidad</p>
+                        <p class="text-bg programacion">Programación web</p>
+                        <p class="text-bg marketing">Marketing web</p>
+                        <p class="title-info">Programación web <span class="line-title">Marketing web</span>Diseño web y usabilidad<span class="line-title"></span></p>
+                        <div class="info-descr">
+                            <p class="text-info">Una web, e-commerce o portal son siempre una pieza clave, pero sólo la primera de una proyecto mucho mayor. Ideamos, <span>diseñamos y programamos proyectos web realmente diferentes.</span> Proyectos totalmente a medida, creados sobre un lienzo en blanco con un equipo interdisciplinar de marketing, diseño y programación. </p>
+                            <p class="link-service"><a href="{{ route('service','programacion-web') }}">Saber más de Programación web&nbsp;></a></p>
+                            <p class="link-service last"><a href="{{ route('service','diseno-web-y-usabilidad') }}">Saber más de Diseño web y usabilidad&nbsp;></a></p>
+                        </div>
                     </div>
                     <div class="info-block" id="text3" data-text="3">
-                        <p class="text-bg">SEO, SEA, Adwords</p>
-                        <p class="title-info">SEO, SEA/Adwords</p>
-                        <p class="text-info"><span>Somos Google Premier Partner,</span>
-                            <img style="max-width: 163px;display: block;margin-bottom: 10px;margin-top: 10px;" src="{{ asset('front/img/primer-google.png') }}" alt="">
-                             sabemos la importancia de una web perfectamente adaptada para Google, tanto a nivel SEO como para optimizar Adwords. La estrategia de keywords nos marcará la arquitectura de la web, así que nos gusta que sea uno de los primeros drivers de plan de e-Marketing.</p>
+                        <p class="text-bg soloseo">SEO</p>
+                        <p class="text-bg sea">SEA. Google Ads</p>
+                        <p class="title-info">SEO <span class="line-title">SEA. Google Ads</span></p>
+                        <div class="info-descr">
+                            <p class="text-info"><span>Somos Google Premier Partner,</span>
+                                <img style="max-width: 163px;display: block;margin-bottom: 10px;margin-top: 10px;" src="{{ asset('front/img/primer-google.png') }}" alt="">
+                                 sabemos la importancia de una web perfectamente adaptada para Google, tanto a nivel SEO como para optimizar Adwords. La estrategia de keywords nos marcará la arquitectura de la web, así que nos gusta que sea uno de los primeros drivers de plan de e-Marketing.</p>
+                            <p class="link-service"><a href="{{ route('service','seo') }}">Saber más de SEO&nbsp;></a></p>
+                            <p class="link-service last"><a href="{{ route('service','sea') }}">Saber más de SEA. Google Ads&nbsp;></a></p>
+                        </div>
                     </div>
                     <div class="info-block" id="text4" data-text="4">
-                        <p class="text-bg">Publicidad online</p>
-                        <p class="title-info">Publicidad online y remarketing</p>
-                        <p class="text-info">Creamos <span>campañas de publicidad online que conectan exactamente con ese cliente que buscas.</span> Una vez lanzamos la web, hemos de empezar a traer tráfico cualificado que generen conversiones y ventas.  Ideamos campañas display efectivas, acciones de remarketing multi fase, que consigan la venta por impulso o que vayan enamorando poco a poco, dependerá de la estrategia.</p>
+                        <p class="text-bg publicidad">Publicidad online</p>
+                        <p class="text-bg remarketing">Remarketing</p>
+                        <div class="info-descr">
+                            <p class="title-info">Publicidad online <span class="line-title">Remarketing</span></p>
+                            <p class="text-info">Creamos <span>campañas de publicidad online que conectan exactamente con ese cliente que buscas.</span> Una vez lanzamos la web, hemos de empezar a traer tráfico cualificado que generen conversiones y ventas.  Ideamos campañas display efectivas, acciones de remarketing multi fase, que consigan la venta por impulso o que vayan enamorando poco a poco, dependerá de la estrategia.</p>
+                            <p class="link-service"><a href="{{ route('service','publicidad-online') }}">Saber más de Publicidad online&nbsp;></a></p>
+                        </div>
                     </div>
                     <div class="info-block" id="text5" data-text="5">
-                        <p class="text-bg">Social<br> Media Ads</p>
-                        <p class="title-info">Social Media Ads</p>
-                        <p class="text-info">Las Redes sociales nos permiten crear campañas online conociendo muy bien al cliente potencial al que nos dirigimos. Creamos campañas de <span>Social Ads con un equipo especialista, experimentado, creativo y orientado totalmente a objetivos.</span></p>
+                        <p class="text-bg media">Social Ads</p>
+                        <p class="title-info">Social Ads</p>
+                        <div class="info-descr">
+                            <p class="text-info">Las Redes sociales nos permiten crear campañas online conociendo muy bien al cliente potencial al que nos dirigimos. Creamos campañas de <span>Social Ads con un equipo especialista, experimentado, creativo y orientado totalmente a objetivos.</span></p>
+                            <p class="link-service"><a href="{{ route('service','social-ads') }}">Saber más de Social Ads&nbsp;></a></p>
+                        </div>
                     </div>
                     <div class="info-block" id="text6" data-text="6">
-                        <p class="text-bg">Medios e influencers</p>
+                        <p class="text-bg influ">Medios e influencers</p>
                         <p class="title-info">Medios e influencers</p>
-                        <p class="text-info">Quien conozca los entresijos de internet sabrá que los medios online y los influencers son un canal de altísimo impacto con un lenguaje propio. Campañas de content marketing que combinadas con estrategias de remarketing e inbound <span>son la clave del éxito en el lanzamiento de marcas.</span></p>
+                        <div class="info-descr">
+                            <p class="text-info">Quien conozca los entresijos de internet sabrá que los medios online y los influencers son un canal de altísimo impacto con un lenguaje propio. Campañas de content marketing que combinadas con estrategias de remarketing e inbound <span>son la clave del éxito en el lanzamiento de marcas.</span></p>
+                            <p class="link-service"><a href="{{ route('service','medios-e-influencers') }}">Saber más de Medios e influencers&nbsp;></a></p>
+                        </div>
                     </div>
                     <div class="info-block" id="text7" data-text="7">
-                        <p class="text-bg">Automation, Inbound Marketing</p>
-                        <p class="title-info">Automation, Inbound Marketing, Mail Marketing</p>
-                        <p class="text-info">Inbound & Automation marketing. La tecnología nos ayuda a saber exactamente que ha motivado a un usuario a interactuar con nosotros. <span>Diseñamos estrategias para atraer a un cliente concreto</span> y posteriormente ir persuadiéndole poco a poco y en diferentes medios, con contenidos adaptados a él.</p>
+                        <p class="text-bg automation">Automation marketing</p>
+                        <p class="text-bg mail">Mail Marketing</p>
+                        <p class="text-bg inbound">Inbound Marketing</p>
+                        <p class="title-info">Mail Marketing <span class="line-title">Inbound Marketing</span> <span class="line-title">Automation marketing</span></p>
+                        <div class="info-descr">
+                            <p class="text-info">Inbound & Automation marketing. La tecnología nos ayuda a saber exactamente que ha motivado a un usuario a interactuar con nosotros. <span>Diseñamos estrategias para atraer a un cliente concreto</span> y posteriormente ir persuadiéndole poco a poco y en diferentes medios, con contenidos adaptados a él.</p>
+                            <p class="link-service"><a href="{{ route('service','inbound-marketing') }}">Saber más de Inbound marketing&nbsp;></a></p>
+                            <p class="link-service last"><a href="{{ route('service','automation-marketing') }}">Saber más de Automation marketing&nbsp;></a></p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-8" id="infografia">
@@ -293,9 +323,12 @@
         $('#lineas .line-polylang').css('display', 'none');
         $('#puntitos_con_linea circle').css('display', 'none');
         //id = 1, Ideas de negocio
-        $('#puntitos .business, text.business').mouseenter(function () {
+        $('#puntitos .business, text.business, #puntitos_con_linea .business-boton').mouseenter(function () {
             $("#text1 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
+            var name = $(this).attr("data-id");
+            $("#text1 .text-bg").css('display', 'none');
+            $("#text1 .text-bg."+name).fadeIn();
             var style = $('#puntitos .business').attr("style");
             if(style != "fill: rgb(236, 190, 49);" ){
                 $('#infografia #transparencias polygon').css('display', 'none');
@@ -318,66 +351,15 @@
                 $('.info-block#text1').fadeIn();
                 $('#puntitos_con_linea .business').fadeIn();
             }
-        });
-        $('#puntitos_con_linea .business-boton').mouseenter(function () {
-            $("#text1 .title-info").addClass('mouseenter');
-            $(".col-md-4.text-info h2").addClass('text-grey');
-            var style = $('#puntitos .business').attr("style");
-            if(style != "fill: rgb(236, 190, 49);" ){
-                $('#infografia #transparencias polygon').css('display', 'none');
-                $('#infografia #lineas_amarillas path').css('display', 'none');
-                $('#infografia #lineas_azules path').css('display', 'none');
-                $('#lineas polyline').css('display', 'none');
-                $('#lineas_transparencia polygon').css('display', 'none');
-                $('#lineas .line-polylang').css('display', 'none');
-                $('#puntitos_con_linea circle').css('display', 'none');
-                $('#Textos text').css('fill', '#036785');
-                $('#puntitos circle').css('fill', '#036785');
-                $('.infographics .info-block').css('display', 'none');
-
-                $('#puntitos .cls-26.business').css('fill', '#ecbe31');
-                $('#Textos .cls-2.business').css('fill', '#fff');
-                $('#Textos .business-secondary').css('fill', '#00bde0');
-                $('#transparencias .business').fadeIn();
-                $('#lineas_transparencia .business').fadeIn();
-                $('#lineas_azules .business').fadeIn();
-                $('.info-block#text1').fadeIn();
-                $('#puntitos_con_linea .business').fadeIn();
-            }
-
         });
 
         //id = 2, Diseño web, marketing, programación
-        $('#puntitos .web, text.web').mouseenter(function () {
+        $('#puntitos .web, text.web, #puntitos_con_linea .web-boton').mouseenter(function () {
             $("#text2 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
-            var style = $('#puntitos .web').attr("style");
-            if(style != "fill: rgb(236, 190, 49);" ){
-                $('#infografia #transparencias polygon').css('display', 'none');
-                $('#infografia #lineas_amarillas path').css('display', 'none');
-                $('#infografia #lineas_azules path').css('display', 'none');
-                $('#lineas polyline').css('display', 'none');
-                $('#lineas_transparencia polygon').css('display', 'none');
-                $('#lineas .line-polylang').css('display', 'none');
-                $('#puntitos_con_linea circle').css('display', 'none');
-                $('#Textos text').css('fill', '#036785');
-                $('#puntitos circle').css('fill', '#036785');
-                $('.infographics .info-block').css('display', 'none');
-
-                $('#puntitos .cls-26.web').css('fill', '#ecbe31');
-                $('#lineas_amarillas .web').fadeIn();
-                $('#Textos .cls-2.web').css('fill', '#fff');
-                $('#Textos .web-secondary').css('fill', '#00bde0');
-                $('#puntitos_con_linea .web').fadeIn();
-                $('#lineas_azules .web').fadeIn();
-                $('#transparencias .web').fadeIn();
-                $('#lineas_transparencia .web').fadeIn();
-                $('.info-block#text2').fadeIn();
-            }
-        });
-        $('#puntitos_con_linea .web-boton').mouseenter(function () {
-            $("#text2 .title-info").addClass('mouseenter');
-            $(".col-md-4.text-info h2").addClass('text-grey');
+            var name = $(this).attr("data-id");
+            $("#text2 .text-bg").css('display', 'none');
+            $("#text2 .text-bg."+name).fadeIn();
             var style = $('#puntitos .web').attr("style");
             if(style != "fill: rgb(236, 190, 49);" ){
                 $('#infografia #transparencias polygon').css('display', 'none');
@@ -404,36 +386,12 @@
         });
 
         //id = 3, SEO, SEA, Adwords
-        $('#puntitos .seo, text.seo').mouseenter(function () {
+        $('#puntitos .seo, text.seo, #puntitos_con_linea .seo-boton').mouseenter(function () {
             $("#text3 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
-            var style = $('#puntitos .seo').attr("style");
-            if(style != "fill: rgb(236, 190, 49);" ){
-                $('#infografia #transparencias polygon').css('display', 'none');
-                $('#infografia #lineas_amarillas path').css('display', 'none');
-                $('#infografia #lineas_azules path').css('display', 'none');
-                $('#lineas polyline').css('display', 'none');
-                $('#lineas_transparencia polygon').css('display', 'none');
-                $('#lineas .line-polylang').css('display', 'none');
-                $('#puntitos_con_linea circle').css('display', 'none');
-                $('#Textos text').css('fill', '#036785');
-                $('#puntitos circle').css('fill', '#036785');
-                $('.infographics .info-block').css('display', 'none');
-
-                $('#puntitos .cls-26.seo').css('fill', '#ecbe31');
-                $('#lineas_amarillas .seo').fadeIn();
-                $('#Textos .cls-2.seo').css('fill', '#fff');
-                $('#Textos .seo-secondary').css('fill', '#00bde0');
-                $('#transparencias .seo').fadeIn();
-                $('#lineas_transparencia .seo').fadeIn();
-                $('#lineas_azules .seo').fadeIn();
-                $('#puntitos_con_linea .seo').fadeIn();
-                $('.info-block#text3').fadeIn();
-            }
-        });
-        $('#puntitos_con_linea .seo-boton').mouseenter(function () {
-            $("#text3 .title-info").addClass('mouseenter');
-            $(".col-md-4.text-info h2").addClass('text-grey');
+            var name = $(this).attr("data-id");
+            $("#text3 .text-bg").css('display', 'none');
+            $("#text3 .text-bg."+name).fadeIn();
             var style = $('#puntitos .seo').attr("style");
             if(style != "fill: rgb(236, 190, 49);" ){
                 $('#infografia #transparencias polygon').css('display', 'none');
@@ -460,36 +418,12 @@
         });
 
         //id = 4, Publicidad online y remarketing
-        $('#puntitos .online, text.online').mouseenter(function () {
+        $('#puntitos .online, text.online, #puntitos_con_linea .online-boton').mouseenter(function () {
             $("#text4 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
-            var style = $('#puntitos .online').attr("style");
-            if(style != "fill: rgb(236, 190, 49);" ){
-                $('#infografia #transparencias polygon').css('display', 'none');
-                $('#infografia #lineas_amarillas path').css('display', 'none');
-                $('#infografia #lineas_azules path').css('display', 'none');
-                $('#lineas polyline').css('display', 'none');
-                $('#lineas_transparencia polygon').css('display', 'none');
-                $('#lineas .line-polylang').css('display', 'none');
-                $('#puntitos_con_linea circle').css('display', 'none');
-                $('#Textos text').css('fill', '#036785');
-                $('#puntitos circle').css('fill', '#036785');
-                $('.infographics .info-block').css('display', 'none');
-
-                $('#puntitos .online').css('fill', '#ecbe31');
-                $('#Textos .cls-2.online').css('fill', '#fff');
-                $('#Textos .online-secondary').css('fill', '#00bde0');
-                $('#lineas_amarillas .online').fadeIn();
-                $('#lineas_azules .online').fadeIn();
-                $('#puntitos_con_linea .online').fadeIn();
-                $('#transparencias .online').fadeIn();
-                $('#lineas_transparencia .online').fadeIn();
-                $('.info-block#text4').fadeIn();
-            }
-        });
-        $('#puntitos_con_linea .online-boton').mouseenter(function () {
-            $("#text4 .title-info").addClass('mouseenter');
-            $(".col-md-4.text-info h2").addClass('text-grey');
+            var name = $(this).attr("data-id");
+            $("#text4 .text-bg").css('display', 'none');
+            $("#text4 .text-bg."+name).fadeIn();
             var style = $('#puntitos .online').attr("style");
             if(style != "fill: rgb(236, 190, 49);" ){
                 $('#infografia #transparencias polygon').css('display', 'none');
@@ -515,36 +449,12 @@
             }
         });
         //id = 5, Social Media Ads
-        $('#puntitos .media, text.media').mouseenter(function () {
+        $('#puntitos .media, text.media, #puntitos_con_linea .media-boton').mouseenter(function () {
             $("#text5 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
-            var style = $('#puntitos .media').attr("style");
-            if(style != "fill: rgb(236, 190, 49);" ){
-                $('#infografia #transparencias polygon').css('display', 'none');
-                $('#infografia #lineas_amarillas path').css('display', 'none');
-                $('#infografia #lineas_azules path').css('display', 'none');
-                $('#lineas polyline').css('display', 'none');
-                $('#lineas_transparencia polygon').css('display', 'none');
-                $('#lineas .line-polylang').css('display', 'none');
-                $('#puntitos_con_linea circle').css('display', 'none');
-                $('#Textos text').css('fill', '#036785');
-                $('#puntitos circle').css('fill', '#036785');
-                $('.infographics .info-block').css('display', 'none');
-
-                $('#puntitos .media').css('fill', '#ecbe31');
-                $('#Textos .cls-2.media').css('fill', '#fff');
-                $('#Textos .media-secondary').css('fill', '#00bde0');
-                $('#lineas_amarillas .media').fadeIn();
-                $('#lineas_azules .media').fadeIn();
-                $('#puntitos_con_linea .media').fadeIn();
-                $('#transparencias .media').fadeIn();
-                $('#lineas_transparencia .media').fadeIn();
-                $('.info-block#text5').fadeIn();
-            }
-        });
-        $('#puntitos_con_linea .media-boton').mouseenter(function () {
-            $("#text5 .title-info").addClass('mouseenter');
-            $(".col-md-4.text-info h2").addClass('text-grey');
+            var name = $(this).attr("data-id");
+            $("#text5 .text-bg").css('display', 'none');
+            $("#text5 .text-bg."+name).fadeIn();
             var style = $('#puntitos .media').attr("style");
             if(style != "fill: rgb(236, 190, 49);" ){
                 $('#infografia #transparencias polygon').css('display', 'none');
@@ -571,36 +481,12 @@
         });
 
         //id = 6, Medios e influencers
-        $('#puntitos .influ, text.influ').mouseenter(function () {
+        $('#puntitos .influ, text.influ, #puntitos_con_linea .influ-boton').mouseenter(function () {
             $("#text6 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
-            var style = $('#puntitos .influ').attr("style");
-            if(style != "fill: rgb(236, 190, 49);" ){
-                $('#infografia #transparencias polygon').css('display', 'none');
-                $('#infografia #lineas_amarillas path').css('display', 'none');
-                $('#infografia #lineas_azules path').css('display', 'none');
-                $('#lineas polyline').css('display', 'none');
-                $('#lineas_transparencia polygon').css('display', 'none');
-                $('#lineas .line-polylang').css('display', 'none');
-                $('#puntitos_con_linea circle').css('display', 'none');
-                $('#Textos text').css('fill', '#036785');
-                $('#puntitos circle').css('fill', '#036785');
-                $('.infographics .info-block').css('display', 'none');
-
-                $('#puntitos .influ').css('fill', '#ecbe31');
-                $('#Textos .cls-2.influ').css('fill', '#fff');
-                $('#Textos .influ-secondary').css('fill', '#00bde0');
-                $('#lineas_amarillas .influ').fadeIn();
-                $('#lineas_azules .influ').fadeIn();
-                $('#puntitos_con_linea .influ').fadeIn();
-                $('#transparencias .influ').fadeIn();
-                $('#lineas_transparencia .influ').fadeIn();
-                $('.info-block#text6').fadeIn();
-            }
-        });
-        $('#puntitos_con_linea .influ-boton').mouseenter(function () {
-            $("#text6 .title-info").addClass('mouseenter');
-            $(".col-md-4.text-info h2").addClass('text-grey');
+            var name = $(this).attr("data-id");
+            $("#text6 .text-bg").css('display', 'none');
+            $("#text6 .text-bg."+name).fadeIn();
             var style = $('#puntitos .influ').attr("style");
             if(style != "fill: rgb(236, 190, 49);" ){
                 $('#infografia #transparencias polygon').css('display', 'none');
@@ -627,9 +513,12 @@
         });
 
         //id = 7, Automation, Inbound Marketing, Mail
-        $('#puntitos .mark, text.mark').mouseenter(function () {
+        $('#puntitos .mark, text.mark, #puntitos_con_linea .mark-boton').mouseenter(function () {
             $("#text7 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
+            var name = $(this).attr("data-id");
+            $("#text7 .text-bg").css('display', 'none');
+            $("#text7 .text-bg."+name).fadeIn();
             var style = $('#puntitos .mark').attr("style");
             if(style != "fill: rgb(236, 190, 49);" ){
                 $('#infografia #transparencias polygon').css('display', 'none');
@@ -654,33 +543,7 @@
                 $('.info-block#text7').fadeIn();
             }
         });
-        $('#puntitos_con_linea .mark-boton').mouseenter(function () {
-            $("#text7 .title-info").addClass('mouseenter');
-            $(".col-md-4.text-info h2").addClass('text-grey');
-            var style = $('#puntitos .mark').attr("style");
-            if(style != "fill: rgb(236, 190, 49);" ){
-                $('#infografia #transparencias polygon').css('display', 'none');
-                $('#infografia #lineas_amarillas path').css('display', 'none');
-                $('#infografia #lineas_azules path').css('display', 'none');
-                $('#lineas polyline').css('display', 'none');
-                $('#lineas_transparencia polygon').css('display', 'none');
-                $('#lineas .line-polylang').css('display', 'none');
-                $('#puntitos_con_linea circle').css('display', 'none');
-                $('#Textos text').css('fill', '#036785');
-                $('#puntitos circle').css('fill', '#036785');
-                $('.infographics .info-block').css('display', 'none');
-
-                $('#puntitos .mark').css('fill', '#ecbe31');
-                $('#Textos .cls-2.mark').css('fill', '#fff');
-                $('#Textos .mark-secondary').css('fill', '#00bde0');
-                $('#lineas_amarillas .mark').fadeIn();
-                $('#lineas_azules .mark').fadeIn();
-                $('#puntitos_con_linea .mark').fadeIn();
-                $('#transparencias .mark').fadeIn();
-                $('#lineas_transparencia .mark').fadeIn();
-                $('.info-block#text7').fadeIn();
-            }
-        });
+        //default
         $(".row.inner-info").mouseleave(function () {
             $("#text1 .title-info,#text2 .title-info,#text3 .title-info,#text4 .title-info,#text5 .title-info,#text6 .title-info,#text7 .title-info").removeClass('mouseenter');
             $('#Textos text').css('fill', '#036785');
@@ -699,10 +562,10 @@
 
         });
         $('.infographics .title-info').after().click(function(){
-            $('.info-block .text-info').fadeOut();
-            $(this).parent().find('.text-info').fadeIn();
+            $('.info-block .info-descr').fadeOut();
+            $(this).parent().find('.info-descr').fadeIn();
         });
-        $('.infographics .info-block .text-info').after().click(function(){
+        $('.infographics .info-block .info-descr').after().click(function(){
             // $('.info-block .text-info').fadeOut();
             $(this).fadeOut();
         });
