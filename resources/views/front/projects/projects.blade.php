@@ -98,10 +98,14 @@
         $(document).ready(function () {
             $("#proyectos").addClass('main-blue');
 
-            $('.effect-sarah').click(function(){
-                var $url = $(this).parent().attr('data-url');
-                window.location.href = $url;
-            });
+            if($(window).width() >= 992){
+                $('.effect-sarah').click(function(){
+                    var $url = $(this).parent().attr('data-url');
+                    window.location.href = $url;
+                });
+            }
+
+
 
             //Script para mostrar proyectos por categoría
             $('.check-category input').change(function() {

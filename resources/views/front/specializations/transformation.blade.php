@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-        @include('front.specializations.complements.action', ['title' => 'Hagamos sistemas complejos para facilitarte el tranajo', 'btntitle' => 'Hablemos'])
+        @include('front.specializations.complements.action', ['title' => 'Hagamos sistemas complejos para facilitarte el trabajo', 'btntitle' => 'Hablemos'])
     </section>
 
 @stop

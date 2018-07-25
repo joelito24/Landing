@@ -18,9 +18,9 @@
                 <ul class="menu">
                     <li class="mbl-especializaciones default-color">Especializaciones <span class="arrow down"></span></li>
                     <ul class="esp-mobile-dropdown">
-                        <li><a href="{{ route('specialization1') }}">Proyectos de e-commerce</a></li>
+                        <li><a href="{{ route('specialization1') }}">Proyectos de e‑Commerce</a></li>
                         <li><a href="{{ route('specialization2') }}">Publicidad online orientada a resultados</a></li>
-                        <li><a href="{{ route('specialization3') }}">e-Marketing y publicidad para marcas</a></li>
+                        <li><a href="{{ route('specialization3') }}">e‑Marketing y publicidad para marcas</a></li>
                         <li><a href="{{ route('specialization4') }}">Transformación digital para empresas</a></li>
                     </ul>
                     <li class="mbl-servicios default-color">Servicios <span class="arrow down"></span></li>

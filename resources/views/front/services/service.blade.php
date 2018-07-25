@@ -128,6 +128,7 @@
             }
         });*/
         $(document).ready(function(){
+            $("#servicios").addClass('main-blue');
             $("#send").click(function(e){
                 e.preventDefault();
                 var error = 0;

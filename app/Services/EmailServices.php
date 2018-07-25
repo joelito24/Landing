@@ -35,10 +35,10 @@ class EmailServices
     public function contactEmail($name, $email, $telephone, $consulta, $consultas, $web)
     {
         $subject = "Nueva solicitud de Contacto";
-        $to = "prueba@thatzad.com";
+        $to = env('EMAIL_TO_THATZAD');
         $view = 'emails.contact';
         $from = $email;
-        $sender = "info@thatzad.com";
+        $sender = "hola@thatzad.com";
         $data = ['data' => [
                 'project_name' => "Thatzad",
                 'title' => "Thatzad - Contacto",
@@ -54,10 +54,10 @@ class EmailServices
     public function contactShortEmail($name, $email, $consulta)
     {
         $subject = "Nueva solicitud de Contacto";
-        $to = "prueba@thatzad.com";
+        $to = env('EMAIL_TO_THATZAD');
         $view = 'emails.contactShort';
         $from = $email;
-        $sender = "info@thatzad.com";
+        $sender = "hola@thatzad.com";
         $data = ['data' => [
             'project_name' => "Thatzad",
             'title' => "Thatzad - Contacto",
@@ -71,8 +71,8 @@ class EmailServices
         $subject = "Thatzpaper";
         $to = $email;
         $view = 'emails.sendwhitepaper';
-        $from = "prueba@thatzad.com";
-        $sender = "info@thatzad.com";
+        $from = env('EMAIL_TO_THATZAD');
+        $sender = "hola@thatzad.com";
         $data = ['data' => [
             'project_name' => "Thatzad",
             'title' => "Thatzpaper",

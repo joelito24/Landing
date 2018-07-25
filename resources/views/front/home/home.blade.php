@@ -12,7 +12,7 @@
                 </div>
                 <div class="col-md-6 right-col" data-animated="fadeInRight">
                     <div class="text-box">
-                        <p class="text-grand">“En Thatzad nos sentimos tremendamente orgullosos de hacer crecer tu negocio digital”</p>
+                        <p class="text-grand">En Thatzad nos sentimos tremendamente orgullosos de hacer crecer tu negocio digital</p>
                         <p>Entendiendo bien tu mercado, tu organización y las necesidades de tu proyecto. Con más de 10 años de experiencia para llegar por el canal más rentable a tu cliente objetivo</p>
                         <p>Desarrollamos la estrategia, la web y las campañas de publicidad con un equipo creativo, implicado y 100% efectivo.</p>
                     </div>
@@ -45,7 +45,7 @@
                         <p class="title-info">Ideas de negocio/Bussines plan</p>
                         <div class="info-descr">
                             <p class="text-info">Todo proyecto se inicia con una idea de negocio y plan de marketing. Dominamos el medio, <span>llevamos más de 12 años haciendo crecer negocios online como el tuyo.</span> Hemos aprendido de los éxitos, pero también de los fracasos. Conocemos las tendencias, sabemos hacia dónde se dirige el futuro. Podemos ayudarte a darle forma a tu idea y diseñar la estrategia que necesitas para cumplir tus objetivos.</p>
-                            <p class="link-service"><a href="{{ route('service','consultoria-de-emarketing-y-desarrollo-de-estrategia') }}">Saber más de Consultoría de e-Marketing&nbsp;></a></p>
+                            <p class="link-service"><a href="{{ route('service','consultoria-de-emarketing-y-desarrollo-de-estrategia') }}">Saber más de Consultoría de e‑Marketing&nbsp;></a></p>
                         </div>
                     </div>
                     <div class="info-block" id="text2" data-text="2">

@@ -51,7 +51,7 @@
     section.agency .description .text-desc{max-width: 100%;}
     section.agency .name-page{color: #fff !important;margin-top: 0;margin-bottom: 27px !important;}
     section.agency .title{max-width: 100%;text-align: center;width:100%;}
-    section.agency .subtitle{text-align: center;}
+    section.agency .subtitle{text-align: center; margin-top: 30px;}
     section.agency .text-col{    margin-left: 5%;width: 90%;margin-right: 5%;padding: 0 0 30px;}
     section.agency .img-col{width:100%;}
     section.agency .inner-agency{padding-bottom: 0 !important;}
@@ -130,6 +130,13 @@
     section.specializations.emarketing .emarketing-orders{padding:40px 0;}
     section.specializations.emarketing .emarketing-orders .right-col{padding-left: 15px;}
     section.generals{padding-top: 30px;}
+    footer .footer-bottom .container .row{margin:0;}
+    figure.effect-sarah p{overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;}
+
+    section.agency .top-agency, section.specializations.advertising .ecommerce-top, section.project .project-top, section.service .contact-block, .bottom-action{background-attachment: initial;}
 }
 
 @media (max-width: 768px){
@@ -170,6 +177,7 @@
     section.whitepapers .whitepaper .btn-yellow-full{visibility: visible;}
 
     section.home .blog .col-article:nth-child(2), section.home .blog .col-article:nth-child(3){display: none;}
+    footer .footer-bottom{    line-height: 56px;padding:0;}
 }
 @media (max-width: 600px){
     section.projects .block-inputs .check-category{width: 50%;}
@@ -179,4 +187,5 @@
     .whitepaper-popup .form-block .form-control{max-width: 100%;}
     section.home .whitepapers .whitepaper .title-whitepaper{font-size: 25px;line-height: 29px;}
     section.whitepapers .whitepaper .btn-yellow-full{max-width: 100%;}
+    .grid figure p{font-size: 18px;line-height: 23px;}
 }

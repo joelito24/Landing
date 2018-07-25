@@ -42,10 +42,10 @@
                             <li data-target="#carroselhome" data-slide-to="0" class="active"></li>
                         @endif
                         @if($project->image4 != "")
-                            <li data-target="#carroselhome" data-slide-to="1" class="@if($project->image3 == "") active @endif"></li>
+                            <li data-target="#carroselhome" data-slide-to="1" ></li>
                         @endif
                         @if($project->image5 != "")
-                            <li data-target="#carroselhome" data-slide-to="2" class="@if($project->image3 == "" && $project->image4 == "") active @endif"></li>
+                            <li data-target="#carroselhome" data-slide-to="2" ></li>
                         @endif
                     </ol>
                     <div class="carousel-inner">

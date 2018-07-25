@@ -117,7 +117,7 @@ return [
                 'type' => 'text',
                 'title' => 'Una frase',
                 'description' => 'Introduzca frase de cita',
-                'rules' => ['required']
+                'rules' => ['']
             ],
             'description1' => [
                 'type' => 'textarea',

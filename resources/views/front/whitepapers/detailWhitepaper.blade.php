@@ -22,7 +22,7 @@
                     <p>{{ $whitepaper->description }}</p>
                     @if (Session::has('whitepapers'))
                         <?php $idSubsriber = Session::get('whitepapers'); ?>
-                        <div class="btn-yellow-full sendmail" data-subscriber="{{ $idSubsriber }}" data-id="{{ $whitepaper->id }}">Descargar</div>
+                        <div class="btn-yellow-full sendmail" data-subscriber="{{ $idSubsriber }}" data-id="{{ $whitepaper->id }}">Descárgatelo</div>
                     @else
                         <div class="btn-yellow-full download" data-id="{{ $whitepaper->id }}">Descargar</div>
                     @endif
