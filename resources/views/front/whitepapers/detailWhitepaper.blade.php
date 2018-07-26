@@ -19,12 +19,12 @@
             <div class="row">
                 <div class="description col-md-6" data-animated="fadeInUp">
                     <p class="number">Thatzpaper {{ $whitepaper->number }}</p>
-                    <p>{{ $whitepaper->description }}</p>
+                    <p>{!! $whitepaper->description !!}</p>
                     @if (Session::has('whitepapers'))
                         <?php $idSubsriber = Session::get('whitepapers'); ?>
                         <div class="btn-yellow-full sendmail" data-subscriber="{{ $idSubsriber }}" data-id="{{ $whitepaper->id }}">Descárgatelo</div>
                     @else
-                        <div class="btn-yellow-full download" data-id="{{ $whitepaper->id }}">Descargar</div>
+                        <div class="btn-yellow-full download" data-id="{{ $whitepaper->id }}">Descárgatelo</div>
                     @endif
                 </div>
                 <div class="col-md-6 image">
