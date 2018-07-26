@@ -50,7 +50,7 @@
                     </div>
                     <div class="info-block" id="text2" data-text="2">
                         <p class="text-bg diseno">Diseño web y usabilidad</p>
-                        <p class="text-bg programacion">Programación web</p>
+                        <p class="text-bg programacion">Programación<br> web</p>
                         <p class="text-bg marketing">Marketing web</p>
                         <p class="title-info">Programación web <span class="line-title">Marketing web</span>Diseño web y usabilidad<span class="line-title"></span></p>
                         <div class="info-descr">

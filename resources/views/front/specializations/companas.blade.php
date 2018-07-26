@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="specializations advertising">
+    <section class="specializations campanas">
         <div class="ecommerce-top">
             <div class="container">
                 <p class="name-page">ESPECIALIZACIONES</p>

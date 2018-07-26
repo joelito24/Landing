@@ -9,13 +9,22 @@
     section.specializations.ecommerce .ecommerce-top .ecommerce-description .img-info img{float: right;}
 
 }
+
 @media (min-width: 1450px){
     section.projects .project{width: 25% !important;}
 }
 /* MAX WIDTH */
+@media (max-width: 1700px){
+    figure.effect-sarah p {overflow: hidden;display: -webkit-box;-webkit-line-clamp: 5;-webkit-box-orient: vertical;}
+}
+@media (max-width: 1450px){
+    figure.effect-sarah p {overflow: hidden;display: -webkit-box;-webkit-line-clamp: 7;-webkit-box-orient: vertical;}
+
+}
 @media (max-width: 1280px){
-    section.specializations.advertising .steps .step{max-width: 19%;}
-    section.specializations.advertising .steps .first-line{text-align: left;}
+    section.specializations.campanas .steps .step{max-width: 19%;}
+    section.specializations.campanas .steps .first-line{text-align: left;}
+    figure.effect-sarah p {overflow: hidden;display: -webkit-box;-webkit-line-clamp: 5;-webkit-box-orient: vertical;}
 }
 @media (max-width: 1224px){
     section.home .right-col{width: 50%;max-width: none;}
@@ -29,11 +38,15 @@
     #header .container{width: 90% !important;max-width: 90% !important;}
     section.home .right-col .white-box{padding: 17px;}
     section.home .right-col{padding: 40px 5%;}
-    section.specializations.advertising .white-block-text .text-blue-big{margin-bottom: 60px;}
-    section.specializations.advertising .white-block-text .text-big{width: 26%;margin-bottom: 0;line-height: 71px;}
-    section.specializations.advertising .white-block-text .text-action{line-height: 39px;width: 66%;}
-    section.specializations.advertising .steps .step{width: 175px;}
-    section.specializations.advertising .main-content .container{width: 90% !important;max-width: 90% !important;}
+    section.specializations.campanas .white-block-text .text-blue-big{margin-bottom: 60px;}
+    section.specializations.campanas .white-block-text .text-big{width: 26%;margin-bottom: 0;line-height: 71px;}
+    section.specializations.campanas .white-block-text .text-action{line-height: 39px;width: 66%;}
+    section.specializations.campanas .steps .step{width: 175px;}
+    section.specializations.campanas .main-content .container{width: 90% !important;max-width: 90% !important;}
+    section.home .infographics .text-info .info-block .text-bg{font-size: 46px;line-height: 44px;top: 34px;width: 303px;}
+}
+@media (max-width: 1100px){
+    figure.effect-sarah p {overflow: hidden;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;}
 }
 @media (max-width: 992px){
     #header{margin-top: -6px;}
@@ -104,26 +117,26 @@
     section.home .whitepapers .title-home{margin-top: 56px;}
     section.generals .row{margin-right: 0;margin-left: 0;}
 
-    section.specializations.advertising .name-page{margin-top: 50px;color: #fff !important;margin-bottom: 27px !important;}
-    section.specializations.advertising .ecommerce-top{text-align: center;}
-    section.specializations.advertising .subtitle{max-width: 100%;}
-    section.specializations.advertising .white-block-text{padding: 40px 5% 0;}
+    section.specializations.campanas .name-page{margin-top: 50px;color: #fff !important;margin-bottom: 27px !important;}
+    section.specializations.campanas .ecommerce-top{text-align: center;}
+    section.specializations.campanas .subtitle{max-width: 100%;}
+    section.specializations.campanas .white-block-text{padding: 40px 5% 0;}
     section.specializations .name-page{margin-top: 50px;margin-bottom: 27px !important;}
     /*section.specializations .title-page{text-align: center;font-size: 40px;}*/
     section.specializations.transformation .title-page{font-size: 37px;}
     section.specializations .ecommerce-top .ecommerce-description{padding-left: 0;}
     section.specializations.ecommerce .white-block{padding-top: 50px; padding-bottom: 50px;}
-    section.specializations.advertising .steps .step{padding-top: 19px;width: 100%;display: block;max-width: 100%; position: relative;}
-    section.specializations.advertising .steps .first-line{border:none;padding: 0 5%;}
-    section.specializations.advertising .steps .second-line{padding: 0 5%;}
-    section.specializations.advertising .steps{display: block;}
-    section.specializations.advertising .steps .step .number{margin-top:0;margin-right: auto;margin-left: auto;}
-    section.specializations.advertising .steps .text{max-width: 100%; text-align: center;}
-    section.specializations.advertising .steps .step .number img, section.specializations.advertising .steps .between-steps{display: none;}
+    section.specializations.campanas .steps .step{padding-top: 19px;width: 100%;display: block;max-width: 100%; position: relative;}
+    section.specializations.campanas .steps .first-line{border:none;padding: 0 5%;}
+    section.specializations.campanas .steps .second-line{padding: 0 5%;}
+    section.specializations.campanas .steps{display: block;}
+    section.specializations.campanas .steps .step .number{margin-top:0;margin-right: auto;margin-left: auto;}
+    section.specializations.campanas .steps .text{max-width: 100%; text-align: center;}
+    section.specializations.campanas .steps .step .number img, section.specializations.campanas .steps .between-steps{display: none;}
     /*section.specializations.advertising .steps .step:after{content: "";position: absolute;bottom: 47%;right: 0;z-index: 0;width: 20px;height: 25px;text-align: right;line-height: 30px;}*/
-    section.specializations.advertising .steps .step:after{content: "";position: absolute;bottom: -35px;left: 0;right: 0;height: 26px;background: #ebbd31;width: 2px;margin: 0 auto;}
-    section.specializations.advertising .steps .step:last-child:after{display: none;}
-    section.specializations.advertising .steps .text{padding-right: 0;}
+    section.specializations.campanas .steps .step:after{content: "";position: absolute;bottom: -35px;left: 0;right: 0;height: 26px;background: #ebbd31;width: 2px;margin: 0 auto;}
+    section.specializations.campanas .steps .step:last-child:after{display: none;}
+    section.specializations.campanas .steps .text{padding-right: 0;}
     footer .top-footer .row{margin-right: 0;margin-left: 0;}
     section.home .specializations .col-special:hover .line-yellow{display: none;}
     section.specializations .white-block .ecommerce-top .ecommerce-description .img-info img#emarketing{margin-bottom: 20px;}
@@ -131,12 +144,9 @@
     section.specializations.emarketing .emarketing-orders .right-col{padding-left: 15px;}
     section.generals{padding-top: 30px;}
     footer .footer-bottom .container .row{margin:0;}
-    figure.effect-sarah p{overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 5;
-        -webkit-box-orient: vertical;}
-
-    section.agency .top-agency, section.specializations.advertising .ecommerce-top, section.project .project-top, section.service .contact-block, .bottom-action{background-attachment: initial;}
+    figure.effect-sarah p{overflow: hidden;display: -webkit-box;-webkit-line-clamp: 5;-webkit-box-orient: vertical;}
+    footer .top-footer .col-last{margin-top:0;}
+    section.agency .top-agency, section.specializations.campanas .ecommerce-top, section.project .project-top, section.service .contact-block, .bottom-action{background-attachment: initial;}
 }
 
 @media (max-width: 768px){
@@ -172,8 +182,8 @@
     section.project .block-slider{margin-top:40px;}
     section.generals img{padding:30px 0;}
     section.generals .subtitle{margin-top:30px;}
-    section.specializations.advertising .main-content .container, section.specializations.advertising .white-block-text{max-width: 100% !important;width:100% !important;}
-    section.specializations.advertising .white-block-text .text-action{    width: 100%;margin-top: 25px;}
+    section.specializations.campanas .main-content .container, section.specializations.campanas .white-block-text{max-width: 100% !important;width:100% !important;}
+    section.specializations.campanas .white-block-text .text-action{    width: 100%;margin-top: 25px;}
     section.whitepapers .whitepaper .btn-yellow-full{visibility: visible;}
 
     section.home .blog .col-article:nth-child(2), section.home .blog .col-article:nth-child(3){display: none;}
