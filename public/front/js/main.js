@@ -24,6 +24,21 @@ $(document).ready(function(){
         $("#mobile-menu-content").toggle();
         $(this).find('#nav-icon1').toggleClass('open');
     });
+
+    $(".popup-cookies .close").click(function(){
+        $(".popup-cookies").fadeOut();
+    });
+
+    if($(".popup-cookies").length){
+        if(readCookie("cookies") != null){}else{
+            $(".popup-cookies").fadeIn();
+        }
+    }
+
+    $(".popup-cookies .acept").click(function(){
+        createCookie("cookies", "", 7);
+        $(".popup-cookies").fadeOut();
+    });
 });
 
 function createCookie(name, value, days) {
