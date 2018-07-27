@@ -198,4 +198,5 @@
     section.home .whitepapers .whitepaper .title-whitepaper{font-size: 25px;line-height: 29px;}
     section.whitepapers .whitepaper .btn-yellow-full{max-width: 100%;}
     .grid figure p{font-size: 18px;line-height: 23px;}
+    .popup-cookies{width: 90%;left: 5%; opacity: 0.9;}
 }

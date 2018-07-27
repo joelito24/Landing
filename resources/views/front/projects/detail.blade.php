@@ -84,7 +84,7 @@
                                     </div>
                                     <figcaption>
                                         <p>{!! $related->description_short !!}</p>
-                                        <div class="btn-yellow"><a href="{{ route('project', $related->slug) }}">Ver mas</a></div>
+                                        <div class="btn-yellow"><a href="{{ route('project', $related->slug) }}">Ver más</a></div>
                                     </figcaption>
                                 </figure>
                             </div>
