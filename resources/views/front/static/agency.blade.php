@@ -48,34 +48,47 @@
         <div class="white-block">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    {{--<div class="col-md-12">--}}
                         <p class="title-opinion">Lo que dicen de nosotros</p>
-                    </div>
-                    <div class="col-md-4" data-animated="fadeInUp">
-                        <div class="block-opinion">
-                            <img src="{{ asset('front/img/agency/ico-opinion.png') }}" alt="">
-                            <div class="text-opinion">
-                                <p>Thatzad ha sido clave para desarrollar y planificar la estrategia digital de una forma innovadora en un sector muy conservador como el futbol amateur.</p>
+                    {{--</div>--}}
+                    <div class="slider multiple-items">
+                        <div>
+                            <div class="block-opinion">
+                                <img src="{{ asset('front/img/agency/ico-opinion.png') }}" alt="">
+                                <div class="text-opinion">
+                                    <p>Thatzad ha sido clave para desarrollar y planificar la estrategia digital de una forma innovadora en un sector muy conservador como el futbol amateur.</p>
+                                </div>
+                                <p class="name-opinion">Jordi Canals, <br>Digital Manager FCF.</p>
                             </div>
-                            <p class="name-opinion">Jordi Canals, <br>Digital Manager FCF.</p>
                         </div>
-                    </div>
-                    <div class="col-md-4" data-animated="fadeInUp">
-                        <div class="block-opinion">
-                            <img src="{{ asset('front/img/agency/ico-opinion.png') }}" alt="">
-                            <div class="text-opinion">
-                                <p>Transformar un servicio tradicional como las administraciones de Lotería para llevarlo al entorno digital, solo se puede hacer de la mano de un partner que haga el proyecto suyo y pueda negociar de primera mano con los grandes players como GOOGLE o FACEBOOK.</p>
+                        <div>
+                            <div class="block-opinion">
+                                <img src="{{ asset('front/img/agency/ico-opinion.png') }}" alt="">
+                                <div class="text-opinion">
+                                    <p>Transformar un servicio tradicional como las administraciones de Lotería para llevarlo al entorno digital, solo se puede hacer de la mano de un partner que haga el proyecto suyo y pueda negociar de primera mano con los grandes players como GOOGLE o FACEBOOK.</p>
+                                </div>
+                                <p class="name-opinion">Sergio Milan, <br>CEO Los Loteros.</p>
                             </div>
-                            <p class="name-opinion">Sergio Milan, <br>CEO Los Loteros.</p>
                         </div>
-                    </div>
-                    <div class="col-md-4" data-animated="fadeInUp">
-                        <div class="block-opinion">
-                            <img src="{{ asset('front/img/agency/ico-opinion.png') }}" alt="">
-                            <div class="text-opinion">
-                                <p>El equipo de Thatzad lleva años trabajando codo con codo con Vogel’s. Por su implicación, seriedad, flexibilidad y resultados son ya una parte clave de nuestro equipo de marketing</p>
+                        <div>
+                            <div class="block-opinion">
+                                <img src="{{ asset('front/img/agency/ico-opinion.png') }}" alt="">
+                                <div class="text-opinion">
+                                    <p>Trabajar con THATZAD es un lujo, no sólo por la diligencia que demuestran en todos los proyectos que hemos realizado con ellos, si no por la proactividad y la eficiencia en la entrega de resultados.</p>
+                                    <p>Destacaría que resaltan en la creatividad de las propuestas que nos presentan, demostrando un gran conocimiento de los diferentes tipos de mercados.</p>
+                                    <p>Trabajar con THATZAD es fácil y rápido, por ello les hemos externalizado nuestro Departamento de Marketing On line al completo y estamos muy contentos.</p>
+                                </div>
+                                <p class="name-opinion">Noemí Belenguer, <br>CEO Vogel’s Iberica.</p>
                             </div>
-                            <p class="name-opinion">Noemí Belenguer, <br>CEO Vogel’s Iberica.</p>
+                        </div>
+                        <div>
+                            <div class="block-opinion">
+                                <img src="{{ asset('front/img/agency/ico-opinion.png') }}" alt="">
+                                <div class="text-opinion">
+                                    <p>Desde 2009 , THATZAD nos acompaña en nuestra aventura de venta online de nuestros uniformes para spa por todo el mundo. Gran equipo humano y profesional.</p>
+                                </div>
+                                <p class="name-opinion">Marcià Angrill, <br>CEO Mi & Co.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,11 +149,45 @@
 @endsection
 
 @section('scripts')
+    <script type="text/javascript" src="{{ asset('front/slick/slick.min.js') }}"></script>
     <script>
         $(document).ready(function(){
             $('#header').css('opacity', '0.9');
             $('#header').css('position', 'absolute');
             $("#agencia").addClass('main-blue');
+
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                speed: 300,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true
+                        }
+                    }
+
+                ]
+            });
+            // $('.multiple-items').slick({
+            //     dots: true,
+            //     infinite: true,
+            //     speed: 300,
+            //     slidesToShow: 1,
+            //     adaptiveHeight: true
+            // });
         });
     </script>
 @endsection

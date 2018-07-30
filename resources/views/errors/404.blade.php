@@ -27,14 +27,32 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
 </head>
-<body>
+<body class="lost">
+    <header id="header" class="header_transparent">
+        <div class="container">
+            <div class="col-md-4">
+                <a href="{{ route('home') }}" ><img class="img-logo" src="{{ asset('front/img/logo_white.png') }}"></a>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="col-md-offset-6 col-md-6">
+            <div class="main-text">
+                <p>Error</p>
+                <p class="big">404</p>
+            </div>
+            <div class="text">
+                <p>Vaya...</p>
+                <p>Parece que le has perdido.</p>
+            </div>
 
-@include('front.layouts.header')
+            <a href="{{ route('home') }}">Volver a la Home ></a>
+        </div>
 
-@yield('content')
-
-@include('front.layouts.footer')
-
+    </div>
+    <div class="container bottom">
+        <img class="img-logo" src="{{ asset('front/img/men.png') }}">
+    </div>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 

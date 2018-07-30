@@ -337,6 +337,8 @@ section.agency .valores .intro p{font-size: 24px;margin-bottom: 0;font-weight: 7
 section.agency .valores ul{list-style:none;margin-top:43px;font-family: var(--title-font);font-size: 36px;}
 section.agency .valores ul li{margin-bottom: 12px;}
 section.agency .valores ul li:last-child{color: #fcbf10;}
+section.agency .multiple-items .slick-slide{padding: 0 15px;}
+section.agency .multiple-items .slick-slide:focus{outline: none;}
 
 /* PROJECTS */
 section.projects{background: #f7f7f7;padding-top: 20px;}
@@ -572,3 +574,13 @@ footer .footer-bottom p{color:var(--white);}
 footer .footer-bottom a.terms{text-decoration: underline;color:var(--white);}
 footer .red-social{margin-top: 17px;}
 footer .red-social p span:first-child{display: block;color: var(--default-color);margin-bottom: 11px;font-weight: 700;}
+
+/* error 404 */
+.lost{background: #a8acad;height: 100vh;min-height: 837px;position: relative;}
+.lost .main-content{margin-top:45px; overflow: hidden;position: relative; z-index: 1000;}
+.lost .main-content a{color: #000;font-size: 22px;text-decoration: underline;margin-top: 31px;display: block;}
+.lost .main-content .main-text{margin-bottom: 100px;font-family: var(--title-font);color: #888b8c;font-size: 35px;}
+.lost .main-content .main-text .big{font-size: 250px;line-height: 250px;margin-top: -119px;}
+.text p{font-size: 35px;font-family: var(--title-font);line-height: 35px;color: #000;}
+.lost .bottom{position: absolute;left: 0;right: 0;margin-left: auto;margin-right: auto;bottom: 0;}
+.lost .bottom img{width:100%;}
