@@ -583,4 +583,4 @@ footer .red-social p span:first-child{display: block;color: var(--default-color)
 .lost .main-content .main-text .big{font-size: 250px;line-height: 250px;margin-top: -119px;}
 .text p{font-size: 35px;font-family: var(--title-font);line-height: 35px;color: #000;}
 .lost .bottom{position: absolute;left: 0;right: 0;margin-left: auto;margin-right: auto;bottom: 0;}
-.lost .bottom img{width:100%;}
+.lost .bottom img{width:80%;}

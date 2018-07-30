@@ -43,7 +43,7 @@
             </div>
             <div class="text">
                 <p>Vaya...</p>
-                <p>Parece que le has perdido.</p>
+                <p>Parece que te has perdido.</p>
             </div>
 
             <a href="{{ route('home') }}">Volver a la Home ></a>
