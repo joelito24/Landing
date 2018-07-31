@@ -321,10 +321,10 @@ section.agency .img-col img{width:100%;}
 section.agency .description .text-desc{font-size: 20px;line-height: 26px;max-width: 425px;}
 section.agency .description .text-desc span{color:var(--main-blue);font-weight: 700;}
 section.agency .white-block{padding:90px 0;background: url(/front/img/home/bg-whitepapers.png) no-repeat center center;background-size: cover;}
-section.agency .white-block .block-opinion{background-color: #dedede;padding:28px 40px 40px;}
+section.agency .white-block .block-opinion{background-color: #dedede;padding: 30px;}
 section.agency .title-opinion{font-size: 48px;font-family: var(--title-font);color: var(--main-blue);margin-bottom: 27px;}
-section.agency .white-block .block-opinion img{max-width: 40%;margin-bottom: 35px;}
-section.agency .white-block .block-opinion .text-opinion{color: #444654;font-size: 16px;font-weight: 700;margin-bottom: 40px;}
+section.agency .white-block .block-opinion img{max-width: 20%;margin-bottom: 20px;opacity: 0.3;}
+section.agency .white-block .block-opinion .text-opinion{color: #444654;font-size: 14px;font-style: italic;margin-bottom: 20px;}
 section.agency .white-block .block-opinion .name-opinion{color: #444654;font-weight: 700;font-size: 16px;margin-bottom: 0;}
 section.agency .content-agency .title-opinion{font-size: 48px;}
 section.agency .content-agency .title-yellow{font-size: 33px;color: #f0bf14;font-family: var(--title-font);margin-top: 28px;}
