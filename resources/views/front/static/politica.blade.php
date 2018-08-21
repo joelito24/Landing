@@ -20,7 +20,7 @@
                 <ul>
                     <li>Firefox desde aquí: <a target="_blank" href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias">https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias</a></li>
                     <li>Chrome desde aquí: <a target="_blank" href="http://support.google.com/chrome/bin/answer.py?hl=es&answer=95647">http://support.google.com/chrome/bin/answer.py?hl=es&answer=95647</a></li>
-                    <li>Explorer desde aquí: <a target="_blank" href="https://support.microsoft.com/ru-ru/help/17442/windows-internet-explorer-delete-manage-cookies#ie=ie-10">http://windows.microsoft.com/es-es/internet-explorer/delete-manage-cookies#ie=ie-10</a></li>
+                    <li>Explorer desde aquí: <a target="_blank" href="http://windows.microsoft.com/es-es/internet-explorer/delete-manage-cookies#ie=ie-10">http://windows.microsoft.com/es-es/internet-explorer/delete-manage-cookies#ie=ie-10</a></li>
                     <li>Safari desde aquí: <a target="_blank" href="https://support.apple.com/kb/ph17191?locale=es_ES">https://support.apple.com/kb/ph17191?locale=es_ES</a></li>
                     <li>Opera desde aquí: <a target="_blank" href="https://help.opera.com/en/latest/web-preferences/#cookies">https://help.opera.com/en/latest/web-preferences/#cookies</a></li>
                 </ul>
