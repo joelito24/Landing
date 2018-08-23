@@ -41,7 +41,7 @@ class EmailServices
         $sender = $email;
         $data = ['data' => [
                 'project_name' => "Thatzad",
-                'title' => "Thatzad - Contacto",
+                'title' => "Nueva solicitud de Contacto - Thatzad",
                 'name' => $name,
                 'email' => $email,
                 'telephone' => $telephone,
@@ -60,7 +60,7 @@ class EmailServices
         $sender = "hola@thatzad.com";
         $data = ['data' => [
             'project_name' => "Thatzad",
-            'title' => "Thatzad - Contacto",
+            'title' => "Nueva solicitud de Contacto - Thatzad",
             'name' => $name,
             'email' => $email,
             'consulta' => $consulta]];

@@ -5,11 +5,11 @@
             <tr>
                 <td class="content-wrapper" align="center" style="padding-left:24px;padding-right:24px;padding-top:24px;">
                     <a class="padding logo" href="{{route('home')}}" target="_blank">
-                        <img style="margin-bottom:20px;" class="logo" src="{{ asset('front/images/mail/logo.png') }}" alt="{{$data['project_name']}}" />
+                        <img style="margin-bottom:10px;max-width: 220px;" class="logo" src="{{ asset('front/img/header/logotipo.png') }}" alt="{{$data['project_name']}}" />
                     </a>
                     <br><br>
-                    <div class="title" style="font-family: Helvetica, Arial, sans-serif;font-size: 33px;font-weight: lighter; color: #374550;">{{$data['title']}}</div>
-                    <br><br>
+                    <div class="title" style="font-family: Helvetica, Arial, sans-serif;font-size: 24px;font-weight: lighter; color: #374550;">{{$data['title']}}</div>
+                    <br>
                     <div><p style="font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:22px;text-align:left;color:#333333;margin-top:12px"><br>
                         <b>@lang('msg.email_text.name'):</b> {{$data['name']}}<br/>
                         <b>@lang('msg.email_text.email'):</b> {{$data['email']}}<br/>

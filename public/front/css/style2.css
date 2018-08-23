@@ -140,6 +140,9 @@ header .menu .especializaciones:hover ul, .menu .servicios:hover ul{
     z-index: 1000;
 }
 
+header .menu .especializaciones .dropdown{
+    width: 342px;
+}
 header .menu a {
     color: inherit;
 }
