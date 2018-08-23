@@ -30,7 +30,6 @@
                     <p>Esta ha sido nuestra forma de entender lo que queríamos que fuera nuestra agencia de marketing online durante los últimos {{ $age }} años, nosotros estamos orgullosos de haberlo conseguido y nos gusta pensar que nuestros Clientes opinan lo mismo.</p>
                     <div class="red-social">
                         <p>
-                            <span>Síguenos en redes sociales:</span>
                             <span>
 								<a target="_blank" href="https://twitter.com/thatzad"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><style>.cls-1{fill:#023c4e;}</style></defs><title></title><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M100,0A100,100,0,1,0,200,100,100.11,100.11,0,0,0,100,0Zm44.61,77.11c0,1,.07,2,.07,3,0,30.42-23.15,65.48-65.49,65.48a65.1,65.1,0,0,1-35.28-10.33A46.48,46.48,0,0,0,78,125.71a23,23,0,0,1-21.5-16,23.11,23.11,0,0,0,10.39-.39A23,23,0,0,1,48.41,86.77c0-.1,0-.2,0-.29a22.92,22.92,0,0,0,10.42,2.88,23.05,23.05,0,0,1-7.12-30.73A65.35,65.35,0,0,0,99.15,82.68a23,23,0,0,1,39.22-21A45.94,45.94,0,0,0,153,56.1a23.12,23.12,0,0,1-10.13,12.74,45.76,45.76,0,0,0,13.22-3.62A46.3,46.3,0,0,1,144.61,77.11Z"/></g></g></svg></a>
 							</span>
@@ -58,7 +57,7 @@
                                 <div class="text-opinion">
                                     <p>Thatzad ha sido clave para desarrollar y planificar la estrategia digital de una forma innovadora en un sector muy conservador como el futbol amateur.</p>
                                 </div>
-                                <p class="name-opinion">Jordi Canals, <br>Digital Manager FCF.</p>
+                                <p class="name-opinion">Jordi Canals, <br>Digital Manager Federació Catalana de Futbol.</p>
                             </div>
                         </div>
                         <div>
@@ -121,7 +120,7 @@
         </div>
         <div class="valores">
             <div class="container">
-                <p class="title-valor">Valores de Thatzad</p>
+                {{--<p class="title-valor">Valores de Thatzad</p>--}}
                 <div class="intro" data-animated="fadeInUp">
                     <p>Valores que intentamos transmitir cada día en Thatzad.</p>
                     <p>Nos consideramos…</p>

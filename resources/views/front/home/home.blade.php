@@ -100,7 +100,7 @@
                         <p class="text-bg automation">Automation marketing</p>
                         <p class="text-bg mail">Mail Marketing</p>
                         <p class="text-bg inbound">Inbound Marketing</p>
-                        <p class="title-info">Mail Marketing <span class="line-title">Inbound Marketing</span> <span class="line-title">Automation marketing</span></p>
+                        <p class="title-info">Inbound Marketing <span class="line-title">Mail Marketing</span> <span class="line-title">Automation marketing</span></p>
                         <div class="info-descr">
                             <p class="text-info">Inbound & Automation marketing. La tecnología nos ayuda a saber exactamente que ha motivado a un usuario a interactuar con nosotros. <span>Diseñamos estrategias para atraer a un cliente concreto</span> y posteriormente ir persuadiéndole poco a poco y en diferentes medios, con contenidos adaptados a él.</p>
                             <p class="link-service"><a href="{{ route('service','inbound-marketing') }}">Saber más de Inbound marketing&nbsp;></a></p>
@@ -562,14 +562,18 @@
 
 
         });
-        $('.infographics .title-info').after().click(function(){
-            $('.info-block .info-descr').fadeOut();
-            $(this).parent().find('.info-descr').fadeIn();
-        });
-        $('.infographics .info-block .info-descr').after().click(function(){
-            // $('.info-block .text-info').fadeOut();
-            $(this).fadeOut();
-        });
+        //Infografía en móvil
+        var mobileScreen = $(window).width();
+        if (mobileScreen < 993) {
+            $('.infographics .title-info').after().click(function(){
+                $('.info-block .info-descr').fadeOut();
+                $(this).parent().find('.info-descr').fadeIn();
+            });
+            $('.infographics .info-block .info-descr').after().click(function(){
+                // $('.info-block .text-info').fadeOut();
+                $(this).fadeOut();
+            });
+        }
 
         // $(window).bind('scroll',function(e){
         //     parallaxScroll();

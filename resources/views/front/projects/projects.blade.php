@@ -83,8 +83,59 @@
                     {{--</figure>--}}
                 {{--</div>--}}
             </div>
-        </div>
 
+        </div>
+        <div class="contact-block">
+            <div class="row" style="margin: 0">
+                <div class="col-md-12">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <p class="big-title">Explícanos tu proyecto y objetivos y diseñaremos juntos una estrategia 100% efectiva</p>
+                    </div>
+                <!--<div class="btn-yellow-full"><a href="{{ route('contact') }}">Contáctanos</a></div>-->
+                    <div class="col-md-3">
+                        <div class="form-block">
+                            <form method="POST" action="" id="contactform">
+                                <div class="send" id="response"></div>
+                                <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
+                                <div class="form-group">
+                                    <!--<label>Nombre</label>-->
+                                    <input class="form-control required" type="text" name="name" id="name" placeholder="Nombre">
+                                </div>
+                                {{--Campo oculto, no es para usuarios normales--}}
+                                <div class="lastname">
+                                    <input class="form-control" placeholder="Apellido" type="text" name="lastname" id="lastname">
+                                </div>
+                                <div class="form-group">
+                                    <!--<label>Email (obligatorio)</label>-->
+                                    <input class="form-control required" type="text" name="email" id="email" placeholder="Email (obligatorio)">
+                                    <p style="margin-top:0px; margin-bottom: -13px;" class="msg-error">El formato de email no es correcto</p>
+                                </div>
+                                <div class="form-group">
+                                    <!--<label>Comentario</label>-->
+                                    <textarea class="form-control" placeholder="Cuéntanos más detalles para entender mejor tu negocio" id="consulta" name="consulta"></textarea>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="newsletter" value="1" id="newsletter" class="gray-radio"/>
+                                        <label for="newsletter" class="white-radio-label">Acepto suscribirme a la newsletter de esta web.</label>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input class="gray-radio" type="checkbox" name="privacy" id="privacy" value="1">
+                                        <label for="privacy" class="white-radio-label">Acepto <a style="color: #fff;font-weight: 700;" href="{{ route('generals') }}" target="_blank">la política de privacidad</a> aplicada en esta web.</label>
+                                        <p style="margin-top: -10px;" class="msg-error">Tienes que aceptar nuestra política de privacidad</p>
+                                    </label>
+                                </div>
+                                <input class="submit btn-yellow-full" type="button" id="send" value="Enviar">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
 @stop
@@ -127,6 +178,49 @@
                     $('.project').show();
                 }
                 // console.log (parseInt(sList));
+            });
+
+            $("#send").click(function(e){
+                e.preventDefault();
+                var error = 0;
+                if (!$('#privacy').attr('checked')){
+                    error = 1;
+                    $('#privacy').parent().find('.white-radio-label').addClass('not-correct');
+                    $("#privacy").next().next().fadeIn();
+                }else{
+                    $('#privacy').next().next().fadeOut();
+                    $('#privacy').parent().find('.white-radio-label').removeClass('not-correct');
+                }
+                var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+                if (!testEmail.test($('#email').val())){
+                    error = 1;
+                    $("#email").next().fadeIn();
+                    $('#email').addClass('not-correct');
+                }else{
+                    $('#email').next().fadeOut();
+                    $('#email').removeClass('not-correct');
+                }
+                //if ($('#name').val().length <= 1)error = 1;
+                if (error === 0){
+                    $.ajax({
+                        type: 'post',
+                        url: '{{ action('ContactController@sendShort') }}',
+                        data: $('#contactform').serialize(),
+                        success: function(response) {
+                            $('#contactform').trigger("reset");
+                            $('#privacy').prop('checked', false);
+                            if (response === 'sent'){
+                                $('#response').html('Se ha enviado su solicitud correctamente');
+                                $([document.documentElement, document.body]).animate({
+                                    scrollTop: $("#response").offset().top
+                                }, 500);
+                            }
+                        },
+                        error: function(e){
+                            console.log(e);
+                        }
+                    });
+                }
             });
 
         });
