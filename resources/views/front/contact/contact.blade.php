@@ -36,7 +36,7 @@
                                 </g>
                             </g>
                         </svg>
-                        <a class="link-contact" href="mailto:hola@thatzad.com">hola@thatzad.com</a>
+                        <img id="emailcontact" style="cursor: pointer;" src="{{ asset('front/img/hola-contact.png') }}" alt="">
                     </div>
                     <div class="info-text">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -182,6 +182,13 @@
             });
             $('#header').addClass('header_transparent');
             $('#header').css('position', 'absolute');
+
+            $('#emailcontact').on('click', function (event) {
+                event.preventDefault();
+                var emailP1 = 'hola';
+                var emailP2 = 'thatzad.com'
+                window.location = 'mailto:' + emailP1 + '@' + emailP2;
+            });
 
             $("#send").click(function(e){
                 e.preventDefault();

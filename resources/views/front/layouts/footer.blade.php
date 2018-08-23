@@ -10,7 +10,7 @@
 					<div class="col-sm-6 col-md-3">
 						<div class="contact">
 							<a href="tel:+34936350620">+34 936 350 620</a>
-							<a href="mailto:hola@thatzad.com">hola@thatzad.com</a>
+							<img id="emaillink" style="margin-bottom: 10px;cursor: pointer;" src="{{ asset('front/img/hola-footer.png') }}" alt="">
 							<div class="address">
 								<p>C/ Marqués de Mulhacén 11 bajos 2, 08034 Barcelona</p>
 							</div>

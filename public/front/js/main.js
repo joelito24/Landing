@@ -39,6 +39,13 @@ $(document).ready(function(){
         createCookie("cookies", "", 7);
         $(".popup-cookies").fadeOut();
     });
+
+    $('#emaillink').on('click', function (event) {
+        event.preventDefault();
+        var emailP1 = 'hola';
+        var emailP2 = 'thatzad.com'
+        window.location = 'mailto:' + emailP1 + '@' + emailP2;
+    });
 });
 
 function createCookie(name, value, days) {
