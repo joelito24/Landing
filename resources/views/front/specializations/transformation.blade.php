@@ -9,7 +9,7 @@
                 <h2 class="title-page">Transformación digital para empresas </h2>
                 <div class="row">
                     <div class="col-md-6" data-animated="fadeInLeft">
-                        <p class="transform-title">Transformar los procesos de una compañía parte de nuevos sistemas que los hagan sencillos y eficientes. Descubre hasta dónde podemos llegar juntos.</p>
+                        <p class="transform-title">Transformar los procesos de una compañía parte de nuevos sistemas y herramientas web que los hagan sencillos y eficientes. Descubre hasta dónde podemos llegar juntos.</p>
                     </div>
                     <div class="col-md-5 col-md-offset-1" data-animated="fadeInRight">
                         <p>El concepto de trasformación digital de una empresa es ciertamente amplio e implica cambios culturales y organizativos profundos en las compañías.</p>
@@ -34,6 +34,7 @@
                     </div>
                     <div class="col-md-offset-1 col-md-5 col-benefits" data-animated="fadeInUp">
                         <ul class="list-benefits">
+                            <li>Web/eCommerce/APP a medida</li>
                             <li>Intranets corporativas</li>
                             <li>Diseño y programación ERP</li>
                             <li>Desarrollo gestor de reservas</li>
@@ -45,7 +46,7 @@
                 </div>
             </div>
         </div>
-        @include('front.specializations.complements.action', ['title' => 'Hagamos sistemas complejos para facilitarte el trabajo', 'btntitle' => 'Hablemos'])
+        @include('front.specializations.complements.action', ['title' => 'Hagamos webs complejas para facilitarte el trabajo', 'btntitle' => 'Hablemos'])
     </section>
 
 @stop

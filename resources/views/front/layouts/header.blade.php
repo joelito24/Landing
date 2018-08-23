@@ -2,7 +2,9 @@
     <div class="container">
         <div class="col-md-4">
             <a href="{{ route('home') }}" ><img class="img-logo" src="{{ asset('front/img/header/logotipo.png') }}"></a>
-            <div id="button-mobile">
+            <div id="button-mobile" style="    position: fixed;
+    right: 5%;
+    top: 22px;">
                 <a href="#" id="burger">
                     <div id="nav-icon1">
                         <span></span>
