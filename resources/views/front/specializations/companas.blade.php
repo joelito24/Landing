@@ -7,7 +7,7 @@
             <div class="container">
                 <p class="name-page">ESPECIALIZACIONES</p>
                 <h2 class="title-page">Publicidad online orientada a resultados</h2>
-                <p class="subtitle" data-animated="fadeInUp">Definamos junto el buyer persona, los objetivos a conseguir y los recursos que tenemos. En THATZAD diseñaremos la mejor estrategia para conseguir los resultados que buscas.</p>
+                <p class="subtitle" data-animated="fadeInUp">Definamos juntos el buyer persona, los objetivos a conseguir y los recursos que tenemos. En THATZAD diseñaremos la mejor estrategia para conseguir los resultados que buscas.</p>
             </div>
 
         </div>
@@ -19,7 +19,7 @@
                             <p>Existen dos tipos de campañas, las que buscan notoriedad de marca (Branding) y las que persiguen objetivos finales de negocio (Performace). Está claro que siempre se persigue aumentar nuestra facturación y nuestro beneficio, pero cuando nuestra marca no es conocida y tenemos unos valores que comunicar, puede ser importante empezar con campañas de branding, para luego conseguir la conversión  mediante campañas más orientadas al objetivo.</p>
                         </div>
                         <div class="col-md-6" data-animated="fadeInUp">
-                            <p>Los objetivos no tienen que ser únicamente ventas, pueden ser leads, contactos comerciales, descargas de catálogos, visualizaciones de videos o visitar más de X minutos una web. Si definimos bien los objetivos de negocio y el embudo de conversión en THATZAD realizaremos la campaña perfecta para conseguirlos, y no por tener una barita mágica, sino con experiencia, creatividad, implicación, análisis y optimización de las campañas.</p>
+                            <p>Los objetivos no tienen que ser únicamente ventas, pueden ser leads, contactos comerciales, descargas de catálogos, visualizaciones de videos o visitar más de X minutos una web. Si definimos bien los objetivos de negocio y el embudo de conversión, en THATZAD realizaremos la campaña perfecta para conseguirlos. Y no por tener una varita mágica, sino con experiencia, creatividad, implicación, análisis y optimización de las campañas.</p>
 
                         </div>
                         <div class="col-lg-6 col-lg-offset-6 col-md-offset-0 col-md-12">

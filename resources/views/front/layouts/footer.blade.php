@@ -19,8 +19,8 @@
 					<div class="col-sm-6 col-md-3">
 						<ul class="menu-footer">
 							<li><a href="{{ route('specialization1') }}">Proyectos de e-commerce</a></li>
-							<li><a href="{{ route('specialization2') }}">Publicidad online orientada a resultados</a></li>
 							<li><a href="{{ route('specialization3') }}">e-Marketing y publicidad para marcas</a></li>
+							<li><a href="{{ route('specialization2') }}">Publicidad online orientada a resultados</a></li>
 							<li><a href="{{ route('specialization4') }}">Transformación digital para empresas</a></li>
 						</ul>
 					</div>

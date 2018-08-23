@@ -75,6 +75,10 @@
 										<!--<label>Nombre</label>-->
 										<input class="form-control required" type="text" name="name" id="name" placeholder="Nombre">
 									</div>
+									{{--Campo oculto, no es para usuarios normales--}}
+									<div class="lastname">
+										<input class="form-control" placeholder="Apellido" type="text" name="lastname" id="lastname">
+									</div>
 									<div class="form-group">
 										<!--<label>Email (obligatorio)</label>-->
 										<input class="form-control required" type="text" name="email" id="email" placeholder="Email (obligatorio)">

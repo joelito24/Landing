@@ -23,6 +23,10 @@ class ContactController extends Controller
     function send( EmailServices $emailService, Newsletter $newsletterRepository, ContactsHistory $contactsHistoryRepository )
     {
         $contactData = Input::all();
+        //Comprobar si es un robot
+        if($contactData['lastname'] != ""){
+            return 'bot';
+        }
         if(!isset($contactData['consult'])){$contactData['consult'] = ["0"];}
 
         $contactData['consultas'] = json_encode($contactData['consult']);
@@ -57,7 +61,10 @@ class ContactController extends Controller
     function sendShort( EmailServices $emailService, Newsletter $newsletterRepository, ContactsHistory $contactsHistoryRepository )
     {
         $contactData = Input::all();
-
+        //Comprobar si es un robot
+        if($contactData['lastname'] != ""){
+            return 'bot';
+        }
         $emailService->contactShortEmail(
             $contactData['name'],
             $contactData['email'],

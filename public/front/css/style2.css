@@ -100,6 +100,7 @@ header.header-blue-mbl {background: transparent!important;position: relative;z-i
 header.header_transparent {background: transparent!important;position: relative;z-index: 100;}
 header .img-logo{padding-top:39px;}
 header .menu {list-style-type: none !important;text-align: right;}
+header.header_home .menu li.especializaciones, header.header_home .menu li.servicios{cursor: default;}
 header.header_home .menu li {color: var(--white);font-family: var(--main-font);font-size: 18px;line-height: 24px;font-weight: 600;margin-left: 2%;margin-right: 2%;}
 header .menu li {font-family: var(--main-font);font-size: 18px;line-height: 24px;font-weight: 600;margin-left: 2%;margin-right: 2%;}
 header .menu .mobile-dropdown , header .menu .esp-mobile-dropdown{list-style: none;display: none; border-bottom: 1px solid var(--main-blue); margin-bottom: 20px;}
@@ -197,6 +198,7 @@ section.service .contact-block label {cursor: pointer;font-weight: 400;font-size
 .white-radio-label:after {content: '';width: 10px;height: 6px;position: absolute;top: 6px;left: 5px;border: 3px solid #ffffff;border-top: none;border-right: none;background: transparent;opacity: 0;-webkit-transform: rotate(-45deg);transform: rotate(-45deg);}
 .white-radio-label:before {content: '';width: 20px;height: 20px;cursor: pointer;display: block;top: 0px;left: 0px;float: left;border: 2px solid #ffffff;border-radius: 2px;margin-right: 9px;margin-bottom: 14px;}
 section.service .quote-mbl {display: none;}
+section.service form .lastname{display: none;height:  0;visibility:  hidden;}
 /*footer .footer-bottom .footerphrase{display: none;}*/
 .w100{width: 100%}
 @media (max-width: 768px){

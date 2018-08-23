@@ -237,6 +237,7 @@ section.contact:before{background-color: rgba(255, 255, 255, 0.9);top: -233px;co
 section.contact .container{z-index: 1;position: relative;}
 section.contact .text-contact{color: var(--default-color);font-size: 21px;font-weight: 700;line-height: 25px;}
 section.contact .form-block{overflow: hidden;background: #fff;padding: 39px 55px 40px;max-width: 430px;float: right;}
+section.contact .form-block .lastname{display: none;height:  0;visibility:  hidden;}
 section.contact .btn-yellow-full{min-width: 201px;float: right;}
 section.contact .form-block label{cursor: pointer;font-weight: 400;font-size: 14px;}
 section.contact .form-block label a{color: var(--main-blue);}

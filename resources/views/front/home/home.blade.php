@@ -13,7 +13,7 @@
                 <div class="col-md-6 right-col" data-animated="fadeInRight">
                     <div class="text-box">
                         <p class="text-grand">En Thatzad nos sentimos tremendamente orgullosos de hacer crecer tu negocio digital</p>
-                        <p>Entendiendo bien tu mercado, tu organización y las necesidades de tu proyecto. Con más de 10 años de experiencia para llegar por el canal más rentable a tu cliente objetivo</p>
+                        <p>Entendiendo bien tu mercado, tu organización y las necesidades de tu proyecto. Con más de 10 años de experiencia para llegar por el canal más rentable a tu cliente objetivo.</p>
                         <p>Desarrollamos la estrategia, la web y las campañas de publicidad con un equipo creativo, implicado y 100% efectivo.</p>
                     </div>
                     <div class="white-box">
@@ -66,7 +66,7 @@
                         <div class="info-descr">
                             <p class="text-info"><span>Somos Google Premier Partner,</span>
                                 <img style="max-width: 163px;display: block;margin-bottom: 10px;margin-top: 10px;" src="{{ asset('front/img/primer-google.png') }}" alt="">
-                                 sabemos la importancia de una web perfectamente adaptada para Google, tanto a nivel SEO como para optimizar Adwords. La estrategia de keywords nos marcará la arquitectura de la web, así que nos gusta que sea uno de los primeros drivers de plan de e-Marketing.</p>
+                                 Sabemos la importancia de una web perfectamente adaptada para Google, tanto a nivel SEO como para optimizar Adwords. La estrategia de keywords nos marcará la arquitectura de la web, así que nos gusta que sea uno de los primeros drivers de plan de e-Marketing.</p>
                             <p class="link-service"><a href="{{ route('service','seo') }}">Saber más de SEO&nbsp;></a></p>
                             <p class="link-service last"><a href="{{ route('service','sea') }}">Saber más de SEA. Google Ads&nbsp;></a></p>
                         </div>
@@ -76,7 +76,7 @@
                         <p class="text-bg remarketing">Remarketing</p>
                         <div class="info-descr">
                             <p class="title-info">Publicidad online <span class="line-title">Remarketing</span></p>
-                            <p class="text-info">Creamos <span>campañas de publicidad online que conectan exactamente con ese cliente que buscas.</span> Una vez lanzamos la web, hemos de empezar a traer tráfico cualificado que generen conversiones y ventas.  Ideamos campañas display efectivas, acciones de remarketing multi fase, que consigan la venta por impulso o que vayan enamorando poco a poco, dependerá de la estrategia.</p>
+                            <p class="text-info">Creamos <span>campañas de publicidad online que conectan exactamente con ese cliente que buscas.</span> El objetivo es atraer tráfico cualificado que genere conversiones y ventas, para alcanzarlo, ideamos campañas display efectivas, acciones de remarketing multi fase, que consigan la venta por impulso o que vayan enamorando poco a poco, dependerá de la estrategia.</p>
                             <p class="link-service"><a href="{{ route('service','publicidad-online') }}">Saber más de Publicidad online&nbsp;></a></p>
                         </div>
                     </div>
@@ -135,22 +135,22 @@
                     
                 </div>
                 <div class="col-md-3 col-special">
-                    <a href="{{ route('specialization2') }}">
+                    <a href="{{ route('specialization3') }}">
                         <div class="inner-special third-special">
                             <div class="line-yellow"></div>
-                            <p  data-animated="fadeInUp">Publicidad online orientada a resultados</p>
-                            <div  data-animated="fadeInUp" class="btn-yellow big">Consigue los resultados que buscas</div>
+                            <p  data-animated="fadeInUp">e-Marketing y publicidad para marcas</p>
+                            <div  data-animated="fadeInUp" class="btn-yellow">Hagamos que tu marca triunfe</div>
                             <div class="line-yellow line-bottom"></div>
                         </div>
                     </a>
                     
                 </div>
                 <div class="col-md-3 col-special">
-                    <a href="{{ route('specialization3') }}">
+                    <a href="{{ route('specialization2') }}">
                         <div class="inner-special second-special">
                             <div class="line-yellow"></div>
-                            <p data-animated="fadeInUp">e-Marketing y publicidad para marcas</p>
-                            <div data-animated="fadeInUp" class="btn-yellow">Hagamos que tu marca triunfe</div>
+                            <p data-animated="fadeInUp">Publicidad online orientada a resultados</p>
+                            <div data-animated="fadeInUp" class="btn-yellow big">Consigue los resultados que buscas</div>
                             <div class="line-yellow line-bottom"></div>
                         </div>
                     </a>

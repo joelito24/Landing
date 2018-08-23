@@ -92,6 +92,11 @@
                         <div class="form-group">
                             <input placeholder="Nombre" class="form-control required" type="text" name="name" id="name">
                         </div>
+                        {{--Campo oculto, no es para usuarios normales--}}
+                        <div class="lastname">
+                            <input placeholder="Apellido" type="text" name="lastname" id="lastname">
+                        </div>
+
                         <div class="form-group">
                             <input placeholder="Empresa" class="form-control" type="text" name="company" id="company">
                         </div>

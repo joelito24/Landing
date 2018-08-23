@@ -38,7 +38,7 @@ class EmailServices
         $to = env('EMAIL_TO_THATZAD');
         $view = 'emails.contact';
         $from = $email;
-        $sender = "hola@thatzad.com";
+        $sender = $email;
         $data = ['data' => [
                 'project_name' => "Thatzad",
                 'title' => "Thatzad - Contacto",
