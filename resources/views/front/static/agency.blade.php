@@ -122,7 +122,7 @@
             <div class="container">
                 {{--<p class="title-valor">Valores de Thatzad</p>--}}
                 <div class="intro" data-animated="fadeInUp">
-                    <p>Valores que intentamos transmitir cada día en Thatzad.</p>
+                    <p style="font-family: var(--title-font);font-size: 36px;margin-bottom: 38px;"><span>Valores</span> que intentamos transmitir cada día en Thatzad.</p>
                     <p>Nos consideramos…</p>
                 </div>
 

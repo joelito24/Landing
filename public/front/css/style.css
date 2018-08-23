@@ -232,7 +232,7 @@ section.service .big-title, section.projects .big-title{margin-top: 115px;font-f
 
 /* CONTACT */
 section.contact{padding:107px 0 289px;position:relative;background: url('/front/img/contact.png') no-repeat center center; background-size:cover;}
-section.contact:before{background-color: rgba(255, 255, 255, 0.9);top: -233px;content: '';display: block;height: 775px;left: 0;position: absolute;right: 0;transform: skewY(-3deg);transform-origin: 100%;}
+section.contact:before{background-color: rgba(255, 255, 255, 0.68);top: -233px;content: '';display: block;height: 775px;left: 0;position: absolute;right: 0;transform: skewY(-3deg);transform-origin: 100%;}
 section.contact .container{z-index: 1;position: relative;}
 section.contact .text-contact{color: var(--default-color);font-size: 21px;font-weight: 700;line-height: 25px;}
 section.contact .form-block{overflow: hidden;background: #fff;padding: 39px 55px 40px;max-width: 430px;float: right;}
@@ -334,7 +334,7 @@ section.agency .content-agency.vision .white-space{position: absolute;height: 10
 section.agency .valores{padding:140px 0;color:#fff;text-align:center;background: url(/front/img/agency/bg-valores.jpg) no-repeat center center;background-size: cover;}
 section.agency .valores .title-valor{font-family: var(--title-font);font-size: 48px;}
 section.agency .valores .intro p{font-size: 24px;margin-bottom: 0;font-weight: 700;}
-section.agency .valores ul{list-style:none;margin-top:43px;font-family: var(--title-font);font-size: 36px;}
+section.agency .valores ul{list-style:none;margin-top:15px;font-family: var(--title-font);font-size: 36px;}
 section.agency .valores ul li{margin-bottom: 12px;}
 section.agency .valores ul li:last-child{color: #fcbf10;}
 section.agency .multiple-items .slick-slide{padding: 0 15px;}
