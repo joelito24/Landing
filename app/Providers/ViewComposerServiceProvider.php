@@ -7,6 +7,7 @@ use App;
 
 use App\Models\Categories;
 use App\Models\Services;
+use View;
 
 class ViewComposerServiceProvider extends ServiceProvider
 {
@@ -14,8 +15,13 @@ class ViewComposerServiceProvider extends ServiceProvider
     public function boot()
     {
 
+        date_default_timezone_set('Europe/Madrid');
+        $today = date('Y');
+        $age = (int) $today - 2006;
+
         $this->registercategories();
         $this->registerheader();
+        View::share('age', $age);
     }
 
     public function register()
