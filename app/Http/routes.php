@@ -119,6 +119,16 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
         'uses' => 'ProjectsController@edit'
     ]);
 
+    Route::get('projects/order', [
+        'as' => 'admin.projects.order',
+        'uses' => 'ProjectsController@order'
+    ]);
+
+    Route::post('projects/order/{categoryId}', [
+        'as' => 'admin.projects.orderSave',
+        'uses' => 'ProjectsController@orderSave'
+    ]);
+
     Route::post('projects/edit/{id}', [
         'as' => 'admin.projects.update',
         'uses' => 'ProjectsController@update'

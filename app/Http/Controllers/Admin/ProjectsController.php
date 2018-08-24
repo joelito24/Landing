@@ -38,6 +38,7 @@ class ProjectsController extends BaseController
             'title' => 'Título',
             'nameCategory' => 'Categoría',
             'description_short' => 'Preguntas',
+            'order' => 'Orden',
         ];
 
         return view('admin.datatable', [
@@ -47,4 +48,26 @@ class ProjectsController extends BaseController
             'header' => $fluxesHead
         ]);
     }
+
+    public function order()
+    {
+        App::setLocale('es');
+        $fluxesHead = [
+            'title' => 'Título',
+        ];
+
+        $repo = App::make($this->repositoryName);
+        $data = $repo->findAllActive();
+
+        return view('admin.order', [
+            'data' => $data,
+            'pageTitle' => 'Orden de Proyectos',
+            'title' => 'Proyectos',
+            'header' => $fluxesHead,
+//            'filter' => all_projects_categories(),
+            'filter_id' => false,
+            'repository' => $this->resourceName
+        ]);
+    }
+
 }

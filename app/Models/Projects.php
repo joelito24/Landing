@@ -75,7 +75,7 @@ class Projects extends Model implements ModelInterface
         return $return;
     }
     public function findAllActive(){
-        return $this->where('active', '1')->get();
+        return $this->where('active', '1')->orderBy('order', 'asc')->get();
     }
 
     public function findBySlug($slug){
@@ -97,6 +97,14 @@ class Projects extends Model implements ModelInterface
             }
         }
         return $return;
+    }
+
+    public function findByCategoryIdActive( $categoryId )
+    {
+        return $this->where('category_id', '=', $categoryId)
+            ->where('active', '=', 1)
+            ->orderBy('order','asc')
+            ->get();
     }
 
 }

@@ -27,7 +27,8 @@ return [
         'create' => 'admin.projects.create',
         'edit' => 'admin.projects.edit',
         'delete' => 'admin.projects.delete',
-        'crop' => 'admin.services.crop',
+        'crop' => 'admin.projects.crop',
+        'order' => 'admin.projects.order',
         'icon' => 'fa fa-star',
         'name' => 'Proyectos',
         'resource' => 'projects'

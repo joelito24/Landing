@@ -324,7 +324,7 @@
         $('#lineas .line-polylang').css('display', 'none');
         $('#puntitos_con_linea circle').css('display', 'none');
         //id = 1, Ideas de negocio
-        $('#puntitos .business, text.business, #puntitos_con_linea .business-boton').mouseenter(function () {
+        $('#puntitos .business, text.business, #puntitos_con_linea .business-boton').hover(function () {
             $("#text1 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
             var name = $(this).attr("data-id");
@@ -355,7 +355,7 @@
         });
 
         //id = 2, Diseño web, marketing, programación
-        $('#puntitos .web, text.web, #puntitos_con_linea .web-boton').mouseenter(function () {
+        $('#puntitos .web, text.web, #puntitos_con_linea .web-boton').hover(function () {
             $("#text2 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
             var name = $(this).attr("data-id");
@@ -387,7 +387,7 @@
         });
 
         //id = 3, SEO, SEA, Adwords
-        $('#puntitos .seo, text.seo, #puntitos_con_linea .seo-boton').mouseenter(function () {
+        $('#puntitos .seo, text.seo, #puntitos_con_linea .seo-boton').hover(function () {
             $("#text3 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
             var name = $(this).attr("data-id");
@@ -419,7 +419,7 @@
         });
 
         //id = 4, Publicidad online y remarketing
-        $('#puntitos .online, text.online, #puntitos_con_linea .online-boton').mouseenter(function () {
+        $('#puntitos .online, text.online, #puntitos_con_linea .online-boton').hover(function () {
             $("#text4 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
             var name = $(this).attr("data-id");
@@ -450,7 +450,7 @@
             }
         });
         //id = 5, Social Media Ads
-        $('#puntitos .media, text.media, #puntitos_con_linea .media-boton').mouseenter(function () {
+        $('#puntitos .media, text.media, #puntitos_con_linea .media-boton').hover(function () {
             $("#text5 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
             var name = $(this).attr("data-id");
@@ -482,7 +482,7 @@
         });
 
         //id = 6, Medios e influencers
-        $('#puntitos .influ, text.influ, #puntitos_con_linea .influ-boton').mouseenter(function () {
+        $('#puntitos .influ, text.influ, #puntitos_con_linea .influ-boton').hover(function () {
             $("#text6 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
             var name = $(this).attr("data-id");
@@ -514,7 +514,7 @@
         });
 
         //id = 7, Automation, Inbound Marketing, Mail
-        $('#puntitos .mark, text.mark, #puntitos_con_linea .mark-boton').mouseenter(function () {
+        $('#puntitos .mark, text.mark, #puntitos_con_linea .mark-boton').hover(function () {
             $("#text7 .title-info").addClass('mouseenter');
             $(".col-md-4.text-info h2").addClass('text-grey');
             var name = $(this).attr("data-id");
@@ -562,6 +562,17 @@
 
 
         });
+
+        $('#infografia text, #infografia circle').click(function (e) {
+            $url = $(this).attr('data-url');
+            if(typeof $url === "undefined"){
+                e.preventDefault();
+            }else{
+                window.location = $url;
+            }
+        });
+
+
         //Infografía en móvil
         var mobileScreen = $(window).width();
         if (mobileScreen < 993) {
