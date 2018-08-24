@@ -1,0 +1,5 @@
+{
+  "name": "thatzad.com Push test",  // Nombre de la página
+  "display": "standalone",        // Where show push avis
+  "gcm_sender_id": "244943799630" // Google Cloud Platform identificator
+}

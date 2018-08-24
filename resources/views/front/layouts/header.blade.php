@@ -48,6 +48,7 @@
                         <li class="main-blue"><a href="{{ route('whitepapers') }}">White papers</a></li>
                         <li class="main-blue"><a href="http://www.thatzblog.com/" target="_blank">Blog</a></li>
                         <li><a href="{{ route('contact') }}"><img id="sobre" src="{{ asset('front/img/header/sobre-icon.png') }}"></a></li>
+                        <li style="display: none;"><a href="#"  onclick="SendPushMe();return false">SendPushMe</a></li>
                     </ul>
                 </div>
                 <div class="row">

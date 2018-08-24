@@ -25,6 +25,11 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
     {{--<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900" rel="stylesheet">--}}
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/latest.json">
+    <script type="text/javascript" src="/push.js"></script>
+    <script type="text/javascript" src="/sw.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3439732-1"></script>
     <script>
