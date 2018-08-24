@@ -37,6 +37,14 @@
         <div class="block-slider">
             <div class="container">
                 <div id="carroselhome" class="carousel">
+                    <a class="carousel-control-prev" href="#carroselhome" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carroselhome" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                     <ol class="carousel-indicators">
                         @if($project->image3 != "")
                             <li data-target="#carroselhome" data-slide-to="0" class="active"></li>

@@ -169,7 +169,6 @@
 
     .grid figure p{font-size: 20px;line-height: 25px;}
     figcaption .btn-yellow{width: 100%;}
-
     section.project .project-description{width: 100%;padding-left:5%;padding-right: 5%;margin-bottom: 10px;}
     section.agency .content-agency .container{width: 100% !important;max-width: 100% !important;}
     section.agency .valores{padding:70px 0;}
@@ -189,9 +188,11 @@
     section.whitepapers .whitepaper .btn-yellow-full{visibility: visible;}
 
     section.home .blog .col-article:nth-child(2), section.home .blog .col-article:nth-child(3){display: none;}
-    footer .footer-bottom{    line-height: 56px;padding:0;}
-    section.agency .slick-prev{left: 0 !important;    z-index: 100;}
-    section.agency .slick-next{right: 0 !important;    z-index: 100;}
+    footer .footer-bottom{line-height: 56px;padding:0;}
+    section.agency .slick-prev{left: 0 !important;z-index: 100;}
+    section.agency .slick-next{right: 0 !important;z-index: 100;}
+    section.project .block-slider .carousel-control-prev{left:0;}
+    section.project .block-slider .carousel-control-next{right:0;}
 }
 @media (max-width: 600px){
     section.projects .block-inputs .check-category{width: 50%;}
