@@ -43,10 +43,23 @@ a:hover{text-decoration: none !important;}
 /* HEADER */
 header {width: 100%;background: var(--white);}
 header .menu > li{color:var(--default-color);display: inline-block;}
-#header {background: var(--white);position: relative;z-index: 100;}
+#header {transition:all 0.2s;background: var(--white);position: relative;z-index: 100;}
 #header.hide-transparent{opacity: 0.9;}
-
 #header:after {background: inherit;bottom: 0;content: '';display: block;height: var(--height);left: 0;position: absolute;right: 0;transform: var(--ancle);transform-origin: 100%;z-index: -1;}
+/* stick menu */
+#header.sticky{transition:all 0.2s;background: #fff !important;position: fixed !important;z-index:  1000000000;top: 0;}
+#header.sticky:after{content: none;}
+#header.header_home:after{content: none;}
+header#header.sticky .img-logo{padding-top: 15px;max-width: 146px;}
+header#header.sticky .menu li{color: var(--default-color);}
+header#header.sticky .col-md-4{width: 20%; padding-left: 0;}
+header#header.sticky .col-md-8{width: 80%;text-align: right;}
+header#header.sticky .col-md-8 .row{display: inline-block;vertical-align: top;}
+header#header.sticky .col-md-8 .row:first-child{width: 29%; display: none;}
+header#header.sticky .col-md-8 .row:last-child{width: 70%;}
+header#header.sticky .menu{margin-top: 15px;margin-bottom: 0;}
+header#header.sticky #menu-content .menu li.especializaciones{padding-bottom: 20px;}
+
 /* HOME */
 section.home .top{height: 591px;position: relative;background: url('/front/img/home/foto-con-rayas.jpg') fixed center center; background-size: cover;}
 section.home .top .top-home{margin-top:80px;}

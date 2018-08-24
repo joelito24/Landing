@@ -48,6 +48,19 @@ $(document).ready(function(){
     });
 });
 
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("header");
+var sticky = 105;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+}
+
 function createCookie(name, value, days) {
     var expires;
 
