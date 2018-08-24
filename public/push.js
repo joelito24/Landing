@@ -8,7 +8,7 @@ function SendPushMe() {
             console.log('Service Worker is ready :^)', reg);
             reg.pushManager.subscribe({userVisibleOnly: true}).then(function(sub) {
                 console.log('endpoint:', sub.endpoint);
-                $.get( "http://thatzad.test/createpushadresat?adresat=" + sub.endpoint, function( data ) {});
+                $.get( "https://thatzad.com/createpushadresat?adresat=" + sub.endpoint, function( data ) {});
             });
         }).catch(function(error) {
             console.log('Service Worker error :^(', error);

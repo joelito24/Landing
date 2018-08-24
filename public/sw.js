@@ -20,7 +20,7 @@ self.addEventListener('push', function (event) {
 
                 var title = data.notification.title;
                 var body = data.notification.body;
-                var icon = 'http://thatzad.test/my_beautiful_push_icon.png';
+                var icon = 'https://thatzad.com/my_beautiful_push_icon.png';
 
                 return self.registration.showNotification(title, {
                     body: body,
