@@ -30,6 +30,8 @@
     <link rel="manifest" href="/latest.json">
     <script type="text/javascript" src="/push.js"></script>
     <script type="text/javascript" src="/sw.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3439732-1"></script>
     <script>
