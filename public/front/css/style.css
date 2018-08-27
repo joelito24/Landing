@@ -46,9 +46,11 @@ header .menu > li{color:var(--default-color);display: inline-block;}
 #header {transition:all 0.2s;background: var(--white);position: relative;z-index: 100;}
 #header.hide-transparent{opacity: 0.9;}
 #header:after {background: inherit;bottom: 0;content: '';display: block;height: var(--height);left: 0;position: absolute;right: 0;transform: var(--ancle);transform-origin: 100%;z-index: -1;}
+header .menu li.contact-item a{display: inline-block;vertical-align: middle;}
+header .menu li.contact-item svg{width: 30px;}
+header .menu li.contact-item svg .cls-1{fill: #36bde0;}
+header.header_home .menu li.contact-item svg .cls-1{fill: #fff;}
 /* stick menu */
-#header.sticky{transition:all 0.2s;background: #fff !important;position: fixed !important;z-index:  1000000000;top: 0;}
-#header.sticky:after{content: none;}
 #header.header_home:after{content: none;}
 header#header.sticky .img-logo{padding-top: 15px;max-width: 146px;}
 header#header.sticky .menu li{color: var(--default-color);}

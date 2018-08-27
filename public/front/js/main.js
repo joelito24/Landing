@@ -48,12 +48,17 @@ $(document).ready(function(){
     });
 });
 
-window.onscroll = function() {myFunction()};
+var mobileScreen = $(window).width();
+window.onscroll = function() {
+    if (mobileScreen > 993) {
+        stickyFunction();
+    }
+};
 
 var navbar = document.getElementById("header");
 var sticky = 105;
 
-function myFunction() {
+function stickyFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
     } else {

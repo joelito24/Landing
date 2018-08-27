@@ -7,12 +7,16 @@
     section.generals .row{max-width: 80%;}
     section.contact .form-block{float: left;}
     section.specializations.ecommerce .ecommerce-top .ecommerce-description .img-info img{float: right;}
-
 }
 
 @media (min-width: 1450px){
     section.projects .project{width: 25% !important;}
 }
+@media (min-width: 993px){
+    #header.sticky{box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.2); -webkit-box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.2); transition:all 0.2s;background: #fff !important;position: fixed !important;z-index:  1000000000;top: 0;}
+    #header.sticky:after{content: none;}
+}
+
 /* MAX WIDTH */
 @media (max-width: 1700px){
     figure.effect-sarah p {overflow: hidden;display: -webkit-box;-webkit-line-clamp: 5;-webkit-box-orient: vertical;}
@@ -47,6 +51,7 @@
 }
 @media (max-width: 1100px){
     figure.effect-sarah p {overflow: hidden;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;}
+    header #menu-content .menu li{font-size: 16px;}
 }
 @media (max-width: 992px){
     #header{margin-top: -6px;}

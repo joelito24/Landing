@@ -152,7 +152,7 @@ header .little li{
     line-height: 24px;
 }
 header .menu.little{
-    margin-top: 20px;
+    margin-top: 19px;
 }
 .main-blue{
     color: var(--main-blue)!important;
@@ -250,7 +250,7 @@ section.service form .lastname, section.projects form .lastname{display: none;he
     #menu-content{display: none;}
     #mobile-menu-content{margin-top: 20px;}
     #mobile-menu-content hr{border-top: 1px solid lightgrey;width: 150%;margin-left: -15%;}
-    #button-mobile{display: block;top:33px;right:2px;position: absolute;}
+    #button-mobile{display: block;position: fixed;right: 3%;top: 17px;background: rgba(255, 255, 255, 0.8);padding: 13px 10px;border-radius: 100%;box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.2);}
     header .menu > li{display: block;}
     header .menu {text-align: left;padding-left: 8px;margin-bottom: 0px;padding-right: 8px;}
     header .menu li {text-align: left;margin-left: 22px;margin-bottom: 0px;height: unset;}
