@@ -150,6 +150,18 @@ return [
                 'description' => '',
                 'rules' => []
             ],
+            'meta_title' =>  [
+                'type' => 'text',
+                'title' => 'Meta título del servicio',
+                'description' => 'Introduzca meta título del servicio',
+                'rules' => ['']
+            ],
+            'meta_description' =>  [
+                'type' => 'textareaSimple',
+                'title' => 'Meta descripción del servicio',
+                'description' => 'Introduzca meta descripción del servicio',
+                'rules' => ['']
+            ],
             'active' => [
                 'type' => 'radio',
                 'title' => 'Visible en el menú',

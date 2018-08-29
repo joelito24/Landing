@@ -114,8 +114,8 @@
 @stop
 
 @section('titles')
-    <title>Thatzad</title>
-    <meta name="description" content="">
+    <title>{{ $service->meta_title }}</title>
+    <meta name="description" content="{{ $service->meta_description }}">
 @endsection
 @section('scripts')
 	<script>

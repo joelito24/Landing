@@ -12,7 +12,7 @@ class Services extends Model implements ModelInterface
     const IMAGE_PATH = 'files/services/';
     protected $table = 'services';
     public $timestamps = true;
-    protected $fillable = ['title', 'about', 'description1', 'quote', 'description2', 'conclusion', 'image1', 'image2', 'slug', 'shorttitle', 'order'];
+    protected $fillable = ['title', 'about', 'description1', 'quote', 'description2', 'conclusion', 'image1', 'image2', 'slug', 'shorttitle', 'order', 'meta_title', 'meta_description'];
 
 
     public function add( $data )
