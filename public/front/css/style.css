@@ -583,7 +583,7 @@ footer .gorila{position: absolute;bottom: -49px; left: 15px;max-width: 313px;wid
 .text-logo{color: var(--main-blue);font-size: 14px;font-weight: 700;margin-top: 11px;}
 .text-logo a{color: var(--main-blue);}
 .text-logo a:hover{color: var(--main-blue) !important;}
-footer .slogan{margin-top: 23px;margin-bottom: 44px;float: right;position: relative;z-index: 10000;}
+footer .slogan{margin-top: 23px;margin-bottom: 44px;float: right;position: relative;z-index: 10000;margin-left:164px;}
 footer .slogan p{display: inline-block;margin-bottom: 0;font-family: var(--title-font);color: #023c4e;font-size: 16px;line-height: 22px;}
 footer .col-last{margin-top: -73px;}
 footer .red-social a{margin-right: 7px;}

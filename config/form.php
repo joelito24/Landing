@@ -109,7 +109,7 @@ return [
             ],
             'about' => [
                 'type' => 'textarea',
-                'title' => 'Preguntas de servicio',
+                'title' => 'Subtítulo de Servicio',
                 'description' => 'Describa servicio',
                 //'rules' => ['required']
             ],
