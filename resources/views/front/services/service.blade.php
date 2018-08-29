@@ -19,9 +19,9 @@
 	    			<div class="col-sm-12 col-md-5 @if(empty(strip_tags($service->about))) text-page @else top-page @endif">
 						{!! $service->about !!}
 						<div class="text-page" style="@if(!empty(strip_tags($service->about))) margin-top:50px; @endif">
-							<div class="description1">{!! $service->description1 !!}</div>
+							<div class="description1">{!! str_replace('&nbsp;', ' ', $service->description1) !!}</div>
 							<div class="quote-mbl">
-								<div class="quote">"{!! $service->quote !!}"</div>
+								<div class="quote">"{!! str_replace('&nbsp;', ' ', $service->quote) !!}"</div>
 							</div>
 {{--							<div class="description2">{!! $service->description2 !!}</div>--}}
 						</div>
@@ -50,7 +50,7 @@
     		<div class="container">
     			<div class="row">
     				<div class="col-sm-12 col-md-6">
-    					<div class="conclusion">{!! $service->conclusion !!}</div>
+    					<div class="conclusion">{!! str_replace('&nbsp;', ' ', $service->conclusion) !!}</div>
     				</div>
     				<div class="col-sm-12 col-md-6">
     					<!--<img src="{{ $service->image2 }}">-->

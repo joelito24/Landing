@@ -236,7 +236,8 @@ section.service .conclusion-service img{box-shadow: 0 5px 10px 1px rgba(1, 0, 1,
 section.service .blue-word{font-size: 16px;font-family: var(--main-font);color: var(--main-blue);}
 section.service .title-service{margin-top: 6px;max-width: 740px;font-size: 58px;font-family: var(--title-font);line-height: 59px;color: var(--default-color);}
 section.service .top-page{margin: 20px 0 46px 88px;}
-section.service .top-page p{font-weight: 700;font-size: 21px;color: var(--default-color);}
+section.service .top-page p, section.service .top-page p span{font-family: 'Muli' !important;font-weight: 700;font-size: 21px !important;color: var(--default-color);line-height:  30px !important;}
+section.service .top-page .text-page .description1 p{font-family: 'Muli' !important;font-size: 16px !important;line-height: 24px !important;}
 section.service .text-page p{color: var(--default-color);font-size: 16px;line-height: 24px;margin-bottom: 35px; font-weight: 400;}
 section.service .quote{/*padding-left: 88px*/;color: var(--main-blue);font-size: 34px;font-family: var(--title-font);line-height: 36px;margin-bottom: 70px; margin-top: 20px;}
 section.service .text-page .description2 p:last-child{margin-bottom: -15px;}

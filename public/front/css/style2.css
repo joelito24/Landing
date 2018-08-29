@@ -184,11 +184,11 @@ section.service .form-block{max-width: 315px;}
 section.service .form-block .btn-yellow-full{width:205px;}
 section.service .form-block .form-group input[type="text"]{min-height: 43px;}
 section.service .form-block .form-group textarea{min-height: 92px;}
-section.service .conclusion-service .conclusion{margin-left: 89px;color: var(--white);font-size: 18px;font-weight: 700;line-height: 24px; background-color: #023c4e; max-width: 574px;}
+section.service .conclusion-service .conclusion{padding-left: 30px; padding-right: 30px;margin-left: 89px;color: var(--white);font-size: 18px;font-weight: 700;line-height: 24px; background-color: #023c4e; max-width: 574px;}
 section.service .conclusion-service .conclusion div{padding-left: 30px;padding-right: 30px;}
 section.service .conclusion-service .conclusion div:first-child{padding-top:40px}
 section.service .conclusion-service .conclusion div:last-child{padding-bottom:40px}
-section.service .conclusion-service .conclusion p{padding-left: 30px;padding-right: 30px;}
+section.service .conclusion-service .conclusion p, section.service .conclusion-service .conclusion p span{font-family: 'Muli' !important;font-size:  18px !important;line-height:  24px !important;}
 section.service .conclusion-service .conclusion p:first-child{padding-top:40px}
 section.service .conclusion-service .conclusion p:last-child{padding-bottom:40px}
 section.service .text-page ul{padding-left: 80px;font-family:Muli;font-size:16px;color: var(--default-color);}
