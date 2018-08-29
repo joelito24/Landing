@@ -17,6 +17,7 @@ return [
         'edit' => 'admin.services.edit',
         'delete' => 'admin.services.delete',
         'crop' => 'admin.services.crop',
+        'order' => 'admin.services.order',
         'icon' => 'fa fa-book',
         'name' => 'Servicios',
         'resource' => 'services'

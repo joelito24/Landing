@@ -26,6 +26,7 @@ class ServicesController extends BaseController
             'id' => 'ID',
             'title' => 'Título',
             'about' => 'Preguntas',
+            'order' => 'Orden',
         ];
 
         return view('admin.datatable', [
@@ -33,6 +34,27 @@ class ServicesController extends BaseController
             'title' => 'Servicios',
             'pageTitle' => 'Listado de servicios',
             'header' => $fluxesHead
+        ]);
+    }
+
+    public function order()
+    {
+        App::setLocale('es');
+        $fluxesHead = [
+            'title' => 'Título',
+        ];
+
+        $repo = App::make($this->repositoryName);
+        $data = $repo->getAllActive();
+
+        return view('admin.order', [
+            'data' => $data,
+            'pageTitle' => 'Orden de Servicio',
+            'title' => 'Servicios',
+            'header' => $fluxesHead,
+//            'filter' => all_projects_categories(),
+            'filter_id' => false,
+            'repository' => $this->resourceName
         ]);
     }
 }

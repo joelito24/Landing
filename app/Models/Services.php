@@ -12,7 +12,7 @@ class Services extends Model implements ModelInterface
     const IMAGE_PATH = 'files/services/';
     protected $table = 'services';
     public $timestamps = true;
-    protected $fillable = ['title', 'about', 'description1', 'quote', 'description2', 'conclusion', 'image1', 'image2', 'slug', 'shorttitle'];
+    protected $fillable = ['title', 'about', 'description1', 'quote', 'description2', 'conclusion', 'image1', 'image2', 'slug', 'shorttitle', 'order'];
 
 
     public function add( $data )
@@ -38,7 +38,8 @@ class Services extends Model implements ModelInterface
     }
 
     public function getAllActive(){
-        return $this->where('active', '=', 1)->get();
+        return $this->where('active', '=', 1)->orderBy('order', 'asc')->get();;
+//        return $this->where('active', '=', 1)->get();;
     }
 
     public function findBySlug($slug){

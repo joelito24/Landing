@@ -150,6 +150,11 @@ return [
                 'description' => '',
                 'rules' => []
             ],
+            'active' => [
+                'type' => 'radio',
+                'title' => 'Visible en el menú',
+                'description' => 'Estado'
+            ]
         ]
     ],
 

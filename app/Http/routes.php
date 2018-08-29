@@ -83,6 +83,16 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
         'uses' => 'ServicesController@update'
     ]);
 
+    Route::get('services/order', [
+        'as' => 'admin.services.order',
+        'uses' => 'ServicesController@order'
+    ]);
+
+    Route::post('services/order/{categoryId}', [
+        'as' => 'admin.services.orderSave',
+        'uses' => 'ServicesController@orderSave'
+    ]);
+
     Route::get('services/delete/{id}', [
         'as' => 'admin.services.delete',
         'uses' => 'ServicesController@delete'
