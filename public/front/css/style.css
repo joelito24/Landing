@@ -572,38 +572,43 @@ section.generals ul a{color:var(--main-blue);}
 .popup-cookies img{max-width: 70px;margin-top: -15px;margin-left: 10px;}
 .popup-cookies .text-cookies{text-align:left;max-width: 545px;background:  #fff;padding: 16px 15px 10px;margin-top: -39px;z-index: 10;position:  relative;box-shadow: 0 -2px 10px 1px rgba(0, 0, 0, 0.1);color: #965735;font-size: 10px;border-radius: 0 0 10px 10px;}
 .popup-cookies .btn-cookie{cursor:pointer;display: inline-block;font-weight: 700;color: #965735;margin-left: 60px;}
-.popup-cookies .close{position: absolute;top: 7px;font-size: 12px;font-weight: 700;color: #965735;opacity: 1;right: 10px;}footer{padding-top:48px;background: var(--white);}
+.popup-cookies .close{position: absolute;top: 7px;font-size: 12px;font-weight: 700;color: #965735;opacity: 1;right: 10px;}
 .popup-cookies p{margin-bottom: 0;}
 .popup-cookies .btn-inner{text-align: right;margin-top: 7px;}
 footer .contact a{cursor: pointer; display: block;}
-footer .top-footer{position: relative;overflow: hidden;}
-footer .logo{max-width: 350px;width: 100%;padding-left: 15px;}
-footer .gorila{position: absolute;bottom: -49px;right: 43px;max-width: 313px;width:100%;}
+footer {position: relative;overflow: hidden; padding-top: 110px;background: var(--white);}
+footer .logo{max-width: 300px;width: 100%;}
+footer .gorila{position: absolute;bottom: -49px; left: 15px;max-width: 313px;width:100%;}
 .text-logo{color: var(--main-blue);font-size: 14px;font-weight: 700;margin-top: 11px;}
 .text-logo a{color: var(--main-blue);}
 .text-logo a:hover{color: var(--main-blue) !important;}
-footer .top-footer .slogan{margin-top:83px;margin-bottom: 44px;float: right;position: relative;z-index: 10000;}
-footer .top-footer .slogan p{margin-bottom: 0;font-family: var(--title-font);color: #023c4e;font-size: 16px;line-height: 22px;}
-footer .top-footer .col-last{margin-top: -73px;}
-footer .top-footer .red-social a{margin-right: 7px;}
-footer .top-footer .red-social .block-social{}
-footer .top-footer .red-social svg{max-width: 33px;}
+footer .slogan{margin-top: 23px;margin-bottom: 44px;float: right;position: relative;z-index: 10000;}
+footer .slogan p{display: inline-block;margin-bottom: 0;font-family: var(--title-font);color: #023c4e;font-size: 16px;line-height: 22px;}
+footer .col-last{margin-top: -73px;}
+footer .red-social a{margin-right: 7px;}
+footer .red-social .block-social{}
+footer .red-social svg{max-width: 33px;}
 footer .google{margin-bottom: 59px;max-width:  200px;float:  right;}
-footer #___partnersbadge_0{float: right;}
-footer ul.menu-footer{list-style: none;margin-top:32px;}
-footer ul.menu-footer li a{color:var(--default-color);}
-footer ul.menu-footer li{margin-bottom: 8px;font-size: 14px;font-weight: 700;}
+footer #___partnersbadge_0{position: absolute;bottom: -50px !important;
+  margin-bottom: -50px !important;}
+footer ul.menu-footer{list-style: none;}
+footer ul.menu-footer li a{color:#fff;}
+footer ul.menu-footer li{margin-bottom: 8px;font-size: 14px;}
 /*footer .last-col ul.menu-footer{margin-top:140px;}*/
 footer ul.menu-footer.gray li a{color: #959fa2;}
 /*footer .last-col ul.menu-footer li:last-child{margin-top: 0;}*/
-footer .contact{margin-top:32px;color:var(--main-blue);}
+footer .contact{color:var(--main-blue);}
 footer .contact p{margin-bottom: 0;font-size: 16px;color:var(--main-blue);max-width: 264px;}
-footer .contact a{margin-bottom: 10px;font-weight: 700;font-size: 16px;color:var(--main-blue);}
+footer .contact a{margin-bottom: 10px;font-size: 16px;color:var(--main-blue);}
 footer .footer-bottom{color:#fff;position: relative;background: var(--default-color);padding: 10px 0;font-size: 12px;}
 footer .footer-bottom p{color:var(--white);}
 footer .footer-bottom a.terms{text-decoration: underline;color:var(--white);}
 footer .red-social{margin-top: 17px;}
-footer .red-social p span:first-child{display: block;color: var(--default-color);margin-bottom: 11px;font-weight: 700;}
+footer .red-social p span:first-child{display: inline-block;color: var(--default-color);margin-bottom: 11px;font-weight: 700;width: 46px;}
+footer .bottom{background: #083c4e;padding-top: 37px;}
+footer .bottom .title-menu{margin-bottom: 20px;text-transform: uppercase;color: #a5a5a5;font-weight: 700;font-size: 12px;}
+footer .bottom .copy{color: #fff;margin-top: 63px;}
+footer .cls-1 {fill: #00bde0;}
 
 /* error 404 */
 .lost{background: #a8acad;height: 100vh;min-height: 837px;position: relative;}

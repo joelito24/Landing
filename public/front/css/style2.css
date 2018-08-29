@@ -204,10 +204,7 @@ section.service form .lastname, section.projects form .lastname{display: none;he
 /*footer .footer-bottom .footerphrase{display: none;}*/
 .w100{width: 100%}
 @media (max-width: 768px){
-
-    footer ul.menu-footer.gray{margin-top: 35px;}
     footer .top-footer .col-last {margin-top: 50px;}
-
     footer .top-footer {overflow: unset;}
     footer .top-footer .slogan {margin-top: 83px;margin-bottom: 44px;float: unset;margin-left: 113px;position: absolute;}
     footer .footer-bottom .footerphrase{display:block; padding-top: 20px;padding-left: 24px;font-size: 14px;font-weight: 400;line-height: 14px;  }
@@ -250,7 +247,8 @@ section.service form .lastname, section.projects form .lastname{display: none;he
     #menu-content{display: none;}
     #mobile-menu-content{margin-top: 20px;}
     #mobile-menu-content hr{border-top: 1px solid lightgrey;width: 150%;margin-left: -15%;}
-    #button-mobile{display: block;position: fixed;right: 3%;top: 17px;background: rgba(255, 255, 255, 0.8);padding: 13px 10px;border-radius: 100%;box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.2);}
+    #button-mobile{display: block;position: fixed;z-index: 10000;right: 3%;top: 17px;background: rgba(255, 255, 255, 0.8);padding: 13px 10px;border-radius: 100%;box-shadow: 0 2px 9px 1px rgba(0, 0, 0, 0.2);}
+    #button-mobile.pos{background: #fff;}
     header .menu > li{display: block;}
     header .menu {text-align: left;padding-left: 8px;margin-bottom: 0px;padding-right: 8px;}
     header .menu li {text-align: left;margin-left: 22px;margin-bottom: 0px;height: unset;}

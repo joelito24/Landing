@@ -302,9 +302,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
         'uses' => 'HomeController@index'
     ]);
 
-    //Services
-    Route::get(LaravelLocalization::transRoute('routes.service'), ['as' => 'service','uses' => 'ServiceController@service']);
-    Route::post(LaravelLocalization::transRoute('routes.service'), ['as' => 'service','uses' => 'ContactController@sendShort']);
 
     //Projects
     Route::get(LaravelLocalization::transRoute('routes.projects'), ['as' => 'projects','uses' => 'ProjectController@projects']);
@@ -332,6 +329,10 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
     //Contact
     Route::get(LaravelLocalization::transRoute('routes.contact'), ['as' => 'contact','uses' => 'ContactController@contact']);
     Route::post(LaravelLocalization::transRoute('routes.contact'), ['as' => 'contact','uses' => 'ContactController@send']);
+
+    //Services
+    Route::get(LaravelLocalization::transRoute('routes.service'), ['as' => 'service','uses' => 'ServiceController@service']);
+    Route::post(LaravelLocalization::transRoute('routes.service'), ['as' => 'service','uses' => 'ContactController@sendShort']);
 
 });
 

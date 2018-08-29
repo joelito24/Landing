@@ -23,6 +23,7 @@ $(document).ready(function(){
         //$("#burger, #mobile-close").toggle();
         $("#mobile-menu-content").toggle();
         $(this).find('#nav-icon1').toggleClass('open');
+        $(this).parent().toggleClass('pos');
     });
 
     $(".popup-cookies .close").click(function(){

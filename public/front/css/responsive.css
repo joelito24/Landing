@@ -29,6 +29,8 @@
     section.specializations.campanas .steps .step{max-width: 19%;}
     section.specializations.campanas .steps .first-line{text-align: left;}
     figure.effect-sarah p {overflow: hidden;display: -webkit-box;-webkit-line-clamp: 5;-webkit-box-orient: vertical;}
+    footer .slogan p{display: block;}
+    footer .slogan{float: left; margin-left: 164px;}
 }
 @media (max-width: 1224px){
     section.home .right-col{width: 50%;max-width: none;}
@@ -154,14 +156,17 @@
     section.agency .top-agency, section.specializations.campanas .ecommerce-top, section.project .project-top, section.service .contact-block, .bottom-action{background-attachment: initial;}
     .slick-prev{left: -12px !important;}
     .slick-next{right: -12px !important;}
+
+    footer #___partnersbadge_0{width:100% !important;}
+    footer .bottom .copy{margin-top:20px;}
+    footer .col-partners{display: none;}
 }
 
 @media (max-width: 768px){
     footer .top-footer .slogan {margin-left:126px}
     footer .google{margin-bottom: 40px;}
     footer .last-col ul.menu-footer{margin-top:51px;}
-    footer .contact{margin-top:49px;}
-    footer .gorila{position: inherit;margin-left: 15px;bottom: -56px;}
+    footer .gorila{position: inherit;margin-left: 0;bottom: -56px;}
     footer .footer-bottom:before{display: none;}
 
     section.projects .block-inputs .check-category{width: 25%;margin-right: 0;float: left;}
@@ -198,6 +203,12 @@
     section.agency .slick-next{right: 0 !important;z-index: 100;}
     section.project .block-slider .carousel-control-prev{left:0;}
     section.project .block-slider .carousel-control-next{right:0;}
+    footer{padding-top:0;}
+    footer .slogan{margin-left: 189px;
+        position: absolute;
+        top: 63px;}
+    footer .bottom .title-menu{margin-top:40px;}
+    footer .col-sm-6:first-child .title-menu{margin-top:0;}
 }
 @media (max-width: 600px){
     section.projects .block-inputs .check-category{width: 50%;}
@@ -209,4 +220,12 @@
     section.whitepapers .whitepaper .btn-yellow-full{max-width: 100%;}
     .grid figure p{font-size: 18px;line-height: 23px;}
     .popup-cookies{width: 90%;left: 5%; opacity: 0.9;}
+}
+@media (max-width: 475px){
+    footer .gorila{max-width: 279px;margin-left: -23px;}
+    footer .slogan{margin-left: 139px;top: 59px;}
+}
+@media (max-width: 375px){
+    footer .slogan p{font-size: 13px;line-height: 16px;}
+    footer .slogan{top:63px;margin-left: 133px;}
 }
