@@ -55,8 +55,8 @@
                         <p class="title-info">Programación web <span class="line-title">Marketing web</span>Diseño web y usabilidad<span class="line-title"></span></p>
                         <div class="info-descr">
                             <p class="text-info">Una web, e-commerce o portal son siempre una pieza clave, pero sólo la primera de una proyecto mucho mayor. Ideamos, <span>diseñamos y programamos proyectos web realmente diferentes.</span> Proyectos totalmente a medida, creados sobre un lienzo en blanco con un equipo interdisciplinar de marketing, diseño y programación. </p>
-                            <p class="link-service"><a href="{{ route('service','programacion-web') }}">Saber más de Programación web&nbsp;></a></p>
-                            <p class="link-service last"><a href="{{ route('service','diseno-web-y-usabilidad') }}">Saber más de Diseño web y usabilidad&nbsp;></a></p>
+                            <p class="link-service"><a href="{{ route('service','desarrollo-web-a-medida') }}">Saber más de Programación web&nbsp;></a></p>
+                            <p class="link-service last"><a href="{{ route('service','agencia-diseno-web') }}">Saber más de Diseño web y usabilidad&nbsp;></a></p>
                         </div>
                     </div>
                     <div class="info-block" id="text3" data-text="3">
@@ -67,8 +67,8 @@
                             <p class="text-info"><span>Somos Google Premier Partner,</span>
                                 <img style="max-width: 163px;display: block;margin-bottom: 10px;margin-top: 10px;" src="{{ asset('front/img/primer-google.png') }}" alt="">
                                  Sabemos la importancia de una web perfectamente adaptada para Google, tanto a nivel SEO como para optimizar Adwords. La estrategia de keywords nos marcará la arquitectura de la web, así que nos gusta que sea uno de los primeros drivers de plan de e-Marketing.</p>
-                            <p class="link-service"><a href="{{ route('service','seo') }}">Saber más de SEO&nbsp;></a></p>
-                            <p class="link-service last"><a href="{{ route('service','sea') }}">Saber más de SEA. Google Ads&nbsp;></a></p>
+                            <p class="link-service"><a href="{{ route('service','agencia-seo') }}">Saber más de SEO&nbsp;></a></p>
+                            <p class="link-service last"><a href="{{ route('service','agencia-adwords') }}">Saber más de SEA. Google Ads&nbsp;></a></p>
                         </div>
                     </div>
                     <div class="info-block" id="text4" data-text="4">
@@ -77,7 +77,7 @@
                         <div class="info-descr">
                             <p class="title-info">Publicidad online <span class="line-title">Remarketing</span></p>
                             <p class="text-info">Creamos <span>campañas de publicidad online que conectan exactamente con ese cliente que buscas.</span> El objetivo es atraer tráfico cualificado que genere conversiones y ventas, para alcanzarlo, ideamos campañas display efectivas, acciones de remarketing multi fase, que consigan la venta por impulso o que vayan enamorando poco a poco, dependerá de la estrategia.</p>
-                            <p class="link-service"><a href="{{ route('service','publicidad-online') }}">Saber más de Publicidad online&nbsp;></a></p>
+                            <p class="link-service"><a href="{{ route('service','agencia-publicidad-online-barcelona') }}">Saber más de Publicidad online&nbsp;></a></p>
                         </div>
                     </div>
                     <div class="info-block" id="text5" data-text="5">
@@ -85,7 +85,7 @@
                         <p class="title-info">Social Ads</p>
                         <div class="info-descr">
                             <p class="text-info">Las Redes sociales nos permiten crear campañas online conociendo muy bien al cliente potencial al que nos dirigimos. Creamos campañas de <span>Social Ads con un equipo especialista, experimentado, creativo y orientado totalmente a objetivos.</span></p>
-                            <p class="link-service"><a href="{{ route('service','social-ads') }}">Saber más de Social Ads&nbsp;></a></p>
+                            <p class="link-service"><a href="{{ route('service','agencia-social-ads') }}">Saber más de Social Ads&nbsp;></a></p>
                         </div>
                     </div>
                     <div class="info-block" id="text6" data-text="6">
@@ -93,7 +93,7 @@
                         <p class="title-info">Medios e influencers</p>
                         <div class="info-descr">
                             <p class="text-info">Quien conozca los entresijos de internet sabrá que los medios online y los influencers son un canal de altísimo impacto con un lenguaje propio. Campañas de content marketing que combinadas con estrategias de remarketing e inbound <span>son la clave del éxito en el lanzamiento de marcas.</span></p>
-                            <p class="link-service"><a href="{{ route('service','medios-e-influencers') }}">Saber más de Medios e influencers&nbsp;></a></p>
+                            <p class="link-service"><a href="{{ route('service','agencia-medios-online') }}">Saber más de Medios e influencers&nbsp;></a></p>
                         </div>
                     </div>
                     <div class="info-block" id="text7" data-text="7">
@@ -103,8 +103,8 @@
                         <p class="title-info">Inbound Marketing <span class="line-title">Mail Marketing</span> <span class="line-title">Automation marketing</span></p>
                         <div class="info-descr">
                             <p class="text-info">Inbound & Automation marketing. La tecnología nos ayuda a saber exactamente que ha motivado a un usuario a interactuar con nosotros. <span>Diseñamos estrategias para atraer a un cliente concreto</span> y posteriormente ir persuadiéndole poco a poco y en diferentes medios, con contenidos adaptados a él.</p>
-                            <p class="link-service"><a href="{{ route('service','inbound-marketing') }}">Saber más de Inbound marketing&nbsp;></a></p>
-                            <p class="link-service last"><a href="{{ route('service','automation-marketing') }}">Saber más de Automation marketing&nbsp;></a></p>
+                            <p class="link-service"><a href="{{ route('service','agencia-inbound-marketing') }}">Saber más de Inbound marketing&nbsp;></a></p>
+                            <p class="link-service last"><a href="{{ route('service','agencia-automation-marketing') }}">Saber más de Automation marketing&nbsp;></a></p>
                         </div>
                     </div>
                 </div>
