@@ -68,7 +68,7 @@
                                 <img style="max-width: 163px;display: block;margin-bottom: 10px;margin-top: 10px;" src="{{ asset('front/img/primer-google.png') }}" alt="">
                                  Sabemos la importancia de una web perfectamente adaptada para Google, tanto a nivel SEO como para optimizar Adwords. La estrategia de keywords nos marcará la arquitectura de la web, así que nos gusta que sea uno de los primeros drivers de plan de e-Marketing.</p>
                             <p class="link-service"><a href="{{ route('service','agencia-seo') }}">Saber más de SEO&nbsp;></a></p>
-                            <p class="link-service last"><a href="{{ route('service','agencia-adwords') }}">Saber más de SEA. Google Ads&nbsp;></a></p>
+                            <p class="link-service last"><a href="{{ route('service','agencia-google-ads') }}">Saber más de SEA. Google Ads&nbsp;></a></p>
                         </div>
                     </div>
                     <div class="info-block" id="text4" data-text="4">
@@ -196,6 +196,17 @@
                     <h2 class="title-home">Artículos</h2>
                     <div class="btn-blue"><a target="_blank" href="http://www.thatzblog.com/">Ver todos los artículos ></a></div>
                 </div>
+                <div class="col-md-10 col-md-offset-1 newsletter">
+                    <div class="inner-text">
+                        <p class="thatznews">Apúntate a las ThatzNews. Jamás de aburriremos</p>
+                    </div>
+                    <form action="" method="post" id="form_newsletter">
+                        <p class="msg-error">Email tiene que ser válido</p>
+                        <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
+                        <input type="text" name="email" id="email" placeholder="Email">
+                        <div id="send" class="btn-yellow-full">Apuntarme</div>
+                    </form>
+                </div>
             </div>
             <?php $i = 1; ?>
             @foreach($posts as $post)
@@ -275,34 +286,17 @@
                 $('#email').parent().find('.msg-error').fadeOut();
                 $('#email').removeClass('not-correct');
             }
-            if ($('#name').val().length <= 1) {
-                error = 1;
-                $('#name').parent().find('.msg-error').fadeIn();
-                $('#name').addClass('not-correct');
-            }else{
-                $('#name').parent().find('.msg-error').fadeOut();
-                $('#name').removeClass('not-correct');
-            }
-            if($("input[name='newsletter']:radio").is(':checked')){
-                $('#name').parent().parent().find('.msg-error.radio-btn').fadeOut();
-            }else{
-                error = 1;
-                $('#name').parent().parent().find('.msg-error.radio-btn').fadeIn();
-            }
-
             if (error === 0){
                 $.ajax({
                     type: 'post',
-                    url: 'routes.newsletter',
+                    url: '{{ action('NewsletterController@postNewsletter') }}',
                     data: $('#form_newsletter').serialize(),
                     success: function(response) {
                         $('#form_newsletter').trigger("reset");
-                        $('#privacy').prop('checked', false);
-                        if (response === 'sent' || response === 'exist'){
-                            $('.whitepaper-popup .form-block').css('background', '#00bde0');
-                            $('.form-newsletter').css('display', 'none');
-                            $('.response-newsletter').fadeIn();
-                            setTimeout(function() { $(".whitepaper-popup").hide('slow'); }, 8000);
+                        // $('#privacy').prop('checked', false);
+                        if (response === 'sent'){
+                           $('.thatznews').html('Gracias por apuntarte a nuestra newsletter!');
+                            $('.thatznews').css('color', ' var(--main-blue)');
                         }
                     },
                     error: function(e){

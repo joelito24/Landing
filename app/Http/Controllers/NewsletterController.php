@@ -56,4 +56,14 @@ class NewsletterController extends Controller
 
 
     }
+
+    public function postNewsletter(Newsletter $newsletterRepository, EmailServices $emailServices){
+
+        $data = Input::all();
+        if($newsletterRepository->checkEmail($data['email'])){
+        }else{
+            $newsletterRepository->add($data);
+        }
+        return 'sent';
+    }
 }

@@ -322,6 +322,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
     Route::get(LaravelLocalization::transRoute('routes.detailwhitepaper'), ['as' => 'detailwhitepaper','uses' => 'WhitepapersController@detail']);
     //Newsletter
     Route::post(LaravelLocalization::transRoute('routes.newsletter'), ['as' => 'newsletter','uses' => 'NewsletterController@add']);
+    Route::post(LaravelLocalization::transRoute('routes.homenewsletter'), ['as' => 'homenewsletter','uses' => 'NewsletterController@postNewsletter']);
     //Agency
     Route::get(LaravelLocalization::transRoute('routes.agency'), ['as' => 'agency','uses' => 'StaticController@agency']);
     Route::get(LaravelLocalization::transRoute('routes.aviso'), ['as' => 'aviso','uses' => 'StaticController@aviso']);
@@ -333,8 +334,6 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
     Route::get(LaravelLocalization::transRoute('routes.specialization2'), ['as' => 'specialization2','uses' => 'SpecializationController@specialization2']);
     Route::get(LaravelLocalization::transRoute('routes.specialization3'), ['as' => 'specialization3','uses' => 'SpecializationController@specialization3']);
     Route::get(LaravelLocalization::transRoute('routes.specialization4'), ['as' => 'specialization4','uses' => 'SpecializationController@specialization4']);
-
-
 
     //Contact
     Route::get(LaravelLocalization::transRoute('routes.contact'), ['as' => 'contact','uses' => 'ContactController@contact']);

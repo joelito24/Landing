@@ -15,5 +15,6 @@ return [
     'aviso'                 => 'aviso-legal',
     'politica'              => 'politica-de-cookies',
     'generals'              => 'politica-de-privacidad',
+    'homenewsletter'        => 'suscribe',
     'service'               => '{slug}',
 ];
