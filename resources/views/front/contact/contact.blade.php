@@ -4,12 +4,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2 class="title-page">Contacto</h2>
+                <h1 class="title-page">Contacto</h1>
             </div>
             <div class="col-md-6" data-animated="fadeInLeft">
 
                 <div class="text-contact">
-                    <p>Nos encanta hablar de marketing online, campañas, e-commerce y proyectos digitales.</p>
+                    <h2>Nos encanta hablar de marketing online, campañas, e-commerce y proyectos digitales.</h2>
                     <p>No te cortes. Por favor, explícanos tu negocio y pensaremos juntos la mejor forma de hacer que sea un éxito.</p>
                 </div>
                 <div class="contact-info">

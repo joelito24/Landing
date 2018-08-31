@@ -14,7 +14,7 @@
                 </div>
             </div>
             <div class="row">
-                <p class="title-page">{{ $whitepaper->title }}</p>
+                <h1 class="title-page">{{ $whitepaper->title }}</h1>
             </div>
             <div class="row">
                 <div class="description col-md-6" data-animated="fadeInUp">

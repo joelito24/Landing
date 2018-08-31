@@ -5,7 +5,7 @@
     <section class="projects">
         <div class="container">
             {{--<p class="name-page">Proyectos destacados</p>--}}
-            <h2 class="title-page">Proyectos destacados</h2>
+            <h1 class="title-page">Proyectos destacados</h1>
             <p class="subtitle-projects">Filtra las campañas y proyectos de marketing online por sectores:</p>
             <div class="block-inputs">
                 @foreach($categories as $category)
@@ -141,8 +141,8 @@
 @stop
 
 @section('titles')
-    <title>Thatzad</title>
-    <meta name="description" content="">
+    <title>Proyectos marketing online | Thatzad</title>
+    <meta name="description" content="Ideas, proyectos, campañas y casos de éxito de THATZAD, tu agencia de marketing online e e-commerce. That's Advertising!">
 @endsection
 @section('scripts')
     <script>

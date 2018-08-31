@@ -5,7 +5,7 @@
     <section class="whitepapers">
 
         <div class="container">
-            <p class="title-page">White papers</p>
+            <h1 class="title-page">White papers</h1>
             <div class="description" data-animated="fadeInUp">
                 <p>Nuestros ThatzPapers son estudios, análisis y reflexiones que hacemos desde los diferentes departamentos de THATZAD.</p>
                 <p>No tienen la intención de sentar cátedra, parten de una curiosidad por algún campo del marketing online sobre el que investigamos y compartimos ese aprendizaje con nuestro equipo y nuestros Clientes.</p>

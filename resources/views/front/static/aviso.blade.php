@@ -5,7 +5,7 @@
     <section class="generals">
         <div class="container">
             <div class="row">
-                <h2 class="title-page">Aviso legal</h2>
+                <h1 class="title-page">Aviso legal</h1>
                 <p class="subtitle">Objeto de la web</p>
                 <p>La web <a href="http://www.thatzad.com/">www.thatzad.com</a> se ha realizado con objeto comercial, dispone información que se ofrece de forma gratuita y accesible para todo el mundo sin necesidad de abonar ningún importe en el momento de acceso pero puede tener secciones para las que estas condiciones cambien, ya sea por ofrecer contenidos de pago o por que el acceso esté restringido a usuarios determinados.</p>
                 <p>Ser usuario de la web de <a href="http://www.thatzad.com/">www.thatzad.com</a> implica que reconoce haber leído y aceptado las presentes condiciones y lo que las extienda la normativa legal aplicable en esta materia. Si Vd. no está de acuerdo con estas condiciones le rogamos que no continúe usando esta web.</p>
