@@ -6,11 +6,11 @@
         <div class="ecommerce-top">
             <div class="container">
                 <p class="name-page">ESPECIALIZACIONES</p>
-                <h2 class="title-page">e-Marketing y publicidad para marcas</h2>
+                <h1 class="title-page">e-Marketing y publicidad para marcas</h1>
             </div>
             <div class="ecommerce-description">
                 <div class="text" data-animated="fadeInLeft">
-                    <p class="subtitle">¿Quién dice que debemos elegir entre “Crear marca” o “Generar ventas”? En THATZAD sabemos cómo hacer que tu marca triunfe en Internet</p>
+                    <h2 class="subtitle">¿Quién dice que debemos elegir entre “Crear marca” o “Generar ventas”? En THATZAD sabemos cómo hacer que tu marca triunfe en Internet</h2>
                     <p>En España se crean cada año más de 100.000 empresas y casi un 25% son de comercio. Las marcas deben hacerse un hueco entre tanta competencia, no sólo por diferenciación de producto o servicio sino de imagen y comunicación de marca.</p>
                     <p>Lanzar una una start-up, una nueva marca de ropa, un producto de alimentación, una cadena de restaurantes o una financiera requieren de recursos humanos y económicos ligados a un plan de negocio y un plan de marketing.</p>
                     <p>Desde la agencia de marketing online THATZAD diseñamos, junto con el Cliente, el plan de e-marketing, tanto la estrategia como el calendario de acciones, todas las creatividades, la gestión integral de campañas y la medición y análisis de los resultados.</p>
@@ -56,8 +56,8 @@
 @stop
 
 @section('titles')
-    <title>e-Marketing y publicidad para marcas | Thatzad</title>
-    <meta name="description" content="">
+    <title>Agencia marketing online para marcas. Desarrollo y campañas</title>
+    <meta name="description" content="¿Quién dice que debemos elegir entre “Crear marca” o “Generar ventas”? En la agencia de marketing online THATZAD sabemos cómo hacerlo. That's Advertising!">
 @endsection
 @section('scripts')
     <script>

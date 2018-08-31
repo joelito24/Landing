@@ -6,8 +6,8 @@
         <div class="ecommerce-top">
             <div class="container">
                 <p class="name-page">ESPECIALIZACIONES</p>
-                <h2 class="title-page">Publicidad online orientada a resultados</h2>
-                <p class="subtitle" data-animated="fadeInUp">Definamos juntos el buyer persona, los objetivos a conseguir y los recursos que tenemos. En THATZAD diseñaremos la mejor estrategia para conseguir los resultados que buscas.</p>
+                <h1 class="title-page">Publicidad online orientada a resultados</h1>
+                <h2 class="subtitle" data-animated="fadeInUp">Definamos juntos el buyer persona, los objetivos a conseguir y los recursos que tenemos. En THATZAD diseñaremos la mejor estrategia para conseguir los resultados que buscas.</h2>
             </div>
 
         </div>
@@ -88,8 +88,8 @@
 @stop
 
 @section('titles')
-    <title>Publicidad online orientada a resultados | Thatzad</title>
-    <meta name="description" content="">
+    <title>Agencia publicidad online orientada a resultados | Thatzad</title>
+    <meta name="description" content="En THATZAD diseñaremos la mejor estrategia para que tus campañas de publicidad online consigan los resultados que buscas. That's Advertising!">
 @endsection
 @section('scripts')
     <script>

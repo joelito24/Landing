@@ -141,7 +141,10 @@
     </div>
 </section>
 @stop
-
+@section('titles')
+    <title>Mail y contacto de la Agencia de marketing online Thatzad</title>
+    <meta name="description" content="">
+@endsection
 @section('scripts')
     <script>
         /*function validardatos(){

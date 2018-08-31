@@ -216,7 +216,7 @@
 </script>
 @endsection
 @section('titles')
-    <title>Thatzad</title>
+    <title>{{ $whitepaper->title }}</title>
     <meta name="description" content="">
 @endsection
 

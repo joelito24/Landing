@@ -6,10 +6,10 @@
         <div class="ecommerce-top">
             <div class="container">
                 <p class="name-page">ESPECIALIZACIONES</p>
-                <h2 class="title-page">Transformación digital para empresas </h2>
+                <h1 class="title-page">Transformación digital para empresas </h1>
                 <div class="row">
                     <div class="col-md-6" data-animated="fadeInLeft">
-                        <p class="transform-title">Transformar los procesos de una compañía parte de nuevos sistemas y herramientas web que los hagan sencillos y eficientes. Descubre hasta dónde podemos llegar juntos.</p>
+                        <h2 class="transform-title">Transformar los procesos de una compañía parte de nuevos sistemas y herramientas web que los hagan sencillos y eficientes. Descubre hasta dónde podemos llegar juntos.</h2>
                     </div>
                     <div class="col-md-5 col-md-offset-1" data-animated="fadeInRight">
                         <p>El concepto de trasformación digital de una empresa es ciertamente amplio e implica cambios culturales y organizativos profundos en las compañías.</p>
@@ -52,8 +52,8 @@
 @stop
 
 @section('titles')
-    <title>Transformación digital para empresas  | Thatzad</title>
-    <meta name="description" content="">
+    <title>Consultoría de transformación digital para empresas</title>
+    <meta name="description" content="Desarrollo de herramientas web a medida para ayudarte a transformar digitalmente tu empresa. Hagamos webs complejas para facilitarte el trabajo">
 @endsection
 @section('scripts')
     <script>

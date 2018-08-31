@@ -30,3 +30,7 @@
     </section>
 
 @stop
+@section('titles')
+    <title>Política de cookies Thatzad</title>
+    <meta name="description" content="">
+@endsection

@@ -143,8 +143,8 @@
 @stop
 
 @section('titles')
-    <title>Thatzad</title>
-    <meta name="description" content="">
+    <title>Thatzad, la Agencia marketing online más especial de Barcelona</title>
+    <meta name="description" content="Nuestra agencia de marketing online es una mezcla de Conocimiento, Creatividad y Esfuerzo. Descubre cómo. Somos tu agencia boutique de marketing online.">
 @endsection
 
 @section('scripts')

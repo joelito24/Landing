@@ -268,6 +268,18 @@ return [
                 'title' => 'Proyectos Relacionados',
                 'description' => 'all_projects_backend',
             ],
+            'meta_title' =>  [
+                'type' => 'text',
+                'title' => 'Meta título del proyecto',
+                'description' => 'Introduzca meta título del proyecto',
+                'rules' => ['']
+            ],
+            'meta_description' =>  [
+                'type' => 'textareaSimple',
+                'title' => 'Meta descripción del proyecto',
+                'description' => 'Introduzca meta descripción del proeycto',
+                'rules' => ['']
+            ],
             'active' => [
                 'type' => 'radio',
                 'title' => 'Visible',

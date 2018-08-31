@@ -97,7 +97,7 @@
 </script>
 @endsection
 @section('titles')
-    <title>Thatzad</title>
-    <meta name="description" content="">
+    <title>White Papers | Artículos de marketing online</title>
+    <meta name="description" content="Nuestros ThatzPapers son estudios, análisis y reflexiones de marketing online y e-commerce que hacemos desde los diferentes departamentos de THATZAD.">
 @endsection
 

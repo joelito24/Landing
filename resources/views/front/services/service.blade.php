@@ -1,7 +1,6 @@
 @extends('front.layouts.master')
 
 @section('content')
-
     <section class="service">
     	<div class="container">
     		<div class="row">

@@ -42,3 +42,7 @@
     </section>
 
 @stop
+@section('titles')
+    <title>Aviso legal Thatzad</title>
+    <meta name="description" content="">
+@endsection

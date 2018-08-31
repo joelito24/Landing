@@ -595,6 +595,6 @@
 @endsection
 
 @section('titles')
-    <title>Thatzad</title>
-    <meta name="description" content="">
+    <title>Agencia marketing online Barcelona | Thatzad</title>
+    <meta name="description" content="Un equipo de marketing online creativo, implicado y 100% efectivo para desarrollar la estrategia, la web y campañas de publicidad online. That's Advertising!">
 @endsection

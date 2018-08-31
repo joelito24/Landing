@@ -15,3 +15,7 @@
     </section>
 
 @stop
+@section('titles')
+    <title>Política de privacidad Thatzad</title>
+    <meta name="description" content="">
+@endsection
