@@ -17,7 +17,7 @@
                         <p>Desarrollamos la estrategia, la web y las campañas de publicidad con un equipo creativo, implicado y 100% efectivo.</p>
                     </div>
                     <div class="white-box">
-                        Somos tu agencia boutique de marketing online
+                        <h1>Somos tu agencia boutique de marketing online</h1>
                     </div>
                 </div>
             </div>

@@ -6,12 +6,12 @@
         <div class="container">
             {{--<p class="name-page">Proyectos destacados</p>--}}
             <h2 class="title-page">Proyectos destacados</h2>
-            <p class="subtitle-projects">Puedes filtrar los proyectos por sectores:</p>
+            <p class="subtitle-projects">Filtra las campañas y proyectos de marketing online por sectores:</p>
             <div class="block-inputs">
                 @foreach($categories as $category)
                     <div class="check-category">
                         <input type="radio" name="filter" value="{{ $category->id }}" id="{{ $category->id }}" class="gray-radio"/>
-                        <label for="{{ $category->id }}" class="gray-radio-label blue">{{ $category->name }}</label>
+                        <label for="{{ $category->id }}" class="blue">{{ $category->name }}</label>
                     </div>
                 @endforeach
                 {{--<div class="check-category">--}}
@@ -163,6 +163,8 @@
                 var sList = "";
                 var val = 0;
                 $('.project').hide();
+                $('.check-category label').removeClass('active');
+                $(this).parent().find('label').addClass('active');
                 $('input[type=radio]').each(function () {
                     var sThisVal = (this.checked ? "1" : "0");
                     if(sThisVal == 1){

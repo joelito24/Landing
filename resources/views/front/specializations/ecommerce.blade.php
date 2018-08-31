@@ -10,7 +10,7 @@
             </div>
             <div class="ecommerce-description">
                 <div class="text" data-animated="fadeInLeft">
-                    <p class="subtitle">¿Quieres saber cómo haremos que tu proyecto de e‑Commerce sea un éxito? Descubre cómo lo planteamos en THATZAD.</p>
+                    <p class="subtitle">¿Quieres saber cómo haremos que tu tienda online sea un éxito? Descubre cómo lo hacemos en nuestra agencia de e-commerce.</p>
                     <p>El comercio electrónico alcanzó en 2016 los 22MM de €, eso supone un 11% de todas las compras minoristas. Hay mucho negocio pero cada vez más competidores, los márgenes se reducen y hemos de ser capaces de optimizar nuestras tiendas online.</p>
                     <p>En THATZAD ideamos campañas que no traigan visitantes sino compradores, con segmentaciones muy pensadas, mensajes adaptados a cada target y creatividades a cada canal.</p>
                 </div>

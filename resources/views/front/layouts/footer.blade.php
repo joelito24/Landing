@@ -31,7 +31,8 @@
 									<a href="tel:+34936350620">+34 936 350 620</a>
 									<img id="emaillink" style="margin-bottom: 10px;cursor: pointer;" src="{{ asset('front/img/hola-footer.png') }}" alt="">
 									<div class="address">
-										<p>C/ Marqués de Mulhacén 11 bajos 2, 08034 Barcelona</p>
+										<p>C/ Marqués de Mulhacén 11 bajos 2</p>
+										<p>Barcelona 08034</p>
 									</div>
 								</div>
 								<div class="red-social">

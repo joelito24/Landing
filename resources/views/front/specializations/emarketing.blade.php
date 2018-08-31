@@ -13,7 +13,7 @@
                     <p class="subtitle">¿Quién dice que debemos elegir entre “Crear marca” o “Generar ventas”? En THATZAD sabemos cómo hacer que tu marca triunfe en Internet</p>
                     <p>En España se crean cada año más de 100.000 empresas y casi un 25% son de comercio. Las marcas deben hacerse un hueco entre tanta competencia, no sólo por diferenciación de producto o servicio sino de imagen y comunicación de marca.</p>
                     <p>Lanzar una una start-up, una nueva marca de ropa, un producto de alimentación, una cadena de restaurantes o una financiera requieren de recursos humanos y económicos ligados a un plan de negocio y un plan de marketing.</p>
-                    <p>Desde THATZAD diseñamos, junto con el Cliente, el plan de e-marketing, tanto la estrategia como el calendario de acciones, todas las creatividades, la gestión integral de campañas y la medición y análisis de los resultados.</p>
+                    <p>Desde la agencia de marketing online THATZAD diseñamos, junto con el Cliente, el plan de e-marketing, tanto la estrategia como el calendario de acciones, todas las creatividades, la gestión integral de campañas y la medición y análisis de los resultados.</p>
                 </div>
                 <div class="img-info" id="first" data-animated="fadeInRight">
                     <img src="{{ asset('front/img/specials/info-emarketing.png') }}" alt="">
