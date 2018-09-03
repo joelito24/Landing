@@ -35,7 +35,7 @@
                 <ul class="menu main-blue">
                     <li><a href="{{ route('whitepapers') }}">White papers</a></li>
                     <li><a href="http://www.thatzblog.com/" target="_blank">Blog</a></li>
-                    <li><a href="{{ route('contact') }}"><img src="{{ asset('front/img/header/sobre-icon.png') }}"></a></li>
+                    <li class="contact-item"><a href="{{ route('contact') }}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 358.4"><defs><style>.cls-1{fill:#00bde0;}</style></defs><title>Contacto</title><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><path class="cls-1" d="M40.49,21.17,224.91,167.25c8.36,6.62,19.89,9.56,31.08,9,11.17.55,22.7-2.37,31.06-9L471.47,21.17C486.25,9.54,482.91,0,464.16,0H47.86C29.09,0,25.75,9.54,40.49,21.17Z"/><path class="cls-1" d="M484.8,59.72l-201.53,153c-7.54,5.66-17.41,8.42-27.24,8.29-9.85.13-19.72-2.65-27.26-8.29L27.2,59.72C12.24,48.38,0,54.46,0,73.22v251A34.24,34.24,0,0,0,34.13,358.4H477.87A34.24,34.24,0,0,0,512,324.27v-251C512,54.46,499.76,48.38,484.8,59.72Z"/></g></g></svg></a></li>
                 </ul>
             </div>
         </div>

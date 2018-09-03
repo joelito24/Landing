@@ -236,6 +236,7 @@ section.home .blog .newsletter .msg-error{font-size: 14px;position: relative;pad
 section.home .blog .newsletter input.not-correct{border: 1px solid red;}
 section.home .blog .newsletter .politica{font-size: 12px;font-weight: 400;margin-top: 5px}
 section.home .blog .newsletter .politica a{font-weight: 700; color: var(--default-color);}
+section.home .blog .newsletter .inner-input{display: inline-block; vertical-align: top; width:65%; margin-right: 2%;}
 /* SERVICES */
 section.service{position: relative;}
 .top-page{position: relative;z-index: 10;}

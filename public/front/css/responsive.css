@@ -23,7 +23,7 @@
 }
 @media (max-width: 1450px){
     figure.effect-sarah p {overflow: hidden;display: -webkit-box;-webkit-line-clamp: 7;-webkit-box-orient: vertical;}
-
+    section.home .blog .newsletter .btn-yellow-full{width:32%;    padding: 0 !important;}
 }
 @media (max-width: 1280px){
     section.specializations.campanas .steps .step{max-width: 19%;}
@@ -50,6 +50,8 @@
     section.specializations.campanas .steps .step{width: 175px;}
     section.specializations.campanas .main-content .container{width: 90% !important;max-width: 90% !important;}
     section.home .infographics .text-info .info-block .text-bg{font-size: 46px;line-height: 44px;top: 34px;width: 303px;}
+    section.home .blog .newsletter .inner-text{width:36%;}
+    section.home .blog .newsletter form{width:59%;}
 }
 @media (max-width: 1100px){
     figure.effect-sarah p {overflow: hidden;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;}
@@ -59,7 +61,7 @@
     #header{margin-top: -6px;}
     #header .col-md-4{padding-left: 0;padding-right: 0;}
     section.contact .form-block{float: left;}
-    section.projects .title-page{padding-top:0;margin-top: 0;}
+    section.projects .title-page{padding-top:0;margin-top: 0;    text-align: center;}
     .container{padding-left:0px !important;padding-right: 0px !important;width: 90% !important;max-width: 90% !important;}
     .name-page{margin-top: 10px;text-align: center;color: #fff;}
     section.home .top{background-attachment: scroll;}
@@ -160,6 +162,7 @@
     footer #___partnersbadge_0{width:100% !important;}
     footer .bottom .copy{margin-top:20px;}
     footer .col-partners{display: none;}
+    section.home .blog .newsletter{margin-left: 15px;margin-right: 15px;}
 }
 
 @media (max-width: 768px){
@@ -169,8 +172,8 @@
     footer .gorila{position: inherit;margin-left: 0;bottom: -56px;}
     footer .footer-bottom:before{display: none;}
 
-    section.projects .block-inputs .check-category{width: 25%;margin-right: 0;float: left;}
-    section.projects .block-inputs{margin-bottom: 0;}
+    /*section.projects .block-inputs .check-category{width: 25%;margin-right: 0;float: left;}*/
+    section.projects .block-inputs{ margin-bottom: 15px;}
     section.contact{background: none;}
     section.contact .contact-info .info-text svg{display: none;}
     section.contact .contact-info .link-contact, section.contact .contact-info .info-text p, section.contact .contact-info .info-text .link-map{padding-left: 0;margin-left: 0;}
@@ -187,6 +190,9 @@
     section.home .blog .col-article .article-block{max-width: 90%;}
     section.agency .valores ul{font-size: 30px;}
     section.home .left-col .title-top{font-size: 48px;line-height: 54px;}
+    section.home .blog .newsletter{display: flex;flex-direction: column;}
+    section.home .blog .newsletter .inner-text{width:100%;margin-bottom: 10px;}
+    section.home .blog .newsletter form{width:100%;}
     section.project .block-slider .container{width: 100% !important;max-width: 100% !important;}
     section.project .block-slider .container #carroselhome{padding:0;}
     section.project .block-slider .carousel-indicators{bottom:15px;}
@@ -211,7 +217,7 @@
     footer .col-sm-6:first-child .title-menu{margin-top:0;}
 }
 @media (max-width: 600px){
-    section.projects .block-inputs .check-category{width: 50%;}
+    /*section.projects .block-inputs .check-category{width: 50%;}*/
     section.home .left-col .title-top{font-size: 42px;line-height: 47px;}
     section.home .top .top-home{margin-top:0;}
     .whitepaper-popup .form-block .close{font-size: 16px;top: 4px;right: 8px;}
@@ -224,6 +230,8 @@
 @media (max-width: 475px){
     footer .gorila{max-width: 279px;margin-left: -23px;}
     footer .slogan{margin-left: 139px;top: 59px;}
+    #form_newsletter .btn-yellow-full{width: 100%;}
+    section.home .blog .newsletter .inner-input{width:100%; margin-bottom: 10px;}
 }
 @media (max-width: 375px){
     footer .slogan p{font-size: 13px;line-height: 16px;}
