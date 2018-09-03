@@ -44,6 +44,10 @@
 									<a target="_blank" href="https://www.linkedin.com/company/thatzad.-that%27s-advertising-/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><style>.cls-1{fill:#023c4e;}</style></defs><title></title><g id="Capa_2" data-name="Capa 2"><g id="Capa_1-2" data-name="Capa 1"><polygon class="cls-1" points="110.69 87.88 110.69 87.7 110.52 87.88 110.69 87.88"/><path class="cls-1" d="M100,0A100,100,0,1,0,200,100,100,100,0,0,0,100,0ZM73.62,149.2H49.73V77.36H73.62ZM61.68,67.74H61.5c-8,0-13.19-5.53-13.19-12.48,0-7.13,5.35-12.48,13.55-12.48,8,0,13.19,5.35,13.37,12.48C75.22,62.21,70.05,67.74,61.68,67.74Zm98,81.46H135.83V110.87c0-9.63-3.39-16.22-12.12-16.22-6.6,0-10.52,4.46-12.3,8.73-.71,1.6-.71,3.74-.71,5.88v40.11H86.81s.36-65.06,0-71.84H110.7V87.7c3.21-4.81,8.91-11.94,21.57-11.94,15.69,0,27.45,10.16,27.45,32.26Z"/></g></g></svg></a>
 								</span></p>
 								</div>
+								<div class="google-partner-movile">
+									<script src="https://apis.google.com/js/platform.js" async defer></script>
+									<div style="float: right;" class="g-partnersbadge" data-agency-id="1589660341"></div>
+								</div>
 							</div>
 							<div class="col-sm-6 col-md-4">
 								<p class="title-menu">Especializaciones</p>

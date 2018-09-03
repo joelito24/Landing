@@ -163,6 +163,7 @@
     footer .bottom .copy{margin-top:20px;}
     footer .col-partners{display: none;}
     section.home .blog .newsletter{margin-left: 15px;margin-right: 15px;}
+    footer .google-partner-movile{display: block;}
 }
 
 @media (max-width: 768px){
@@ -215,6 +216,7 @@
         top: 63px;}
     footer .bottom .title-menu{margin-top:40px;}
     footer .col-sm-6:first-child .title-menu{margin-top:0;}
+    footer .top{padding-top: 30px;}
 }
 @media (max-width: 600px){
     /*section.projects .block-inputs .check-category{width: 50%;}*/

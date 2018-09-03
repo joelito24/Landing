@@ -626,6 +626,7 @@ footer .bottom{background: #083c4e;padding-top: 37px;}
 footer .bottom .title-menu{margin-bottom: 20px;text-transform: uppercase;color: #a5a5a5;font-weight: 700;font-size: 12px;}
 footer .bottom .copy{color: #fff;margin-top: 63px;}
 footer .cls-1 {fill: #00bde0;}
+footer .google-partner-movile{display: none;}
 
 /* error 404 */
 .lost{background: #a8acad;height: 100vh;min-height: 837px;position: relative;}
