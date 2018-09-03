@@ -227,14 +227,15 @@ section.home .blog .col-article .more a:active{text-decoration: none;transition:
 section.home .blog .col-article .more a span{color: #fcbf10;margin-left: 10px;font-size: 24px;vertical-align: sub;}
 section.home #infografia circle{cursor: pointer;}
 section.home .blog .newsletter{background-color: #f6f6f6;box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.15);margin-top: 22px;padding: 12px 24px;display: inline-block;vertical-align: middle;}
-section.home .blog .newsletter input{outline:none;width: 65%;margin-right: 2%;display:inline-block; vertical-align:middle;height: 40px;background-color: #ffffff;border-radius: 6px;border: none;padding: 0 11px;}
+section.home .blog .newsletter input{outline:none;width: 100%;display:inline-block; vertical-align:middle;height: 40px;background-color: #ffffff;border-radius: 6px;border: none;padding: 0 11px;}
 section.home .blog .newsletter .btn-yellow-full{width:135px;display:inline-block; vertical-align:middle;}
 section.home .blog .newsletter p{margin-bottom: 0;font-size: 16px;color: #023d4f;font-weight: 700;}
 section.home .blog .newsletter .inner-text{margin-right: 4%;display: inline-block;vertical-align: middle;width:  45%;}
 section.home .blog .newsletter form{width: 50%;display: inline-block;vertical-align: middle;}
 section.home .blog .newsletter .msg-error{font-size: 14px;position: relative;padding-top: 15px;text-align: left;}
 section.home .blog .newsletter input.not-correct{border: 1px solid red;}
-
+section.home .blog .newsletter .politica{font-size: 12px;font-weight: 400;margin-top: 5px}
+section.home .blog .newsletter .politica a{font-weight: 700; color: var(--default-color);}
 /* SERVICES */
 section.service{position: relative;}
 .top-page{position: relative;z-index: 10;}

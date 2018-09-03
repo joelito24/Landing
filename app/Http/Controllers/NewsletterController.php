@@ -60,7 +60,11 @@ class NewsletterController extends Controller
     public function postNewsletter(Newsletter $newsletterRepository, EmailServices $emailServices){
 
         $data = Input::all();
-        if($newsletterRepository->checkEmail($data['email'])){
+
+        //Comprobar si es un robot
+        if($data['lastname'] != ""){
+            return 'bot';
+        }else if($newsletterRepository->checkEmail($data['email'])){
         }else{
             $newsletterRepository->add($data);
         }

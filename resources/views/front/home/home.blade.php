@@ -201,9 +201,13 @@
                         <p class="thatznews">Apúntate a las ThatzNews. Jamás de aburriremos</p>
                     </div>
                     <form action="" method="post" id="form_newsletter">
-                        <p class="msg-error">Email tiene que ser válido</p>
                         <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
-                        <input type="text" name="email" id="email" placeholder="Email">
+                        <input style="display: none;" type="text" name="lastname" id="lastname">
+                        <div style="display: inline-block; vertical-align: top; width:65%; margin-right: 2%;">
+                            <p class="msg-error">Email tiene que ser válido</p>
+                            <input type="text" name="email" id="email" placeholder="Email">
+                            <p class="politica">Consulta nuestra <a target="_blank" href="{{ route('generals') }}">política de privacidad</a></p>
+                        </div>
                         <div id="send" class="btn-yellow-full">Apuntarme</div>
                     </form>
                 </div>
