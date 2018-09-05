@@ -47,25 +47,33 @@ $(document).ready(function(){
         var emailP2 = 'thatzad.com'
         window.location = 'mailto:' + emailP1 + '@' + emailP2;
     });
+
+    var mobileScreen = $(window).width();
+    var heightFull = $("body").outerHeight(true);
+    var heightScreen = $(window).height();
+        // alert( $(window).height() );
+    window.onscroll = function() {
+        // alert(heightScreen);
+        if (mobileScreen > 993 && heightFull-heightScreen > 216) {
+            stickyFunction();
+        }
+    };
+
+
+
+    var navbar = document.getElementById("header");
+    var sticky = 105;
+
+    function stickyFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
 });
 
-var mobileScreen = $(window).width();
-window.onscroll = function() {
-    if (mobileScreen > 993) {
-        stickyFunction();
-    }
-};
 
-var navbar = document.getElementById("header");
-var sticky = 105;
-
-function stickyFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else {
-        navbar.classList.remove("sticky");
-    }
-}
 
 function createCookie(name, value, days) {
     var expires;
