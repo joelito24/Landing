@@ -51,6 +51,7 @@ return [
         'edit' => 'admin.whitepapers.edit',
         'delete' => 'admin.whitepapers.delete',
         'crop' => 'admin.whitepapers.crop',
+        'order' => 'admin.whitepapers.order',
         'icon' => 'fa fa-file-o',
         'name' => 'White papers',
         'resource' => 'whitepapers'

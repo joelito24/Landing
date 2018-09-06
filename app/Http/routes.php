@@ -205,6 +205,17 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
         'as' => 'admin.whitepapers.update',
         'uses' => 'WhitepapersController@update'
     ]);
+
+    Route::get('whitepapers/order', [
+        'as' => 'admin.whitepapers.order',
+        'uses' => 'WhitepapersController@order'
+    ]);
+
+    Route::post('whitepapers/order/{categoryId}', [
+        'as' => 'admin.whitepapers.orderSave',
+        'uses' => 'WhitepapersController@orderSave'
+    ]);
+
     Route::get('whitepapers/crop/{id}', [
         'as' => 'admin.whitepapers.crop',
         'uses' => 'WhitepapersController@crop'

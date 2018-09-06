@@ -26,6 +26,7 @@ class WhitepapersController extends BaseController
             'title' => 'Título',
 //            'description' => 'Descripción',
             'data_file' => 'Ficheros',
+            'order' => 'Orden'
         ];
 
         return view('admin.datatable', [
@@ -33,6 +34,27 @@ class WhitepapersController extends BaseController
             'title' => 'White papers',
             'pageTitle' => 'Listado de white papers',
             'header' => $fluxesHead
+        ]);
+    }
+
+    public function order()
+    {
+        App::setLocale('es');
+        $fluxesHead = [
+            'title' => 'Título',
+        ];
+
+        $repo = App::make($this->repositoryName);
+        $data = $repo->findAllActive();
+
+        return view('admin.order', [
+            'data' => $data,
+            'pageTitle' => 'Orden de White Papers',
+            'title' => 'White papers',
+            'header' => $fluxesHead,
+//            'filter' => all_projects_categories(),
+            'filter_id' => false,
+            'repository' => $this->resourceName
         ]);
     }
 }
