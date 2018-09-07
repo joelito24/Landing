@@ -109,13 +109,16 @@
                     <p>Queremos ser la agencia de marketing online de la que nuestros clientes estén absolutamente convencidos de que deben confiar sus proyectos clave.</p>
                     <p>Por efectividad y resultados en los parámetros que realmente influyen en el negocio, por visión estratégica y la capacidad de ir un paso más allá, prever su necesidades en un mercado cambiante que conocemos y en el que tenemos toda la experiencia. Con un enfoque creativo y en inspiradas ocasiones genial.</p>
                     <p class="title-yellow">Puro músculo. Cero grasa</p>
+                    <div class="thatzad-vintage">
+                        <a target="_blank" href="http://www.vintage2012.thatzad.com">ThatzVintage<img src="{{ asset('front/img/agency/thatzad_vintage.png') }}"></a>
+                    </div>
                 </div>
                 <div class="img-col" data-animated="fadeInRight">
-                    <img src="{{ asset('front/img/agency/agency2.jpg') }}" alt="">
+                     <img src="{{ asset('front/img/agency/agency2.jpg') }}" alt="">
                 </div>
+                
             </div>
             <div class="white-space">
-
             </div>
         </div>
         <div class="valores">
