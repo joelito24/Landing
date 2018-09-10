@@ -356,12 +356,12 @@ section.agency .white-block .block-opinion .name-opinion{color: #444654;font-wei
 section.agency .content-agency .title-opinion{font-size: 48px;}
 section.agency .content-agency .title-yellow{font-size: 33px;color: #f0bf14;font-family: var(--title-font);margin-top: 28px;}
 section.agency .content-agency.vision{background: var(--default-color);position: relative;}
-section.agency .content-agency.vision .inner-agency{z-index: 10;position: relative;padding-top: 95px;overflow: hidden;padding-bottom: 30px;}
+section.agency .content-agency.vision .inner-agency{z-index: 10;position: relative;padding-top: 95px;overflow: hidden;padding-bottom: 95px;}
 section.agency .content-agency.vision .white-space{position: absolute;height: 100%;width: 10%;background: #fff;top: 0;right: 0;z-index: 1;}
-section.agency .content-agency .thatzad-vintage{padding-top: 120px;}
-section.agency .content-agency .thatzad-vintage a{color: #557b87;font-size: 20px;font-weight: 700;text-decoration: underline;}
-section.agency .content-agency .thatzad-vintage img{vertical-align: bottom;margin-left: 10px;}
-section.agency .valores{padding:140px 0;color:#fff;text-align:center;background: url(/front/img/agency/bg-valores.jpg) no-repeat center center;background-size: cover;}
+section.agency .thatzad-vintage{padding-top: 120px; text-align: right; padding-right: 25px;}
+section.agency .thatzad-vintage a{color: #557b87;font-size: 18px;font-weight: 700;text-decoration: underline;}
+section.agency .thatzad-vintage img{vertical-align: bottom;margin-left: 10px; width: 40px;}
+section.agency .valores{padding:140px 0 20px;color:#fff;text-align:center;background: url(/front/img/agency/bg-valores.jpg) no-repeat center center;background-size: cover;}
 section.agency .valores .title-valor{font-family: var(--title-font);font-size: 48px;}
 section.agency .valores .intro p{font-size: 24px;margin-bottom: 0;font-weight: 700;}
 section.agency .valores ul{list-style:none;margin-top:15px;font-family: var(--title-font);font-size: 36px;}
