@@ -6,11 +6,11 @@
         <div class="ecommerce-top">
             <div class="container">
                 <p class="name-page">ESPECIALIZACIONES</p>
-                <h1 class="title-page">Proyectos de e-Commerce </h1>
+                <h1 class="title-page">Proyectos de eCommerce </h1>
             </div>
             <div class="ecommerce-description">
                 <div class="text" data-animated="fadeInLeft">
-                    <h2 class="subtitle">¿Quieres saber cómo haremos que tu tienda online sea un éxito? Descubre cómo lo hacemos en nuestra agencia de e-commerce.</h2>
+                    <h2 class="subtitle">¿Quieres saber cómo haremos que tu tienda online sea un éxito? Descubre cómo lo hacemos en nuestra agencia de eCommerce.</h2>
                     <p>El comercio electrónico alcanzó en 2016 los 22MM de €, eso supone un 11% de todas las compras minoristas. Hay mucho negocio pero cada vez más competidores, los márgenes se reducen y hemos de ser capaces de optimizar nuestras tiendas online.</p>
                     <p>En THATZAD ideamos campañas que no traigan visitantes sino compradores, con segmentaciones muy pensadas, mensajes adaptados a cada target y creatividades a cada canal.</p>
                 </div>
@@ -57,8 +57,8 @@
 @stop
 
 @section('titles')
-    <title>Agencia e-Commerce Barcelona. Consultoría y desarrollo</title>
-    <meta name="description" content="¿Quieres saber cómo haremos que tu proyecto de e‑Commerce sea un éxito? Descubre cómo lo planteamos en la agencia de e-Commerce THATZAD.">
+    <title>Agencia eCommerce Barcelona. Consultoría y desarrollo</title>
+    <meta name="description" content="¿Quieres saber cómo haremos que tu proyecto de e‑Commerce sea un éxito? Descubre cómo lo planteamos en la agencia de eCommerce THATZAD.">
 @endsection
 @section('scripts')
     <script>

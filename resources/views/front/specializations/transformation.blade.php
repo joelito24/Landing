@@ -28,7 +28,7 @@
                         <p class="title-page">Muchísimo más que una web</p>
                     </div>
                     <div class="col-md-6 col-text" data-animated="fadeInUp">
-                        <p>En THATZAD aportamos nuestra experiencia y conocimiento de Internet a diseñar sistemas gestores desde cero, a medida de las necesidades de cada Cliente. Desde una intranet (en web o APP), un ERP personalizado que enlace con tu e-commerce, un CRM ligado a tu web y redes sociales o un gestor de reservas integral que intercambie información con APIs externas.</p>
+                        <p>En THATZAD aportamos nuestra experiencia y conocimiento de Internet a diseñar sistemas gestores desde cero, a medida de las necesidades de cada Cliente. Desde una intranet (en web o APP), un ERP personalizado que enlace con tu eCommerce, un CRM ligado a tu web y redes sociales o un gestor de reservas integral que intercambie información con APIs externas.</p>
                         <p>Apostamos por los lenguajes abiertos y no por las herramientas herméticas que hay en el mercado, para programar a medida todo lo que pueda necesitar tu empresa. HTML5, PHP4, CSS3, Ajax o Javascript nos permiten diseñar libremente, tanto a nivel gráfico como de arquitectura y enfrentarnos a reglas de negocio complejas.</p>
                         <p>El límite está únicamente en nuestra imaginación y no en la tecnología.</p>
                     </div>

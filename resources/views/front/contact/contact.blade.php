@@ -9,7 +9,7 @@
             <div class="col-md-6" data-animated="fadeInLeft">
 
                 <div class="text-contact">
-                    <p>Nos encanta hablar de marketing online, campañas, e-commerce y proyectos digitales.</p>
+                    <p>Nos encanta hablar de marketing online, campañas, eCommerce y proyectos digitales.</p>
                     <p>No te cortes. Por favor, explícanos tu negocio y pensaremos juntos la mejor forma de hacer que sea un éxito.</p>
                 </div>
                 <div class="contact-info">

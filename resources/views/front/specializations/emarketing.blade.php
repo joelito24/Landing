@@ -6,14 +6,14 @@
         <div class="ecommerce-top">
             <div class="container">
                 <p class="name-page">ESPECIALIZACIONES</p>
-                <h1 class="title-page">e-Marketing y publicidad para marcas</h1>
+                <h1 class="title-page">eMarketing y publicidad para marcas</h1>
             </div>
             <div class="ecommerce-description">
                 <div class="text" data-animated="fadeInLeft">
                     <h2 class="subtitle">¿Quién dice que debemos elegir entre “Crear marca” o “Generar ventas”? En THATZAD sabemos cómo hacer que tu marca triunfe en Internet</h2>
                     <p>En España se crean cada año más de 100.000 empresas y casi un 25% son de comercio. Las marcas deben hacerse un hueco entre tanta competencia, no sólo por diferenciación de producto o servicio sino de imagen y comunicación de marca.</p>
                     <p>Lanzar una una start-up, una nueva marca de ropa, un producto de alimentación, una cadena de restaurantes o una financiera requieren de recursos humanos y económicos ligados a un plan de negocio y un plan de marketing.</p>
-                    <p>Desde la agencia de marketing online THATZAD diseñamos, junto con el Cliente, el plan de e-marketing, tanto la estrategia como el calendario de acciones, todas las creatividades, la gestión integral de campañas y la medición y análisis de los resultados.</p>
+                    <p>Desde la agencia de marketing online THATZAD diseñamos, junto con el Cliente, el plan de eMarketing, tanto la estrategia como el calendario de acciones, todas las creatividades, la gestión integral de campañas y la medición y análisis de los resultados.</p>
                 </div>
                 <div class="img-info" id="first" data-animated="fadeInRight">
                     <img src="{{ asset('front/img/specials/info-emarketing.png') }}" alt="">
@@ -29,7 +29,7 @@
                     <div class="text" data-animated="fadeInRight">
                         <h2 class="title-page">La web como herramienta clave y ADN de la marca.</h2>
                         <p>Si las campañas y las redes sociales son los embajadores de nuestra marca. La web debe ser la herramienta perfecta de comunicación y venta. Un concentrador que sea capaz de convertir tráfico cualificado en objetivos de negocio. </p>
-                        <p>Uno de los puntos que nos diferencian en THATZAD es que no somos sólo una agencia, somos consultores, en cada proyecto trabaja un equipo de e-marketing, uno de diseño y uno de programación. El resultado son webs mucho mejor pensadas para vender, mejor programadas y diseñadas con esos detalles que marcan la diferencia. Todo lo que se nos pide a una agencia boutique de marketing online.</p>
+                        <p>Uno de los puntos que nos diferencian en THATZAD es que no somos sólo una agencia, somos consultores, en cada proyecto trabaja un equipo de eMarketing, uno de diseño y uno de programación. El resultado son webs mucho mejor pensadas para vender, mejor programadas y diseñadas con esos detalles que marcan la diferencia. Todo lo que se nos pide a una agencia boutique de marketing online.</p>
                     </div>
                     <div class="img-info" id="second" data-animated="fadeInLeft">
                         <img id="emarketing-mvl" src="{{ asset('front/img/specials/info-emarketing2.png') }}" alt="">

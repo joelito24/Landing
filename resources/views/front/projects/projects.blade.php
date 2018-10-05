@@ -142,7 +142,7 @@
 
 @section('titles')
     <title>Proyectos marketing online | Thatzad</title>
-    <meta name="description" content="Ideas, proyectos, campañas y casos de éxito de THATZAD, tu agencia de marketing online e e-commerce. That's Advertising!">
+    <meta name="description" content="Ideas, proyectos, campañas y casos de éxito de THATZAD, tu agencia de marketing online e eCommerce. That's Advertising!">
 @endsection
 @section('scripts')
     <script>
