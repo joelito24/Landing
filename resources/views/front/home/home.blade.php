@@ -127,7 +127,7 @@
                         <a href="{{ route('specialization1') }}">
                             <div class="inner-special fourth-special">
                                 <div class="line-yellow"></div>
-                                <p data-animated="fadeInUp">Proyectos de e‑commerce</p>
+                                <p data-animated="fadeInUp">Proyectos de eCommerce</p>
                                 <div data-animated="fadeInUp" class="btn-yellow">Cómo hacer crecer tu negocio</div>
                                 <div  class="line-yellow line-bottom"></div>
                             </div>
