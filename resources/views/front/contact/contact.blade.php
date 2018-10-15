@@ -37,7 +37,7 @@
                                 </g>
                             </g>
                         </svg>
-                        <a class="link-contact" href="">+34 936350620</a>
+                        <a class="link-contact" href="tel:+34936350620">+34 936350620</a>
                     </div>
                     <div class="info-text">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
