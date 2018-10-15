@@ -66,7 +66,7 @@
             </div>
             <div class="col-md-6">
                 <div class="form-block" data-animated="pulse">
-                    <form method="POST" action="{{ action('ContactController@send') }}" id="contactform">
+                    <form onsubmit="ga('send', 'event', 'formulario', 'enviar', 'contacto');" method="POST" action="{{ action('ContactController@send') }}" id="contactform">
                         <div class="send" id="response"></div>
                         <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                         <div class="form-group">
