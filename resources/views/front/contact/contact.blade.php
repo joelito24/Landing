@@ -209,7 +209,7 @@
                             if (response === 'sent'){
                                 $('#response').html('Se ha enviado su solicitud correctamente');
                                 $([document.documentElement, document.body]).animate({
-                                    scrollTop: $("#response").offset().top
+                                    scrollTop: $(".title-page").offset().top
                                 }, 500);
                             }
                         },
