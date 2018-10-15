@@ -198,7 +198,7 @@
                     </div>
                     <div class="col-md-10 col-sm-12 col-md-offset-1 col-sm-offset-0 newsletter">
                         <div class="inner-text">
-                            <p class="thatznews">Apúntate a las ThatzNews. Jamás de aburriremos</p>
+                            <p class="thatznews">Apúntate a las ThatzNews. Jamás te aburriremos</p>
                         </div>
                         <form action="" method="post" id="form_newsletter">
                             <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
