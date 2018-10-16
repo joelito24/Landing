@@ -41,7 +41,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6"  data-animated="fadeInUp">
-                        <p class="subtitle">Fidelización, palanca de futuro en e‑Commerce</p>
+                        <p class="subtitle">Fidelización, palanca de futuro en eCommerce</p>
                         <p>Pero es cara generar la primera venta online de un cliente, así que debemos potenciar mucho más las revisitas y segundas compras. Debemos inventar nuevas formas de aplicar conceptos tradicionales de fidelización. Mediante campañas de mail marketing, remarketing, Social Ads, push notifications, marketing automation y muchas otras que desarrollemos pensando en ti.</p>
                         <p>Y aunque tenemos una amplia experiencia y sabemos lo que funciona y lo que no, no tenemos una barita mágica, el éxito lo conseguimos a base de conocimiento, creatividad e implicación en tu proyecto.</p>
                     </div>
@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-        @include('front.specializations.complements.action', ['title' => 'Los líderes futuros de cada vertical de e‑commerce se están definiendo ahora.', 'btntitle' => '¡Hagámoslo juntos!'])
+        @include('front.specializations.complements.action', ['title' => 'Los líderes futuros de cada vertical de eCommerce se están definiendo ahora.', 'btntitle' => '¡Hagámoslo juntos!'])
     </section>
 
 @stop
