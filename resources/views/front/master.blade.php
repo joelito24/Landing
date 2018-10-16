@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
     <link href="{{ asset('front/css/style.css') }}" rel="stylesheet">
-    <!--<link href="{{ asset('front/css/style2.css') }}" rel="stylesheet">-->
+    <link href="{{ asset('front/css/style2.css') }}" rel="stylesheet">
     <link href="{{ asset('front/css/responsive.css') }}" rel="stylesheet">
 
     <link href="{{ asset('front/slick/slick.css') }}" rel="stylesheet">
