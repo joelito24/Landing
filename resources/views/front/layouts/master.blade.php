@@ -26,9 +26,6 @@
 
     <link rel="manifest" href="/manifest.json">
     <link rel="manifest" href="/latest.json">
-    <script type="text/javascript" src="/push.js"></script>
-    <script type="text/javascript" src="/sw.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3439732-1"></script>
@@ -50,7 +47,9 @@
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
+<script type="text/javascript" src="/push.js"></script>
+<script type="text/javascript" src="/sw.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script type="text/javascript" src="{{ asset('front/js/main.js') }}"></script>
 <script type="text/javascript" src="{{ asset('front/js/animate.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
