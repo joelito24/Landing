@@ -8,14 +8,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
     <link href="{{ asset('front/css/style.css') }}" rel="stylesheet">
-    <!--<link href="{{ asset('front/css/style2.css') }}" rel="stylesheet">-->
     <link href="{{ asset('front/css/responsive.css') }}" rel="stylesheet">
 
     <link href="{{ asset('front/slick/slick.css') }}" rel="stylesheet">
     <link href="{{ asset('front/slick/slick-theme.css') }}" rel="stylesheet">
 
     <!-- bootstrap -->
-    <link href="{{ asset('admin/css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('admin/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- fontAwesome icons -->
     <link href="{{ asset('front/css/font-awesome.css') }}" rel="stylesheet" type="text/css">
