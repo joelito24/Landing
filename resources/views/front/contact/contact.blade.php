@@ -16,7 +16,7 @@
                     <div class="info-text">
 {{--                        <img src="{{ asset('front/img/contact/001-arroba.svg') }}" alt="">--}}
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 332"><defs><style>.cls-1{isolation:isolate;}.cls-2{fill-rule:evenodd;}</style></defs><title></title><g id="Capa_2" data-name="Capa 2"><g id="Forma_1" data-name="Forma 1" class="cls-1"><g id="Forma_1-2" data-name="Forma 1"><path class="cls-2" d="M165,0C74,0,0,74,0,165c0,91.32,73.87,167,165,167,36.87,0,74.17-12.39,102.34-34a15,15,0,0,0-18.26-23.8c-23,17.67-53.67,28-84.08,28C90.56,302.2,30,240.54,30,165,30,90.56,90.56,29.8,165,29.8c75.54,0,137,60.76,137,135.2v15a30,30,0,0,1-60,0V105a15,15,0,0,0-30,0v1a77.29,77.29,0,0,0-47-16,75,75,0,0,0,0,150,77.67,77.67,0,0,0,57.73-25.81A60,60,0,0,0,332,180V165C332,73.75,256.21,0,165,0Zm0,210.2a45.2,45.2,0,0,1,0-90.4c25.48,0,47,20.81,47,45.2S190.48,210.2,165,210.2Z"/></g></g></g></svg>
-                        <img onclick="ga('send', 'event', 'enlace-externo', 'clic', 'direccion-email');" id="emailcontact" style="cursor: pointer;" src="{{ asset('front/img/hola-contact.png') }}" alt="">
+                        <img onclick="gtag('event', 'clic', {'event_category': 'enlace-externo', 'event_label': 'direccion-email' });" id="emailcontact" style="cursor: pointer;" src="{{ asset('front/img/hola-contact.png') }}" alt="">
                     </div>
                     <div class="info-text">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -37,7 +37,7 @@
                                 </g>
                             </g>
                         </svg>
-                        <a onclick="ga('send', 'event', 'enlace-externo', 'clic', 'numero-telefono');" class="link-contact" href="tel:+34936350620">+34 936350620</a>
+                        <a onclick="gtag('event', 'clic', {'event_category': 'enlace-externo', 'event_label': 'numero-telefono' });" class="link-contact" href="tel:+34936350620">+34 936350620</a>
                     </div>
                     <div class="info-text">
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -60,13 +60,14 @@
                                                         </g>
                         </svg>
                         <p>C/ Marqués de Mulhacen 11, bajos 2. 08034 Barcelona</p>
-                        <a onclick="ga('send', 'event', 'enlace-externo', 'clic', 'ver-mapa');" class="link-map" target="_blank" href="https://www.google.es/maps/place/Thatzad!+That's+Advertising./@41.3910271,2.1175009,17z/data=!3m1!4b1!4m5!3m4!1s0x12a482af16c1db65:0xd098ab6be5c69c5c!8m2!3d41.3910231!4d2.1196949?hl=es">Ver mapa</a>
+                        <a onclick="gtag('event', 'clic', {'event_category': 'enlace-externo', 'event_label': 'ver-mapa' });" class="link-map" target="_blank" href="https://www.google.es/maps/place/Thatzad!+That's+Advertising./@41.3910271,2.1175009,17z/data=!3m1!4b1!4m5!3m4!1s0x12a482af16c1db65:0xd098ab6be5c69c5c!8m2!3d41.3910231!4d2.1196949?hl=es">Ver mapa</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="form-block" data-animated="pulse">
-                    <form onsubmit="ga('send', 'event', 'formulario', 'enviar', 'contacto');" method="POST" action="{{ action('ContactController@send') }}" id="contactform">
+                    {{--ga('send', 'event', 'formulario', 'enviar', 'contacto');--}}
+                    <form onsubmit="gtag('event', 'enviar', {'event_category': 'formulario', 'event_label': 'contacto' });" method="POST" action="{{ action('ContactController@send') }}" id="contactform">
                         <div class="send" id="response"></div>
                         <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                         <div class="form-group">

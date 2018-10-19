@@ -28,8 +28,9 @@
 							<div class="col-sm-6 col-md-4">
 								<p class="title-menu">CONTÁCTANOS</p>
 								<div class="contact">
-									<a onclick="ga('send', 'event', 'enlace-externo', 'clic', 'numero-telefono');" href="tel:+34936350620">+34 936 350 620</a>
-									<img onclick="ga('send', 'event', 'enlace-externo', 'clic', 'direccion-email');" id="emaillink" style="margin-bottom: 10px;cursor: pointer;" src="{{ asset('front/img/hola-footer.png') }}" alt="">
+									{{--<a onclick="ga('send', 'event', 'enlace-externo', 'clic', 'numero-telefono');" href="tel:+34936350620">+34 936 350 620</a>--}}
+									<a onclick="gtag('event', 'clic', {'event_category': 'enlace-externo', 'event_label': 'numero-telefono' });" href="tel:+34936350620">+34 936 350 620</a>
+									<img onclick="gtag('event', 'clic', {'event_category': 'enlace-externo', 'event_label': 'direccion-email' });" id="emaillink" style="margin-bottom: 10px;cursor: pointer;" src="{{ asset('front/img/hola-footer.png') }}" alt="">
 									<div class="address">
 										<p>C/ Marqués de Mulhacén 11 bajos 2</p>
 										<p>Barcelona 08034</p>
