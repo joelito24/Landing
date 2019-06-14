@@ -42,7 +42,7 @@
                         </div>
                         <div class="info-block" id="text1" data-text="1">
                             <p class="text-bg business">Ideas de negocio</p>
-                            <p class="title-info">Ideas de negocio/Bussines plan</p>
+                            <p class="title-info">Ideas de negocio/Business plan</p>
                             <div class="info-descr">
                                 <p class="text-info">Todo proyecto se inicia con una idea de negocio y plan de marketing. Dominamos el medio, <span>llevamos más de {{ $age }} años haciendo crecer negocios online como el tuyo.</span> Hemos aprendido de los éxitos, pero también de los fracasos. Conocemos las tendencias, sabemos hacia dónde se dirige el futuro. Podemos ayudarte a darle forma a tu idea y diseñar la estrategia que necesitas para cumplir tus objetivos.</p>
                                 <p class="link-service"><a href="{{ route('service','consultoria-de-emarketing-y-desarrollo-de-estrategia') }}">Saber más de Consultoría de e‑Marketing&nbsp;></a></p>
