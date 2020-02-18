@@ -34,7 +34,7 @@ class HomeController extends Controller {
 	{
 		    	// $services = $serviceRepository->getAllActive();
         $whitepaper = $whitepapersRepository->findLastHome();
-        if (count($whitepaper)<=0){
+        if (!empty($whitepaper)){
             $whitepaper = $whitepapersRepository->findLast();
         }
 
