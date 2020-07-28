@@ -15,7 +15,7 @@ return [
 	|
 	*/
 
-	'driver' => env('MAIL_DRIVER', 'smtp'),
+	'driver' => env('MAIL_DRIVER', 'mail'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => null, 'name' => null],
+	'from' => ['address' => env('MAIL_USERNAME'), 'name' => 'Thatzad'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -67,7 +67,7 @@ return [
 	|
 	*/
 
-	'encryption' => '',
+	'encryption' => env('MAIL_ENCRYPTION', Null),
 
 	/*
 	|--------------------------------------------------------------------------

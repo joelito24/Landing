@@ -11,7 +11,7 @@ class EmailServices
     {
         Mail::send($view, $data, function ($message) use($from, $to, $subject, $emailFrom)
         {
-            $message->from($emailFrom);
+            //$message->from($emailFrom);
             $message->to($to);
             $message->subject($subject);
 
