@@ -1051,6 +1051,7 @@ section.landing-agencia-marketing .top-agency .name-page {
     color: #ebbd31;
     font-size: 24px;
     font-weight: 700;
+    text-transform: inherit;
 }
 
 section.landing-agencia-marketing .top-agency .title {
