@@ -1138,8 +1138,9 @@ section.landing-agencia-marketing .content-2-agency .title-section {
     margin: 15px auto 44px;
     font-family: var(--title-font)
 }
-section.landing-agencia-marketing .content-2-agency .container-proyectos {
-
+section.landing-agencia-marketing .content-2-agency .container-proyectos {}
+section.landing-agencia-marketing .content-2-agency .container-proyectos .row {
+ margin-bottom:45px;
 }
 section.landing-agencia-marketing .content-2-agency .container-proyectos .element-img.mobile {
     display: none;
