@@ -1068,7 +1068,7 @@ section.landing-agencia-marketing .top-agency .subtitle {
     max-width: 570px;
     color: #ffffff;
     font-weight: 400;
-    margin-bottom: 100px;
+    margin-bottom: 72px;
 }
 
 section.landing-agencia-marketing .content-1-agency {
@@ -1085,7 +1085,7 @@ section.landing-agencia-marketing .content-1-agency:before {
     transform-origin: 100%;
     z-index: -1;
     left: 0;
-    transform: skewY(-2deg);
+    transform: skewY(-3deg);
     right: 0;
 }
 
