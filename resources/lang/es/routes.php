@@ -3,6 +3,7 @@
 return [
     'home'                  => '',
     'contact'               => 'contacto',
+    'landing-agencia-ecommerce' => 'contacto',
     'projects'              => '/proyectos-marketing-online',
     'project'               => 'proyectos-marketing-online/{slug}',
     'whitepapers'           => 'white-papers',
@@ -16,5 +17,6 @@ return [
     'politica'              => 'politica-de-cookies',
     'generals'              => 'politica-de-privacidad',
     'homenewsletter'        => 'suscribe',
+    'landingagenciaecommerce' => 'agencia-marketing-ecommerce-barcelona',
     'service'               => '{slug}',
 ];

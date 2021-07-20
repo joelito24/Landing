@@ -67,6 +67,25 @@ class EmailServices
         $this->sendEmail($from, $to, $subject, $view, $data, $sender);
     }
 
+    public function contactShortEmailLanding($name, $web, $email, $telf)
+    {
+        $subject = "Nueva solicitud de Contacto";
+        $to = env('EMAIL_TO_THATZAD');
+        $view = 'emails.contactShortLanding';
+        $from = $email;
+        $sender = $email;
+        $data = ['data' => [
+            'project_name' => "Thatzad",
+            'title' => "Nueva solicitud de Contacto Landing - Thatzad",
+            'name' => $name,
+            'email' => $email,
+            'web' => $web,
+            'telf' => $telf,
+
+        ]];
+        $this->sendEmail($from, $to, $subject, $view, $data, $sender);
+    }
+
     public function sendWhitepaper($name, $email, $pdf){
         $subject = "Thatzpaper";
         $to = $email;

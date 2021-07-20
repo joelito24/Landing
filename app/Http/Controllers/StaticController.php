@@ -22,9 +22,11 @@ class StaticController extends Controller
     }
 
     public function agency(){
-
         return view('front.static.agency');
+    }
 
+    public function landing_agencia_ecommerce(){
+        return view('front.static.landing_agencia_ecommerce');
     }
 
 }

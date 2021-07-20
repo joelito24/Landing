@@ -83,4 +83,29 @@ class ContactController extends Controller
         return 'sent';
     }
 
+    function sendShortLandingEcommerce( EmailServices $emailService, Newsletter $newsletterRepository, ContactsHistory $contactsHistoryRepository )
+    {
+
+        $contactData = Input::all();
+        //Comprobar si es un robot
+
+        $emailService->contactShortEmailLanding(
+            $contactData['name'],
+            $contactData['web'],
+            $contactData['email'],
+            $contactData['telf']
+        );
+
+        $contactsHistoryRepository->add($contactData);
+
+        if(isset($contactData['newsletter'])){
+            $result = $newsletterRepository->checkEmail($contactData['email']);
+            //dd($result);
+            if(!isset($result)){
+                $newsletterRepository->add($contactData);
+            }
+        }
+        return 'sent';
+    }
+
 }
