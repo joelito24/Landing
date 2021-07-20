@@ -7,7 +7,11 @@
             <div class="container">
                 <div class="row">
                     <p class="name-page col-md-8">La agencia de marketing para ecommerce</p>
+                </div>
+                <div class="row">
                     <h1 class="title col-md-8">Los beneficios de vuestro ecommerce son escalables, vayamos un paso más</h1>
+                </div>
+                <div class="row">
                     <h2 class="subtitle col-md-6" data-animated="fadeInUp">
                         En un mercado online cada vez más maduro, la optimización de vuestro ecommerce y su estrategia de marketing es clave para entrar en beneficios.
                         <br><br>
@@ -15,6 +19,8 @@
                         <br><br>
                         Cuando la competencia es fuerte ya no sirve con tener una tienda online y una campaña en Insta, hemos de tener la mejor tienda y las mejores campañas en aquellos canales que ofrezcan rentabilidad.
                     </h2>
+                </div>
+                <div class="row">
                     <div class="col-md-8">
                         <div class="btn-yellow-full"><a href="#contact-block">¿Empezamos?</a></div>
                     </div>
