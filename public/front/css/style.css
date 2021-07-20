@@ -1091,7 +1091,7 @@ section.landing-agencia-marketing .content-1-agency:before {
 
 section.landing-agencia-marketing .content-1-agency .ecommerce-description {}
 section.landing-agencia-marketing .content-1-agency .ecommerce-description .desc-info {
-    margin-top: 110px;
+    margin-top: 0;
 }
 section.landing-agencia-marketing .content-1-agency .ecommerce-description .desc-info .element-ecommerce-description {
     margin-bottom: 64px;
