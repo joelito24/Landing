@@ -13,7 +13,7 @@
     <link href="{{ asset('front/slick/slick.css') }}" rel="stylesheet">
     <link href="{{ asset('front/slick/slick-theme.css') }}" rel="stylesheet">
 	
-    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://www.thatzad.com/favicon.ico" rel="icon" type="image/x-icon">
 	
     <!-- bootstrap -->
     <link href="{{ asset('admin/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -53,6 +53,7 @@
      gtag('consent', 'default', {
         'ad_storage':           'denied',
         'analytics_storage':    'denied',
+        'wait_for_update': 1000
      });
 
      gtag('js', new Date());
@@ -63,18 +64,21 @@
     </script>
 
     <script type="text/plain" cookie-consent="tracking">
-        console.log('tracking fired');
-        gtag('consent', 'update', {
-            'analytics_storage': 'granted'
-        });    
+        $(document).ready(function(){
+          gtag('consent', 'update', {
+              'analytics_storage': 'granted'
+          });
+          console.log('tracking fired');
+        });
     </script>
 
     <script type="text/plain" cookie-consent="targeting">
-        console.log('targeting fired');
-        gtag('consent', 'update', {
-            'ad_storage': 'granted'
+        $(document).ready(function(){
+          gtag('consent', 'update', {
+              'ad_storage': 'granted'
+          });
+          console.log('targeting fired');
         });
-    
     </script>
 
 
