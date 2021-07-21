@@ -66,7 +66,7 @@
 									<li><a href="{{ route('politica') }}">Política de cookies</a></li>
 									<li><a href="{{ route('aviso') }}">Aviso legal</a></li>
 								</ul>
-								<p class="copy">Thatzad Copyright 2018</p>
+								<p class="copy">Thatzad Copyright {{ date('Y') }}</p>
 							</div>
 						</div>
 					</div>
