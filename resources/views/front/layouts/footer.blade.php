@@ -1,4 +1,4 @@
-@include('front.static.cookies')
+
 <footer class="footer">
 	<div class="">
 		<div class="">
