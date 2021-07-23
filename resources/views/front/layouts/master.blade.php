@@ -7,6 +7,8 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="facebook-domain-verification" content="jshrh571tev77sebddofjmai81dmy9" />
+    
     <link href="{{ asset('front/css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('front/css/responsive.css') }}" rel="stylesheet">
 
