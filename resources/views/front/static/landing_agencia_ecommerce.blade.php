@@ -9,7 +9,7 @@
                     <p class="name-page col-md-8">La agencia de marketing para ecommerce</p>
                 </div>
                 <div class="row">
-                    <h1 class="title col-md-8">Los beneficios de vuestro ecommerce son escalables, vayamos un paso más</h1>
+                    <h1 class="title col-md-8">Los beneficios de vuestro ecommerce son escalables, vayamos un paso más allá</h1>
                 </div>
                 <div class="row">
                     <h2 class="subtitle col-md-6" data-animated="fadeInUp">
