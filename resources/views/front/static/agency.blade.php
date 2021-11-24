@@ -55,6 +55,15 @@
                             <div class="block-opinion">
                                 <img src="{{ asset('front/img/agency/ico-opinion.png') }}" alt="">
                                 <div class="text-opinion">
+                                    <p>Sólo agradecerte todo el tiempo, la paciencia, la generosidad y sobre todo el trabajo y el trato del equipo de Thatzad. Muy especialmente de Teresa y Carlos, de quien he recibido un trato profesional exquisito. Eso dice muchísimo de una empresa y de quien la dirige.</p>
+                                </div>
+                                <p class="name-opinion">Carme Samsó, <br>CEO Espaidelestudi.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="block-opinion">
+                                <img src="{{ asset('front/img/agency/ico-opinion.png') }}" alt="">
+                                <div class="text-opinion">
                                     <p>Thatzad ha sido clave para desarrollar y planificar la estrategia digital de una forma innovadora en un sector muy conservador como el futbol amateur.</p>
                                 </div>
                                 <p class="name-opinion">Jordi Canals, <br>Digital Manager Federació Catalana de Futbol.</p>
@@ -66,7 +75,7 @@
                                 <div class="text-opinion">
                                     <p>Transformar un servicio tradicional como las administraciones de Lotería para llevarlo al entorno digital, solo se puede hacer de la mano de un partner que haga el proyecto suyo y pueda negociar de primera mano con los grandes players como GOOGLE o FACEBOOK.</p>
                                 </div>
-                                <p class="name-opinion">Sergio Milan, <br>CEO Los Loteros.</p>
+                                <p class="name-opinion">Sergio Milan, <br>CEO Losloteros.com</p>
                             </div>
                         </div>
                         <div>

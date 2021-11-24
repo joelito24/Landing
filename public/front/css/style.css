@@ -318,6 +318,20 @@ section.home .infographics .container {
 section.home .infographics #infografia svg {
     max-width: 800px
 }
+section.home .infographics #infografia{
+    position: relative;
+}
+section.home .infographics #infografia .text-inside-svg-infografia{
+    color: black;
+    font-weight: 900;
+    position: absolute;
+    z-index: 99;
+    top: 264px;
+    text-align: center;
+    right: 55%;
+    font-family: var(--main-font);
+}
+
 section.home .infographics .inner-info {
     padding-bottom: 100px;
     margin-top: 100px
@@ -825,7 +839,7 @@ section.service .text-page p {
     font-weight: 400
 }
 section.service .quote {
-;
+
     color: var(--main-blue);
     font-size: 34px;
     font-family: var(--title-font);
@@ -1971,6 +1985,15 @@ section.specializations .bg-stripers .conclusion {
     font-size: 18px;
     font-weight: 700
 }
+
+section.specializations.ecommerce .quote {
+    color: var(--main-blue);
+    font-size: 34px;
+    font-family: var(--title-font);
+    line-height: 36px;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
 .bottom-action {
     padding: 93px 0;
     background-attachment: fixed;
@@ -2633,6 +2656,26 @@ footer .cls-1 {
 }
 footer .google-partner-movile {
     display: none
+}
+footer .segell-generalitat-footer{
+    float: right;
+    position: absolute;
+    right:195px;
+    top:230px
+}
+footer .segell-generalitat-footer-mov{
+    display: none;
+}
+footer .segell-generalitat-footer-mov .segell-div-inside-footer-mov{
+    width:178px;
+    padding-bottom: 10px;
+    padding-top:3px;
+    margin-left:4px
+}
+
+footer .segell-generalitat-footer .segell-div-inside-footer{
+    float: right;
+    width:220px
 }
 .lost {
     background: #a8acad;

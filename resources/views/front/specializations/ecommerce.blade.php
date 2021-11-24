@@ -42,8 +42,9 @@
                 <div class="row">
                     <div class="col-md-6"  data-animated="fadeInUp">
                         <p class="subtitle">Fidelización, palanca de futuro en eCommerce</p>
-                        <p>Pero es cara generar la primera venta online de un cliente, así que debemos potenciar mucho más las revisitas y segundas compras. Debemos inventar nuevas formas de aplicar conceptos tradicionales de fidelización. Mediante campañas de mail marketing, remarketing, Social Ads, push notifications, marketing automation y muchas otras que desarrollemos pensando en ti.</p>
+                        <p>Pero es cara generar la primera venta online de un cliente, así que debemos potenciar mucho más las revisitas y segundas compras. Debemos inventar nuevas formas de aplicar conceptos tradicionales de fidelización. Mediante campañas de mail marketing, remarketing, Social Ads, push notifications, marketing Automation, creación de contenidos, propuesta de valor y muchas otras que desarrollemos pensando en ti.</p>
                         <p>Y aunque tenemos una amplia experiencia y sabemos lo que funciona y lo que no, no tenemos una barita mágica, el éxito lo conseguimos a base de conocimiento, creatividad e implicación en tu proyecto.</p>
+                            <a class="quote" href="{{ route('service','agencia-automation-marketing') }}" style="cursor:pointer">¿Quieres que te lo expliquemos con un par de ejemplos? <button class="slick-next slick-arrow" style="position: unset;display: contents;">></button></a>
                     </div>
                     <div class="col-md-4 col-md-offset-1" data-animated="fadeInUp">
                         <img src="{{ asset('front/img/specials/info-ecommerce.png') }}" alt="">

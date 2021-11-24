@@ -108,8 +108,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8" id="infografia">
+                    <div class="col-md-8" id="infografia" >
                     @include('front.home.complements.infografia')
+                    <h3 class="text-inside-svg-infografia">360°<br>DIGITAL</h3>
                     <!-- <object type="image/svg+xml" data="picture.svg">
                       <img
                         src="{{ asset('front/img/specials/infografía_180308-08.svg') }}">
