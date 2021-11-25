@@ -378,3 +378,7 @@ Route::get('payment/paypal/ko', ['as' => 'payments.paypal.ko', 'uses' => 'Paypal
 
 //TRANSFER
 Route::post('payment/transfer', ['as' => 'payments.transfer', 'uses' => 'TransferController@Transfer']);
+
+Route::group(['middleware' => ['cors']], function () {
+    Route::post('/contactthatzblog', ['uses' => 'ContactPostController@send']);
+});

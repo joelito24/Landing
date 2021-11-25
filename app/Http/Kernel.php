@@ -33,7 +33,8 @@ class Kernel extends HttpKernel
         'admin' => 'App\Http\Middleware\AdminMiddleware',
         'localize' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
         'localizationRedirect' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
-        'localeSessionRedirect' => \Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class
+        'localeSessionRedirect' => \Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class,
+        'cors' => \App\Http\Middleware\Cors::class
     ];
 
 }
