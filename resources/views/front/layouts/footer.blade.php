@@ -45,11 +45,6 @@
 										<a target="_blank" href="https://twitter.com/thatzad"><svg
 												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
 												<defs>
-													<style>
-														.cls-1 {
-															fill: #023c4e;
-														}
-													</style>
 												</defs>
 												<title></title>
 												<g id="Capa_2" data-name="Capa 2">
@@ -65,11 +60,6 @@
 											href="https://www.linkedin.com/company/thatzad.-that%27s-advertising-/"><svg
 												xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
 												<defs>
-													<style>
-														.cls-1 {
-															fill: #023c4e;
-														}
-													</style>
 												</defs>
 												<title></title>
 												<g id="Capa_2" data-name="Capa 2">

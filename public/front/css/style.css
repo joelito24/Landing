@@ -316,7 +316,9 @@ section.home .infographics .container {
     position: relative
 }
 section.home .infographics #infografia svg {
-    max-width: 800px
+    max-width: 800px;
+    background-image: url(/front/img/home/bg-360.png);
+    background-position: center;
 }
 section.home .infographics #infografia{
     position: relative;
