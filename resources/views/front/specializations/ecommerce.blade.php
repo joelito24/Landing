@@ -44,7 +44,13 @@
                         <p class="subtitle">Fidelización, palanca de futuro en eCommerce</p>
                         <p>Pero es cara generar la primera venta online de un cliente, así que debemos potenciar mucho más las revisitas y segundas compras. Debemos inventar nuevas formas de aplicar conceptos tradicionales de fidelización. Mediante campañas de mail marketing, remarketing, Social Ads, push notifications, marketing Automation, creación de contenidos, propuesta de valor y muchas otras que desarrollemos pensando en ti.</p>
                         <p>Y aunque tenemos una amplia experiencia y sabemos lo que funciona y lo que no, no tenemos una barita mágica, el éxito lo conseguimos a base de conocimiento, creatividad e implicación en tu proyecto.</p>
-                            <a class="quote" href="{{ route('service','agencia-automation-marketing') }}" style="cursor:pointer">¿Quieres que te lo expliquemos con un par de ejemplos? <button class="slick-next slick-arrow" style="position: unset;display: contents;">></button></a>
+                            <a class="quote" href="{{ route('service','agencia-automation-marketing') }}">
+                            <span>¿Quieres que te lo expliquemos con un par de ejemplos?</span></a>
+                            <a class="" href="{{ route('service','agencia-automation-marketing') }}" style="cursor:pointer"><div class="downArrow bounce">
+                                {{--<img style="max-width: 23px;color: #fff;" src="{{ asset('front/img/home/right-arrow-angle.png') }}" alt="">--}}
+                                <svg style="max-width: 23px;color: #00bde0;" aria-hidden="true" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>
+                            </div></a>
+                            
                     </div>
                     <div class="col-md-4 col-md-offset-1" data-animated="fadeInUp">
                         <img src="{{ asset('front/img/specials/info-ecommerce.png') }}" alt="">

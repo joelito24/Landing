@@ -404,6 +404,14 @@ section.home .infographics .bounce {
     margin-left: 274px;
     margin-top: -76px
 }
+.specializations.ecommerce .bounce {
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+    margin-left: 360px;
+    margin-top: -146px;
+    margin-bottom: 100px;
+}
 @-moz-keyframes bounce {
     0%, 100%, 20%, 50%, 80% {
         -moz-transform: translateX(0);
@@ -1995,6 +2003,9 @@ section.specializations.ecommerce .quote {
     line-height: 36px;
     margin-bottom: 70px;
     margin-top: 20px;
+    width: 350px;
+    display: flex;
+    cursor:pointer
 }
 .bottom-action {
     padding: 93px 0;
@@ -2659,12 +2670,6 @@ footer .cls-1 {
 footer .google-partner-movile {
     display: none
 }
-footer .segell-generalitat-footer{
-    float: right;
-    position: absolute;
-    right:195px;
-    top:230px
-}
 footer .segell-generalitat-footer-mov{
     display: none;
 }
@@ -2675,10 +2680,6 @@ footer .segell-generalitat-footer-mov .segell-div-inside-footer-mov{
     margin-left:4px
 }
 
-footer .segell-generalitat-footer .segell-div-inside-footer{
-    float: right;
-    width:220px
-}
 .lost {
     background: #a8acad;
     height: 100vh;
@@ -3207,6 +3208,17 @@ section.service form .lastname {
     }
     footer .footer-bottom {
         height: 56px
+    }
+}
+
+@media (max-width: 450px){
+    section.specializations.ecommerce .quote {
+        width: 215px !important;
+        font-size: 18px;
+    }
+    .specializations.ecommerce .bounce{
+        margin-left: 239px;
+        margin-top: -146px;
     }
 }
 @media (max-width: 1199px) {

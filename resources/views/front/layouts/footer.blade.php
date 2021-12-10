@@ -97,7 +97,7 @@
 
 							</ul>
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-sm-6 col-md-4 col-lg-2">
 							<p class="title-menu">Información</p>
 							<ul class="menu-footer gray">
 								<li><a href="{{ route('generals') }}">Política de privacidad</a></li>
@@ -106,9 +106,8 @@
 							</ul>
 							<p class="copy">Thatzad Copyright {{ date('Y') }}</p>
 						</div>
-						<div class="w-100 segell-generalitat-footer">
-							<div class="segell-div-inside-footer"><img style="width:100%"
-									src="{{ asset('front/img/segell-footer.png') }}"></div>
+						<div class="col-lg-2 segell-generalitat-footer">
+							<img style='width:100%;min-width: 220px;' src="{{ asset('front/img/segell-footer.png') }}">
 						</div>
 					</div>
 				</div>
