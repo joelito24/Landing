@@ -94,7 +94,7 @@ class EmailServices
         $sender = $email;
         $data = ['data' => [
             'project_name' => "Thatzad",
-            'title' => "Nueva solicitud de Contacto Posts - Thatzad",
+            'title' => "Nueva solicitud de Contacto - Thatzad",
             'name' => $name,
             'email' => $email,
             'web' => $web,

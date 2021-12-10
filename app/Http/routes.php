@@ -314,6 +314,12 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+//API
+Route::group(['middleware' => ['cors']], function () {
+    Route::post('/contact_blog', ['uses' => 'ContactPostController@send']); 
+});
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 //FRONT
 Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['localizationRedirect', 'localize']
 ], function()
@@ -378,7 +384,3 @@ Route::get('payment/paypal/ko', ['as' => 'payments.paypal.ko', 'uses' => 'Paypal
 
 //TRANSFER
 Route::post('payment/transfer', ['as' => 'payments.transfer', 'uses' => 'TransferController@Transfer']);
-
-Route::group(['middleware' => ['cors']], function () {
-    Route::post('/contactthatzblog', ['uses' => 'ContactPostController@send']);
-});

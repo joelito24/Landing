@@ -13,7 +13,7 @@ class VerifyCsrfToken extends BaseVerifier {
 		'payment/paypal/response',
 		'payment/paypal/ko',
 		'payment/paypal/ok',
-		'contactthatzblog',
+		'contact_blog',
 	];
 
 	public function handle( $request, Closure $next )
