@@ -34,14 +34,14 @@ class EmailServices
 
     public function contactEmail($name, $email, $telephone, $consulta, $consultas, $web)
     {
-        $subject = "Nueva solicitud de Contacto";
+        $subject = "Thatzad Agencia y Marketing - Solicitud de contacto";
         $to = env('EMAIL_TO_THATZAD');
         $view = 'emails.contact';
         $from = $email;
         $sender = $email;
         $data = ['data' => [
                 'project_name' => "Thatzad",
-                'title' => "Nueva solicitud de Contacto - Thatzad",
+                'title' => "Thatzad Agencia y Marketing",
                 'name' => $name,
                 'email' => $email,
                 'telephone' => $telephone,
@@ -53,14 +53,14 @@ class EmailServices
 
     public function contactShortEmail($name, $email, $consulta)
     {
-        $subject = "Nueva solicitud de Contacto";
+        $subject = "Thatzad Agencia y Marketing - Solicitud de contacto";
         $to = env('EMAIL_TO_THATZAD');
         $view = 'emails.contactShort';
         $from = $email;
         $sender = $email;
         $data = ['data' => [
             'project_name' => "Thatzad",
-            'title' => "Nueva solicitud de Contacto - Thatzad",
+            'title' => "Thatzad Agencia y Marketing",
             'name' => $name,
             'email' => $email,
             'consulta' => $consulta]];
@@ -69,14 +69,14 @@ class EmailServices
 
     public function contactShortEmailLanding($name, $web, $email, $telf)
     {
-        $subject = "Nueva solicitud de Contacto";
+        $subject = "Thatzad Agencia y Marketing - Solicitud de contacto";
         $to = env('EMAIL_TO_THATZAD');
         $view = 'emails.contactShortLanding';
         $from = $email;
         $sender = $email;
         $data = ['data' => [
             'project_name' => "Thatzad",
-            'title' => "Nueva solicitud de Contacto Landing - Thatzad",
+            'title' => "Thatzad Agencia y Marketing",
             'name' => $name,
             'email' => $email,
             'web' => $web,
@@ -87,14 +87,14 @@ class EmailServices
     }
     public function contactShortEmailPosts($name, $web, $email, $telf)
     {
-        $subject = "Nueva solicitud de Contacto";
+        $subject = "Thatzad Blog - Solicitud de contacto";
         $to = env('EMAIL_TO_THATZAD');
         $view = 'emails.contactShortLanding';
         $from = $email;
         $sender = $email;
         $data = ['data' => [
             'project_name' => "Thatzad",
-            'title' => "Nueva solicitud de Contacto Blog - Thatzad",
+            'title' => "Thatzad Blog",
             'name' => $name,
             'email' => $email,
             'web' => $web,
