@@ -199,8 +199,14 @@ return [
         'fields' => [
             'title' => [
                 'type' => 'text',
-                'title' => 'Ttítulo',
+                'title' => 'Título',
                 'description' => 'Introduzca el título.',
+                'rules' => ['required']
+            ],
+            'link' => [
+                'type' => 'text',
+                'title' => 'Link',
+                'description' => 'Introduzca la url del proyecto.',
                 'rules' => ['required']
             ],
             'category_id' => [
