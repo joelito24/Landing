@@ -207,7 +207,7 @@ return [
                 'type' => 'text',
                 'title' => 'Link',
                 'description' => 'Introduzca la url del proyecto.',
-                'rules' => ['required']
+                'rules' => []
             ],
             'category_id' => [
                 'type' => 'select',
