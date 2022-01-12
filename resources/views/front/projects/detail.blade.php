@@ -15,6 +15,9 @@
         </div>
         <div class="project-description" data-animated="fadeInUp">
             {!! $project->description  !!}
+            @if(!empty($project->link))
+                <a target='_blank' href='{{$project->link}}'>Ver Proyecto<span> ></span></a>
+            @endif
         </div>
         <div class="container">
             <div class="row">
