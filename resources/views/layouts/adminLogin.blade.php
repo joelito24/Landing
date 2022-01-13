@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ $title or 'Administración' }} - {{env('APP_NAME', 'Proyecto')}} </title>
 
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans'
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans'
               rel='stylesheet' type='text/css'/>
 
         <link href="{{ admin_asset('css/bootstrap.min.css') }}" rel="stylesheet">

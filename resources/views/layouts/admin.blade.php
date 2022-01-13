@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ $title or 'Admintración' }} - {{env('APP_NAME', 'Proyecto')}} </title>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
         <link href="{{ admin_asset('css/bootstrap.min.css') }}" rel="stylesheet">
         <link href="{{ admin_asset('css/font-awesome.css') }}" rel="stylesheet"/>
         <link href="{{ admin_asset('js/morris/morris-0.4.3.min.css') }}" rel="stylesheet"/>
