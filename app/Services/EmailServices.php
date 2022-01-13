@@ -7,12 +7,13 @@ use Illuminate\Support\Facades\Mail;
 class EmailServices
 {
 
-    private function sendEmail( $from, $to, $subject, $view, $data, $emailFrom)
+    private function sendEmail( $from, $to, $subject, $view, $data, $emailFrom, $bcc = null)
     {
-        Mail::send($view, $data, function ($message) use($from, $to, $subject, $emailFrom)
+        Mail::send($view, $data, function ($message) use($from, $to, $subject, $emailFrom,$bcc)
         {
             //$message->from($emailFrom);
             $message->to($to);
+            if ($bcc){ $message->bcc($bcc); }
             $message->subject($subject);
 
         });
@@ -48,7 +49,7 @@ class EmailServices
                 'consulta' => $consulta,
                 'consultas' => $consultas,
                 'web' => $web]];
-        $this->sendEmail($from, $to, $subject, $view, $data, $sender);
+        $this->sendEmail($from, $to, $subject, $view, $data, $sender,$email);
     }
 
     public function contactShortEmail($name, $email, $consulta)
@@ -64,7 +65,7 @@ class EmailServices
             'name' => $name,
             'email' => $email,
             'consulta' => $consulta]];
-        $this->sendEmail($from, $to, $subject, $view, $data, $sender);
+        $this->sendEmail($from, $to, $subject, $view, $data, $sender,$email);
     }
 
     public function contactShortEmailLanding($name, $web, $email, $telf)
@@ -83,7 +84,7 @@ class EmailServices
             'telf' => $telf,
 
         ]];
-        $this->sendEmail($from, $to, $subject, $view, $data, $sender);
+        $this->sendEmail($from, $to, $subject, $view, $data, $sender,$email);
     }
     public function contactShortEmailPosts($name, $web, $email, $telf)
     {
@@ -101,7 +102,7 @@ class EmailServices
             'telf' => $telf,
 
         ]];
-        $this->sendEmail($from, $to, $subject, $view, $data, $sender);
+        $this->sendEmail($from, $to, $subject, $view, $data, $sender,$email);
     }
     public function sendWhitepaper($name, $email, $pdf){
         $subject = "Thatzpaper";
