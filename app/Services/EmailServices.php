@@ -34,14 +34,14 @@ class EmailServices
 
     public function contactEmail($name, $email, $telephone, $consulta, $consultas, $web)
     {
-        $subject = "Thatzad Agencia y Marketing - Solicitud de contacto";
+        $subject = "Thatzad Agencia e-Marketing - Solicitud de contacto";
         $to = env('EMAIL_TO_THATZAD');
         $view = 'emails.contact';
         $from = $email;
         $sender = $email;
         $data = ['data' => [
                 'project_name' => "Thatzad",
-                'title' => "Thatzad Agencia y Marketing",
+                'title' => "Thatzad Agencia e-Marketing",
                 'name' => $name,
                 'email' => $email,
                 'telephone' => $telephone,
@@ -53,14 +53,14 @@ class EmailServices
 
     public function contactShortEmail($name, $email, $consulta)
     {
-        $subject = "Thatzad Agencia y Marketing - Solicitud de contacto";
+        $subject = "Thatzad Agencia e-Marketing - Solicitud de contacto";
         $to = env('EMAIL_TO_THATZAD');
         $view = 'emails.contactShort';
         $from = $email;
         $sender = $email;
         $data = ['data' => [
             'project_name' => "Thatzad",
-            'title' => "Thatzad Agencia y Marketing",
+            'title' => "Thatzad Agencia e-Marketing",
             'name' => $name,
             'email' => $email,
             'consulta' => $consulta]];
@@ -69,14 +69,14 @@ class EmailServices
 
     public function contactShortEmailLanding($name, $web, $email, $telf)
     {
-        $subject = "Thatzad Agencia y Marketing - Solicitud de contacto";
+        $subject = "Thatzad Agencia e-Marketing - Solicitud de contacto";
         $to = env('EMAIL_TO_THATZAD');
         $view = 'emails.contactShortLanding';
         $from = $email;
         $sender = $email;
         $data = ['data' => [
             'project_name' => "Thatzad",
-            'title' => "Thatzad Agencia y Marketing",
+            'title' => "Thatzad Agencia e-Marketing",
             'name' => $name,
             'email' => $email,
             'web' => $web,
