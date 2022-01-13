@@ -13,7 +13,7 @@ class EmailServices
         {
             //$message->from($emailFrom);
             $message->to($to);
-            if ($bcc){ $message->bcc($bcc); }
+            // if ($bcc){ $message->bcc($bcc); }
             $message->subject($subject);
 
         });
