@@ -51,11 +51,11 @@ class EmailServices
                 'web' => $web]];
         $this->sendEmail($from, $to, $subject, $view, $data, $sender,$email);
     }
-    public function succesContact($name, $email){
+    public function successContact($name, $email){
         $subject = "Thatzad Agencia e-Marketing - Solicitud de contacto";
         $to = $email;
         $view = 'emails.contact';
-        $from = $email;
+        $from = env('EMAIL_TO_THATZAD');
         $sender = $email;
         $view = 'emails.contact_succes';
         $data = [
@@ -65,7 +65,7 @@ class EmailServices
                 'name' =>  $name
             ]
         ];
-        $this->sendEmail($from, $email, $subject, $view, $data, $sender);
+        $this->sendEmail($from, $to, $subject, $view, $data, $sender);
     }
     public function contactShortEmail($name, $email, $consulta)
     {

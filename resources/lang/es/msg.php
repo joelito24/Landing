@@ -10,7 +10,7 @@ return [
         'mesage' => 'Mensaje',
         'consults' => 'Consultas',
         'web' => 'Web',
-        'succes' => [
+        'success' => [
           'text1'   => 'Hola',
           'text2'   => '¡Gracias por ponerte en contacto con nosotros! Sabemos que nuestra respuesta es importante para ti, por eso te contactaremos en breve para que nos expliques más en detalle tus necesidades.',
           'text3'   => 'Si lo prefieres, puedes llamarnos al <a href="tel:+34936350620">+34 936 350 620 </a>',

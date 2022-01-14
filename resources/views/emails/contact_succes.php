@@ -12,12 +12,12 @@
                     <br>
                     <div>
                         <p style="font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:22px;text-align:left;color:#333333;margin-top:12px"><br>
-                        @lang('msg.email_text.succes.text1') {{$data['name']}},<br/>
-                        @lang('msg.email_text.succes.text2')<br/>
-                        @lang('msg.email_text.succes.text3')<br/>
-                        @lang('msg.email_text.succes.text4')<br/>
-                        @lang('msg.email_text.succes.text5')<br/>
-                        @lang('msg.email_text.succes.text6')
+                        @lang('msg.email_text.success.text1') {{$data['name']}},<br/>
+                        @lang('msg.email_text.success.text2')<br/>
+                        @lang('msg.email_text.success.text3')<br/>
+                        @lang('msg.email_text.success.text4')<br/>
+                        @lang('msg.email_text.success.text5')<br/>
+                        @lang('msg.email_text.success.text6')
                         </p><br>
                     </div>
                 </td>

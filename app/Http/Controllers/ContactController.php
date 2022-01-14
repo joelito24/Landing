@@ -40,7 +40,7 @@ class ContactController extends Controller
             $contactData['web']
         );
         if($contactData['email'] == 'sandra.corbacho@thatzad.com'){
-            $emailService->succesContact(
+            $emailService->successContact(
                 $contactData['name'],
                 $contactData['email'],
             );
