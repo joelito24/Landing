@@ -57,7 +57,7 @@ class EmailServices
         $view = 'emails.contact';
         $from = env('EMAIL_TO_THATZAD');
         $sender = $email;
-        $view = 'emails.contact_succes';
+        $view = 'emails.contact_success';
         $data = [
             'data' => [
                 'project_name' => "Thatzad",
