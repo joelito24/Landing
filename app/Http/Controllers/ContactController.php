@@ -39,12 +39,10 @@ class ContactController extends Controller
             $contactData['consultas'],
             $contactData['web']
         );
-        if($contactData['email'] == 'sandra.corbacho@thatzad.com' || $contactData['email'] == 'teresa.quintanilla@thatzad.com'){
-            $emailService->successContact(
-                $contactData['name'],
-                $contactData['email'],
-            );
-        }
+        $emailService->successContact(
+            $contactData['name'],
+            $contactData['email'],
+        );
         $contactsHistoryRepository->add($contactData);
 
         if(isset($contactData['newsletter'])){
@@ -75,7 +73,10 @@ class ContactController extends Controller
             $contactData['email'],
             $contactData['consulta']
         );
-
+        $emailService->successContact(
+            $contactData['name'],
+            $contactData['email'],
+        );
         $contactsHistoryRepository->add($contactData);
 
         if(isset($contactData['newsletter'])){
@@ -100,7 +101,10 @@ class ContactController extends Controller
             $contactData['email'],
             $contactData['telf']
         );
-
+        $emailService->successContact(
+            $contactData['name'],
+            $contactData['email'],
+        );
         $contactsHistoryRepository->add($contactData);
 
         if(isset($contactData['newsletter'])){
