@@ -30,8 +30,8 @@ add your own hostname on your `/etc/hosts`
 
 Service|Address outside containers
 -------|--------------------------
-Webserver|[localhost:46000](http://localhost:46000)
-MySQL|**host:** `localhost`; **port:** `46002`
+Webserver|[localhost:57000](http://localhost:57000)
+MySQL|**host:** `localhost`; **port:** `57002`
 
 ## Hosts within your environment ##
 

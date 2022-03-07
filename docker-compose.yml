@@ -15,7 +15,7 @@ services:
             - MYSQL_USER=user
             - MYSQL_PASSWORD=toor
         ports:
-            - '46002:3306'
+            - '57002:3306'
 
     webserver:
         image: 'nginx:alpine'
@@ -24,7 +24,7 @@ services:
             - '.:/application'
             - './phpdocker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf'
         ports:
-            - '46000:80'
+            - '57000:80'
 
     php-fpm:
         build: phpdocker/php-fpm
