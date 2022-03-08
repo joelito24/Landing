@@ -404,7 +404,7 @@ section.home .infographics .bounce {
     margin-left: 274px;
     margin-top: -76px
 }
-.specializations.kit-digital .bounce {
+.specializations.ecommerce .bounce {
     -moz-animation: bounce 3s infinite;
     -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite;
@@ -1058,9 +1058,9 @@ section.contact #response {
     text-align: center
 }
 
-section.landing-agencia-kit-digital {}
+section.landing-agencia-marketing {}
 
-section.landing-agencia-kit-digital  .top-agency {
+section.landing-agencia-marketing .top-agency {
     padding-top: 295px;
     padding-bottom: 46px;
     background-position: bottom center;
@@ -1068,7 +1068,7 @@ section.landing-agencia-kit-digital  .top-agency {
     background-image: url(/front/img/landings/agencia-marketing-e-commerce/header.png)
 }
 
-section.landing-agencia-kit-digital .top-agency .name-page {
+section.landing-agencia-marketing .top-agency .name-page {
     z-index: 10;
     margin-top: 0;
     margin-bottom: 27px;
@@ -1078,7 +1078,7 @@ section.landing-agencia-kit-digital .top-agency .name-page {
     text-transform: inherit;
 }
 
-section.landing-agencia-kit-digital  .top-agency .title {
+section.landing-agencia-marketing .top-agency .title {
     z-index: 10;
     margin-top: 0;
     margin-bottom: 40px;
@@ -1087,7 +1087,7 @@ section.landing-agencia-kit-digital  .top-agency .title {
     font-weight: 700;
     font-family: var(--title-font)
 }
-section.landing-agencia-kit-digital  .top-agency .subtitle {
+section.landing-agencia-marketing .top-agency .subtitle {
     font-size: 16px;
     max-width: 570px;
     color: #ffffff;
@@ -1095,11 +1095,11 @@ section.landing-agencia-kit-digital  .top-agency .subtitle {
     margin-bottom: 72px;
 }
 
-section.landing-agencia-kit-digital .content-1-agency {
+section.landing-agencia-marketing .content-1-agency {
     margin-top: 60px;
     background-color: #f3f8f9;
 }
-section.landing-agencia-kit-digital .content-1-agency:before {
+section.landing-agencia-marketing .content-1-agency:before {
     background-color: #f3f8f9;
     top: -110px;
     content: '';
@@ -1113,15 +1113,15 @@ section.landing-agencia-kit-digital .content-1-agency:before {
     right: 0;
 }
 
-section.landing-agencia-kit-digital .content-1-agency .kit-digital-description {}
-section.landing-agencia-kit-digital .content-1-agency .kit-digital-description .desc-info {
+section.landing-agencia-marketing .content-1-agency .ecommerce-description {}
+section.landing-agencia-marketing .content-1-agency .ecommerce-description .desc-info {
     margin-top: 0;
 }
-section.landing-agencia-kit-digital .content-1-agency .kit-digital-description .desc-info .element-kit-digital-description {
+section.landing-agencia-marketing .content-1-agency .ecommerce-description .desc-info .element-ecommerce-description {
     margin-bottom: 64px;
 }
 
-section.landing-agencia-kit-digital .content-1-agency .kit-digital-description .desc-info .element-kit-digital-description .title-section {
+section.landing-agencia-marketing .content-1-agency .ecommerce-description .desc-info .element-ecommerce-description .title-section {
     min-height: 63px;
     color: #023c4e;
     font-size: 24px;
@@ -1130,30 +1130,69 @@ section.landing-agencia-kit-digital .content-1-agency .kit-digital-description .
     font-family: var(--title-font)
 }
 
-section.landing-agencia-kit-digital .content-1-agency .kit-digital-description .desc-info .element-kit-digital-description .description-section {
+section.landing-agencia-marketing .container-desc .title-section{
+    width: 754px;
+    height: 45px;
+    color: #828282;
+    font-family: "Playfair Display";
+    font-size: 34px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+}
+section.landing-agencia-marketing .container-desc .desc-text{
+    width: 758px;
+    height: 60px;
+    color: #023c4e;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    /* Text style for "THATZAD, a" */
+    font-family: "Mulish Roman - Bold";
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+section.landing-agencia-marketing .container-desc{
+    align-content: center;
+    align-self: center;
+    background-size: cover;
+    padding-top: 48px;
+    padding-bottom: 60px;
+}
+
+section.landing-agencia-marketing .content-1-agency .ecommerce-description .desc-info .element-ecommerce-description .description-section {
     /* Style for "En THATZAD" */
     color: #023c4e;
     font-size: 16px;
     font-weight: 400;
 }
-section.landing-agencia-kit-digital .content-1-agency .kit-digital-description .desc-info .element-kit-digital-description .description-section b {
+section.landing-agencia-marketing .content-1-agency .ecommerce-description .desc-info .element-ecommerce-description .description-section b {
     font-weight: 700;
 }
-section.landing-agencia-kit-digital .content-1-agency .kit-digital-description .desc-info .element-kit-digital-description .description-section span {
+section.landing-agencia-marketing .content-1-agency .ecommerce-description .desc-info .element-ecommerce-description .description-section span {
     color: #00bde0;
     font-weight: 700;
 }
-section.landing-agencia-kit-digital .content-1-agency .kit-digital-description .img-info {
+section.landing-agencia-marketing .content-1-agency .ecommerce-description .img-info {
     text-align: right;
 }
-section.landing-agencia-kit-digital .content-2-agency {
+section.landing-agencia-marketing .content-2-agency {
     padding-top: 48px;
     padding-bottom: 60px;
     background: url(/front/img/home/bg-whitepapers.png) center center no-repeat;
     background-size: cover;
 }
 
-section.landing-agencia-kit-digital .content-2-agency .title-section {
+section.landing-agencia-marketing .content-2-agency .title-section {
     max-width: 842px;
     color: #828282;
     font-size: 36px;
@@ -1162,47 +1201,47 @@ section.landing-agencia-kit-digital .content-2-agency .title-section {
     margin: 15px auto 44px;
     font-family: var(--title-font)
 }
-section.landing-agencia-kit-digital .content-2-agency .container-proyectos {}
-section.landing-agencia-kit-digital .content-2-agency .container-proyectos .row {
+section.landing-agencia-marketing .content-2-agency .container-proyectos {}
+section.landing-agencia-marketing .content-2-agency .container-proyectos .row {
  margin-bottom:45px;
 }
-section.landing-agencia-kit-digital .content-2-agency .container-proyectos .element-img.mobile {
+section.landing-agencia-marketing .content-2-agency .container-proyectos .element-img.mobile {
     display: none;
 }
-section.landing-agencia-kit-digital .content-2-agency .container-proyectos .element-img {
+section.landing-agencia-marketing .content-2-agency .container-proyectos .element-img {
     text-align: center;
 }
-section.landing-agencia-kit-digital .content-2-agency .container-proyectos .element-img img {
+section.landing-agencia-marketing .content-2-agency .container-proyectos .element-img img {
     max-width: 100%;
 }
-section.landing-agencia-kit-digital .content-2-agency .container-proyectos .element-description {
+section.landing-agencia-marketing .content-2-agency .container-proyectos .element-description {
     margin-top: 120px;
 }
-section.landing-agencia-kit-digital .content-2-agency .container-proyectos .element-description .title {
+section.landing-agencia-marketing .content-2-agency .container-proyectos .element-description .title {
     color: #023c4e;
     font-size: 24px;
     font-weight: 800;
     margin-bottom: 22px;
 }
-section.landing-agencia-kit-digital .content-2-agency .container-proyectos .element-description .subtitle {
+section.landing-agencia-marketing .content-2-agency .container-proyectos .element-description .subtitle {
     color: #023c4e;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 20px;
 }
-section.landing-agencia-kit-digital .content-2-agency .container-proyectos .element-description .link {
+section.landing-agencia-marketing .content-2-agency .container-proyectos .element-description .link {
     color: #00bde0;
     font-size: 18px;
     font-weight: 800;
 }
-section.landing-agencia-kit-digital .content-2-agency .container-proyectos .element-description .link a {
+section.landing-agencia-marketing .content-2-agency .container-proyectos .element-description .link a {
     color: #00bde0;
 }
-section.landing-agencia-kit-digital .content-2-agency .container-proyectos .element-description .link a:hover {
+section.landing-agencia-marketing .content-2-agency .container-proyectos .element-description .link a:hover {
     text-decoration: underline;
 }
 
-section.landing-agencia-kit-digital .content-2-agency .title-end-section {
+section.landing-agencia-marketing .content-2-agency .title-end-section {
     color: #023c4e;
     font-size: 48px;
     font-weight: 700;
@@ -1214,52 +1253,67 @@ section.landing-agencia-kit-digital .content-2-agency .title-end-section {
     line-height: normal;
 }
 
-section.landing-agencia-kit-digital .content-2-agency .line-after-title {
+section.landing-agencia-marketing .content-2-agency .line-after-title {
     border: 2px solid #ebbd31;
     width: 85%;
     max-width: 685px;
     margin: 0 auto
 }
-section.landing-agencia-kit-digital .contact-block {}
-section.landing-agencia-kit-digital .contact-block .big-title {
+.upper-title {
+    width: 451px;
+    height: 60px;
     color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+section.landing-agencia-marketing .contact-block .big-title {
+    width: 561px;
+    height: 96px;
+    color: #ffffff;
+    font-family: "Playfair Display";
     font-size: 36px;
     font-weight: 900;
-    max-width: 627px;
-    margin: 0;
-    font-family: var(--title-font)
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
 }
-section.landing-agencia-kit-digital .contact-block .line-horizontal.mobile {
+
+section.landing-agencia-marketing .contact-block .line-horizontal.mobile {
     display: none;
 }
-section.landing-agencia-kit-digital .contact-block .line-horizontal {
+section.landing-agencia-marketing .contact-block .line-horizontal {
     border-top: dashed 2px white;
     max-width: 475px;
     margin-top:30px;
     margin-bottom:20px;
 }
-section.landing-agencia-kit-digital .contact-block .contact-container {}
-section.landing-agencia-kit-digital .contact-block .contact-container.mobile {
+section.landing-agencia-marketing .contact-block .contact-container {}
+section.landing-agencia-marketing .contact-block .contact-container.mobile {
     display: none;
 }
 
-section.landing-agencia-kit-digital .contact-block .contact-container .title-contact {
+section.landing-agencia-marketing .contact-block .contact-container .title-contact {
     color: #ffffff;
     font-size: 36px;
     font-weight: 900;
     margin-bottom: 33px;
     font-family: var(--title-font)
 }
-section.landing-agencia-kit-digital .contact-block .contact-container a {
+section.landing-agencia-marketing .contact-block .contact-container a {
     color: #ffffff;
     font-size: 18px;
     font-weight: 700;
 }
-section.landing-agencia-kit-digital .contact-block .contact-container a svg {
+section.landing-agencia-marketing .contact-block .contact-container a svg {
     width: 22px;
     fill: white;
 }
-section.landing-agencia-kit-digital .contact-block .contact-container a svg .cls-1 {
+section.landing-agencia-marketing .contact-block .contact-container a svg .cls-1 {
     fill: white;
 }
 
@@ -1920,7 +1974,7 @@ section.project .related .title-related {
     font-size: 36px;
     text-align: center
 }
-section.specializations .kit-digital-top {
+section.specializations .ecommerce-top {
     background-color: #f3f8f9
 }
 section.specializations .name-page {
@@ -1933,24 +1987,24 @@ section.specializations .title-page {
     margin-top: 0;
     margin-bottom: 48px
 }
-section.specializations .kit-digital-top .kit-digital-description {
+section.specializations .ecommerce-top .ecommerce-description {
     padding-left: 10%;
     overflow: hidden
 }
-section.specializations .kit-digital-top .kit-digital-description .text {
+section.specializations .ecommerce-top .ecommerce-description .text {
     width: 50%;
     float: left;
     padding-right: 8%
 }
-section.specializations .kit-digital-top .kit-digital-description .img-info {
+section.specializations .ecommerce-top .ecommerce-description .img-info {
     float: left;
     width: 50%
 }
-section.specializations.kit-digital .kit-digital-top .kit-digital-description .img-info img,
-section.specializations.emarketing .kit-digital-top .kit-digital-description .img-info img {
+section.specializations.ecommerce .ecommerce-top .ecommerce-description .img-info img,
+section.specializations.emarketing .ecommerce-top .ecommerce-description .img-info img {
     float: left
 }
-section.specializations .kit-digital-top .kit-digital-description .text .subtitle {
+section.specializations .ecommerce-top .ecommerce-description .text .subtitle {
     color: var(--default-color);
     font-size: 22px;
     line-height: 26px;
@@ -1962,7 +2016,7 @@ section.specializations p {
     color: var(--default-color);
     margin-bottom: 28px
 }
-section.specializations.kit-digital .white-block {
+section.specializations.ecommerce .white-block {
     padding-top: 69px;
     padding-bottom: 60px
 }
@@ -1996,7 +2050,7 @@ section.specializations .bg-stripers .conclusion {
     font-weight: 700
 }
 
-section.specializations.kit-digital .quote {
+section.specializations.ecommerce .quote {
     color: var(--main-blue);
     font-size: 34px;
     font-family: var(--title-font);
@@ -2025,23 +2079,23 @@ section.specializations.kit-digital .quote {
 section.specializations.emarketing .white-block {
     padding: 70px 0 36px
 }
-section.specializations.emarketing .kit-digital-top.white {
+section.specializations.emarketing .ecommerce-top.white {
     background: #fff
 }
-section.specializations.emarketing .kit-digital-top.white .title-page {
+section.specializations.emarketing .ecommerce-top.white .title-page {
     font-size: 36px;
     margin-bottom: 28px
 }
-section.specializations .white-block .kit-digital-top .kit-digital-description .img-info img {
+section.specializations .white-block .ecommerce-top .ecommerce-description .img-info img {
     float: right
 }
-section.specializations.emarketing .kit-digital-top .kit-digital-description .text {
+section.specializations.emarketing .ecommerce-top .ecommerce-description .text {
     padding-right: 3%
 }
-section.specializations.emarketing .white-block .kit-digital-top .kit-digital-description {
+section.specializations.emarketing .white-block .ecommerce-top .ecommerce-description {
     padding-left: 0
 }
-section.specializations.emarketing .white-block .kit-digital-top .kit-digital-description .text {
+section.specializations.emarketing .white-block .ecommerce-top .ecommerce-description .text {
     padding-right: 10%;
     padding-left: 5%
 }
@@ -2091,7 +2145,7 @@ section.specializations.transformation .white-stripers .col-benefits {
 section.specializations.campanas .main-content {
     background: #eff9fb
 }
-section.specializations.campanas .kit-digital-top {
+section.specializations.campanas .ecommerce-top {
     padding-bottom: 197px;
     background-attachment: fixed;
     background-position: center;
@@ -3029,7 +3083,7 @@ header .menu.little {
 section.service {
     background-color: #f4f8f9
 }
-section.landing-agencia-kit-digital #response,
+section.landing-agencia-marketing #response,
 section.service #response {
     font-weight: 700;
     font-size: 20px;
@@ -3037,7 +3091,7 @@ section.service #response {
     margin-bottom: 20px;
     text-align: center
 }
-section.landing-agencia-kit-digital .form-block .form-control.not-correct,
+section.landing-agencia-marketing .form-block .form-control.not-correct,
 section.service .form-block .form-control.not-correct {
     border: 1px solid #fbd0d0;
     background: #fbd0d0
@@ -3067,25 +3121,25 @@ section.service .text-page .description2,
 section.service .top-page p {
     max-width: 540px
 }
-section.landing-agencia-kit-digital .form-block .form-check .form-check-label,
-section.landing-agencia-kit-digital .form-block .form-group label,
+section.landing-agencia-marketing .form-block .form-check .form-check-label,
+section.landing-agencia-marketing .form-block .form-group label,
 section.service .form-block .form-check .form-check-label,
 section.service .form-block .form-group label {
     color: var(--white)
 }
-section.landing-agencia-kit-digital .form-block,
+section.landing-agencia-marketing .form-block,
 section.service .form-block {
     max-width: 315px
 }
-section.landing-agencia-kit-digital .form-block .btn-yellow-full,
+section.landing-agencia-marketing .form-block .btn-yellow-full,
 section.service .form-block .btn-yellow-full {
     width: 205px
 }
-section.landing-agencia-kit-digital .form-block input[type=text],
+section.landing-agencia-marketing .form-block input[type=text],
 section.service .form-block .form-group input[type=text] {
     min-height: 43px
 }
-section.landing-agencia-kit-digital .form-block .form-group textarea,
+section.landing-agencia-marketing .form-block .form-group textarea,
 section.service .form-block .form-group textarea {
     min-height: 92px
 }
@@ -3120,14 +3174,14 @@ section.service .text-page ul li {
     margin-bottom: 10px
 }
 
-section.landing-agencia-kit-digital .contact-block label,
+section.landing-agencia-marketing .contact-block label,
 section.projects .contact-block label,
 section.service .contact-block label {
     cursor: pointer;
     font-weight: 400;
     font-size: 14px
 }
-section.landing-agencia-kit-digital .contact-block,
+section.landing-agencia-marketing .contact-block,
 section.projects .contact-block,
 section.service .contact-block {
     padding: 68px 0;
@@ -3212,11 +3266,11 @@ section.service form .lastname {
 }
 
 @media (max-width: 450px){
-    section.specializations.kit-digital .quote {
+    section.specializations.ecommerce .quote {
         width: 215px !important;
         font-size: 18px;
     }
-    .specializations.kit-digital .bounce{
+    .specializations.ecommerce .bounce{
         margin-left: 239px;
         margin-top: -146px;
     }
@@ -3236,10 +3290,10 @@ section.service form .lastname {
         margin-top: 50px;
         margin-bottom: 27px!important
     }
-    section.specializations.emarketing .kit-digital-top .kit-digital-description {
+    section.specializations.emarketing .ecommerce-top .ecommerce-description {
         padding-left: 0
     }
-    section.specializations.emarketing .kit-digital-top .kit-digital-description .text {
+    section.specializations.emarketing .ecommerce-top .ecommerce-description .text {
         width: 100%;
         padding: 0 5%
     }
@@ -3282,7 +3336,7 @@ section.service form .lastname {
     section.specializations ul.list-benefits {
         margin-left: 30px
     }
-    section.specializations .kit-digital-top .kit-digital-description .text {
+    section.specializations .ecommerce-top .ecommerce-description .text {
         width: 100%;
         padding: 0 5%
     }

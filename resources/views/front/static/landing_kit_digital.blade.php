@@ -14,11 +14,11 @@
                 </div>
                 <div class="row">
                     <h2 class="subtitle col-md-6" data-animated="fadeInUp">
-                        En un mercado online cada vez más maduro, la optimización de vuestro ecommerce y su estrategia de marketing es clave para entrar en beneficios.
-                        <br><br>
-                        Eso significa que hemos de analizar cada funcionalidad, cada imagen, texto o cada acción de marketing para orientarlo a vender vuestro producto y vuestra marca.
+                        En un mercado online cada vez más maduro, la optimización de vuestra web o ecommerce y su estrategia de marketing es clave para entrar en beneficios.
                         <br><br>
                         Cuando la competencia es fuerte ya no sirve con tener una tienda online y una campaña en Insta, hemos de tener la mejor tienda y las mejores campañas en aquellos canales que ofrezcan rentabilidad.
+                        <br><br>
+                        Esa es la fórmula que proponemos desde Thatzad como agentes digitalizadores acreditados en Sitio web y Presencia en Internet, Comercio Electrónico, Gestión de redes sociales y Business Inteligence y analítica.                 
                     </h2>
                 </div>
                 <div class="row">
@@ -28,7 +28,12 @@
                 </div>
             </div>
         </div>
-        {{-- Seccion descripcion (logos, titulo + parrafo)  --}}
+        {{-- Seccion descripcion (logos, titulo + parrafo) HACER RESPONSIVE --}}
+        <div class="container-desc">
+            <img src="{{ asset('front/img/landings/kitDigital/logos_kitDigital.png') }}" style="align-items: center">
+            <p class="title-section">¿Qué soluciones te ofrecemos desde Thatzad?</p>
+            <p class="subtitle">Se han definido 8 categorías en un proceso de digitalización de una empresa. Thatzad, como agencia de Marketing y publicidad online estamos acreditados para las siguientes categorías o soluciones.</p> 
+        </div>
 
         {{-- Seccion tablas precios --}}
 
@@ -133,15 +138,20 @@
                 </div>
             </div>
         </div>
+        {{--Formulario (HACER RESPOSIVE, CAMBIAR MAIL) --}}
         <div id="contact-block" class="contact-block">
             <div class="row" style="margin: 0">
                 <div class="col-md-12">
                     <div class="col-md-1"></div>
                     <div class="col-md-5">
-                        <p class="big-title">Conozcámonos y os explicaremos las ideas que tenemos para vuestro ecommerce</p>
+                        <p class="upper-title">Llevamos más de 16 años ayudando a digitalizar negocios como el tuyo. </p>
+                        <br>
+                        <p class="big-title">¿Quieres ir un paso más allá en tu negocio online?</p>
+                        <br>
+                        <p class="big-title">¡Hagámoslo juntos!</p>
                         <div class="line-horizontal desktop"></div>
                         <div class="contact-container desktop">
-                            <p class="title-contact">O contactadnos</p>
+                            
                             <a href="tel:0034936350620">
                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      viewBox="0 0 511.999 511.999" style="enable-background:new 0 0 511.999 511.999;" xml:space="preserve">
@@ -169,7 +179,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="form-block">
-                            <form method="POST" action="" id="contactform">
+                            <form method="POST" action id="contactform">
                                 <div class="send" id="response"></div>
                                 <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                                 <div class="form-group">
@@ -287,7 +297,7 @@
                 if (error === 0){
                     $.ajax({
                         type: 'post',
-                        url: '{{ route('landingagenciaecommerce') }}',
+                        url: '{{ route('landingagenciakitdigital') }}',
                         data: $('#contactform').serialize(),
                         success: function(response) {
                             $('#contactform').trigger("reset");
