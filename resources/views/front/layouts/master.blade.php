@@ -23,8 +23,10 @@
     <link href="{{ asset('front/css/font-awesome.css') }}" rel="stylesheet" type="text/css">
     <!-- Animate CSS -->
     <link href="{{ asset('front/css/animate.css') }}" rel="stylesheet">
+
     <!--Layout landing kit digital CSS -->
     <link href="{{ asset('front/css/kitDigital.css') }}" rel="stylesheet">
+
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
     {{--<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900" rel="stylesheet">--}}

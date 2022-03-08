@@ -1,3 +1,4 @@
+
 .btn-yellow,
 .btn-yellow-full,
 .btn-yellow-full a,
@@ -3512,4 +3513,108 @@ section.service form .lastname {
         width: unset;
         float: unset
     }
+
+section.landing-agencia-marketing .container-1-agency .blue-1-bg {
+   /* Style for "Rectangle" */
+    /* width: 1150px;
+    height: 299px; */
+    border-radius: 17px;
+    background-color: rgba(243, 248, 251, 0.8); 
+    padding: 50px;
+}
+
+section.landing-agencia-marketing .container-1-agency .blue-2-bg {
+    width: 1150px;
+    height: 299px;
+    border-radius: 17px;
+    background-color: rgba(235, 244, 248, 0.8);
+}
+
+section.landing-agencia-marketing .container-1-agency .blue-3-bg {
+    width: 1150px;
+    height: 299px;
+    border-radius: 17px;
+    background-color: rgba(217, 235, 242, 0.8);
+}
+
+section.landing-agencia-marketing .container-1-agency .blue-4-bg {
+    width: 1150px;
+    height: 299px;
+    border-radius: 17px;
+    background-color: rgba(178, 214, 228, 0.8);
+}
+section.landing-agencia-marketing .container-1-agency .container-table-title {
+    text-orientation: sideways-right;
+    writing-mode: vertical-rl;
+    max-height: 246px;
+
+}
+
+section.landing-agencia-marketing .container-1-agency .table-title {
+    color: #023c4e;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    font-family: Mulish;
+    transform: rotate(180deg);
+}
+
+section.landing-agencia-marketing .container-1-agency .line-hr {
+    width: 913px;
+    height: 2px;
+    border: 1px solid lightgray;
+}
+
+section.landing-agencia-marketing .container-1-agency .line-vr {
+    width: 2px;
+    border: 1px solid #023c4e;
+    margin: 4%;
+}
+
+section.landing-agencia-marketing .container-1-agency .table-title-row{
+    width: 225px;
+    height: 21px;
+    color: #023c4e;
+    font-size: 16px;
+    font-weight: 800;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+section.landing-agencia-marketing .container-1-agency .price-title {
+    width: 91px;
+    height: 15px;
+    color: #023c4e;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+section.landing-agencia-marketing .container-1-agency .content-table {
+    width: 696px;
+    height: 40px;
+    color: #023c4e;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+section.landing-agencia-marketing .container-1-agency .price-text {
+    width: 125px;
+    height: 20px;
+    color: #00bde0;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
 }

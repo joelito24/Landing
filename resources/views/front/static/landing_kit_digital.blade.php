@@ -36,7 +36,75 @@
         </div>
 
         {{-- Seccion tablas precios --}}
+        <div class="container-1-agency" data-animated="fadeInUp">
+            <div class="container blue-1-bg p-10">
+                <div class="col-md-2 ">
+                    <div class="container-table-title">
+                        <div class="line-vr"></div>
+                        <p class="h3 table-title"> Sitio web y presencia en Internet </p>
+                    </div>
+                </div>
+                <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <p class="table-title-row h5"> Diseño web</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="price-title">Rango de precio</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10">
+                                <p> Nuestras webs son realmente diferentes, están pensadas para vender. Son proyectos totalmente a medida, creados sobre un lienzo en blanco.</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="price-text">1500 - 3000 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line-hr"></div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="row">
+                                <p class="table-title-row h5"> Programación web</p>
+                            </div>
+                            <div class="row">
+                                <p> Programación 100% a medida, ágil y de la máxima calidad. Con código abierto, sin CMS comerciales, para que tengas total libertad</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="row">
+                                <p class="price-text">1500 - 25000 €</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="row">
+                                <p class="table-title-row h5"> Posicionamiento web (SEO)</p>
+                            </div>
+                            <div class="row">
+                                <p> Basamos el SEO en tres palancas: arquitectura de la web, creación de contenidos y difusión de los mismos.</p>
+                            </div>
+                        </div>
+                        <div class="vr"></div>
+                        <div class="hr"></div>
+                        <div class="col-md-2">
+                            <div class="row">
+                                <p class="price-text">800 - 2000 €</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
 
+            <!--
+            <div class="container blue-2-bg"></div>
+            <div class="container blue-3-bg"></div>
+            <div class="container blue-4-bg"></div>
+            -->
+        </div>
         <div class="content-1-agency" data-animated="fadeInUp">
             <div class="container">
                 <div class="row ecommerce-description">
