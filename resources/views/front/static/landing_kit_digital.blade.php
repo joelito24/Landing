@@ -5,11 +5,12 @@
     <section class="landing-agencia-marketing">
         <div class="top-agency">
             <div class="container">
+                
                 <div class="row">
-                    <p class="name-page col-md-8">La agencia de marketing para kit digital</p>
+                    <h1 class="title col-md-8">Kit Digital + Thatzad</h1>
                 </div>
                 <div class="row">
-                    <h1 class="title col-md-8">Los beneficios de vuestro ecommerce son escalables, vayamos un paso más allá</h1>
+                    <p class="name-page col-md-8">En Thatzad sabemos muy bien cómo sacar el máximo retorno a las ayudas europeas de Kit Digital</p>
                 </div>
                 <div class="row">
                     <h2 class="subtitle col-md-6" data-animated="fadeInUp">
