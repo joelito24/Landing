@@ -29,4 +29,8 @@ class StaticController extends Controller
         return view('front.static.landing_agencia_ecommerce');
     }
 
+    public function landing_kit_digital() {
+        return view('front.static.landing_kit_digital');
+    }
+
 }

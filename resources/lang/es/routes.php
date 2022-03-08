@@ -18,5 +18,6 @@ return [
     'generals'              => 'politica-de-privacidad',
     'homenewsletter'        => 'suscribe',
     'landingagenciaecommerce' => 'agencia-marketing-ecommerce-barcelona',
+    'landingagenciakitdigital' => 'agencia-kit-digital-barcelona',
     'service'               => '{slug}',
 ];

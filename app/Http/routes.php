@@ -359,6 +359,8 @@ Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => ['lo
     //Ladings
     Route::get(LaravelLocalization::transRoute('routes.landingagenciaecommerce'), ['as' => 'landingagenciaecommerce','uses' => 'StaticController@landing_agencia_ecommerce']);
     Route::post(LaravelLocalization::transRoute('routes.landingagenciaecommerce'), ['as' => 'landingagenciaecommerce','uses' => 'ContactController@sendShortLandingEcommerce']);
+    Route::get(LaravelLocalization::transRoute('routes.landingagenciakitdigital'), ['as' => 'landingagenciakitdigital','uses' => 'StaticController@landing_kit_digital']);
+    Route::post(LaravelLocalization::transRoute('routes.landingagenciakitdigital'), ['as' => 'landingagenciakitdigital','uses' => 'ContactController@sendShortLandingKitDigital']);
 
     //Services
     Route::get(LaravelLocalization::transRoute('routes.service'), ['as' => 'service','uses' => 'ServiceController@service']);
